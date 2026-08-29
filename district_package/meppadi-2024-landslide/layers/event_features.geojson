@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punchiri Mattam",
+        "date": "2024-07-30",
+        "provenance": "KSDMA memorandum",
+        "parent_settlement_id": "LGD-627340"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.160051,
+          11.489158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mundakkai",
+        "date": "2024-07-30",
+        "provenance": "KSDMA memorandum",
+        "parent_settlement_id": "LGD-627340"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.160051,
+          11.489158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chooralmala",
+        "date": "2024-07-30",
+        "provenance": "KSDMA memorandum",
+        "parent_settlement_id": "LGD-627340"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.160051,
+          11.489158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Attamala",
+        "date": "2024-07-30",
+        "provenance": "KSDMA memorandum",
+        "parent_settlement_id": "LGD-627340"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.160051,
+          11.489158
+        ]
+      }
+    }
+  ]
+}

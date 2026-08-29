@@ -1,0 +1,14 @@
+services:
+  setu-engine:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SETU_ALLOWED_ORIGINS: http://localhost:3000,http://localhost:5173
+      SETU_DATABASE: /app/data/setu.db
+    volumes:
+      - setu-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  setu-data:

@@ -1,0 +1,1285 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "copernicus_dem_n11_e075.tif": "dbddab328128c5874aa94a035b28488279ffc0762a1c2d348d7bd86772567bba",
+    "copernicus_dem_n11_e076.tif": "717edb70dcd7f132ebf44466189a9f461d8137b3c36713ee407b8456f1f14884",
+    "glo30_hand_n11_e075.tif": "efc3356df52cd42592fbb068f9af53a47dca5a50c0de202017a818ac276aa421",
+    "glo30_hand_n11_e076.tif": "098182ab2b19839751447fa5080a89a6986fd97fdd9728b2f6502051cd79d623"
+  },
+  "statistics": {
+    "LGD-627293": {
+      "sample_count": 3067,
+      "elevation_m": {
+        "mean": 915.4,
+        "p10": 769.56,
+        "p90": 1186.25
+      },
+      "slope_deg": {
+        "mean": 12.23,
+        "p90": 24.34
+      },
+      "hand_m": {
+        "mean": 43.01,
+        "p10": 1.16,
+        "p25": 9.34
+      },
+      "susceptibility": {
+        "inundation": 0.31114,
+        "landslide": 0.64395
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627294": {
+      "sample_count": 1140,
+      "elevation_m": {
+        "mean": 802.73,
+        "p10": 727.83,
+        "p90": 927.75
+      },
+      "slope_deg": {
+        "mean": 10.42,
+        "p90": 19.68
+      },
+      "hand_m": {
+        "mean": 32.44,
+        "p10": 0.7,
+        "p25": 8.44
+      },
+      "susceptibility": {
+        "inundation": 0.34819,
+        "landslide": 0.2498
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627295": {
+      "sample_count": 529,
+      "elevation_m": {
+        "mean": 751.02,
+        "p10": 716.3,
+        "p90": 787.04
+      },
+      "slope_deg": {
+        "mean": 8.97,
+        "p90": 15.44
+      },
+      "hand_m": {
+        "mean": 21.39,
+        "p10": 0.4,
+        "p25": 5.0
+      },
+      "susceptibility": {
+        "inundation": 0.53526,
+        "landslide": 0.06935
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627296": {
+      "sample_count": 1104,
+      "elevation_m": {
+        "mean": 823.31,
+        "p10": 728.35,
+        "p90": 1000.0
+      },
+      "slope_deg": {
+        "mean": 12.11,
+        "p90": 20.99
+      },
+      "hand_m": {
+        "mean": 31.77,
+        "p10": 0.91,
+        "p25": 8.07
+      },
+      "susceptibility": {
+        "inundation": 0.36467,
+        "landslide": 0.36203
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627297": {
+      "sample_count": 1097,
+      "elevation_m": {
+        "mean": 837.08,
+        "p10": 736.65,
+        "p90": 1031.7
+      },
+      "slope_deg": {
+        "mean": 13.89,
+        "p90": 23.28
+      },
+      "hand_m": {
+        "mean": 35.16,
+        "p10": 0.48,
+        "p25": 9.63
+      },
+      "susceptibility": {
+        "inundation": 0.30007,
+        "landslide": 0.43611
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627298": {
+      "sample_count": 1305,
+      "elevation_m": {
+        "mean": 807.87,
+        "p10": 736.88,
+        "p90": 896.74
+      },
+      "slope_deg": {
+        "mean": 14.72,
+        "p90": 24.74
+      },
+      "hand_m": {
+        "mean": 35.81,
+        "p10": 0.0,
+        "p25": 8.56
+      },
+      "susceptibility": {
+        "inundation": 0.34301,
+        "landslide": 0.25111
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627299": {
+      "sample_count": 2021,
+      "elevation_m": {
+        "mean": 799.56,
+        "p10": 546.17,
+        "p90": 1028.54
+      },
+      "slope_deg": {
+        "mean": 18.59,
+        "p90": 32.07
+      },
+      "hand_m": {
+        "mean": 58.43,
+        "p10": 0.0,
+        "p25": 12.63
+      },
+      "susceptibility": {
+        "inundation": 0.20623,
+        "landslide": 0.91629
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627300": {
+      "sample_count": 560,
+      "elevation_m": {
+        "mean": 757.33,
+        "p10": 725.83,
+        "p90": 797.06
+      },
+      "slope_deg": {
+        "mean": 12.93,
+        "p90": 21.41
+      },
+      "hand_m": {
+        "mean": 21.94,
+        "p10": 0.0,
+        "p25": 7.05
+      },
+      "susceptibility": {
+        "inundation": 0.41426,
+        "landslide": 0.09683
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627301": {
+      "sample_count": 554,
+      "elevation_m": {
+        "mean": 751.52,
+        "p10": 724.33,
+        "p90": 780.51
+      },
+      "slope_deg": {
+        "mean": 10.22,
+        "p90": 17.64
+      },
+      "hand_m": {
+        "mean": 18.64,
+        "p10": 0.0,
+        "p25": 5.92
+      },
+      "susceptibility": {
+        "inundation": 0.47711,
+        "landslide": 0.0756
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627302": {
+      "sample_count": 430,
+      "elevation_m": {
+        "mean": 747.29,
+        "p10": 721.92,
+        "p90": 770.9
+      },
+      "slope_deg": {
+        "mean": 9.03,
+        "p90": 16.49
+      },
+      "hand_m": {
+        "mean": 19.29,
+        "p10": 0.0,
+        "p25": 6.16
+      },
+      "susceptibility": {
+        "inundation": 0.46301,
+        "landslide": 0.07067
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627303": {
+      "sample_count": 383,
+      "elevation_m": {
+        "mean": 740.4,
+        "p10": 714.74,
+        "p90": 767.44
+      },
+      "slope_deg": {
+        "mean": 7.91,
+        "p90": 14.54
+      },
+      "hand_m": {
+        "mean": 18.94,
+        "p10": 0.0,
+        "p25": 3.75
+      },
+      "susceptibility": {
+        "inundation": 0.62578,
+        "landslide": 0.06231
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627304": {
+      "sample_count": 537,
+      "elevation_m": {
+        "mean": 744.53,
+        "p10": 715.53,
+        "p90": 777.58
+      },
+      "slope_deg": {
+        "mean": 7.5,
+        "p90": 14.2
+      },
+      "hand_m": {
+        "mean": 18.25,
+        "p10": 0.0,
+        "p25": 3.5
+      },
+      "susceptibility": {
+        "inundation": 0.64565,
+        "landslide": 0.06086
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627305": {
+      "sample_count": 631,
+      "elevation_m": {
+        "mean": 747.33,
+        "p10": 718.87,
+        "p90": 771.0
+      },
+      "slope_deg": {
+        "mean": 8.15,
+        "p90": 14.88
+      },
+      "hand_m": {
+        "mean": 19.53,
+        "p10": 0.0,
+        "p25": 3.48
+      },
+      "susceptibility": {
+        "inundation": 0.64726,
+        "landslide": 0.06377
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627306": {
+      "sample_count": 582,
+      "elevation_m": {
+        "mean": 745.46,
+        "p10": 719.68,
+        "p90": 771.29
+      },
+      "slope_deg": {
+        "mean": 8.57,
+        "p90": 16.24
+      },
+      "hand_m": {
+        "mean": 15.94,
+        "p10": 0.0,
+        "p25": 1.79
+      },
+      "susceptibility": {
+        "inundation": 0.79951,
+        "landslide": 0.0696
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627307": {
+      "sample_count": 765,
+      "elevation_m": {
+        "mean": 906.96,
+        "p10": 734.5,
+        "p90": 1268.76
+      },
+      "slope_deg": {
+        "mean": 14.6,
+        "p90": 29.36
+      },
+      "hand_m": {
+        "mean": 47.74,
+        "p10": 0.0,
+        "p25": 7.31
+      },
+      "susceptibility": {
+        "inundation": 0.40102,
+        "landslide": 0.83886
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627308": {
+      "sample_count": 700,
+      "elevation_m": {
+        "mean": 872.26,
+        "p10": 733.5,
+        "p90": 1295.17
+      },
+      "slope_deg": {
+        "mean": 15.07,
+        "p90": 26.38
+      },
+      "hand_m": {
+        "mean": 39.91,
+        "p10": 0.37,
+        "p25": 7.9
+      },
+      "susceptibility": {
+        "inundation": 0.37251,
+        "landslide": 0.75371
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627309": {
+      "sample_count": 877,
+      "elevation_m": {
+        "mean": 777.58,
+        "p10": 736.7,
+        "p90": 816.5
+      },
+      "slope_deg": {
+        "mean": 7.86,
+        "p90": 13.71
+      },
+      "hand_m": {
+        "mean": 21.17,
+        "p10": 0.0,
+        "p25": 8.47
+      },
+      "susceptibility": {
+        "inundation": 0.34689,
+        "landslide": 0.06946
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627310": {
+      "sample_count": 442,
+      "elevation_m": {
+        "mean": 758.06,
+        "p10": 723.96,
+        "p90": 791.38
+      },
+      "slope_deg": {
+        "mean": 7.07,
+        "p90": 12.44
+      },
+      "hand_m": {
+        "mean": 17.28,
+        "p10": 0.0,
+        "p25": 3.65
+      },
+      "susceptibility": {
+        "inundation": 0.63366,
+        "landslide": 0.05331
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627311": {
+      "sample_count": 1633,
+      "elevation_m": {
+        "mean": 766.67,
+        "p10": 719.37,
+        "p90": 811.66
+      },
+      "slope_deg": {
+        "mean": 7.24,
+        "p90": 12.83
+      },
+      "hand_m": {
+        "mean": 19.61,
+        "p10": 0.11,
+        "p25": 7.91
+      },
+      "susceptibility": {
+        "inundation": 0.37204,
+        "landslide": 0.07518
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627312": {
+      "sample_count": 980,
+      "elevation_m": {
+        "mean": 758.85,
+        "p10": 715.67,
+        "p90": 804.48
+      },
+      "slope_deg": {
+        "mean": 6.58,
+        "p90": 11.42
+      },
+      "hand_m": {
+        "mean": 18.99,
+        "p10": 1.33,
+        "p25": 7.27
+      },
+      "susceptibility": {
+        "inundation": 0.40303,
+        "landslide": 0.06439
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627313": {
+      "sample_count": 3624,
+      "elevation_m": {
+        "mean": 896.71,
+        "p10": 826.6,
+        "p90": 963.56
+      },
+      "slope_deg": {
+        "mean": 8.0,
+        "p90": 15.21
+      },
+      "hand_m": {
+        "mean": 22.44,
+        "p10": 1.08,
+        "p25": 8.44
+      },
+      "susceptibility": {
+        "inundation": 0.34819,
+        "landslide": 0.13226
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627314": {
+      "sample_count": 1092,
+      "elevation_m": {
+        "mean": 826.75,
+        "p10": 772.96,
+        "p90": 890.38
+      },
+      "slope_deg": {
+        "mean": 9.82,
+        "p90": 16.37
+      },
+      "hand_m": {
+        "mean": 24.9,
+        "p10": 1.07,
+        "p25": 10.34
+      },
+      "susceptibility": {
+        "inundation": 0.27458,
+        "landslide": 0.12204
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627315": {
+      "sample_count": 632,
+      "elevation_m": {
+        "mean": 765.28,
+        "p10": 738.59,
+        "p90": 795.31
+      },
+      "slope_deg": {
+        "mean": 7.51,
+        "p90": 12.84
+      },
+      "hand_m": {
+        "mean": 17.19,
+        "p10": 0.0,
+        "p25": 4.65
+      },
+      "susceptibility": {
+        "inundation": 0.5592,
+        "landslide": 0.05503
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627316": {
+      "sample_count": 568,
+      "elevation_m": {
+        "mean": 792.34,
+        "p10": 759.31,
+        "p90": 825.94
+      },
+      "slope_deg": {
+        "mean": 8.87,
+        "p90": 14.62
+      },
+      "hand_m": {
+        "mean": 20.79,
+        "p10": 0.0,
+        "p25": 6.94
+      },
+      "susceptibility": {
+        "inundation": 0.42,
+        "landslide": 0.06266
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627317": {
+      "sample_count": 433,
+      "elevation_m": {
+        "mean": 859.98,
+        "p10": 806.31,
+        "p90": 898.84
+      },
+      "slope_deg": {
+        "mean": 8.48,
+        "p90": 14.69
+      },
+      "hand_m": {
+        "mean": 21.5,
+        "p10": 0.87,
+        "p25": 7.83
+      },
+      "susceptibility": {
+        "inundation": 0.37578,
+        "landslide": 0.0863
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627318": {
+      "sample_count": 567,
+      "elevation_m": {
+        "mean": 886.86,
+        "p10": 859.5,
+        "p90": 915.2
+      },
+      "slope_deg": {
+        "mean": 6.5,
+        "p90": 12.16
+      },
+      "hand_m": {
+        "mean": 17.27,
+        "p10": 0.0,
+        "p25": 2.83
+      },
+      "susceptibility": {
+        "inundation": 0.70205,
+        "landslide": 0.05211
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627319": {
+      "sample_count": 2584,
+      "elevation_m": {
+        "mean": 892.4,
+        "p10": 853.03,
+        "p90": 932.2
+      },
+      "slope_deg": {
+        "mean": 7.64,
+        "p90": 14.75
+      },
+      "hand_m": {
+        "mean": 18.08,
+        "p10": 0.0,
+        "p25": 3.15
+      },
+      "susceptibility": {
+        "inundation": 0.67452,
+        "landslide": 0.07414
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627320": {
+      "sample_count": 539,
+      "elevation_m": {
+        "mean": 899.55,
+        "p10": 864.23,
+        "p90": 930.16
+      },
+      "slope_deg": {
+        "mean": 8.87,
+        "p90": 15.71
+      },
+      "hand_m": {
+        "mean": 20.72,
+        "p10": 0.0,
+        "p25": 4.13
+      },
+      "susceptibility": {
+        "inundation": 0.59675,
+        "landslide": 0.06733
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627321": {
+      "sample_count": 866,
+      "elevation_m": {
+        "mean": 902.7,
+        "p10": 861.29,
+        "p90": 959.59
+      },
+      "slope_deg": {
+        "mean": 9.11,
+        "p90": 18.47
+      },
+      "hand_m": {
+        "mean": 27.17,
+        "p10": 0.41,
+        "p25": 4.58
+      },
+      "susceptibility": {
+        "inundation": 0.56411,
+        "landslide": 0.11528
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627322": {
+      "sample_count": 389,
+      "elevation_m": {
+        "mean": 845.7,
+        "p10": 779.31,
+        "p90": 918.62
+      },
+      "slope_deg": {
+        "mean": 9.91,
+        "p90": 17.68
+      },
+      "hand_m": {
+        "mean": 27.09,
+        "p10": 0.0,
+        "p25": 8.71
+      },
+      "susceptibility": {
+        "inundation": 0.33664,
+        "landslide": 0.15638
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627323": {
+      "sample_count": 745,
+      "elevation_m": {
+        "mean": 836.67,
+        "p10": 766.42,
+        "p90": 894.71
+      },
+      "slope_deg": {
+        "mean": 11.26,
+        "p90": 20.15
+      },
+      "hand_m": {
+        "mean": 23.59,
+        "p10": 0.0,
+        "p25": 7.3
+      },
+      "susceptibility": {
+        "inundation": 0.40152,
+        "landslide": 0.16413
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627324": {
+      "sample_count": 824,
+      "elevation_m": {
+        "mean": 906.74,
+        "p10": 731.91,
+        "p90": 1307.23
+      },
+      "slope_deg": {
+        "mean": 15.08,
+        "p90": 30.39
+      },
+      "hand_m": {
+        "mean": 48.46,
+        "p10": 0.0,
+        "p25": 5.02
+      },
+      "susceptibility": {
+        "inundation": 0.53392,
+        "landslide": 0.86829
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627325": {
+      "sample_count": 328,
+      "elevation_m": {
+        "mean": 734.98,
+        "p10": 718.64,
+        "p90": 754.32
+      },
+      "slope_deg": {
+        "mean": 7.38,
+        "p90": 13.99
+      },
+      "hand_m": {
+        "mean": 12.27,
+        "p10": 0.0,
+        "p25": 1.31
+      },
+      "susceptibility": {
+        "inundation": 0.84895,
+        "landslide": 0.05996
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627326": {
+      "sample_count": 642,
+      "elevation_m": {
+        "mean": 754.18,
+        "p10": 723.08,
+        "p90": 788.48
+      },
+      "slope_deg": {
+        "mean": 9.47,
+        "p90": 17.27
+      },
+      "hand_m": {
+        "mean": 20.72,
+        "p10": 0.0,
+        "p25": 3.16
+      },
+      "susceptibility": {
+        "inundation": 0.67368,
+        "landslide": 0.07401
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627327": {
+      "sample_count": 672,
+      "elevation_m": {
+        "mean": 744.28,
+        "p10": 722.47,
+        "p90": 766.43
+      },
+      "slope_deg": {
+        "mean": 7.01,
+        "p90": 12.92
+      },
+      "hand_m": {
+        "mean": 13.55,
+        "p10": 0.0,
+        "p25": 1.81
+      },
+      "susceptibility": {
+        "inundation": 0.79752,
+        "landslide": 0.05537
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627328": {
+      "sample_count": 389,
+      "elevation_m": {
+        "mean": 749.82,
+        "p10": 729.43,
+        "p90": 772.19
+      },
+      "slope_deg": {
+        "mean": 7.05,
+        "p90": 13.16
+      },
+      "hand_m": {
+        "mean": 14.24,
+        "p10": 0.0,
+        "p25": 1.84
+      },
+      "susceptibility": {
+        "inundation": 0.79453,
+        "landslide": 0.0564
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627329": {
+      "sample_count": 584,
+      "elevation_m": {
+        "mean": 778.37,
+        "p10": 741.22,
+        "p90": 813.63
+      },
+      "slope_deg": {
+        "mean": 8.64,
+        "p90": 16.0
+      },
+      "hand_m": {
+        "mean": 19.94,
+        "p10": 0.0,
+        "p25": 2.1
+      },
+      "susceptibility": {
+        "inundation": 0.76913,
+        "landslide": 0.07356
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627330": {
+      "sample_count": 445,
+      "elevation_m": {
+        "mean": 751.87,
+        "p10": 728.08,
+        "p90": 776.2
+      },
+      "slope_deg": {
+        "mean": 9.6,
+        "p90": 16.63
+      },
+      "hand_m": {
+        "mean": 15.13,
+        "p10": 0.0,
+        "p25": 2.43
+      },
+      "susceptibility": {
+        "inundation": 0.73805,
+        "landslide": 0.07127
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627331": {
+      "sample_count": 330,
+      "elevation_m": {
+        "mean": 763.0,
+        "p10": 732.7,
+        "p90": 798.14
+      },
+      "slope_deg": {
+        "mean": 10.5,
+        "p90": 18.64
+      },
+      "hand_m": {
+        "mean": 18.77,
+        "p10": 0.0,
+        "p25": 1.94
+      },
+      "susceptibility": {
+        "inundation": 0.78466,
+        "landslide": 0.07989
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627332": {
+      "sample_count": 1186,
+      "elevation_m": {
+        "mean": 911.96,
+        "p10": 744.0,
+        "p90": 1169.02
+      },
+      "slope_deg": {
+        "mean": 16.99,
+        "p90": 29.22
+      },
+      "hand_m": {
+        "mean": 55.01,
+        "p10": 0.0,
+        "p25": 9.11
+      },
+      "susceptibility": {
+        "inundation": 0.32022,
+        "landslide": 0.78851
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627333": {
+      "sample_count": 435,
+      "elevation_m": {
+        "mean": 793.07,
+        "p10": 729.8,
+        "p90": 902.34
+      },
+      "slope_deg": {
+        "mean": 11.21,
+        "p90": 20.47
+      },
+      "hand_m": {
+        "mean": 22.01,
+        "p10": 0.0,
+        "p25": 3.1
+      },
+      "susceptibility": {
+        "inundation": 0.67875,
+        "landslide": 0.22425
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627334": {
+      "sample_count": 987,
+      "elevation_m": {
+        "mean": 1038.75,
+        "p10": 761.8,
+        "p90": 1368.87
+      },
+      "slope_deg": {
+        "mean": 18.03,
+        "p90": 29.74
+      },
+      "hand_m": {
+        "mean": 60.99,
+        "p10": 3.08,
+        "p25": 16.08
+      },
+      "susceptibility": {
+        "inundation": 0.13399,
+        "landslide": 0.84971
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627335": {
+      "sample_count": 674,
+      "elevation_m": {
+        "mean": 983.71,
+        "p10": 758.18,
+        "p90": 1356.5
+      },
+      "slope_deg": {
+        "mean": 18.94,
+        "p90": 31.24
+      },
+      "hand_m": {
+        "mean": 61.68,
+        "p10": 3.52,
+        "p25": 14.39
+      },
+      "susceptibility": {
+        "inundation": 0.16551,
+        "landslide": 0.89257
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627336": {
+      "sample_count": 336,
+      "elevation_m": {
+        "mean": 789.73,
+        "p10": 748.3,
+        "p90": 824.78
+      },
+      "slope_deg": {
+        "mean": 12.52,
+        "p90": 21.89
+      },
+      "hand_m": {
+        "mean": 23.86,
+        "p10": 0.0,
+        "p25": 6.26
+      },
+      "susceptibility": {
+        "inundation": 0.45726,
+        "landslide": 0.1063
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627337": {
+      "sample_count": 1143,
+      "elevation_m": {
+        "mean": 1067.29,
+        "p10": 773.5,
+        "p90": 1568.8
+      },
+      "slope_deg": {
+        "mean": 17.84,
+        "p90": 32.46
+      },
+      "hand_m": {
+        "mean": 62.26,
+        "p10": 1.24,
+        "p25": 12.14
+      },
+      "susceptibility": {
+        "inundation": 0.21926,
+        "landslide": 0.92743
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627338": {
+      "sample_count": 578,
+      "elevation_m": {
+        "mean": 869.04,
+        "p10": 757.51,
+        "p90": 1104.69
+      },
+      "slope_deg": {
+        "mean": 13.58,
+        "p90": 26.4
+      },
+      "hand_m": {
+        "mean": 52.57,
+        "p10": 0.0,
+        "p25": 6.7
+      },
+      "susceptibility": {
+        "inundation": 0.43279,
+        "landslide": 0.58194
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627339": {
+      "sample_count": 1303,
+      "elevation_m": {
+        "mean": 783.43,
+        "p10": 521.07,
+        "p90": 886.65
+      },
+      "slope_deg": {
+        "mean": 16.06,
+        "p90": 29.46
+      },
+      "hand_m": {
+        "mean": 47.98,
+        "p10": 1.08,
+        "p25": 10.76
+      },
+      "susceptibility": {
+        "inundation": 0.26054,
+        "landslide": 0.68381
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-627340": {
+      "sample_count": 1205,
+      "elevation_m": {
+        "mean": 1088.21,
+        "p10": 806.41,
+        "p90": 1601.17
+      },
+      "slope_deg": {
+        "mean": 20.79,
+        "p90": 35.97
+      },
+      "hand_m": {
+        "mean": 73.25,
+        "p10": 3.0,
+        "p25": 16.62
+      },
+      "susceptibility": {
+        "inundation": 0.12524,
+        "landslide": 1.0
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    },
+    "LGD-913291": {
+      "sample_count": 719,
+      "elevation_m": {
+        "mean": 795.68,
+        "p10": 737.75,
+        "p90": 875.22
+      },
+      "slope_deg": {
+        "mean": 10.61,
+        "p90": 20.38
+      },
+      "hand_m": {
+        "mean": 26.46,
+        "p10": 0.0,
+        "p25": 3.92
+      },
+      "susceptibility": {
+        "inundation": 0.61263,
+        "landslide": 0.17788
+      },
+      "provenance": {
+        "elevation_slope": "Copernicus DEM GLO-30 2021",
+        "hand": "ASF GLO-30 HAND v1/2021 CC0",
+        "method": "polygon grid sample at ~220 m; Horn-style central-difference slope"
+      }
+    }
+  }
+}

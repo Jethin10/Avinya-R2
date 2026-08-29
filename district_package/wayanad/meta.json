@@ -1,0 +1,25 @@
+{
+  "id": "wayanad-demo",
+  "name": "Wayanad District",
+  "bbox": [
+    75.82,
+    11.42,
+    76.46,
+    11.97
+  ],
+  "timezone": "Asia/Kolkata",
+  "replay": {
+    "t0": "2024-07-30T02:00:00+05:30",
+    "t1": "2024-07-31T02:00:00+05:30"
+  },
+  "provenance": {
+    "scenario": "synthetic",
+    "reports": "mixed archived/synthetic",
+    "telemetry": "synthetic",
+    "disclosure": "Demonstration package; not operational ground truth."
+  },
+  "counts": {
+    "settlements": 214,
+    "assets": 16
+  }
+}

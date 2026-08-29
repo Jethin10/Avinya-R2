@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "setu-backend"
+version = "0.1.0"
+description = "Offline severity estimation and disaster triage engine"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "GPL-3.0-only" }
+dependencies = [
+  "fastapi>=0.115,<1",
+  "pydantic>=2.10,<3",
+  "uvicorn>=0.34,<1",
+  "pyshp>=2.3,<3",
+  "pyproj>=3.7,<4",
+  "numpy>=2.2,<3",
+  "tifffile>=2024.8,<2027",
+  "imagecodecs>=2025.3,<2027",
+]
+
+[project.optional-dependencies]
+test = ["httpx>=0.28,<1", "pytest>=8,<9"]
+
+[project.scripts]
+setu = "engine.cli:main"
+setu-forge = "scripts.forge.run_all:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["core", "engine", "ingest", "exports", "scripts"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

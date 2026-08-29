@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "id": "settlements",
+      "format": "geojson",
+      "path": "layers/settlements.geojson",
+      "provenance": "archived"
+    },
+    {
+      "id": "event_features",
+      "format": "geojson",
+      "path": "layers/event_features.geojson",
+      "provenance": "archived"
+    },
+    {
+      "id": "hazard_frames",
+      "format": "json",
+      "path": "layers/hazard_frames.json",
+      "provenance": "derived_from_archived_kalladi_rainfall"
+    }
+  ]
+}

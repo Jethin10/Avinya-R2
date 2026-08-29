@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-30",
+  "sources": [
+    {
+      "id": "ksdma-floods-2018",
+      "publisher": "Kerala State Disaster Management Authority",
+      "title": "Memorandum: Kerala Floods and Landslides 2018",
+      "url": "https://sdma.kerala.gov.in/wp-content/uploads/2019/08/Memorandum2-Floods-2018.pdf",
+      "path": "data/sources/kerala_floods_2018_memorandum.pdf",
+      "sha256": "1a621482c463a26d202a04dde06395b3a1a86e80d28e717b49c45dc4660ce18f",
+      "access": "public government report; attribution retained"
+    },
+    {
+      "id": "ksdma-floods-2019",
+      "publisher": "Kerala State Disaster Management Authority",
+      "title": "Memorandum: Kerala Floods and Landslides 2019",
+      "url": "https://sdma.kerala.gov.in/wp-content/uploads/2020/03/Memorandum-pages-deleted-Copy-compressed.pdf",
+      "path": "data/sources/kerala_floods_2019_memorandum.pdf",
+      "sha256": "c999719992632da0aebe7980e0e6ec68eb6de03a02cc1dc6f1bf41c4a1986593",
+      "access": "public government report; attribution retained"
+    },
+    {
+      "id": "ksdma-meppadi-2024",
+      "publisher": "Kerala State Disaster Management Authority",
+      "title": "Memorandum: Meppadi Landslide 2024",
+      "url": "https://sdma.kerala.gov.in/wp-content/uploads/2024/12/Memorandum_17082024.pdf",
+      "path": "data/sources/meppadi_landslide_2024_memorandum.pdf",
+      "sha256": "1fe8c37f0dd83c513ace9b07e6ac43b8fbbc16b8c7a1e562791d922e0c5fe3a7",
+      "access": "public government report; attribution retained"
+    },
+    {
+      "id": "soi-kerala-villages",
+      "publisher": "Survey of India",
+      "title": "Kerala Village Boundary Database",
+      "url": "https://surveyofindia.gov.in/documents/KERALA.zip",
+      "path": "data/sources/survey_of_india_kerala_village_boundaries.zip",
+      "sha256": "d022f7ac68639b1c4ce663bd95eaf3130f72a61502ff75d46b1122bee141d32c",
+      "extract_to": "data/sources/survey_of_india_kerala",
+      "access": "public government geospatial data; source attribution required"
+    },
+    {
+      "id": "census-2011-wayanad-pca",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "title": "District Census Handbook Wayanad: Primary Census Abstract",
+      "url": "https://censusindia.gov.in/nada/index.php/catalog/6781/download/9858/DDW_PCA3203_2011_MDDS%20with%20UI.xlsx",
+      "path": "data/sources/census_2011_wayanad_pca.xlsx",
+      "sha256": "900fb5e155514931287bd3ddbfcea7b90fb1e49d6c760afcc73d3edd1df4d1f5",
+      "access": "public government statistical data; attribution retained"
+    },
+    {
+      "id": "osm-wayanad-roads-2026-08-29",
+      "publisher": "OpenStreetMap contributors",
+      "title": "Wayanad vehicular road network snapshot",
+      "url": "https://overpass-api.de/api/interpreter",
+      "method": "POST_FORM_FILE",
+      "query_path": "scripts/forge/overpass_wayanad.ql",
+      "snapshot_at": "2026-08-29T19:46:06Z",
+      "path": "data/sources/osm_wayanad_roads.json",
+      "sha256": "6ca4232f6e5faaab810d7bbb9e50c9da5f87302afc2124949395ffa0043e903d",
+      "access": "ODbL 1.0; © OpenStreetMap contributors; attribution required"
+    },
+    {
+      "id": "copernicus-dem-glo30-n11e075",
+      "publisher": "Copernicus Programme / European Union / ESA",
+      "title": "Copernicus DEM GLO-30 2021 N11 E075",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N11_00_E075_00_DEM/Copernicus_DSM_COG_10_N11_00_E075_00_DEM.tif",
+      "path": "data/sources/copernicus_dem_n11_e075.tif",
+      "sha256": "dbddab328128c5874aa94a035b28488279ffc0762a1c2d348d7bd86772567bba",
+      "access": "Copernicus DEM GLO-30 public licence; attribution retained"
+    },
+    {
+      "id": "copernicus-dem-glo30-n11e076",
+      "publisher": "Copernicus Programme / European Union / ESA",
+      "title": "Copernicus DEM GLO-30 2021 N11 E076",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N11_00_E076_00_DEM/Copernicus_DSM_COG_10_N11_00_E076_00_DEM.tif",
+      "path": "data/sources/copernicus_dem_n11_e076.tif",
+      "sha256": "717edb70dcd7f132ebf44466189a9f461d8137b3c36713ee407b8456f1f14884",
+      "access": "Copernicus DEM GLO-30 public licence; attribution retained"
+    },
+    {
+      "id": "glo30-hand-n11e075",
+      "publisher": "Alaska Satellite Facility",
+      "title": "Global 30m HAND v1/2021 N11 E075",
+      "url": "https://glo-30-hand.s3.amazonaws.com/v1/2021/Copernicus_DSM_COG_10_N11_00_E075_00_HAND.tif",
+      "path": "data/sources/glo30_hand_n11_e075.tif",
+      "sha256": "efc3356df52cd42592fbb068f9af53a47dca5a50c0de202017a818ac276aa421",
+      "access": "CC0 1.0; source attribution retained"
+    },
+    {
+      "id": "glo30-hand-n11e076",
+      "publisher": "Alaska Satellite Facility",
+      "title": "Global 30m HAND v1/2021 N11 E076",
+      "url": "https://glo-30-hand.s3.amazonaws.com/v1/2021/Copernicus_DSM_COG_10_N11_00_E076_00_HAND.tif",
+      "path": "data/sources/glo30_hand_n11_e076.tif",
+      "sha256": "098182ab2b19839751447fa5080a89a6986fd97fdd9728b2f6502051cd79d623",
+      "access": "CC0 1.0; source attribution retained"
+    }
+  ],
+  "unavailable_public_streams": [
+    "historical settlement-level telecom heartbeat counts",
+    "historical feeder-level outage telemetry"
+  ],
+  "policy": "Unavailable operational streams may be generated only as provenance=synthetic and must never be represented as archived observations."
+}

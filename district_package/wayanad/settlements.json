@@ -1,0 +1,7070 @@
+[
+  {
+    "id": "BH-042",
+    "lgd_code": "LGD-673000",
+    "name": "Bhimsar",
+    "name_variants": [
+      "Bheemsar",
+      "भीमसर"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.095,
+        11.61
+      ]
+    },
+    "population": 420,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 680,
+    "slope_deg": 3,
+    "hand_m": 0.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "KH-017",
+    "lgd_code": "LGD-673001",
+    "name": "Kharsa",
+    "name_variants": [
+      "Kharsaa",
+      "खरसा"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.067317,
+        11.621618
+      ]
+    },
+    "population": 557,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 709,
+    "slope_deg": 10,
+    "hand_m": 2.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "DH-031",
+    "lgd_code": "LGD-673002",
+    "name": "Dhanauri",
+    "name_variants": [
+      "Dhanouri",
+      "धनौरी"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.081583,
+        11.591958
+      ]
+    },
+    "population": 694,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 738,
+    "slope_deg": 17,
+    "hand_m": 4.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "ME-008",
+    "lgd_code": "LGD-673003",
+    "name": "Meppadi",
+    "name_variants": [
+      "Meppady",
+      "മേപ്പാടി"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.091445,
+        11.624928
+      ]
+    },
+    "population": 831,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 767,
+    "slope_deg": 24,
+    "hand_m": 5.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "CH-011",
+    "lgd_code": "LGD-673004",
+    "name": "Chooralmala",
+    "name_variants": [
+      "Churalmala",
+      "ചൂരൽമല"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.060897,
+        11.606621
+      ]
+    },
+    "population": 968,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 796,
+    "slope_deg": 31,
+    "hand_m": 7.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "MU-019",
+    "lgd_code": "LGD-673005",
+    "name": "Mundakkai",
+    "name_variants": [
+      "Mundakai",
+      "മുണ്ടക്കൈ"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.096807,
+        11.599309
+      ]
+    },
+    "population": 1105,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 825,
+    "slope_deg": 38,
+    "hand_m": 9.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-007",
+    "lgd_code": "LGD-673006",
+    "name": "Settlement 7",
+    "name_variants": [
+      "Village 7"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.074707,
+        11.62969
+      ]
+    },
+    "population": 1242,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 854,
+    "slope_deg": 7,
+    "hand_m": 10.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-008",
+    "lgd_code": "LGD-673007",
+    "name": "Settlement 8",
+    "name_variants": [
+      "Village 8"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.070404,
+        11.591523
+      ]
+    },
+    "population": 1379,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 883,
+    "slope_deg": 14,
+    "hand_m": 12.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-009",
+    "lgd_code": "LGD-673008",
+    "name": "Settlement 9",
+    "name_variants": [
+      "Village 9"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.099935,
+        11.61728
+      ]
+    },
+    "population": 1516,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 912,
+    "slope_deg": 21,
+    "hand_m": 14.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-010",
+    "lgd_code": "LGD-673009",
+    "name": "Settlement 10",
+    "name_variants": [
+      "Village 10"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.060034,
+        11.618242
+      ]
+    },
+    "population": 1653,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 941,
+    "slope_deg": 28,
+    "hand_m": 15.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-011",
+    "lgd_code": "LGD-673010",
+    "name": "Settlement 11",
+    "name_variants": [
+      "Village 11"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.089306,
+        11.590113
+      ]
+    },
+    "population": 1790,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 970,
+    "slope_deg": 35,
+    "hand_m": 17.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-012",
+    "lgd_code": "LGD-673011",
+    "name": "Settlement 12",
+    "name_variants": [
+      "Village 12"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.086673,
+        11.631275
+      ]
+    },
+    "population": 1927,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 999,
+    "slope_deg": 4,
+    "hand_m": 1.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-013",
+    "lgd_code": "LGD-673012",
+    "name": "Settlement 13",
+    "name_variants": [
+      "Village 13"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.060428,
+        11.598658
+      ]
+    },
+    "population": 2064,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 1028,
+    "slope_deg": 11,
+    "hand_m": 3.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-014",
+    "lgd_code": "LGD-673013",
+    "name": "Settlement 14",
+    "name_variants": [
+      "Village 14"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.102397,
+        11.605076
+      ]
+    },
+    "population": 2201,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1057,
+    "slope_deg": 18,
+    "hand_m": 4.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-015",
+    "lgd_code": "LGD-673014",
+    "name": "Settlement 15",
+    "name_variants": [
+      "Village 15"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.066639,
+        11.629005
+      ]
+    },
+    "population": 2338,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 1086,
+    "slope_deg": 25,
+    "hand_m": 6.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-016",
+    "lgd_code": "LGD-673015",
+    "name": "Settlement 16",
+    "name_variants": [
+      "Village 16"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.076977,
+        11.586674
+      ]
+    },
+    "population": 2475,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 1115,
+    "slope_deg": 32,
+    "hand_m": 8.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-017",
+    "lgd_code": "LGD-673016",
+    "name": "Settlement 17",
+    "name_variants": [
+      "Village 17"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.098199,
+        11.625338
+      ]
+    },
+    "population": 2612,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1144,
+    "slope_deg": 39,
+    "hand_m": 9.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-018",
+    "lgd_code": "LGD-673017",
+    "name": "Settlement 18",
+    "name_variants": [
+      "Village 18"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.05595,
+        11.610995
+      ]
+    },
+    "population": 2749,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 1173,
+    "slope_deg": 8,
+    "hand_m": 11.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-019",
+    "lgd_code": "LGD-673018",
+    "name": "Settlement 19",
+    "name_variants": [
+      "Village 19"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.097248,
+        11.592835
+      ]
+    },
+    "population": 2886,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 1202,
+    "slope_deg": 15,
+    "hand_m": 13.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-020",
+    "lgd_code": "LGD-673019",
+    "name": "Settlement 20",
+    "name_variants": [
+      "Village 20"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.078864,
+        11.634563
+      ]
+    },
+    "population": 3023,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 691,
+    "slope_deg": 22,
+    "hand_m": 14.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-021",
+    "lgd_code": "LGD-673020",
+    "name": "Settlement 21",
+    "name_variants": [
+      "Village 21"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.064086,
+        11.590929
+      ]
+    },
+    "population": 3160,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 720,
+    "slope_deg": 29,
+    "hand_m": 16.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-022",
+    "lgd_code": "LGD-673021",
+    "name": "Settlement 22",
+    "name_variants": [
+      "Village 22"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.104858,
+        11.613344
+      ]
+    },
+    "population": 3297,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 749,
+    "slope_deg": 36,
+    "hand_m": 18.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-023",
+    "lgd_code": "LGD-673022",
+    "name": "Settlement 23",
+    "name_variants": [
+      "Village 23"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.059217,
+        11.624461
+      ]
+    },
+    "population": 3434,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 778,
+    "slope_deg": 5,
+    "hand_m": 2.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-024",
+    "lgd_code": "LGD-673023",
+    "name": "Settlement 24",
+    "name_variants": [
+      "Village 24"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.085608,
+        11.585072
+      ]
+    },
+    "population": 3571,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 807,
+    "slope_deg": 12,
+    "hand_m": 3.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-025",
+    "lgd_code": "LGD-673024",
+    "name": "Settlement 25",
+    "name_variants": [
+      "Village 25"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.092816,
+        11.632366
+      ]
+    },
+    "population": 3708,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 836,
+    "slope_deg": 19,
+    "hand_m": 5.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-026",
+    "lgd_code": "LGD-673025",
+    "name": "Settlement 26",
+    "name_variants": [
+      "Village 26"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.05523,
+        11.602098
+      ]
+    },
+    "population": 3845,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 865,
+    "slope_deg": 26,
+    "hand_m": 7.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-027",
+    "lgd_code": "LGD-673026",
+    "name": "Settlement 27",
+    "name_variants": [
+      "Village 27"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.1038,
+        11.599004
+      ]
+    },
+    "population": 3982,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 894,
+    "slope_deg": 33,
+    "hand_m": 8.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-028",
+    "lgd_code": "LGD-673027",
+    "name": "Settlement 28",
+    "name_variants": [
+      "Village 28"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.069796,
+        11.634382
+      ]
+    },
+    "population": 4119,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 923,
+    "slope_deg": 40,
+    "hand_m": 10.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-029",
+    "lgd_code": "LGD-673028",
+    "name": "Settlement 29",
+    "name_variants": [
+      "Village 29"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.070983,
+        11.584931
+      ]
+    },
+    "population": 4256,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 952,
+    "slope_deg": 9,
+    "hand_m": 12.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-030",
+    "lgd_code": "LGD-673029",
+    "name": "Settlement 30",
+    "name_variants": [
+      "Village 30"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.103765,
+        11.62249
+      ]
+    },
+    "population": 4393,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 981,
+    "slope_deg": 16,
+    "hand_m": 13.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-031",
+    "lgd_code": "LGD-673030",
+    "name": "Settlement 31",
+    "name_variants": [
+      "Village 31"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.053844,
+        11.616895
+      ]
+    },
+    "population": 4530,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 1010,
+    "slope_deg": 23,
+    "hand_m": 15.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-032",
+    "lgd_code": "LGD-673031",
+    "name": "Settlement 32",
+    "name_variants": [
+      "Village 32"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.094737,
+        11.58708
+      ]
+    },
+    "population": 4667,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1039,
+    "slope_deg": 30,
+    "hand_m": 17.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-033",
+    "lgd_code": "LGD-673032",
+    "name": "Settlement 33",
+    "name_variants": [
+      "Village 33"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.084649,
+        11.637049
+      ]
+    },
+    "population": 4804,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 1068,
+    "slope_deg": 37,
+    "hand_m": 1.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-034",
+    "lgd_code": "LGD-673033",
+    "name": "Settlement 34",
+    "name_variants": [
+      "Village 34"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.058149,
+        11.593077
+      ]
+    },
+    "population": 4941,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 1097,
+    "slope_deg": 6,
+    "hand_m": 2.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-035",
+    "lgd_code": "LGD-673034",
+    "name": "Settlement 35",
+    "name_variants": [
+      "Village 35"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.107733,
+        11.607702
+      ]
+    },
+    "population": 478,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1126,
+    "slope_deg": 13,
+    "hand_m": 4.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-036",
+    "lgd_code": "LGD-673035",
+    "name": "Settlement 36",
+    "name_variants": [
+      "Village 36"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.060976,
+        11.630565
+      ]
+    },
+    "population": 615,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 1155,
+    "slope_deg": 20,
+    "hand_m": 6.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-037",
+    "lgd_code": "LGD-673036",
+    "name": "Settlement 37",
+    "name_variants": [
+      "Village 37"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.080137,
+        11.5818
+      ]
+    },
+    "population": 752,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 1184,
+    "slope_deg": 27,
+    "hand_m": 7.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-038",
+    "lgd_code": "LGD-673037",
+    "name": "Settlement 38",
+    "name_variants": [
+      "Village 38"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.09907,
+        11.631021
+      ]
+    },
+    "population": 889,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1213,
+    "slope_deg": 34,
+    "hand_m": 9.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-039",
+    "lgd_code": "LGD-673038",
+    "name": "Settlement 39",
+    "name_variants": [
+      "Village 39"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.05156,
+        11.607364
+      ]
+    },
+    "population": 1026,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 702,
+    "slope_deg": 3,
+    "hand_m": 11.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-040",
+    "lgd_code": "LGD-673039",
+    "name": "Settlement 40",
+    "name_variants": [
+      "Village 40"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.102892,
+        11.592625
+      ]
+    },
+    "population": 1163,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 731,
+    "slope_deg": 10,
+    "hand_m": 12.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-041",
+    "lgd_code": "LGD-673040",
+    "name": "Settlement 41",
+    "name_variants": [
+      "Village 41"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.074825,
+        11.638447
+      ]
+    },
+    "population": 1300,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 760,
+    "slope_deg": 17,
+    "hand_m": 14.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-042",
+    "lgd_code": "LGD-673041",
+    "name": "Settlement 42",
+    "name_variants": [
+      "Village 42"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.064508,
+        11.585382
+      ]
+    },
+    "population": 1437,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 789,
+    "slope_deg": 24,
+    "hand_m": 16.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-043",
+    "lgd_code": "LGD-673042",
+    "name": "Settlement 43",
+    "name_variants": [
+      "Village 43"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.108217,
+        11.617733
+      ]
+    },
+    "population": 1574,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 818,
+    "slope_deg": 31,
+    "hand_m": 18.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-044",
+    "lgd_code": "LGD-673043",
+    "name": "Settlement 44",
+    "name_variants": [
+      "Village 44"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.05382,
+        11.623436
+      ]
+    },
+    "population": 1711,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 847,
+    "slope_deg": 38,
+    "hand_m": 1.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-045",
+    "lgd_code": "LGD-673044",
+    "name": "Settlement 45",
+    "name_variants": [
+      "Village 45"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.090287,
+        11.582252
+      ]
+    },
+    "population": 1848,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 876,
+    "slope_deg": 7,
+    "hand_m": 3.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-046",
+    "lgd_code": "LGD-673045",
+    "name": "Settlement 46",
+    "name_variants": [
+      "Village 46"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.09122,
+        11.637562
+      ]
+    },
+    "population": 1985,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 905,
+    "slope_deg": 14,
+    "hand_m": 5.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-047",
+    "lgd_code": "LGD-673046",
+    "name": "Settlement 47",
+    "name_variants": [
+      "Village 47"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.052961,
+        11.597186
+      ]
+    },
+    "population": 2122,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 934,
+    "slope_deg": 21,
+    "hand_m": 6.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-048",
+    "lgd_code": "LGD-673047",
+    "name": "Settlement 48",
+    "name_variants": [
+      "Village 48"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.108747,
+        11.601137
+      ]
+    },
+    "population": 2259,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 963,
+    "slope_deg": 28,
+    "hand_m": 8.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-049",
+    "lgd_code": "LGD-673048",
+    "name": "Settlement 49",
+    "name_variants": [
+      "Village 49"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.064709,
+        11.636092
+      ]
+    },
+    "population": 2396,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 992,
+    "slope_deg": 35,
+    "hand_m": 10.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-050",
+    "lgd_code": "LGD-673049",
+    "name": "Settlement 50",
+    "name_variants": [
+      "Village 50"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.073617,
+        11.580278
+      ]
+    },
+    "population": 2533,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1021,
+    "slope_deg": 4,
+    "hand_m": 11.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-051",
+    "lgd_code": "LGD-673050",
+    "name": "Settlement 51",
+    "name_variants": [
+      "Village 51"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.104911,
+        11.627695
+      ]
+    },
+    "population": 2670,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 1050,
+    "slope_deg": 11,
+    "hand_m": 13.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-052",
+    "lgd_code": "LGD-673051",
+    "name": "Settlement 52",
+    "name_variants": [
+      "Village 52"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.049525,
+        11.613798
+      ]
+    },
+    "population": 2807,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 1079,
+    "slope_deg": 18,
+    "hand_m": 15.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-053",
+    "lgd_code": "LGD-673052",
+    "name": "Settlement 53",
+    "name_variants": [
+      "Village 53"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.100005,
+        11.586497
+      ]
+    },
+    "population": 2944,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1108,
+    "slope_deg": 25,
+    "hand_m": 17.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-054",
+    "lgd_code": "LGD-673053",
+    "name": "Settlement 54",
+    "name_variants": [
+      "Village 54"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.081131,
+        11.640996
+      ]
+    },
+    "population": 3081,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 1137,
+    "slope_deg": 32,
+    "hand_m": 0.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-055",
+    "lgd_code": "LGD-673054",
+    "name": "Settlement 55",
+    "name_variants": [
+      "Village 55"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.058123,
+        11.587801
+      ]
+    },
+    "population": 3218,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 1166,
+    "slope_deg": 39,
+    "hand_m": 2.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-056",
+    "lgd_code": "LGD-673055",
+    "name": "Settlement 56",
+    "name_variants": [
+      "Village 56"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.111275,
+        11.611599
+      ]
+    },
+    "population": 3355,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1195,
+    "slope_deg": 8,
+    "hand_m": 4.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-057",
+    "lgd_code": "LGD-673056",
+    "name": "Settlement 57",
+    "name_variants": [
+      "Village 57"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.055745,
+        11.630041
+      ]
+    },
+    "population": 3492,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 684,
+    "slope_deg": 15,
+    "hand_m": 5.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-058",
+    "lgd_code": "LGD-673057",
+    "name": "Settlement 58",
+    "name_variants": [
+      "Village 58"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.084367,
+        11.578694
+      ]
+    },
+    "population": 3629,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 713,
+    "slope_deg": 22,
+    "hand_m": 7.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-059",
+    "lgd_code": "LGD-673058",
+    "name": "Settlement 59",
+    "name_variants": [
+      "Village 59"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.098009,
+        11.636154
+      ]
+    },
+    "population": 3766,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 742,
+    "slope_deg": 29,
+    "hand_m": 9.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-060",
+    "lgd_code": "LGD-673059",
+    "name": "Settlement 60",
+    "name_variants": [
+      "Village 60"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.048914,
+        11.602848
+      ]
+    },
+    "population": 3903,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 771,
+    "slope_deg": 36,
+    "hand_m": 10.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-061",
+    "lgd_code": "LGD-673060",
+    "name": "Settlement 61",
+    "name_variants": [
+      "Village 61"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.107878,
+        11.594205
+      ]
+    },
+    "population": 4040,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 800,
+    "slope_deg": 5,
+    "hand_m": 12.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-062",
+    "lgd_code": "LGD-673061",
+    "name": "Settlement 62",
+    "name_variants": [
+      "Village 62"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.07007,
+        11.640612
+      ]
+    },
+    "population": 4177,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 829,
+    "slope_deg": 12,
+    "hand_m": 14.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-063",
+    "lgd_code": "LGD-673062",
+    "name": "Settlement 63",
+    "name_variants": [
+      "Village 63"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.066586,
+        11.580592
+      ]
+    },
+    "population": 4314,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 858,
+    "slope_deg": 19,
+    "hand_m": 16.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-064",
+    "lgd_code": "LGD-673063",
+    "name": "Settlement 64",
+    "name_variants": [
+      "Village 64"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.109884,
+        11.622678
+      ]
+    },
+    "population": 4451,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 887,
+    "slope_deg": 26,
+    "hand_m": 17.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-065",
+    "lgd_code": "LGD-673064",
+    "name": "Settlement 65",
+    "name_variants": [
+      "Village 65"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.049271,
+        11.620884
+      ]
+    },
+    "population": 4588,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 916,
+    "slope_deg": 33,
+    "hand_m": 1.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-066",
+    "lgd_code": "LGD-673065",
+    "name": "Settlement 66",
+    "name_variants": [
+      "Village 66"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.095371,
+        11.581096
+      ]
+    },
+    "population": 4725,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 945,
+    "slope_deg": 40,
+    "hand_m": 3.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-067",
+    "lgd_code": "LGD-673066",
+    "name": "Settlement 67",
+    "name_variants": [
+      "Village 67"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.088224,
+        11.641827
+      ]
+    },
+    "population": 4862,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 974,
+    "slope_deg": 9,
+    "hand_m": 4.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-068",
+    "lgd_code": "LGD-673067",
+    "name": "Settlement 68",
+    "name_variants": [
+      "Village 68"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.052323,
+        11.592013
+      ]
+    },
+    "population": 4999,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1003,
+    "slope_deg": 16,
+    "hand_m": 6.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-069",
+    "lgd_code": "LGD-673068",
+    "name": "Settlement 69",
+    "name_variants": [
+      "Village 69"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.11269,
+        11.604545
+      ]
+    },
+    "population": 536,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 1032,
+    "slope_deg": 23,
+    "hand_m": 8.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-070",
+    "lgd_code": "LGD-673069",
+    "name": "Settlement 70",
+    "name_variants": [
+      "Village 70"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.059498,
+        11.636208
+      ]
+    },
+    "population": 673,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 1061,
+    "slope_deg": 30,
+    "hand_m": 9.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-071",
+    "lgd_code": "LGD-673070",
+    "name": "Settlement 71",
+    "name_variants": [
+      "Village 71"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.077404,
+        11.576695
+      ]
+    },
+    "population": 810,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1090,
+    "slope_deg": 37,
+    "hand_m": 11.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-072",
+    "lgd_code": "LGD-673071",
+    "name": "Settlement 72",
+    "name_variants": [
+      "Village 72"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.104508,
+        11.632894
+      ]
+    },
+    "population": 947,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 1119,
+    "slope_deg": 6,
+    "hand_m": 13.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-073",
+    "lgd_code": "LGD-673072",
+    "name": "Settlement 73",
+    "name_variants": [
+      "Village 73"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.046334,
+        11.609672
+      ]
+    },
+    "population": 1084,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 1148,
+    "slope_deg": 13,
+    "hand_m": 15.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-074",
+    "lgd_code": "LGD-673073",
+    "name": "Settlement 74",
+    "name_variants": [
+      "Village 74"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.105142,
+        11.587414
+      ]
+    },
+    "population": 1221,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1177,
+    "slope_deg": 20,
+    "hand_m": 16.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-075",
+    "lgd_code": "LGD-673074",
+    "name": "Settlement 75",
+    "name_variants": [
+      "Village 75"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.076705,
+        11.643765
+      ]
+    },
+    "population": 1358,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 1206,
+    "slope_deg": 27,
+    "hand_m": 18.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-076",
+    "lgd_code": "LGD-673075",
+    "name": "Settlement 76",
+    "name_variants": [
+      "Village 76"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.059545,
+        11.582775
+      ]
+    },
+    "population": 1495,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 695,
+    "slope_deg": 34,
+    "hand_m": 2.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-077",
+    "lgd_code": "LGD-673076",
+    "name": "Settlement 77",
+    "name_variants": [
+      "Village 77"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.113597,
+        11.616281
+      ]
+    },
+    "population": 1632,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 724,
+    "slope_deg": 3,
+    "hand_m": 3.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-078",
+    "lgd_code": "LGD-673077",
+    "name": "Settlement 78",
+    "name_variants": [
+      "Village 78"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.050877,
+        11.62813
+      ]
+    },
+    "population": 1769,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 753,
+    "slope_deg": 10,
+    "hand_m": 5.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-079",
+    "lgd_code": "LGD-673078",
+    "name": "Settlement 79",
+    "name_variants": [
+      "Village 79"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.089262,
+        11.576839
+      ]
+    },
+    "population": 1906,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 782,
+    "slope_deg": 17,
+    "hand_m": 7.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-080",
+    "lgd_code": "LGD-673079",
+    "name": "Settlement 80",
+    "name_variants": [
+      "Village 80"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.095627,
+        11.640819
+      ]
+    },
+    "population": 2043,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 811,
+    "slope_deg": 24,
+    "hand_m": 8.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-081",
+    "lgd_code": "LGD-673080",
+    "name": "Settlement 81",
+    "name_variants": [
+      "Village 81"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.047544,
+        11.597788
+      ]
+    },
+    "population": 2180,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 840,
+    "slope_deg": 31,
+    "hand_m": 10.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-082",
+    "lgd_code": "LGD-673081",
+    "name": "Settlement 82",
+    "name_variants": [
+      "Village 82"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.112295,
+        11.597036
+      ]
+    },
+    "population": 2317,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 869,
+    "slope_deg": 38,
+    "hand_m": 12.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-083",
+    "lgd_code": "LGD-673082",
+    "name": "Settlement 83",
+    "name_variants": [
+      "Village 83"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.064891,
+        11.641484
+      ]
+    },
+    "population": 2454,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 898,
+    "slope_deg": 7,
+    "hand_m": 14.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-084",
+    "lgd_code": "LGD-673083",
+    "name": "Settlement 84",
+    "name_variants": [
+      "Village 84"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.069838,
+        11.576463
+      ]
+    },
+    "population": 2591,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 927,
+    "slope_deg": 14,
+    "hand_m": 15.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-085",
+    "lgd_code": "LGD-673084",
+    "name": "Settlement 85",
+    "name_variants": [
+      "Village 85"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.110251,
+        11.627927
+      ]
+    },
+    "population": 2728,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 956,
+    "slope_deg": 21,
+    "hand_m": 17.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-086",
+    "lgd_code": "LGD-673085",
+    "name": "Settlement 86",
+    "name_variants": [
+      "Village 86"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.045468,
+        11.61724
+      ]
+    },
+    "population": 2865,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 985,
+    "slope_deg": 28,
+    "hand_m": 1.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-087",
+    "lgd_code": "LGD-673086",
+    "name": "Settlement 87",
+    "name_variants": [
+      "Village 87"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.100642,
+        11.581239
+      ]
+    },
+    "population": 3002,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 1014,
+    "slope_deg": 35,
+    "hand_m": 2.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-088",
+    "lgd_code": "LGD-673087",
+    "name": "Settlement 88",
+    "name_variants": [
+      "Village 88"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.084222,
+        11.645268
+      ]
+    },
+    "population": 3139,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 1043,
+    "slope_deg": 4,
+    "hand_m": 4.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-089",
+    "lgd_code": "LGD-673088",
+    "name": "Settlement 89",
+    "name_variants": [
+      "Village 89"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.052974,
+        11.586769
+      ]
+    },
+    "population": 3276,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1072,
+    "slope_deg": 11,
+    "hand_m": 6.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-090",
+    "lgd_code": "LGD-673089",
+    "name": "Settlement 90",
+    "name_variants": [
+      "Village 90"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.115737,
+        11.608871
+      ]
+    },
+    "population": 3413,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 1101,
+    "slope_deg": 18,
+    "hand_m": 7.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-091",
+    "lgd_code": "LGD-673090",
+    "name": "Settlement 91",
+    "name_variants": [
+      "Village 91"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.054328,
+        11.635054
+      ]
+    },
+    "population": 3550,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 1130,
+    "slope_deg": 25,
+    "hand_m": 9.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-092",
+    "lgd_code": "LGD-673091",
+    "name": "Settlement 92",
+    "name_variants": [
+      "Village 92"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.082012,
+        11.57407
+      ]
+    },
+    "population": 3687,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1159,
+    "slope_deg": 32,
+    "hand_m": 11.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-093",
+    "lgd_code": "LGD-673092",
+    "name": "Settlement 93",
+    "name_variants": [
+      "Village 93"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.10286,
+        11.637942
+      ]
+    },
+    "population": 3824,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 1188,
+    "slope_deg": 39,
+    "hand_m": 13.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-094",
+    "lgd_code": "LGD-673093",
+    "name": "Settlement 94",
+    "name_variants": [
+      "Village 94"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.044156,
+        11.604822
+      ]
+    },
+    "population": 3961,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 1217,
+    "slope_deg": 8,
+    "hand_m": 14.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-095",
+    "lgd_code": "LGD-673094",
+    "name": "Settlement 95",
+    "name_variants": [
+      "Village 95"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.110022,
+        11.589542
+      ]
+    },
+    "population": 4098,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 706,
+    "slope_deg": 15,
+    "hand_m": 16.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-096",
+    "lgd_code": "LGD-673095",
+    "name": "Settlement 96",
+    "name_variants": [
+      "Village 96"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.071656,
+        11.645475
+      ]
+    },
+    "population": 4235,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 735,
+    "slope_deg": 22,
+    "hand_m": 18.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-097",
+    "lgd_code": "LGD-673096",
+    "name": "Settlement 97",
+    "name_variants": [
+      "Village 97"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.062135,
+        11.578107
+      ]
+    },
+    "population": 4372,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 764,
+    "slope_deg": 29,
+    "hand_m": 1.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-098",
+    "lgd_code": "LGD-673097",
+    "name": "Settlement 98",
+    "name_variants": [
+      "Village 98"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.114823,
+        11.621484
+      ]
+    },
+    "population": 4509,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 793,
+    "slope_deg": 36,
+    "hand_m": 3.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-099",
+    "lgd_code": "LGD-673098",
+    "name": "Settlement 99",
+    "name_variants": [
+      "Village 99"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.046464,
+        11.6251
+      ]
+    },
+    "population": 4646,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 822,
+    "slope_deg": 5,
+    "hand_m": 5.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-100",
+    "lgd_code": "LGD-673099",
+    "name": "Settlement 100",
+    "name_variants": [
+      "Village 100"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.094572,
+        11.57611
+      ]
+    },
+    "population": 4783,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 851,
+    "slope_deg": 12,
+    "hand_m": 6.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-101",
+    "lgd_code": "LGD-673100",
+    "name": "Settlement 101",
+    "name_variants": [
+      "Village 101"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.092183,
+        11.644937
+      ]
+    },
+    "population": 4920,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 880,
+    "slope_deg": 19,
+    "hand_m": 8.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-102",
+    "lgd_code": "LGD-673101",
+    "name": "Settlement 102",
+    "name_variants": [
+      "Village 102"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.04732,
+        11.592417
+      ]
+    },
+    "population": 457,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 909,
+    "slope_deg": 26,
+    "hand_m": 10.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-103",
+    "lgd_code": "LGD-673102",
+    "name": "Settlement 103",
+    "name_variants": [
+      "Village 103"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.11608,
+        11.600864
+      ]
+    },
+    "population": 594,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 938,
+    "slope_deg": 33,
+    "hand_m": 12.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-104",
+    "lgd_code": "LGD-673103",
+    "name": "Settlement 104",
+    "name_variants": [
+      "Village 104"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.059507,
+        11.641199
+      ]
+    },
+    "population": 731,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 967,
+    "slope_deg": 40,
+    "hand_m": 13.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-105",
+    "lgd_code": "LGD-673104",
+    "name": "Settlement 105",
+    "name_variants": [
+      "Village 105"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.074019,
+        11.573045
+      ]
+    },
+    "population": 868,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 996,
+    "slope_deg": 9,
+    "hand_m": 15.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-106",
+    "lgd_code": "LGD-673105",
+    "name": "Settlement 106",
+    "name_variants": [
+      "Village 106"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.109457,
+        11.633276
+      ]
+    },
+    "population": 1005,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 1025,
+    "slope_deg": 16,
+    "hand_m": 17.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-107",
+    "lgd_code": "LGD-673106",
+    "name": "Settlement 107",
+    "name_variants": [
+      "Village 107"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.04245,
+        11.612743
+      ]
+    },
+    "population": 1142,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1054,
+    "slope_deg": 23,
+    "hand_m": 0.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-108",
+    "lgd_code": "LGD-673107",
+    "name": "Settlement 108",
+    "name_variants": [
+      "Village 108"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.105908,
+        11.582535
+      ]
+    },
+    "population": 1279,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 1083,
+    "slope_deg": 30,
+    "hand_m": 2.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-109",
+    "lgd_code": "LGD-673108",
+    "name": "Settlement 109",
+    "name_variants": [
+      "Village 109"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.079447,
+        11.647859
+      ]
+    },
+    "population": 1416,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 1112,
+    "slope_deg": 37,
+    "hand_m": 4.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-110",
+    "lgd_code": "LGD-673109",
+    "name": "Settlement 110",
+    "name_variants": [
+      "Village 110"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.054764,
+        11.581631
+      ]
+    },
+    "population": 1553,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1141,
+    "slope_deg": 6,
+    "hand_m": 5.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-111",
+    "lgd_code": "LGD-673110",
+    "name": "Settlement 111",
+    "name_variants": [
+      "Village 111"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.117875,
+        11.613882
+      ]
+    },
+    "population": 1690,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 1170,
+    "slope_deg": 13,
+    "hand_m": 7.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-112",
+    "lgd_code": "LGD-673111",
+    "name": "Settlement 112",
+    "name_variants": [
+      "Village 112"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.049365,
+        11.632784
+      ]
+    },
+    "population": 1827,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 1199,
+    "slope_deg": 20,
+    "hand_m": 9.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-113",
+    "lgd_code": "LGD-673112",
+    "name": "Settlement 113",
+    "name_variants": [
+      "Village 113"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.087218,
+        11.572404
+      ]
+    },
+    "population": 1964,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 688,
+    "slope_deg": 27,
+    "hand_m": 11.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-114",
+    "lgd_code": "LGD-673113",
+    "name": "Settlement 114",
+    "name_variants": [
+      "Village 114"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.100128,
+        11.642686
+      ]
+    },
+    "population": 2101,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 717,
+    "slope_deg": 34,
+    "hand_m": 12.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-115",
+    "lgd_code": "LGD-673114",
+    "name": "Settlement 115",
+    "name_variants": [
+      "Village 115"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.04298,
+        11.599466
+      ]
+    },
+    "population": 2238,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 746,
+    "slope_deg": 3,
+    "hand_m": 14.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-116",
+    "lgd_code": "LGD-673115",
+    "name": "Settlement 116",
+    "name_variants": [
+      "Village 116"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.114505,
+        11.592715
+      ]
+    },
+    "population": 2375,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 775,
+    "slope_deg": 10,
+    "hand_m": 16.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-117",
+    "lgd_code": "LGD-673116",
+    "name": "Settlement 117",
+    "name_variants": [
+      "Village 117"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.066197,
+        11.646149
+      ]
+    },
+    "population": 2512,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 804,
+    "slope_deg": 17,
+    "hand_m": 17.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-118",
+    "lgd_code": "LGD-673117",
+    "name": "Settlement 118",
+    "name_variants": [
+      "Village 118"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.065722,
+        11.573926
+      ]
+    },
+    "population": 2649,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 833,
+    "slope_deg": 24,
+    "hand_m": 1.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-119",
+    "lgd_code": "LGD-673118",
+    "name": "Settlement 119",
+    "name_variants": [
+      "Village 119"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.114987,
+        11.627
+      ]
+    },
+    "population": 2786,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 862,
+    "slope_deg": 31,
+    "hand_m": 3.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-120",
+    "lgd_code": "LGD-673119",
+    "name": "Settlement 120",
+    "name_variants": [
+      "Village 120"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.042622,
+        11.621127
+      ]
+    },
+    "population": 2923,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 891,
+    "slope_deg": 38,
+    "hand_m": 4.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-121",
+    "lgd_code": "LGD-673120",
+    "name": "Settlement 121",
+    "name_variants": [
+      "Village 121"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.100097,
+        11.57646
+      ]
+    },
+    "population": 3060,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 920,
+    "slope_deg": 7,
+    "hand_m": 6.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-122",
+    "lgd_code": "LGD-673121",
+    "name": "Settlement 122",
+    "name_variants": [
+      "Village 122"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.087857,
+        11.648405
+      ]
+    },
+    "population": 3197,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 949,
+    "slope_deg": 14,
+    "hand_m": 8.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-123",
+    "lgd_code": "LGD-673122",
+    "name": "Settlement 123",
+    "name_variants": [
+      "Village 123"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.048184,
+        11.58693
+      ]
+    },
+    "population": 3334,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 978,
+    "slope_deg": 21,
+    "hand_m": 10.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-124",
+    "lgd_code": "LGD-673123",
+    "name": "Settlement 124",
+    "name_variants": [
+      "Village 124"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.119142,
+        11.605508
+      ]
+    },
+    "population": 3471,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 1007,
+    "slope_deg": 28,
+    "hand_m": 11.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-125",
+    "lgd_code": "LGD-673124",
+    "name": "Settlement 125",
+    "name_variants": [
+      "Village 125"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.054107,
+        11.639827
+      ]
+    },
+    "population": 3608,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1036,
+    "slope_deg": 35,
+    "hand_m": 13.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-126",
+    "lgd_code": "LGD-673125",
+    "name": "Settlement 126",
+    "name_variants": [
+      "Village 126"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.078942,
+        11.570417
+      ]
+    },
+    "population": 3745,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 1065,
+    "slope_deg": 4,
+    "hand_m": 15.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-127",
+    "lgd_code": "LGD-673126",
+    "name": "Settlement 127",
+    "name_variants": [
+      "Village 127"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.107586,
+        11.638543
+      ]
+    },
+    "population": 3882,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 1094,
+    "slope_deg": 11,
+    "hand_m": 16.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-128",
+    "lgd_code": "LGD-673127",
+    "name": "Settlement 128",
+    "name_variants": [
+      "Village 128"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.040281,
+        11.607582
+      ]
+    },
+    "population": 4019,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1123,
+    "slope_deg": 18,
+    "hand_m": 18.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-129",
+    "lgd_code": "LGD-673128",
+    "name": "Settlement 129",
+    "name_variants": [
+      "Village 129"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.110997,
+        11.584892
+      ]
+    },
+    "population": 4156,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 1152,
+    "slope_deg": 25,
+    "hand_m": 2.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-130",
+    "lgd_code": "LGD-673129",
+    "name": "Settlement 130",
+    "name_variants": [
+      "Village 130"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.07409,
+        11.649548
+      ]
+    },
+    "population": 4293,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 1181,
+    "slope_deg": 32,
+    "hand_m": 3.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-131",
+    "lgd_code": "LGD-673130",
+    "name": "Settlement 131",
+    "name_variants": [
+      "Village 131"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.05759,
+        11.576766
+      ]
+    },
+    "population": 4430,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1210,
+    "slope_deg": 39,
+    "hand_m": 5.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-132",
+    "lgd_code": "LGD-673131",
+    "name": "Settlement 132",
+    "name_variants": [
+      "Village 132"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.119067,
+        11.61939
+      ]
+    },
+    "population": 4567,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 699,
+    "slope_deg": 8,
+    "hand_m": 7.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-133",
+    "lgd_code": "LGD-673132",
+    "name": "Settlement 133",
+    "name_variants": [
+      "Village 133"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.044766,
+        11.629512
+      ]
+    },
+    "population": 4704,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 728,
+    "slope_deg": 15,
+    "hand_m": 9.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-134",
+    "lgd_code": "LGD-673133",
+    "name": "Settlement 134",
+    "name_variants": [
+      "Village 134"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.092831,
+        11.571722
+      ]
+    },
+    "population": 4841,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 757,
+    "slope_deg": 22,
+    "hand_m": 10.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-135",
+    "lgd_code": "LGD-673134",
+    "name": "Settlement 135",
+    "name_variants": [
+      "Village 135"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.096434,
+        11.646979
+      ]
+    },
+    "population": 4978,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 786,
+    "slope_deg": 29,
+    "hand_m": 12.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-136",
+    "lgd_code": "LGD-673135",
+    "name": "Settlement 136",
+    "name_variants": [
+      "Village 136"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.042816,
+        11.593796
+      ]
+    },
+    "population": 515,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 815,
+    "slope_deg": 36,
+    "hand_m": 14.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-137",
+    "lgd_code": "LGD-673136",
+    "name": "Settlement 137",
+    "name_variants": [
+      "Village 137"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.118454,
+        11.5968
+      ]
+    },
+    "population": 652,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 844,
+    "slope_deg": 5,
+    "hand_m": 15.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-138",
+    "lgd_code": "LGD-673137",
+    "name": "Settlement 138",
+    "name_variants": [
+      "Village 138"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.060517,
+        11.645791
+      ]
+    },
+    "population": 789,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 873,
+    "slope_deg": 12,
+    "hand_m": 17.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-139",
+    "lgd_code": "LGD-673138",
+    "name": "Settlement 139",
+    "name_variants": [
+      "Village 139"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.070167,
+        11.570357
+      ]
+    },
+    "population": 926,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 902,
+    "slope_deg": 19,
+    "hand_m": 1.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-140",
+    "lgd_code": "LGD-673139",
+    "name": "Settlement 140",
+    "name_variants": [
+      "Village 140"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.114107,
+        11.632641
+      ]
+    },
+    "population": 1063,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 931,
+    "slope_deg": 26,
+    "hand_m": 2.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-141",
+    "lgd_code": "LGD-673140",
+    "name": "Settlement 141",
+    "name_variants": [
+      "Village 141"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.039465,
+        11.616358
+      ]
+    },
+    "population": 1200,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 960,
+    "slope_deg": 33,
+    "hand_m": 4.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-142",
+    "lgd_code": "LGD-673141",
+    "name": "Settlement 142",
+    "name_variants": [
+      "Village 142"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.105652,
+        11.577858
+      ]
+    },
+    "population": 1337,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 989,
+    "slope_deg": 40,
+    "hand_m": 6.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-143",
+    "lgd_code": "LGD-673142",
+    "name": "Settlement 143",
+    "name_variants": [
+      "Village 143"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.082803,
+        11.651121
+      ]
+    },
+    "population": 1474,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1018,
+    "slope_deg": 9,
+    "hand_m": 8.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-144",
+    "lgd_code": "LGD-673143",
+    "name": "Settlement 144",
+    "name_variants": [
+      "Village 144"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.05009,
+        11.581509
+      ]
+    },
+    "population": 1611,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 1047,
+    "slope_deg": 16,
+    "hand_m": 9.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-145",
+    "lgd_code": "LGD-673144",
+    "name": "Settlement 145",
+    "name_variants": [
+      "Village 145"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.121392,
+        11.610806
+      ]
+    },
+    "population": 1748,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 1076,
+    "slope_deg": 23,
+    "hand_m": 11.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-146",
+    "lgd_code": "LGD-673145",
+    "name": "Settlement 146",
+    "name_variants": [
+      "Village 146"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.048865,
+        11.637426
+      ]
+    },
+    "population": 1885,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1105,
+    "slope_deg": 30,
+    "hand_m": 13.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-147",
+    "lgd_code": "LGD-673146",
+    "name": "Settlement 147",
+    "name_variants": [
+      "Village 147"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.084442,
+        11.568655
+      ]
+    },
+    "population": 2022,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 1134,
+    "slope_deg": 37,
+    "hand_m": 14.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-148",
+    "lgd_code": "LGD-673147",
+    "name": "Settlement 148",
+    "name_variants": [
+      "Village 148"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.104707,
+        11.64356
+      ]
+    },
+    "population": 2159,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 1163,
+    "slope_deg": 6,
+    "hand_m": 16.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-149",
+    "lgd_code": "LGD-673148",
+    "name": "Settlement 149",
+    "name_variants": [
+      "Village 149"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.039024,
+        11.601926
+      ]
+    },
+    "population": 2296,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1192,
+    "slope_deg": 13,
+    "hand_m": 18.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-150",
+    "lgd_code": "LGD-673149",
+    "name": "Settlement 150",
+    "name_variants": [
+      "Village 150"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.115746,
+        11.588228
+      ]
+    },
+    "population": 2433,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 681,
+    "slope_deg": 20,
+    "hand_m": 1.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-151",
+    "lgd_code": "LGD-673150",
+    "name": "Settlement 151",
+    "name_variants": [
+      "Village 151"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.068324,
+        11.650287
+      ]
+    },
+    "population": 2570,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 710,
+    "slope_deg": 27,
+    "hand_m": 3.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-152",
+    "lgd_code": "LGD-673151",
+    "name": "Settlement 152",
+    "name_variants": [
+      "Village 152"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.061356,
+        11.572327
+      ]
+    },
+    "population": 2707,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 739,
+    "slope_deg": 34,
+    "hand_m": 5.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-153",
+    "lgd_code": "LGD-673152",
+    "name": "Settlement 153",
+    "name_variants": [
+      "Village 153"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.119278,
+        11.625218
+      ]
+    },
+    "population": 2844,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 768,
+    "slope_deg": 3,
+    "hand_m": 7.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-154",
+    "lgd_code": "LGD-673153",
+    "name": "Settlement 154",
+    "name_variants": [
+      "Village 154"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.040675,
+        11.625343
+      ]
+    },
+    "population": 2981,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 797,
+    "slope_deg": 10,
+    "hand_m": 8.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-155",
+    "lgd_code": "LGD-673154",
+    "name": "Settlement 155",
+    "name_variants": [
+      "Village 155"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.098672,
+        11.572043
+      ]
+    },
+    "population": 3118,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 826,
+    "slope_deg": 17,
+    "hand_m": 10.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-156",
+    "lgd_code": "LGD-673155",
+    "name": "Settlement 156",
+    "name_variants": [
+      "Village 156"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.091896,
+        11.650686
+      ]
+    },
+    "population": 3255,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 855,
+    "slope_deg": 24,
+    "hand_m": 12.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-157",
+    "lgd_code": "LGD-673156",
+    "name": "Settlement 157",
+    "name_variants": [
+      "Village 157"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.043669,
+        11.587989
+      ]
+    },
+    "population": 3392,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 884,
+    "slope_deg": 31,
+    "hand_m": 13.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-158",
+    "lgd_code": "LGD-673157",
+    "name": "Settlement 158",
+    "name_variants": [
+      "Village 158"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.121743,
+        11.601672
+      ]
+    },
+    "population": 3529,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 913,
+    "slope_deg": 38,
+    "hand_m": 15.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-159",
+    "lgd_code": "LGD-673158",
+    "name": "Settlement 159",
+    "name_variants": [
+      "Village 159"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.054794,
+        11.644409
+      ]
+    },
+    "population": 3666,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 942,
+    "slope_deg": 7,
+    "hand_m": 17.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-160",
+    "lgd_code": "LGD-673159",
+    "name": "Settlement 160",
+    "name_variants": [
+      "Village 160"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.075334,
+        11.567515
+      ]
+    },
+    "population": 3803,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 971,
+    "slope_deg": 14,
+    "hand_m": 0.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-161",
+    "lgd_code": "LGD-673160",
+    "name": "Settlement 161",
+    "name_variants": [
+      "Village 161"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.112205,
+        11.638233
+      ]
+    },
+    "population": 3940,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1000,
+    "slope_deg": 21,
+    "hand_m": 2.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-162",
+    "lgd_code": "LGD-673161",
+    "name": "Settlement 162",
+    "name_variants": [
+      "Village 162"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.037095,
+        11.610938
+      ]
+    },
+    "population": 4077,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 1029,
+    "slope_deg": 28,
+    "hand_m": 4.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-163",
+    "lgd_code": "LGD-673162",
+    "name": "Settlement 163",
+    "name_variants": [
+      "Village 163"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.111066,
+        11.580267
+      ]
+    },
+    "population": 4214,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 1058,
+    "slope_deg": 35,
+    "hand_m": 6.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-164",
+    "lgd_code": "LGD-673163",
+    "name": "Settlement 164",
+    "name_variants": [
+      "Village 164"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.077172,
+        11.652995
+      ]
+    },
+    "population": 4351,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1087,
+    "slope_deg": 4,
+    "hand_m": 7.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-165",
+    "lgd_code": "LGD-673164",
+    "name": "Settlement 165",
+    "name_variants": [
+      "Village 165"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.052989,
+        11.576319
+      ]
+    },
+    "population": 4488,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 1116,
+    "slope_deg": 11,
+    "hand_m": 9.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-166",
+    "lgd_code": "LGD-673165",
+    "name": "Settlement 166",
+    "name_variants": [
+      "Village 166"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.122753,
+        11.616602
+      ]
+    },
+    "population": 4625,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 1145,
+    "slope_deg": 18,
+    "hand_m": 11.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-167",
+    "lgd_code": "LGD-673166",
+    "name": "Settlement 167",
+    "name_variants": [
+      "Village 167"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.043945,
+        11.634058
+      ]
+    },
+    "population": 4762,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1174,
+    "slope_deg": 25,
+    "hand_m": 12.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-168",
+    "lgd_code": "LGD-673167",
+    "name": "Settlement 168",
+    "name_variants": [
+      "Village 168"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.090355,
+        11.567822
+      ]
+    },
+    "population": 4899,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 1203,
+    "slope_deg": 32,
+    "hand_m": 14.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-169",
+    "lgd_code": "LGD-673168",
+    "name": "Settlement 169",
+    "name_variants": [
+      "Village 169"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.100896,
+        11.64817
+      ]
+    },
+    "population": 436,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 692,
+    "slope_deg": 39,
+    "hand_m": 16.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-170",
+    "lgd_code": "LGD-673169",
+    "name": "Settlement 170",
+    "name_variants": [
+      "Village 170"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.038729,
+        11.595942
+      ]
+    },
+    "population": 573,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 721,
+    "slope_deg": 8,
+    "hand_m": 17.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-171",
+    "lgd_code": "LGD-673170",
+    "name": "Settlement 171",
+    "name_variants": [
+      "Village 171"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.120006,
+        11.592453
+      ]
+    },
+    "population": 710,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 750,
+    "slope_deg": 15,
+    "hand_m": 1.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-172",
+    "lgd_code": "LGD-673171",
+    "name": "Settlement 172",
+    "name_variants": [
+      "Village 172"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.06232,
+        11.650039
+      ]
+    },
+    "population": 847,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 779,
+    "slope_deg": 22,
+    "hand_m": 3.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-173",
+    "lgd_code": "LGD-673172",
+    "name": "Settlement 173",
+    "name_variants": [
+      "Village 173"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.065964,
+        11.568454
+      ]
+    },
+    "population": 984,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 808,
+    "slope_deg": 29,
+    "hand_m": 5.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-174",
+    "lgd_code": "LGD-673173",
+    "name": "Settlement 174",
+    "name_variants": [
+      "Village 174"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.118487,
+        11.631194
+      ]
+    },
+    "population": 1121,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 837,
+    "slope_deg": 36,
+    "hand_m": 6.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-175",
+    "lgd_code": "LGD-673174",
+    "name": "Settlement 175",
+    "name_variants": [
+      "Village 175"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.037224,
+        11.620389
+      ]
+    },
+    "population": 1258,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 866,
+    "slope_deg": 5,
+    "hand_m": 8.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-176",
+    "lgd_code": "LGD-673175",
+    "name": "Settlement 176",
+    "name_variants": [
+      "Village 176"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.104571,
+        11.573375
+      ]
+    },
+    "population": 1395,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 895,
+    "slope_deg": 12,
+    "hand_m": 10.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-177",
+    "lgd_code": "LGD-673176",
+    "name": "Settlement 177",
+    "name_variants": [
+      "Village 177"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.086635,
+        11.653685
+      ]
+    },
+    "population": 1532,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 924,
+    "slope_deg": 19,
+    "hand_m": 11.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-178",
+    "lgd_code": "LGD-673177",
+    "name": "Settlement 178",
+    "name_variants": [
+      "Village 178"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.045534,
+        11.582218
+      ]
+    },
+    "population": 1669,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 953,
+    "slope_deg": 26,
+    "hand_m": 13.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-179",
+    "lgd_code": "LGD-673178",
+    "name": "Settlement 179",
+    "name_variants": [
+      "Village 179"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.124263,
+        11.607199
+      ]
+    },
+    "population": 1806,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 982,
+    "slope_deg": 33,
+    "hand_m": 15.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-180",
+    "lgd_code": "LGD-673179",
+    "name": "Settlement 180",
+    "name_variants": [
+      "Village 180"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.049196,
+        11.642024
+      ]
+    },
+    "population": 1943,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 1011,
+    "slope_deg": 40,
+    "hand_m": 16.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-181",
+    "lgd_code": "LGD-673180",
+    "name": "Settlement 181",
+    "name_variants": [
+      "Village 181"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.081084,
+        11.565497
+      ]
+    },
+    "population": 2080,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 1040,
+    "slope_deg": 9,
+    "hand_m": 0.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-182",
+    "lgd_code": "LGD-673181",
+    "name": "Settlement 182",
+    "name_variants": [
+      "Village 182"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.109316,
+        11.643609
+      ]
+    },
+    "population": 2217,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1069,
+    "slope_deg": 16,
+    "hand_m": 2.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-183",
+    "lgd_code": "LGD-673182",
+    "name": "Settlement 183",
+    "name_variants": [
+      "Village 183"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.0356,
+        11.605011
+      ]
+    },
+    "population": 2354,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 1098,
+    "slope_deg": 23,
+    "hand_m": 4.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-184",
+    "lgd_code": "LGD-673183",
+    "name": "Settlement 184",
+    "name_variants": [
+      "Village 184"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.116175,
+        11.583639
+      ]
+    },
+    "population": 2491,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 1127,
+    "slope_deg": 30,
+    "hand_m": 5.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-185",
+    "lgd_code": "LGD-673184",
+    "name": "Settlement 185",
+    "name_variants": [
+      "Village 185"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.071117,
+        11.653954
+      ]
+    },
+    "population": 2628,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1156,
+    "slope_deg": 37,
+    "hand_m": 7.4,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 12
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-186",
+    "lgd_code": "LGD-673185",
+    "name": "Settlement 186",
+    "name_variants": [
+      "Village 186"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.056818,
+        11.57152
+      ]
+    },
+    "population": 2765,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 1185,
+    "slope_deg": 6,
+    "hand_m": 9.1,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 13
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-187",
+    "lgd_code": "LGD-673186",
+    "name": "Settlement 187",
+    "name_variants": [
+      "Village 187"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.123164,
+        11.622738
+      ]
+    },
+    "population": 2902,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 1214,
+    "slope_deg": 13,
+    "hand_m": 10.8,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 14
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-188",
+    "lgd_code": "LGD-673187",
+    "name": "Settlement 188",
+    "name_variants": [
+      "Village 188"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.039496,
+        11.6298
+      ]
+    },
+    "population": 3039,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 703,
+    "slope_deg": 20,
+    "hand_m": 12.5,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 15
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-189",
+    "lgd_code": "LGD-673188",
+    "name": "Settlement 189",
+    "name_variants": [
+      "Village 189"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.096522,
+        11.567965
+      ]
+    },
+    "population": 3176,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 732,
+    "slope_deg": 27,
+    "hand_m": 14.2,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 16
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-190",
+    "lgd_code": "LGD-673189",
+    "name": "Settlement 190",
+    "name_variants": [
+      "Village 190"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.09624,
+        11.65223
+      ]
+    },
+    "population": 3313,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 761,
+    "slope_deg": 34,
+    "hand_m": 15.9,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 17
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-191",
+    "lgd_code": "LGD-673190",
+    "name": "Settlement 191",
+    "name_variants": [
+      "Village 191"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.039428,
+        11.589795
+      ]
+    },
+    "population": 3450,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 790,
+    "slope_deg": 3,
+    "hand_m": 17.6,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 18
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-192",
+    "lgd_code": "LGD-673191",
+    "name": "Settlement 192",
+    "name_variants": [
+      "Village 192"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.123641,
+        11.59747
+      ]
+    },
+    "population": 3587,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 819,
+    "slope_deg": 10,
+    "hand_m": 1.3,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 19
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-193",
+    "lgd_code": "LGD-673192",
+    "name": "Settlement 193",
+    "name_variants": [
+      "Village 193"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.056243,
+        11.648786
+      ]
+    },
+    "population": 3724,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 848,
+    "slope_deg": 17,
+    "hand_m": 3.0,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 20
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-194",
+    "lgd_code": "LGD-673193",
+    "name": "Settlement 194",
+    "name_variants": [
+      "Village 194"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.071303,
+        11.565274
+      ]
+    },
+    "population": 3861,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 877,
+    "slope_deg": 24,
+    "hand_m": 4.7,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 21
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-195",
+    "lgd_code": "LGD-673194",
+    "name": "Settlement 195",
+    "name_variants": [
+      "Village 195"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.116688,
+        11.637152
+      ]
+    },
+    "population": 3998,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "pucca",
+    "elevation_m": 906,
+    "slope_deg": 31,
+    "hand_m": 6.4,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 22
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-196",
+    "lgd_code": "LGD-673195",
+    "name": "Settlement 196",
+    "name_variants": [
+      "Village 196"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.034528,
+        11.61477
+      ]
+    },
+    "population": 4135,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "kutcha",
+    "elevation_m": 935,
+    "slope_deg": 38,
+    "hand_m": 8.1,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 23
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-197",
+    "lgd_code": "LGD-673196",
+    "name": "Settlement 197",
+    "name_variants": [
+      "Village 197"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.110359,
+        11.575708
+      ]
+    },
+    "population": 4272,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 964,
+    "slope_deg": 7,
+    "hand_m": 9.8,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 24
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-198",
+    "lgd_code": "LGD-673197",
+    "name": "Settlement 198",
+    "name_variants": [
+      "Village 198"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.080779,
+        11.655872
+      ]
+    },
+    "population": 4409,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "pucca",
+    "elevation_m": 993,
+    "slope_deg": 14,
+    "hand_m": 11.5,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 25
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-199",
+    "lgd_code": "LGD-673198",
+    "name": "Settlement 199",
+    "name_variants": [
+      "Village 199"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.048386,
+        11.576645
+      ]
+    },
+    "population": 4546,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "kutcha",
+    "elevation_m": 1022,
+    "slope_deg": 21,
+    "hand_m": 13.2,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 26
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-200",
+    "lgd_code": "LGD-673199",
+    "name": "Settlement 200",
+    "name_variants": [
+      "Village 200"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.12592,
+        11.613245
+      ]
+    },
+    "population": 4683,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1051,
+    "slope_deg": 28,
+    "hand_m": 14.9,
+    "road_hours_normal": 0.5,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 27
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-201",
+    "lgd_code": "LGD-673200",
+    "name": "Settlement 201",
+    "name_variants": [
+      "Village 201"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.043887,
+        11.638674
+      ]
+    },
+    "population": 4820,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "pucca",
+    "elevation_m": 1080,
+    "slope_deg": 35,
+    "hand_m": 16.6,
+    "road_hours_normal": 0.58,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 28
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-202",
+    "lgd_code": "LGD-673201",
+    "name": "Settlement 202",
+    "name_variants": [
+      "Village 202"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.087272,
+        11.564386
+      ]
+    },
+    "population": 4957,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "kutcha",
+    "elevation_m": 1109,
+    "slope_deg": 4,
+    "hand_m": 18.3,
+    "road_hours_normal": 0.66,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 29
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-203",
+    "lgd_code": "LGD-673202",
+    "name": "Settlement 203",
+    "name_variants": [
+      "Village 203"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.105493,
+        11.648611
+      ]
+    },
+    "population": 494,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 1138,
+    "slope_deg": 11,
+    "hand_m": 2.0,
+    "road_hours_normal": 0.74,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 30
+    },
+    "observability": 0.85,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-204",
+    "lgd_code": "LGD-673203",
+    "name": "Settlement 204",
+    "name_variants": [
+      "Village 204"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.035046,
+        11.59873
+      ]
+    },
+    "population": 631,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "pucca",
+    "elevation_m": 1167,
+    "slope_deg": 18,
+    "hand_m": 3.7,
+    "road_hours_normal": 0.82,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 31
+    },
+    "observability": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-205",
+    "lgd_code": "LGD-673204",
+    "name": "Settlement 205",
+    "name_variants": [
+      "Village 205"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.120828,
+        11.587907
+      ]
+    },
+    "population": 768,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.34,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "kutcha",
+    "elevation_m": 1196,
+    "slope_deg": 25,
+    "hand_m": 5.4,
+    "road_hours_normal": 0.9,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 32
+    },
+    "observability": 0.25,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-206",
+    "lgd_code": "LGD-673205",
+    "name": "Settlement 206",
+    "name_variants": [
+      "Village 206"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.064793,
+        11.653942
+      ]
+    },
+    "population": 905,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.405,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 685,
+    "slope_deg": 32,
+    "hand_m": 7.1,
+    "road_hours_normal": 0.98,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 33
+    },
+    "observability": 0.31,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-207",
+    "lgd_code": "LGD-673206",
+    "name": "Settlement 207",
+    "name_variants": [
+      "Village 207"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.0615,
+        11.567256
+      ]
+    },
+    "population": 1042,
+    "elderly_frac": 0.132,
+    "pct_sc_st": 0.47,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "pucca",
+    "elevation_m": 714,
+    "slope_deg": 39,
+    "hand_m": 8.8,
+    "road_hours_normal": 1.06,
+    "nearest_phc_id": "PHC-07",
+    "heartbeat_baseline": {
+      "hourly": 34
+    },
+    "observability": 0.37,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-208",
+    "lgd_code": "LGD-673207",
+    "name": "Settlement 208",
+    "name_variants": [
+      "Village 208"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.122585,
+        11.629053
+      ]
+    },
+    "population": 1179,
+    "elderly_frac": 0.144,
+    "pct_sc_st": 0.535,
+    "pct_kutcha": 0.5,
+    "pct_pucca": 0.44,
+    "fragility_class": "kutcha",
+    "elevation_m": 743,
+    "slope_deg": 8,
+    "hand_m": 10.5,
+    "road_hours_normal": 1.14,
+    "nearest_phc_id": "PHC-08",
+    "heartbeat_baseline": {
+      "hourly": 35
+    },
+    "observability": 0.43,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-209",
+    "lgd_code": "LGD-673208",
+    "name": "Settlement 209",
+    "name_variants": [
+      "Village 209"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.035657,
+        11.62474
+      ]
+    },
+    "population": 1316,
+    "elderly_frac": 0.06,
+    "pct_sc_st": 0.6,
+    "pct_kutcha": 0.58,
+    "pct_pucca": 0.37,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 772,
+    "slope_deg": 15,
+    "hand_m": 12.2,
+    "road_hours_normal": 1.22,
+    "nearest_phc_id": "PHC-01",
+    "heartbeat_baseline": {
+      "hourly": 36
+    },
+    "observability": 0.49,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-210",
+    "lgd_code": "LGD-673209",
+    "name": "Settlement 210",
+    "name_variants": [
+      "Village 210"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.102777,
+        11.569111
+      ]
+    },
+    "population": 1453,
+    "elderly_frac": 0.072,
+    "pct_sc_st": 0.665,
+    "pct_kutcha": 0.66,
+    "pct_pucca": 0.3,
+    "fragility_class": "pucca",
+    "elevation_m": 801,
+    "slope_deg": 22,
+    "hand_m": 13.9,
+    "road_hours_normal": 1.3,
+    "nearest_phc_id": "PHC-02",
+    "heartbeat_baseline": {
+      "hourly": 37
+    },
+    "observability": 0.55,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-211",
+    "lgd_code": "LGD-673210",
+    "name": "Settlement 211",
+    "name_variants": [
+      "Village 211"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.090843,
+        11.65561
+      ]
+    },
+    "population": 1590,
+    "elderly_frac": 0.084,
+    "pct_sc_st": 0.08,
+    "pct_kutcha": 0.18,
+    "pct_pucca": 0.72,
+    "fragility_class": "kutcha",
+    "elevation_m": 830,
+    "slope_deg": 29,
+    "hand_m": 15.6,
+    "road_hours_normal": 0.18,
+    "nearest_phc_id": "PHC-03",
+    "heartbeat_baseline": {
+      "hourly": 8
+    },
+    "observability": 0.61,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-212",
+    "lgd_code": "LGD-673211",
+    "name": "Settlement 212",
+    "name_variants": [
+      "Village 212"
+    ],
+    "block": "Mananthavady",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.041133,
+        11.58365
+      ]
+    },
+    "population": 1727,
+    "elderly_frac": 0.096,
+    "pct_sc_st": 0.145,
+    "pct_kutcha": 0.26,
+    "pct_pucca": 0.65,
+    "fragility_class": "semi-pucca",
+    "elevation_m": 859,
+    "slope_deg": 36,
+    "hand_m": 17.3,
+    "road_hours_normal": 0.26,
+    "nearest_phc_id": "PHC-04",
+    "heartbeat_baseline": {
+      "hourly": 9
+    },
+    "observability": 0.67,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-213",
+    "lgd_code": "LGD-673212",
+    "name": "Settlement 213",
+    "name_variants": [
+      "Village 213"
+    ],
+    "block": "Sulthan Bathery",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.126533,
+        11.603164
+      ]
+    },
+    "population": 1864,
+    "elderly_frac": 0.108,
+    "pct_sc_st": 0.21,
+    "pct_kutcha": 0.34,
+    "pct_pucca": 0.58,
+    "fragility_class": "pucca",
+    "elevation_m": 888,
+    "slope_deg": 5,
+    "hand_m": 1.0,
+    "road_hours_normal": 0.34,
+    "nearest_phc_id": "PHC-05",
+    "heartbeat_baseline": {
+      "hourly": 10
+    },
+    "observability": 0.73,
+    "provenance": "synthetic"
+  },
+  {
+    "id": "WY-214",
+    "lgd_code": "LGD-673213",
+    "name": "Settlement 214",
+    "name_variants": [
+      "Village 214"
+    ],
+    "block": "Kalpetta",
+    "tehsil": "Wayanad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        76.050258,
+        11.646532
+      ]
+    },
+    "population": 2001,
+    "elderly_frac": 0.12,
+    "pct_sc_st": 0.275,
+    "pct_kutcha": 0.42,
+    "pct_pucca": 0.51,
+    "fragility_class": "kutcha",
+    "elevation_m": 917,
+    "slope_deg": 12,
+    "hand_m": 2.7,
+    "road_hours_normal": 0.42,
+    "nearest_phc_id": "PHC-06",
+    "heartbeat_baseline": {
+      "hourly": 11
+    },
+    "observability": 0.79,
+    "provenance": "synthetic"
+  }
+]

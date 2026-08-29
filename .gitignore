@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+.venv/
+setu.db
+setu-*.db
+*.db-shm
+*.db-wal
+dist/
+models/

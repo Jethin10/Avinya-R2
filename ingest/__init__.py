@@ -1,0 +1,2 @@
+"""SETU observation ingest pipeline."""
+

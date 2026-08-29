@@ -1,0 +1,394 @@
+[
+  {
+    "settlement_id": "LGD-627293",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627294",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627295",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627296",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627297",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627298",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627299",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627300",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627301",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627302",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627303",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627304",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627305",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627306",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627307",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627308",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627309",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627310",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627311",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627312",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627313",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627314",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627315",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627316",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627317",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627318",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627319",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627320",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627321",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627322",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627323",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627324",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627325",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627326",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627327",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627328",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627329",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627330",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627331",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627332",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627333",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627334",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627335",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627336",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627337",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627338",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627339",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-627340",
+    "affected": true,
+    "severe": true,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.95,
+    "provenance": "ksdma_meppadi_memorandum"
+  },
+  {
+    "settlement_id": "LGD-913291",
+    "affected": false,
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.05,
+    "provenance": "ksdma_meppadi_memorandum"
+  }
+]

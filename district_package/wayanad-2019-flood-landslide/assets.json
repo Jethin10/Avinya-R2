@@ -1,0 +1,98 @@
+[
+  {
+    "asset_id": "BOAT-01",
+    "kind": "boat",
+    "capacity": 12,
+    "status": "available"
+  },
+  {
+    "asset_id": "BOAT-02",
+    "kind": "boat",
+    "capacity": 12,
+    "status": "available"
+  },
+  {
+    "asset_id": "BOAT-03",
+    "kind": "boat",
+    "capacity": 12,
+    "status": "available"
+  },
+  {
+    "asset_id": "BOAT-04",
+    "kind": "boat",
+    "capacity": 12,
+    "status": "available"
+  },
+  {
+    "asset_id": "BOAT-05",
+    "kind": "boat",
+    "capacity": 12,
+    "status": "available"
+  },
+  {
+    "asset_id": "EXCAVATOR-01",
+    "kind": "excavator",
+    "capacity": 1,
+    "status": "available"
+  },
+  {
+    "asset_id": "EXCAVATOR-02",
+    "kind": "excavator",
+    "capacity": 1,
+    "status": "available"
+  },
+  {
+    "asset_id": "EXCAVATOR-03",
+    "kind": "excavator",
+    "capacity": 1,
+    "status": "available"
+  },
+  {
+    "asset_id": "EXCAVATOR-04",
+    "kind": "excavator",
+    "capacity": 1,
+    "status": "available"
+  },
+  {
+    "asset_id": "EXCAVATOR-05",
+    "kind": "excavator",
+    "capacity": 1,
+    "status": "available"
+  },
+  {
+    "asset_id": "MEDICAL-01",
+    "kind": "medical",
+    "capacity": 6,
+    "status": "available"
+  },
+  {
+    "asset_id": "MEDICAL-02",
+    "kind": "medical",
+    "capacity": 6,
+    "status": "available"
+  },
+  {
+    "asset_id": "MEDICAL-03",
+    "kind": "medical",
+    "capacity": 6,
+    "status": "available"
+  },
+  {
+    "asset_id": "MEDICAL-04",
+    "kind": "medical",
+    "capacity": 6,
+    "status": "available"
+  },
+  {
+    "asset_id": "MEDICAL-05",
+    "kind": "medical",
+    "capacity": 6,
+    "status": "available"
+  },
+  {
+    "asset_id": "MEDICAL-06",
+    "kind": "medical",
+    "capacity": 6,
+    "status": "available"
+  }
+]

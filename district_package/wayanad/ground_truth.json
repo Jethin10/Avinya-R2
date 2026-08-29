@@ -1,0 +1,1500 @@
+[
+  {
+    "settlement_id": "BH-042",
+    "severe": true,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.98,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "KH-017",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "DH-031",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "ME-008",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.945,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "CH-011",
+    "severe": true,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.91,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "MU-019",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-007",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-008",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-009",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-010",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-011",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-012",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-013",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-014",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-015",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-016",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-017",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-018",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-019",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-020",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-021",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-022",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-023",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-024",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-025",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-026",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-027",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-028",
+    "severe": true,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.7,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-029",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-030",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-031",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-032",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-033",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-034",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-035",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-036",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-037",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-038",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-039",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-040",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-041",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-042",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-043",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-044",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-045",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-046",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-047",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-048",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-049",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-050",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-051",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-052",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-053",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-054",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.735,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-055",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.84,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-056",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-057",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-058",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-059",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-060",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-061",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-062",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-063",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-064",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-065",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.805,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-066",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-067",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-068",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-069",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-070",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-071",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-072",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-073",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-074",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-075",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-076",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-077",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-078",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-079",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-080",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-081",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-082",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-083",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-084",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-085",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-086",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-087",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-088",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-089",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-090",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-091",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-092",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-093",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-094",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-095",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-096",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-097",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-098",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-099",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-100",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-101",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-102",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-103",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-104",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-105",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-106",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-107",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-108",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-109",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-110",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-111",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-112",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-113",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-114",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-115",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-116",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-117",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-118",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-119",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-120",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-121",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-122",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-123",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-124",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-125",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-126",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-127",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-128",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-129",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-130",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-131",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-132",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-133",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-134",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-135",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-136",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-137",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-138",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-139",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-140",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.77,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-141",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-142",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-143",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-144",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-145",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-146",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-147",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-148",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-149",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-150",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-151",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-152",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-153",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-154",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-155",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-156",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-157",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-158",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-159",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-160",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.875,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-161",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-162",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-163",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-164",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-165",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-166",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-167",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-168",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-169",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-170",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-171",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-172",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-173",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-174",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-175",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-176",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-177",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-178",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-179",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-180",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-181",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-182",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-183",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-184",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-185",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-186",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-187",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-188",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-189",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-190",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-191",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-192",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-193",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-194",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-195",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-196",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-197",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-198",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-199",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-200",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-201",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-202",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-203",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-204",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-205",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.29,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-206",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.33,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-207",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.36,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-208",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.08,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-209",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.12,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-210",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.15,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-211",
+    "severe": false,
+    "failure_mode": "INUNDATION",
+    "severity": 0.18,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-212",
+    "severe": false,
+    "failure_mode": "COLLAPSE",
+    "severity": 0.22,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-213",
+    "severe": false,
+    "failure_mode": "LANDSLIDE",
+    "severity": 0.26,
+    "provenance": "synthetic"
+  },
+  {
+    "settlement_id": "WY-214",
+    "severe": true,
+    "failure_mode": "INUNDATION",
+    "severity": 0.665,
+    "provenance": "synthetic"
+  }
+]

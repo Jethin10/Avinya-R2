@@ -1,0 +1,3432 @@
+[
+  {
+    "settlement_id": "LGD-627293",
+    "failure_mode": "INUNDATION",
+    "probability": 0.247218,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627293",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.138032,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627293",
+    "failure_mode": "CASUALTY",
+    "probability": 0.084395,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627293",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.364854,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627293",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627294",
+    "failure_mode": "INUNDATION",
+    "probability": 0.270226,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627294",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.074968,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627294",
+    "failure_mode": "CASUALTY",
+    "probability": 0.054819,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627294",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.159896,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627294",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627295",
+    "failure_mode": "INUNDATION",
+    "probability": 0.386396,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627295",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046096,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627295",
+    "failure_mode": "CASUALTY",
+    "probability": 0.073526,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627295",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.066062,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627295",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627296",
+    "failure_mode": "INUNDATION",
+    "probability": 0.28046,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627296",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.092925,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627296",
+    "failure_mode": "CASUALTY",
+    "probability": 0.056467,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627296",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.218256,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627296",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627297",
+    "failure_mode": "INUNDATION",
+    "probability": 0.240343,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627297",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.104778,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627297",
+    "failure_mode": "CASUALTY",
+    "probability": 0.063611,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627297",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.256777,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627297",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627298",
+    "failure_mode": "INUNDATION",
+    "probability": 0.267009,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627298",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.075178,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627298",
+    "failure_mode": "CASUALTY",
+    "probability": 0.054301,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627298",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.160577,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627298",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627299",
+    "failure_mode": "INUNDATION",
+    "probability": 0.182069,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627299",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.181606,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627299",
+    "failure_mode": "CASUALTY",
+    "probability": 0.111629,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627299",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.506471,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627299",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627300",
+    "failure_mode": "INUNDATION",
+    "probability": 0.311255,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627300",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.050493,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627300",
+    "failure_mode": "CASUALTY",
+    "probability": 0.061426,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627300",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.080352,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627300",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627301",
+    "failure_mode": "INUNDATION",
+    "probability": 0.350285,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627301",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.047096,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627301",
+    "failure_mode": "CASUALTY",
+    "probability": 0.067711,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627301",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.069312,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627301",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627302",
+    "failure_mode": "INUNDATION",
+    "probability": 0.341529,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627302",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046307,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627302",
+    "failure_mode": "CASUALTY",
+    "probability": 0.066301,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627302",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.066748,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627302",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627303",
+    "failure_mode": "INUNDATION",
+    "probability": 0.442609,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627303",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.04497,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627303",
+    "failure_mode": "CASUALTY",
+    "probability": 0.082578,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627303",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.062401,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627303",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627304",
+    "failure_mode": "INUNDATION",
+    "probability": 0.454949,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627304",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.044738,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627304",
+    "failure_mode": "CASUALTY",
+    "probability": 0.084565,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627304",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.061647,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627304",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627305",
+    "failure_mode": "INUNDATION",
+    "probability": 0.455948,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627305",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.045203,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627305",
+    "failure_mode": "CASUALTY",
+    "probability": 0.084726,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627305",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.06316,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627305",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627306",
+    "failure_mode": "INUNDATION",
+    "probability": 0.550496,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627306",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046136,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627306",
+    "failure_mode": "CASUALTY",
+    "probability": 0.099951,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627306",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.066192,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627306",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627307",
+    "failure_mode": "INUNDATION",
+    "probability": 0.303033,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627307",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.169218,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627307",
+    "failure_mode": "CASUALTY",
+    "probability": 0.103886,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627307",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.466207,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627307",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627308",
+    "failure_mode": "INUNDATION",
+    "probability": 0.285329,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627308",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.155594,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627308",
+    "failure_mode": "CASUALTY",
+    "probability": 0.095371,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627308",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.421929,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627308",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627309",
+    "failure_mode": "INUNDATION",
+    "probability": 0.269419,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627309",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046114,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627309",
+    "failure_mode": "CASUALTY",
+    "probability": 0.054689,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627309",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.066119,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627309",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627310",
+    "failure_mode": "INUNDATION",
+    "probability": 0.447503,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627310",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.04353,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627310",
+    "failure_mode": "CASUALTY",
+    "probability": 0.083366,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627310",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.057721,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627310",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627311",
+    "failure_mode": "INUNDATION",
+    "probability": 0.285037,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627311",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.047029,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627311",
+    "failure_mode": "CASUALTY",
+    "probability": 0.057204,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627311",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.069094,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627311",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627312",
+    "failure_mode": "INUNDATION",
+    "probability": 0.304282,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627312",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.045302,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627312",
+    "failure_mode": "CASUALTY",
+    "probability": 0.060303,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627312",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.063483,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627312",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627313",
+    "failure_mode": "INUNDATION",
+    "probability": 0.270226,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627313",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.056162,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627313",
+    "failure_mode": "CASUALTY",
+    "probability": 0.054819,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627313",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.098775,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627313",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627314",
+    "failure_mode": "INUNDATION",
+    "probability": 0.224514,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627314",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.054526,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627314",
+    "failure_mode": "CASUALTY",
+    "probability": 0.047458,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627314",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.093461,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627314",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627315",
+    "failure_mode": "INUNDATION",
+    "probability": 0.401263,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627315",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.043805,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627315",
+    "failure_mode": "CASUALTY",
+    "probability": 0.07592,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627315",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.058616,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627315",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627316",
+    "failure_mode": "INUNDATION",
+    "probability": 0.31482,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627316",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.045026,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627316",
+    "failure_mode": "CASUALTY",
+    "probability": 0.062,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627316",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.062583,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627316",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627317",
+    "failure_mode": "INUNDATION",
+    "probability": 0.287359,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627317",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.048808,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627317",
+    "failure_mode": "CASUALTY",
+    "probability": 0.057578,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627317",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.074876,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627317",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627318",
+    "failure_mode": "INUNDATION",
+    "probability": 0.489973,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627318",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.043338,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627318",
+    "failure_mode": "CASUALTY",
+    "probability": 0.090205,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627318",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.057097,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627318",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627319",
+    "failure_mode": "INUNDATION",
+    "probability": 0.472877,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627319",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046862,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627319",
+    "failure_mode": "CASUALTY",
+    "probability": 0.087452,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627319",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.068553,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627319",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627320",
+    "failure_mode": "INUNDATION",
+    "probability": 0.424582,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627320",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.045773,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627320",
+    "failure_mode": "CASUALTY",
+    "probability": 0.079675,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627320",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.065012,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627320",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627321",
+    "failure_mode": "INUNDATION",
+    "probability": 0.404312,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627321",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.053445,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627321",
+    "failure_mode": "CASUALTY",
+    "probability": 0.076411,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627321",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.089946,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627321",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627322",
+    "failure_mode": "INUNDATION",
+    "probability": 0.263053,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627322",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.060021,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627322",
+    "failure_mode": "CASUALTY",
+    "probability": 0.053664,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627322",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.111318,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627322",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627323",
+    "failure_mode": "INUNDATION",
+    "probability": 0.303344,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627323",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.061261,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627323",
+    "failure_mode": "CASUALTY",
+    "probability": 0.060152,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627323",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.115348,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627323",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627324",
+    "failure_mode": "INUNDATION",
+    "probability": 0.385564,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627324",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.173926,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627324",
+    "failure_mode": "CASUALTY",
+    "probability": 0.106829,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627324",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.481511,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627324",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627325",
+    "failure_mode": "INUNDATION",
+    "probability": 0.581198,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627325",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.044594,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627325",
+    "failure_mode": "CASUALTY",
+    "probability": 0.104895,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627325",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.061179,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627325",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627326",
+    "failure_mode": "INUNDATION",
+    "probability": 0.472355,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627326",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046842,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627326",
+    "failure_mode": "CASUALTY",
+    "probability": 0.087368,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627326",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.068485,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627326",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627327",
+    "failure_mode": "INUNDATION",
+    "probability": 0.54926,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627327",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.043859,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627327",
+    "failure_mode": "CASUALTY",
+    "probability": 0.099752,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627327",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.058792,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627327",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627328",
+    "failure_mode": "INUNDATION",
+    "probability": 0.547403,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627328",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.044024,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627328",
+    "failure_mode": "CASUALTY",
+    "probability": 0.099453,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627328",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.059328,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627328",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627329",
+    "failure_mode": "INUNDATION",
+    "probability": 0.53163,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627329",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.04677,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627329",
+    "failure_mode": "CASUALTY",
+    "probability": 0.096913,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627329",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.068251,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627329",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627330",
+    "failure_mode": "INUNDATION",
+    "probability": 0.512329,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627330",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.046403,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627330",
+    "failure_mode": "CASUALTY",
+    "probability": 0.093805,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627330",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.06706,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627330",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627331",
+    "failure_mode": "INUNDATION",
+    "probability": 0.541274,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627331",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.047782,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627331",
+    "failure_mode": "CASUALTY",
+    "probability": 0.098466,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627331",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.071543,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627331",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627332",
+    "failure_mode": "INUNDATION",
+    "probability": 0.252857,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627332",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.161162,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627332",
+    "failure_mode": "CASUALTY",
+    "probability": 0.098851,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627332",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.440025,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627332",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627333",
+    "failure_mode": "INUNDATION",
+    "probability": 0.475504,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627333",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.07088,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627333",
+    "failure_mode": "CASUALTY",
+    "probability": 0.087875,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627333",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.14661,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627333",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627334",
+    "failure_mode": "INUNDATION",
+    "probability": 0.137208,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627334",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.170954,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627334",
+    "failure_mode": "CASUALTY",
+    "probability": 0.104971,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627334",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.471849,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627334",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627335",
+    "failure_mode": "INUNDATION",
+    "probability": 0.156782,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627335",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.177811,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627335",
+    "failure_mode": "CASUALTY",
+    "probability": 0.109257,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627335",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.494136,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627335",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627336",
+    "failure_mode": "INUNDATION",
+    "probability": 0.337958,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627336",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.052008,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627336",
+    "failure_mode": "CASUALTY",
+    "probability": 0.065726,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627336",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.085276,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627336",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627337",
+    "failure_mode": "INUNDATION",
+    "probability": 0.19016,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627337",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.183389,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627337",
+    "failure_mode": "CASUALTY",
+    "probability": 0.112743,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627337",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.512264,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627337",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627338",
+    "failure_mode": "INUNDATION",
+    "probability": 0.322763,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627338",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.12811,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627338",
+    "failure_mode": "CASUALTY",
+    "probability": 0.078194,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627338",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.332609,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627338",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627339",
+    "failure_mode": "INUNDATION",
+    "probability": 0.215795,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627339",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.14441,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627339",
+    "failure_mode": "CASUALTY",
+    "probability": 0.088381,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627339",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.385581,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627339",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627340",
+    "failure_mode": "INUNDATION",
+    "probability": 0.131774,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627340",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.195,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627340",
+    "failure_mode": "CASUALTY",
+    "probability": 0.12,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627340",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.55,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-627340",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-913291",
+    "failure_mode": "INUNDATION",
+    "probability": 0.434443,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-913291",
+    "failure_mode": "COLLAPSE",
+    "probability": 0.063461,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-913291",
+    "failure_mode": "CASUALTY",
+    "probability": 0.081263,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-913291",
+    "failure_mode": "LANDSLIDE",
+    "probability": 0.122498,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  },
+  {
+    "settlement_id": "LGD-913291",
+    "failure_mode": "WIND",
+    "probability": 0.04,
+    "variance": 0.28,
+    "provenance": {
+      "type": "physics_prior",
+      "terrain_sources": [
+        "Copernicus DEM GLO-30 2021",
+        "ASF GLO-30 HAND v1/2021"
+      ],
+      "post_hoc_ground_truth_used": false
+    }
+  }
+]
