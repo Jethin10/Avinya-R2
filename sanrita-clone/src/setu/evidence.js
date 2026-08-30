@@ -620,19 +620,19 @@ export function mountEvidencePage() {
 
   situation = createSituationBoard(selectSource, setDetail);
 
-  const root = el("div.setu-evidence-root", {}, [
-    el("main.setu-evidence-page", {}, [
-      el("header.setu-evidence-topbar", {}, [
+  const root = el("div.setu-evidence-root.setu-module-root", { "data-module": "evidence" }, [
+    el("main.setu-evidence-page.setu-module-page", {}, [
+      el("header.setu-evidence-topbar.setu-module-topbar", {}, [
         el("a.setu-evidence-brand", { href: "/", text: "SETU" }),
         el("div.setu-evidence-context", {}, [
           el("span", { text: "WAYANAD · FIRST 24H" }),
-          el("span", { text: "SYNTHETIC DEMO" }),
+          el("span", { text: "01 · EVIDENCE" }),
         ]),
         el("a.setu-evidence-back", { href: "/", text: "BACK TO TWIN" }),
       ]),
       el("section.setu-evidence-hero", {}, [
         el("div", {}, [
-          el("h1", {}, ["EVIDENCE", el("br"), "INTAKE"]),
+          el("h1", { text: "EVIDENCE" }),
           el("p", { text: "A message is not ground truth. A quiet village is not a safe village. SETU keeps every source attached, shows where it conflicts, and only then lets it change the response." }),
         ]),
         situation.node,
@@ -687,7 +687,7 @@ export function mountEvidencePage() {
         ]),
         el("div.setu-evidence-footer-next", {}, [
           el("p", { "data-evidence-disclosure": "", text: "Demonstration package. Evidence shown here is synthetic and exists to demonstrate the information-fog workflow." }),
-          el("a", { href: "/projects", text: "NEXT · VALIDATOR" }),
+          el("a", { href: "/validation", text: "NEXT · VALIDATION" }),
         ]),
       ]),
     ]),
@@ -751,6 +751,9 @@ export function installEvidenceRouteBridge() {
   const reconcile = () => {
     if (isEvidenceRoute()) {
       mountEvidencePage();
+      if (window.location.pathname !== "/evidence") {
+        history.replaceState(history.state, "", "/evidence");
+      }
       return;
     }
     if (document.querySelector(".setu-evidence-root")) window.location.reload();
@@ -762,20 +765,28 @@ export function installEvidenceRouteBridge() {
     try {
       const url = new URL(anchor.href, window.location.href);
       if (url.origin !== window.location.origin || !isEvidenceRoute(url.pathname)) return;
+      // Let the captured San Rita shell own its route animation. Only canonicalise links rendered
+      // by the standalone SETU module itself.
+      if (!anchor.closest(".setu-module-root")) return;
       event.preventDefault();
-      window.location.assign("/about");
+      window.location.assign("/evidence");
     } catch {
       // Ignore malformed or non-standard hrefs owned by the captured shell.
     }
   }, true);
 
-  for (const method of ["pushState", "replaceState"]) {
-    const original = history[method].bind(history);
-    history[method] = (...args) => {
-      const result = original(...args);
-      queueMicrotask(reconcile);
-      return result;
-    };
+  window.__setuRouteReconcilers ??= new Set();
+  window.__setuRouteReconcilers.add(reconcile);
+  if (!window.__setuRouteHistoryBridge) {
+    window.__setuRouteHistoryBridge = true;
+    for (const method of ["pushState", "replaceState"]) {
+      const original = history[method].bind(history);
+      history[method] = (...args) => {
+        const result = original(...args);
+        queueMicrotask(() => window.__setuRouteReconcilers?.forEach((handler) => handler()));
+        return result;
+      };
+    }
   }
   window.addEventListener("popstate", reconcile);
 }

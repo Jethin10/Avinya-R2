@@ -78,3 +78,47 @@
 - Comparison history: the original console screenshot exposed a context/action mismatch; the implementation now scopes scenarios to the selected district, refuses regional-only story actions, seeks each historical story step to a meaningful recorded frame, focuses the camera on the actual operational subject, and exposes replay frame/play state in the console status.
 
 final result: blocked
+
+## SETU three-box district inspection pass — 2026-08-30
+
+- Source visual truth: `C:/Users/jethi/AppData/Local/Temp/codex-clipboard-d3e4709b-69ea-4366-b2fa-540ed0aabc0a.png` (1910 × 1066 px).
+- Implementation screenshot: `C:/avinyar2/sanrita-clone/design-qa-selected-district.png` (1446 × 807 px).
+- Normalized side-by-side comparison: `C:/avinyar2/sanrita-clone/design-qa-comparison.png`.
+- Effective browser viewport: 1446 × 807 CSS px at devicePixelRatio 1.15. The source has the same 1.792 aspect ratio and was downsampled to 1446 × 807 for comparison; no crop or stretch was used.
+- State under test: India → Maharashtra → Nandurbar, regional-only district inspection, historical replay source.
+
+### Findings
+
+- No actionable P0, P1, or P2 differences remain for the requested redesign.
+- Fonts and typography: the existing F37 Stout display face and mono operational type remain unchanged. The new box labels, decision copy, metrics, and values use the same optical hierarchy and letter-spacing system as the surrounding SETU shell.
+- Spacing and layout rhythm: district inspection now resolves to exactly three edge boxes — Risk + impact at top-right, Access + response at bottom-left, and Evidence + readiness at bottom-right. The state situation card is suppressed only while a district is selected, removing the accidental fourth card. The selected district stays fully visible in the open center of the map.
+- Colors and visual tokens: the existing pale canvas, forest-green ink, translucent white surfaces, hairlines, shadows, and restrained signal-orange emphasis are preserved.
+- Image / asset fidelity: no image, icon, terrain, map, or brand asset was replaced. The same 3D state geometry and captured shell assets remain in use.
+- Copy and content: regional-only data is now organized by operational intent instead of by raw subsystem. Risk explains the decision posture, Access explains what can safely be acted on, and Evidence states the exact resolution boundary and what remains locked until a district twin is available.
+
+### Focused comparison evidence
+
+- Full-view comparison confirms the center district extrusion is unobstructed and visually dominant while the three information boxes remain independently readable.
+- Focused card review confirms the first visible layer in each box answers a distinct command question: `what is the risk?`, `what can I safely do?`, and `what evidence can I defend?`.
+- A short-height browser pass was also checked before the final capture; box max-heights were reduced so the top-right and bottom-right cards no longer overlap at the smaller viewport.
+
+### Comparison history
+
+1. Earlier state: blocked by a P1 composition issue. The state context plus district dossier produced four visible information surfaces and covered a large portion of the selected district.
+2. Fix: district mode now hides the state context, uses three floating command boxes, and slightly increases the non-close district camera distance so the selected geometry retains breathing room.
+3. Earlier content: P2 information-quality issue. The regional dossier read as a collection of subsystem statuses rather than a decision surface.
+4. Fix: regional copy and metrics were rewritten around threat belief, priority posture, safe readiness actions, route/facility certainty, evidence resolution, verification lock, dispatch proof, and the district-twin unlock condition.
+5. Post-fix evidence: `design-qa-comparison.png` shows the selected district fully visible between the three boxes with the requested richer, more intentional information hierarchy.
+
+### Interaction and runtime verification
+
+- Exercised: select Maharashtra from the state rail → select Nandurbar → inspect three-box district state → use `State overview` → reselect Nandurbar. All transitions completed and restored the expected state.
+- Browser console check: the captured San Rita shell still emits React error #418 from its prebundled `_next` chunk and a duplicate-Three.js warning. Neither originates in the touched SETU files and neither prevented the tested district flow from completing.
+- `npm run build`: passed.
+- `npm run test:sites`: 4/4 passed.
+
+### Follow-up polish
+
+- P3: on very short desktop viewports, secondary detail inside a box may require internal scrolling; the primary decision summary and headline remain visible.
+
+final result: passed

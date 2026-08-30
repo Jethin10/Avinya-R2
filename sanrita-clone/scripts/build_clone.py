@@ -182,10 +182,10 @@ def rebrand_copy(page: str) -> str:
     # language from flashing during hydration or surfacing on narrow/fallback layouts.
     nav_labels = {
         "map": "twin",
-        "projects": "validator",
+        "projects": "validation",
         "about": "evidence",
-        "playground": "infer",
-        "contact": "act",
+        "playground": "inference",
+        "contact": "action",
         "instagram": "signals",
         "linkedin": "ledger",
     }
@@ -204,10 +204,13 @@ def rebrand_copy(page: str) -> str:
 
     serialized_nav = {
         r'\"title\":\"Map\",\"link\":\"/\"': r'\"title\":\"Twin\",\"link\":\"/\"',
-        r'\"title\":\"Projects\",\"link\":\"/projects\"': r'\"title\":\"Validator\",\"link\":\"/projects\"',
+        r'\"title\":\"Projects\",\"link\":\"/projects\"': r'\"title\":\"Validation\",\"link\":\"/projects\"',
         r'\"title\":\"About\",\"link\":\"/about\"': r'\"title\":\"Evidence\",\"link\":\"/about\"',
-        r'\"title\":\"Playground\",\"link\":\"/playground\"': r'\"title\":\"Infer\",\"link\":\"/infer\"',
-        r'\"title\":\"Contact\",\"link\":\"/contact\"': r'\"title\":\"Act\",\"link\":\"/act\"',
+        # Keep the legacy link keys here because the captured Navigation component looks titles up
+        # by canonical /playground and /contact. The SETU route bridge converts those destinations
+        # to the public /inference and /action chapters after the original transition runs.
+        r'\"title\":\"Playground\",\"link\":\"/playground\"': r'\"title\":\"Inference\",\"link\":\"/playground\"',
+        r'\"title\":\"Contact\",\"link\":\"/contact\"': r'\"title\":\"Action\",\"link\":\"/contact\"',
         r'\"title\":\"Instagram\",\"link\":\"#\"': r'\"title\":\"Signals\",\"link\":\"#\"',
         r'\"title\":\"Linkedin\",\"link\":\"#\"': r'\"title\":\"Ledger\",\"link\":\"#\"',
     }
@@ -241,6 +244,29 @@ def rebrand_copy(page: str) -> str:
     page = page.replace("https://www.linkedin.com/company/sanrita/", "#")
     page = page.replace("https://sanrita.ca", "/")
     page = page.replace("@ateliersanrita", "")
+
+    # The hydrated global menu reads this serialized array verbatim. Keep the visible workflow in
+    # operational order and drop the inherited studio social slots entirely; they are not SETU
+    # chapters and otherwise reappear after React hydration even when the server copy is rebranded.
+    menu_order_old = (
+        r'{\"title\":\"Twin\",\"link\":\"/\"},'
+        r'{\"title\":\"Validation\",\"link\":\"/projects\"},'
+        r'{\"title\":\"Evidence\",\"link\":\"/about\"},'
+        r'{\"title\":\"Inference\",\"link\":\"/playground\"},'
+        r'{\"title\":\"Action\",\"link\":\"/contact\"}'
+    )
+    menu_order_new = (
+        r'{\"title\":\"Twin\",\"link\":\"/\"},'
+        r'{\"title\":\"Evidence\",\"link\":\"/about\"},'
+        r'{\"title\":\"Validation\",\"link\":\"/projects\"},'
+        r'{\"title\":\"Inference\",\"link\":\"/playground\"},'
+        r'{\"title\":\"Action\",\"link\":\"/contact\"}'
+    )
+    page = page.replace(menu_order_old, menu_order_new)
+    page = page.replace(
+        r',{\"title\":\"Instagram\",\"link\":\"#\"},{\"title\":\"Linkedin\",\"link\":\"#\"}',
+        "",
+    )
     return page
 
 
@@ -273,6 +299,53 @@ def disable_captured_auto_zoom() -> None:
         print(f"Disabled captured homepage auto-zoom in {chunk.name}")
         return
     print("Warning: captured homepage auto-zoom initializer was not found")
+
+
+def patch_captured_hotspot_semantics() -> None:
+    """Expose the hovered trail key to SETU and suppress only San Rita's baked title meshes.
+
+    Route geometry, camera, glow and hotspot motion remain the captured implementation. SETU
+    renders the replacement operational word as DOM text, so semantics can change independently
+    of the compressed WebGL model.
+    """
+    if not NEXT_CHUNKS.exists():
+        return
+
+    over_old = (
+        'i&&rJ.default.to(i.scale,{x:1,y:1,z:1,duration:.3,ease:"back.out(2)"}),'
+        'o&&rJ.default.to(o.scale,{x:1.3,y:1.3,z:1.3,duration:.3,ease:"back.out(2)"}),AN(!0)'
+    )
+    over_new = (
+        'i&&(i.visible=!1),document.body.dataset.setuHotspot=r,'
+        'o&&rJ.default.to(o.scale,{x:1.3,y:1.3,z:1.3,duration:.3,ease:"back.out(2)"}),AN(!0)'
+    )
+    out_old = (
+        'rJ.default.to(i.scale,{x:0,y:0,z:0,duration:.3}),'
+        'rJ.default.to(o.scale,{x:1,y:1,z:1,duration:.3}),AN(!1)'
+    )
+    out_new = (
+        'delete document.body.dataset.setuHotspot,i&&(i.visible=!1),'
+        'rJ.default.to(o.scale,{x:1,y:1,z:1,duration:.3}),AN(!1)'
+    )
+    titles_old = 'o.forEach(e=>{AK?e.scale.set(1,1,1):e.scale.set(0,0,0)}),A.push(...o)'
+    titles_new = 'o.forEach(e=>{e.visible=!1,e.scale.set(0,0,0)}),A.push(...o)'
+
+    for chunk in NEXT_CHUNKS.glob("*.js"):
+        source = chunk.read_text(encoding="utf-8")
+        if "trail-about-main-hotspot" not in source:
+            continue
+        if "dataset.setuHotspot" in source:
+            return
+        if over_old not in source or out_old not in source or titles_old not in source:
+            print(f"Warning: captured hotspot semantics changed in {chunk.name}")
+            return
+        source = source.replace(titles_old, titles_new, 1)
+        source = source.replace(over_old, over_new, 1)
+        source = source.replace(out_old, out_new, 1)
+        chunk.write_text(source, encoding="utf-8")
+        print(f"Rebound captured hotspot labels in {chunk.name}")
+        return
+    print("Warning: captured trail hotspot component was not found")
 
 
 def main() -> None:
@@ -329,6 +402,7 @@ def main() -> None:
     page = rebrand_copy(page)
     page = attach_setu(page)
     disable_captured_auto_zoom()
+    patch_captured_hotspot_semantics()
 
     TARGET.write_text(page, encoding="utf-8")
     print(f"Prepared {TARGET} ({len(page):,} characters)")

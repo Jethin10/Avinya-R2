@@ -13,6 +13,8 @@
  */
 
 import "./setu.css";
+import "./hotspot-labels.js";
+import "./transition-brand.js";
 import * as client from "./client.js";
 import { activate, el, mount, setScene } from "./dom.js";
 import { createRail } from "./rail.js";
