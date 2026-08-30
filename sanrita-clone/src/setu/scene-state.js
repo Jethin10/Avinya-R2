@@ -381,7 +381,7 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
       const visibleHeight = entry.height * entry.mesh.scale.y;
       const distance = close
         ? Math.max(58, Math.min(112, entry.footprintSpan * 2.7))
-        : Math.max(110, Math.min(this.overview.distance * 0.92, entry.footprintSpan * 4.2));
+        : Math.max(124, Math.min(this.overview.distance * 0.98, entry.footprintSpan * 5.0));
       return {
         target: [entry.anchor[0], visibleHeight * (close ? 1.05 : 0.5), entry.anchor[1]],
         distance,
