@@ -14,7 +14,10 @@ from scripts.forge.historical import build_all
 
 
 def test_official_sources_verify_and_packages_are_reproducible() -> None:
-    assert len(fetch(download=False)) == 6
+    manifest = json.loads((ROOT / "data" / "source_manifest.json").read_text(encoding="utf-8"))
+    verified = fetch(download=False)
+    assert len(verified) == len(manifest["sources"]) and len(verified) >= 6
+    assert all(row["sha256"] for row in verified)
     outputs = build_all()
     assert {path.name for path in outputs} == {"wayanad-2018-flood", "wayanad-2019-flood-landslide", "meppadi-2024-landslide"}
     for path in outputs:

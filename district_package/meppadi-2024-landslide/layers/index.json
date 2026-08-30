@@ -17,6 +17,18 @@
       "format": "json",
       "path": "layers/hazard_frames.json",
       "provenance": "derived_from_archived_kalladi_rainfall"
+    },
+    {
+      "id": "buildings",
+      "format": "json.gz",
+      "path": "layers/buildings.json.gz",
+      "provenance": "archived"
+    },
+    {
+      "id": "heightmap",
+      "format": "json.gz",
+      "path": "layers/heightmap.json.gz",
+      "provenance": "archived"
     }
   ]
 }

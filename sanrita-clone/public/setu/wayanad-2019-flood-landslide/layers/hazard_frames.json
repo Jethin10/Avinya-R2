@@ -1,0 +1,1511 @@
+{
+  "scenario_id": "wayanad-2019-flood-landslide",
+  "frames": [
+    {
+      "t": "2019-08-08T08:00:00+05:30",
+      "hazard": "landslide",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.2,
+          "provenance": "derived_visualization_proxy"
+        }
+      ]
+    },
+    {
+      "t": "2019-08-09T08:00:00+05:30",
+      "hazard": "landslide",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.35,
+          "provenance": "derived_visualization_proxy"
+        }
+      ]
+    },
+    {
+      "t": "2019-08-10T08:00:00+05:30",
+      "hazard": "landslide",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.5,
+          "provenance": "derived_visualization_proxy"
+        }
+      ]
+    },
+    {
+      "t": "2019-08-11T08:00:00+05:30",
+      "hazard": "landslide",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.65,
+          "provenance": "derived_visualization_proxy"
+        }
+      ]
+    },
+    {
+      "t": "2019-08-12T08:00:00+05:30",
+      "hazard": "landslide",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.8,
+          "provenance": "derived_visualization_proxy"
+        }
+      ]
+    },
+    {
+      "t": "2019-08-13T08:00:00+05:30",
+      "hazard": "landslide",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.95,
+          "provenance": "derived_visualization_proxy"
+        }
+      ]
+    }
+  ]
+}

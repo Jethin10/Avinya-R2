@@ -1,0 +1,3770 @@
+{
+  "scenario_id": "wayanad-2018-flood",
+  "frames": [
+    {
+      "t": "2018-08-08T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.2,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-09T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.254,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-10T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.307,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-11T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.361,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-12T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.414,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-13T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.468,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-14T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.521,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-15T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.575,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-16T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.629,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-17T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.682,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-18T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.736,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-19T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.789,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-20T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.843,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-21T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.896,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    },
+    {
+      "t": "2018-08-22T08:00:00+05:30",
+      "hazard": "flood",
+      "values": [
+        {
+          "settlement_id": "LGD-627293",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627294",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627295",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627296",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627297",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627298",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627299",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627300",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627301",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627302",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627303",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627304",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627305",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627306",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627307",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627308",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627309",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627310",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627311",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627312",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627313",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627314",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627315",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627316",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627317",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627318",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627319",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627320",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627321",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627322",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627323",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627324",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627325",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627326",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627327",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627328",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627329",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627330",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627331",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627332",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627333",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627334",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627335",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627336",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627337",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627338",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627339",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-627340",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        },
+        {
+          "settlement_id": "LGD-913291",
+          "intensity": 0.95,
+          "provenance": "derived_from_ksdma_rainfall_warning_bands"
+        }
+      ]
+    }
+  ]
+}

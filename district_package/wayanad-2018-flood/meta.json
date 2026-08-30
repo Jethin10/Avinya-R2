@@ -37,6 +37,17 @@
     "roads_damaged_km": 565,
     "bridges_damaged": 9
   },
+  "event_streams": {
+    "generator": "scripts/forge/event_stream.py",
+    "seeded_by": "scenario id (blake2b), so a rebuild reproduces the stream byte for byte",
+    "by_provenance": {
+      "synthetic": 432,
+      "archived": 5
+    },
+    "archived": "district-level facts drawn from the KSDMA memoranda pinned in data/source_manifest.json",
+    "synthetic": "per-settlement message traffic, aggregated tower-attach counts, 11 kV feeder states and Sentinel-1 pass geometry. No such per-village record exists publicly for these events; these rows are simulated, disclosed as synthetic, and must not be read as observations.",
+    "personal_data": false
+  },
   "routing": {
     "base_settlement_id": "LGD-913291",
     "asset_profiles": [
@@ -50,10 +61,15 @@
     "method": "settlement polygon samples of elevation, slope and HAND; no post-hoc ground truth leakage",
     "artifact": "terrain.json"
   },
+  "cascade": {
+    "method": "downhill-only neighbour edges where the DEM drop exceeds 15 m; lag from drop-driven travel time",
+    "provenance": "derived_from_copernicus_dem_glo30",
+    "artifact": "cascade.json"
+  },
   "counts": {
     "settlements": 49,
     "assets": 16,
-    "events": 1,
+    "events": 437,
     "frames": 15
   }
 }

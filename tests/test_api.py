@@ -58,14 +58,19 @@ def test_live_event_moves_belief_and_unknown_location_is_quarantined(tmp_path: P
 def test_live_evidence_survives_seek_and_reset_restores_baseline(tmp_path: Path) -> None:
     with make_client(tmp_path) as client:
         event = {"kind": "report", "channel": "ham", "source_id": "field-2", "provenance": "live", "settlement_id": "KH-017", "text": "I saw severe flood", "hazard": "flood", "severity_hint": "severe", "is_firsthand": True}
+        # The package's own t0 telemetry is part of the baseline, so "reset" means back to that -
+        # not back to empty. Capture it before the live report lands.
+        baseline = client.get("/api/settlement/KH-017/receipt").json()["evidence"]
         client.post("/api/events", json=event)
         moved = client.get("/api/settlement/KH-017/receipt").json()["evidence"]
         current_t = client.get("/api/state").json()["t"]
         client.post("/api/clock", json={"action": "seek", "t": current_t})
         replayed = client.get("/api/settlement/KH-017/receipt").json()["evidence"]
         assert len(replayed) == len(moved)
+        assert len(replayed) > len(baseline)
         client.post("/api/clock", json={"action": "reset"})
-        assert client.get("/api/settlement/KH-017/receipt").json()["evidence"] == []
+        restored = client.get("/api/settlement/KH-017/receipt").json()["evidence"]
+        assert [row["raw_ref"] for row in restored] == [row["raw_ref"] for row in baseline]
 
 
 def test_verification_injection_exports_and_hash_chain(tmp_path: Path) -> None:
@@ -104,3 +109,22 @@ def test_golden_replay_top10_and_metrics(tmp_path: Path) -> None:
         assert metrics["operational"]["top_k_recall"] == 1.0
         assert metrics["operational"]["silent_zone_recall"] > 0
         assert metrics["calibration"]["ece"] is not None and metrics["calibration"]["curve"]
+
+
+def test_coverage_separates_messages_claims_and_unreported_villages(tmp_path: Path) -> None:
+    with make_client(tmp_path) as client:
+        client.post("/api/clock", json={"action": "seek", "t": "2024-07-30T08:00:00+05:30"})
+        coverage = client.get("/api/coverage").json()
+        totals = coverage["totals"]
+        # The information paradox, as a number: many messages collapse to far fewer distinct claims.
+        assert totals["messages_ingested"] > totals["distinct_claims"] * 4
+        assert totals["unresolved_locations"] >= 3
+        assert totals["settlements"] == 214
+        assert 0 < totals["settlements_with_reports"] < 214
+        assert totals["settlements_with_reports"] + totals["settlements_without_reports"] == 214
+        # A village nobody can report from still has telemetry evidence - that is the silent zone.
+        silent = {row["settlement_id"]: row for row in coverage["settlements"]}["BH-042"]
+        assert silent["messages"] == 0 and silent["evidence_rows"] > 0
+        assert "BH-042" in coverage["without_reports"]
+        density = max(row["messages"] for row in coverage["settlements"])
+        assert density >= 5, "report density must be usable for the Reports map mode"

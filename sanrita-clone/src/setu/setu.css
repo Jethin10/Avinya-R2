@@ -1,0 +1,937 @@
+/*
+ * The SETU layer's own stylesheet.
+ *
+ * Every rule is keyed on `html[data-setu="on"]` and every colour, font and easing is one of the
+ * clone's own custom properties. Nothing here introduces a value the San Rita stylesheet does not
+ * already define - if this file and the site ever disagree about what green is, this file is wrong.
+ *
+ * The layering, once, because four things overlap:
+ *   -1  the site's own transition canvas and terrain map, untouched
+ *    5  .setu-stage, our WebGL canvas, only present in a state or district scene
+ *   20  the site's <aside>, which our nav rail lives inside and therefore above the stage
+ *   30  .setu-chrome, the panels, above everything and pointer-transparent except where filled
+ */
+
+html[data-setu="on"] .setu-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+html[data-setu="on"] {
+  /* SETU gets one semantic signal colour; the rest of the shell remains the captured site's palette. */
+  --color-signal-orange: #d65b3c;
+  --color-setu-terrain: #b8c5c0;
+  --setu-surface: color-mix(in srgb, #f7fafb 78%, transparent);
+  --setu-surface-strong: color-mix(in srgb, #f8fbfc 90%, transparent);
+  --setu-hairline: color-mix(in srgb, var(--color-forest-green) 10%, transparent);
+  --setu-muted: color-mix(in srgb, var(--color-forest-green) 58%, transparent);
+  --setu-shadow: 0 24px 70px -34px color-mix(in srgb, var(--color-deep-green) 42%, transparent),
+    0 4px 18px -10px color-mix(in srgb, var(--color-deep-green) 18%, transparent);
+}
+
+/* The site's own nav labels and aside heading. Hidden, never removed: React owns those nodes. */
+html[data-setu="on"] .c-icons > a:not(.setu-nav-row) { display: none !important; }
+html[data-setu="on"] aside > h2:not(.setu-heading) { visibility: hidden; }
+html[data-setu="on"] .c-icons > div:has(a[href="/en"]):has(a[href="/fr"]) { display: none !important; }
+
+/*
+ * SETU is product identity, not rail metadata. The captured heading class is intentionally tiny
+ * mono copy; keep its placement, but replace its typographic voice with the site's own F37 Stout
+ * display face so the left rail has a real visual anchor.
+ */
+html[data-setu="on"] .setu-heading {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  width: min(100%, 20rem);
+  margin: 0 !important;
+  gap: 0.34rem;
+  color: var(--color-forest-green) !important;
+  font-family: Impact, "Arial Narrow", Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+html[data-setu="on"] .setu-heading__brand {
+  display: block;
+  font-size: clamp(3.4rem, 4.25vw, 5.25rem);
+  line-height: 0.78;
+  letter-spacing: -0.045em;
+}
+
+html[data-setu="on"] .setu-heading__descriptor {
+  display: block;
+  font-size: clamp(1.05rem, 1.18vw, 1.45rem);
+  line-height: 0.88;
+  letter-spacing: 0.015em;
+  opacity: 0.82;
+}
+
+@media (max-width: 900px) {
+  html[data-setu="on"] .setu-heading__brand { font-size: clamp(2.7rem, 10vw, 4rem); }
+  html[data-setu="on"] .setu-heading__descriptor { font-size: clamp(0.95rem, 3.2vw, 1.2rem); }
+}
+
+/*
+ * The captured nav makes only its *direct* anchor children interactive. SETU keeps its rows inside
+ * a display:contents wrapper so React can safely reinsert the rail, which means those anchors are
+ * no longer direct DOM children of `.c-icons` and inherit `pointer-events:none` from the aside.
+ * Opt the injected rows back into hit-testing explicitly; otherwise they look correct but every
+ * click falls through to the San Rita hero underneath.
+ */
+html[data-setu="on"] .setu-nav-row {
+  pointer-events: auto !important;
+  cursor: pointer;
+  transition: opacity 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-setu="on"] .setu-nav-row:hover { transform: translateX(2px); }
+html[data-setu="on"] .setu-nav-row[data-active="true"] { color: var(--color-signal-orange) !important; }
+
+html[data-setu="on"] .setu-rail-story {
+  pointer-events: auto;
+}
+
+html[data-setu="on"] .setu-rail-story > .setu-nav-row {
+  display: flex;
+}
+
+html[data-setu="on"] .setu-step-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border: 1px solid color-mix(in srgb, var(--color-forest-green) 16%, transparent);
+  border-radius: 999px;
+  font-family: var(--next-font-mono), ui-monospace, monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+html[data-setu="on"] .setu-nav-row[data-active="true"] .setu-step-glyph {
+  border-color: color-mix(in srgb, var(--color-signal-orange) 52%, transparent);
+  background: color-mix(in srgb, var(--color-signal-orange) 9%, transparent);
+}
+
+html[data-setu="on"] .setu-rail-divider {
+  margin: 14px 0 5px;
+  padding-top: 11px;
+  border-top: 1px solid color-mix(in srgb, var(--color-forest-green) 10%, transparent);
+  font-family: var(--next-font-mono), ui-monospace, monospace;
+  font-size: 0.48rem;
+  letter-spacing: 0.12em;
+  opacity: 0.42;
+}
+
+html[data-setu="on"] .setu-block-rail {
+  display: flex;
+  flex-direction: column;
+}
+
+html[data-setu="on"] .setu-block-glyph {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--color-forest-green) 20%, transparent);
+  border-radius: 3px;
+  transform: rotate(45deg) scale(0.62);
+}
+
+html[data-setu="on"] .setu-block-row { opacity: 0.62; }
+html[data-setu="on"] .setu-block-row:hover { opacity: 1; }
+
+/* --- stage ------------------------------------------------------------------------------------ */
+
+html[data-setu="on"] .setu-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 900ms cubic-bezier(0.16, 1, 0.3, 1);
+  background: transparent;
+}
+
+html[data-setu-scene="state"] .setu-stage,
+html[data-setu-scene="district"] .setu-stage {
+  display: block;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-stage canvas { display: block; width: 100%; height: 100%; }
+
+/*
+ * Clearing the screen for a scene.
+ *
+ * The stage sits at z 5 inside the document, but the site's own hero lives in `.c-client-boot`, a
+ * fixed z-30 stacking context - so no z-index we give the stage can climb over the hero without
+ * also burying the <aside> that hosts our nav rail, since the aside is inside that same context.
+ * The way out is to stop drawing the hero rather than to out-stack it: hide the site's own content
+ * siblings while a scene is up, keep the aside (z 20) above the stage, and let every one of them
+ * come straight back when the breadcrumb returns to the nation view. Visibility, not removal -
+ * React owns these nodes and must find them where it left them.
+ */
+html[data-setu-scene="state"] .c-home_grid,
+html[data-setu-scene="district"] .c-home_grid,
+html[data-setu-scene="state"] .c-home-wrapper > .grid > .desktop-only,
+html[data-setu-scene="district"] .c-home-wrapper > .grid > .desktop-only,
+html[data-setu-scene="state"] .c-r3f-canvas,
+html[data-setu-scene="district"] .c-r3f-canvas,
+html[data-setu-scene="state"] .c-r3f-hotspots,
+html[data-setu-scene="district"] .c-r3f-hotspots {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/*
+ * The cloned page's fixed client shell sits at z-30, above SETU's z-5 WebGL stage. Hiding the hero
+ * children is not enough because `.c-home-wrapper` itself carries the full-screen icy-blue
+ * background, so it still paints an opaque sheet over the state/district scene. Make only that
+ * shell transparent and pointer-transparent while a SETU scene is active; the rail opts its own
+ * links back into pointer events below.
+ */
+html[data-setu-scene="state"] .c-client-boot,
+html[data-setu-scene="district"] .c-client-boot,
+html[data-setu-scene="state"] .c-home-wrapper,
+html[data-setu-scene="district"] .c-home-wrapper,
+html[data-setu-scene="state"] .c-home-wrapper > .grid,
+html[data-setu-scene="district"] .c-home-wrapper > .grid {
+  background: transparent !important;
+  pointer-events: none !important;
+}
+
+/* Keep the site's original pale canvas under the transparent WebGL stage. This is deliberately the
+ * same icy-blue/near-white token the captured home uses, so entering Kerala or any other state no
+ * longer flips the page into the old terrain-grey theme. */
+html[data-setu-scene="state"],
+html[data-setu-scene="state"] body,
+html[data-setu-scene="district"],
+html[data-setu-scene="district"] body {
+  background: var(--color-icy-blue) !important;
+}
+
+/*
+ * Keeping the rail on screen.
+ *
+ * The site slides its aside out of view during a scene by animating `--scroll-aside` from 0 to
+ * 314px as an inline style, which drags `.c-icons` to `left: -85px`. An author `!important`
+ * declaration outranks a non-important inline value, so this pins the aside in place for exactly
+ * as long as one of our scenes is showing and hands the property straight back afterwards.
+ */
+html[data-setu-scene="state"] aside,
+html[data-setu-scene="district"] aside {
+  --scroll-aside: 0px !important;
+}
+
+/*
+ * The site also fades the aside out entirely on the way into a scene - `visibility: hidden` set
+ * inline, alongside the slide. Pinning the offset is therefore only half the job: the rail lives in
+ * that aside, so it has to be made visible again explicitly, and so do the rows themselves, because
+ * a descendant can only escape an ancestor's hidden visibility by declaring its own.
+ */
+html[data-setu-scene="state"] aside,
+html[data-setu-scene="district"] aside,
+html[data-setu-scene="state"] aside .c-icons,
+html[data-setu-scene="district"] aside .c-icons,
+html[data-setu-scene="state"] .setu-nav-row,
+html[data-setu-scene="district"] .setu-nav-row,
+html[data-setu-scene="state"] .setu-heading,
+html[data-setu-scene="district"] .setu-heading {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/*
+ * And it clips the whole boot wrapper away - `clip-path: inset(100%)` on `.c-client-boot`, which is
+ * the ancestor of both the site's content and our rail. No visibility declaration on a descendant
+ * survives that, so the clip has to be lifted for the duration of a scene. Safe to lift because the
+ * things it was hiding are hidden by name above; the aside is the only child left to draw.
+ */
+html[data-setu-scene="state"] .c-client-boot,
+html[data-setu-scene="district"] .c-client-boot {
+  clip-path: none !important;
+}
+
+/* --- chrome ----------------------------------------------------------------------------------- */
+
+html[data-setu="on"] .setu-chrome {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+  font-family: var(--next-font-mono), ui-monospace, monospace;
+  color: var(--color-forest-green);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+html[data-setu="on"] .setu-chrome > * { pointer-events: auto; }
+
+/* Keep the captured loading animation, but remove its studio-era copy. SETU enters with one quiet
+ * operational line; the full command chrome appears once the preloader leaves the DOM. */
+html[data-setu="on"] .c-preloader ul { visibility: hidden !important; }
+html[data-setu="on"] .c-preloader::after {
+  content: "SETU  /  INITIALIZING DISTRICT TWIN";
+  position: absolute;
+  top: calc(50% - 126px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--next-font-mono), ui-monospace, monospace;
+  font-size: 0.5625rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-forest-green);
+  white-space: nowrap;
+}
+html[data-setu="on"]:has(.c-preloader) .setu-chrome { opacity: 0; }
+
+/* The source map has its former studio wordmark baked into the image itself. Keep the map clean
+ * without bringing back the heavy black label: softly dissolve only that small patch, then place
+ * SETU directly on the terrain in the same display face used by the landing title. */
+html[data-setu="on"][data-setu-scene="nation"] .c-home_grid-content_map::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  z-index: 68;
+  width: 286px;
+  height: 78px;
+  pointer-events: none;
+  background: color-mix(in srgb, var(--color-forest-green) 14%, transparent);
+  backdrop-filter: blur(28px) saturate(62%);
+  -webkit-backdrop-filter: blur(28px) saturate(62%);
+  -webkit-mask-image: radial-gradient(ellipse at 42% 47%, #000 48%, transparent 88%);
+  mask-image: radial-gradient(ellipse at 42% 47%, #000 48%, transparent 88%);
+}
+
+html[data-setu="on"][data-setu-scene="nation"] .c-home_grid-content_map::after {
+  content: "SETU";
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  z-index: 69;
+  pointer-events: none;
+  font-family: Impact, "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(2.4rem, 3.25vw, 3.55rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  color: var(--color-adventure-yellow);
+  text-shadow: 0 2px 14px color-mix(in srgb, var(--color-deep-green) 28%, transparent);
+}
+
+@media (max-width: 900px) {
+  html[data-setu="on"][data-setu-scene="nation"] .c-home_grid-content_map::before,
+  html[data-setu="on"][data-setu-scene="nation"] .c-home_grid-content_map::after { display: none; }
+}
+
+/* Everything the layer draws as a surface: the aside's own bone-white on the site's green ground. */
+html[data-setu="on"] .setu-card {
+  background: var(--setu-surface);
+  border: 1px solid var(--setu-hairline);
+  border-radius: 14px;
+  box-shadow: var(--setu-shadow);
+  backdrop-filter: blur(18px) saturate(118%);
+  -webkit-backdrop-filter: blur(18px) saturate(118%);
+}
+
+/* --- breadcrumb and provenance ---------------------------------------------------------------- */
+
+html[data-setu="on"] .setu-breadcrumb {
+  position: absolute;
+  top: var(--spacing-16, 1rem);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px 8px 12px;
+  border-radius: 13px;
+}
+
+html[data-setu="on"] .setu-crumb {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 0.59375rem;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--color-forest-green);
+  cursor: pointer;
+  opacity: 0.52;
+  transition: opacity 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-setu="on"] .setu-crumb:hover,
+html[data-setu="on"] .setu-crumb[aria-current="true"] { opacity: 1; }
+html[data-setu="on"] .setu-crumb[aria-current="true"] { font-weight: 700; cursor: default; }
+html[data-setu="on"] .setu-crumb-sep { opacity: 0.35; font-size: 0.625rem; }
+
+/* The one badge the interface is not allowed to be subtle about: which source these numbers are. */
+html[data-setu="on"] .setu-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid color-mix(in srgb, var(--color-forest-green) 12%, transparent);
+  background: color-mix(in srgb, #ffffff 48%, transparent);
+}
+
+html[data-setu="on"] .setu-source::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+html[data-setu-mode="engine"] .setu-source { color: color-mix(in srgb, var(--color-forest-green) 88%, black); }
+html[data-setu-mode="engine"] .setu-source::before { animation: setu-pulse 2.4s infinite; }
+html[data-setu-mode="baked"] .setu-source { color: color-mix(in srgb, var(--color-forest-green) 62%, var(--color-terrain-grey)); }
+
+@keyframes setu-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-setu="on"] .setu-source::before { animation: none; }
+  html[data-setu="on"] .setu-stage { transition: none; }
+}
+
+/* --- panels ----------------------------------------------------------------------------------- */
+
+html[data-setu="on"] .setu-context {
+  position: absolute;
+  top: 72px;
+  left: 220px;
+  width: min(326px, 29vw);
+  padding: 15px 16px 14px;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateY(7px);
+  transition: opacity 280ms ease, transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-setu-scene="district"] .setu-context,
+html[data-setu-scene="nation"] .setu-context,
+html[data-setu-scene="state"] .setu-context {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html[data-setu="on"] .setu-context-kicker {
+  margin-bottom: 5px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--color-signal-orange);
+}
+
+html[data-setu="on"] .setu-context-title {
+  max-width: 16ch;
+  margin-bottom: 11px;
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif;
+  font-size: clamp(1.25rem, 1.55vw, 1.75rem);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.018em;
+  text-transform: uppercase;
+}
+
+html[data-setu="on"] .setu-context-copy {
+  margin: 9px 0 0;
+  font-size: 0.53rem;
+  line-height: 1.55;
+  opacity: 0.58;
+}
+
+html[data-setu="on"] .setu-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--setu-hairline);
+  border-left: 1px solid var(--setu-hairline);
+}
+
+html[data-setu="on"] .setu-metric {
+  min-width: 0;
+  padding: 8px 8px 7px;
+  border-right: 1px solid var(--setu-hairline);
+  border-bottom: 1px solid var(--setu-hairline);
+  transition: background 180ms ease;
+}
+
+html[data-setu="on"] .setu-metric[role="button"] { cursor: pointer; }
+html[data-setu="on"] .setu-metric[role="button"]:hover { background: color-mix(in srgb, #ffffff 42%, transparent); }
+html[data-setu="on"] .setu-metric strong {
+  display: block;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+html[data-setu="on"] .setu-metric span,
+html[data-setu="on"] .setu-metric small {
+  display: block;
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.43rem;
+  line-height: 1.28;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+html[data-setu="on"] .setu-metric small { opacity: 0.38; }
+
+/*
+ * The dossier: everything the engine knows about the loaded district, in one right-hand column.
+ * It is a column and not a floating cluster of widgets because the numbers are meant to be read in
+ * order - belief, then what was dispatched because of it, then what is being verified, then what
+ * is not being seen at all - and a dashboard of tiles loses that argument.
+ */
+html[data-setu="on"] .setu-dossier {
+  position: absolute;
+  top: 64px;
+  right: 18px;
+  bottom: 18px;
+  width: min(370px, 40vw);
+  height: auto;
+  padding: 8px 7px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--setu-surface-strong);
+  border: 1px solid var(--setu-hairline);
+  border-radius: 18px;
+  box-shadow: var(--setu-shadow);
+  backdrop-filter: blur(22px) saturate(120%);
+  -webkit-backdrop-filter: blur(22px) saturate(120%);
+  transform: translateX(calc(100% + 36px));
+  transition: transform 680ms cubic-bezier(0.16, 1, 0.3, 1), opacity 320ms ease;
+  opacity: 0;
+  scrollbar-width: thin;
+}
+
+html[data-setu-scene="district"] .setu-dossier { transform: translateX(0); opacity: 1; }
+html[data-setu="on"] .setu-dossier::-webkit-scrollbar { width: 3px; }
+html[data-setu="on"] .setu-dossier::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-forest-green) 30%, transparent);
+}
+
+html[data-setu="on"] .setu-dossier .setu-panel {
+  padding: 14px 12px 15px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+html[data-setu="on"] .setu-dossier .setu-panel + .setu-panel {
+  border-top: 1px solid var(--setu-hairline);
+}
+
+/* State-level operational readout. Selecting a district always returns useful information; only an
+ * engine-backed district transitions into the deeper dossier. This keeps unsupported districts from
+ * doing a meaningless camera fly-and-return while still making the regional SETU layer inspectable. */
+html[data-setu="on"] .setu-state-summary {
+  position: absolute;
+  top: 72px;
+  right: 18px;
+  width: min(340px, 34vw);
+  padding: 15px 16px 14px;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateY(8px) scale(0.985);
+  pointer-events: none;
+  transition: opacity 240ms ease, transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-setu-scene="state"] .setu-state-summary[data-shown="true"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+html[data-setu="on"] .setu-state-summary .setu-panel-head { margin-bottom: 12px; }
+html[data-setu="on"] .setu-state-summary .setu-row { padding: 8px 0; }
+html[data-setu="on"] .setu-state-summary .setu-row-meta { white-space: normal; }
+
+html[data-setu="on"] .setu-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+html[data-setu="on"] .setu-panel-title {
+  font-size: 0.65625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+html[data-setu="on"] .setu-panel-note {
+  font-size: 0.5rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+html[data-setu="on"] .setu-rows { display: flex; flex-direction: column; }
+
+html[data-setu="on"] .setu-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 0;
+  font-size: 0.625rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-forest-green) 7%, transparent);
+  background: none;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 100%;
+  text-align: left;
+  color: inherit;
+  font-family: inherit;
+  transition: background 180ms ease, transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-setu="on"] button.setu-row { cursor: pointer; }
+html[data-setu="on"] button.setu-row:hover {
+  background: color-mix(in srgb, #ffffff 42%, transparent);
+  transform: translateX(2px);
+}
+html[data-setu="on"] .setu-row:first-child { border-top: 0; }
+html[data-setu="on"] .setu-row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+html[data-setu="on"] .setu-row-meta { font-size: 0.5rem; opacity: 0.48; text-transform: uppercase; line-height: 1.35; }
+html[data-setu="on"] .setu-row-value { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+html[data-setu="on"] .setu-subsection-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 12px 0 5px;
+  border-top: 1px solid color-mix(in srgb, var(--color-forest-green) 12%, transparent);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+
+html[data-setu="on"] .setu-subsection-head span:last-child:not(:first-child) {
+  max-width: 62%;
+  text-align: right;
+  font-weight: 400;
+  opacity: 0.42;
+}
+
+html[data-setu="on"] .setu-action-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 4px 0 9px;
+}
+
+html[data-setu="on"] .setu-compare-strip {
+  padding-top: 0;
+  border-bottom: 1px solid var(--setu-hairline);
+  margin-bottom: 4px;
+}
+
+html[data-setu="on"] .setu-button-compact {
+  min-height: 24px;
+  padding: 4px 8px;
+  font-size: 0.5rem;
+}
+
+html[data-setu="on"] .setu-row-active {
+  color: color-mix(in srgb, var(--color-signal-orange) 84%, var(--color-forest-green));
+  background: color-mix(in srgb, var(--color-signal-orange) 7%, transparent);
+}
+
+html[data-setu="on"] .setu-row-alert {
+  color: color-mix(in srgb, var(--color-signal-orange) 82%, var(--color-forest-green));
+}
+
+html[data-setu="on"] .setu-featured-question {
+  margin: 2px 0 8px;
+  padding: 13px 12px 10px;
+  border: 1px solid color-mix(in srgb, var(--color-signal-orange) 18%, var(--setu-hairline));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--color-signal-orange) 4%, transparent);
+}
+
+html[data-setu="on"] .setu-featured-question__name {
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif;
+  font-size: 1.18rem;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+html[data-setu="on"] .setu-featured-question__action { margin-top: 7px; font-size: 0.62rem; line-height: 1.4; }
+html[data-setu="on"] .setu-featured-question__meta { margin-top: 5px; font-size: 0.48rem; opacity: 0.52; text-transform: uppercase; }
+html[data-setu="on"] .setu-featured-question__voi { margin: 9px 0 5px; font-size: 0.54rem; font-weight: 700; color: var(--color-signal-orange); }
+
+html[data-setu="on"] .setu-evidence-against .setu-row-value { color: var(--color-signal-orange); }
+html[data-setu="on"] .setu-evidence-superseded { opacity: 0.42; }
+html[data-setu="on"] .setu-evidence-superseded .setu-row-name,
+html[data-setu="on"] .setu-evidence-superseded .setu-row-meta { text-decoration: line-through; text-decoration-thickness: 1px; }
+
+/* A probability, drawn. The bar is the only chart in the layer: everything else is a number. */
+html[data-setu="on"] .setu-meter {
+  position: relative;
+  height: 2px;
+  grid-column: 1 / -1;
+  background: color-mix(in srgb, var(--color-forest-green) 10%, transparent);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+html[data-setu="on"] .setu-meter > i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  display: block;
+  background: var(--setu-fill, var(--color-forest-green));
+  border-radius: inherit;
+}
+
+/* Confidence, as the width of the interval rather than a second number to read. */
+html[data-setu="on"] .setu-meter > u {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  border-left: 1px solid color-mix(in srgb, var(--color-forest-green) 55%, transparent);
+  border-right: 1px solid color-mix(in srgb, var(--color-forest-green) 55%, transparent);
+}
+
+/* --- controls --------------------------------------------------------------------------------- */
+
+/*
+ * The bottom bar: time, flood stage, and the two things that can be done to the district rather
+ * than read from it. Anything that mutates the model is on this bar and nowhere else, so a reader
+ * can tell at a glance which parts of the screen are a report and which are a lever.
+ */
+html[data-setu="on"] .setu-controls {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: min(430px, 46vw);
+  padding: 14px 15px;
+  border-radius: 18px;
+}
+
+html[data-setu-scene="district"] .setu-controls { display: flex; }
+
+html[data-setu="on"] .setu-control-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+html[data-setu="on"] .setu-control-row > label { opacity: 0.52; min-width: 78px; letter-spacing: 0.065em; }
+html[data-setu="on"] .setu-control-row output { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+html[data-setu="on"] .setu-slider {
+  flex: 1;
+  appearance: none;
+  height: 2px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-forest-green) 14%, transparent);
+  cursor: pointer;
+}
+
+html[data-setu="on"] .setu-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--color-forest-green);
+  border: 2px solid color-mix(in srgb, #ffffff 84%, var(--color-icy-blue));
+  box-shadow: 0 2px 6px color-mix(in srgb, var(--color-deep-green) 22%, transparent);
+}
+
+html[data-setu="on"] .setu-slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: 2px solid color-mix(in srgb, #ffffff 84%, var(--color-icy-blue));
+  border-radius: 999px;
+  background: var(--color-forest-green);
+}
+
+html[data-setu="on"] .setu-button {
+  font: inherit;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  min-height: 27px;
+  padding: 5px 10px;
+  color: var(--color-forest-green);
+  background: color-mix(in srgb, #ffffff 32%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-forest-green) 12%, transparent);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease,
+    transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms ease;
+}
+
+html[data-setu="on"] .setu-button:hover:not(:disabled) {
+  background: color-mix(in srgb, #ffffff 68%, transparent);
+  border-color: color-mix(in srgb, var(--color-forest-green) 20%, transparent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px -8px color-mix(in srgb, var(--color-deep-green) 38%, transparent);
+}
+html[data-setu="on"] .setu-button:active:not(:disabled) { transform: translateY(0) scale(0.98); }
+html[data-setu="on"] .setu-button[aria-pressed="true"] {
+  background: var(--color-forest-green);
+  border-color: var(--color-forest-green);
+  color: var(--color-icy-blue);
+  font-weight: 700;
+}
+html[data-setu="on"] .setu-button:disabled { opacity: 0.27; cursor: not-allowed; }
+html[data-setu="on"] .setu-button-group { display: flex; gap: 5px; flex-wrap: wrap; }
+
+html[data-setu="on"] .setu-lens-group {
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+html[data-setu="on"] .setu-lens-group .setu-button {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-inline: 6px;
+}
+
+html[data-setu="on"] .setu-stress-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 90px;
+  margin-top: -7px;
+}
+
+html[data-setu="on"] .setu-stress-actions[hidden] { display: none; }
+html[data-setu="on"] .setu-stress-toggle[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--color-signal-orange) 7%, #ffffff 28%);
+  border-color: color-mix(in srgb, var(--color-signal-orange) 24%, transparent);
+}
+
+html[data-setu="on"] .setu-engine-note {
+  padding-left: 90px;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+html[data-setu="on"] .setu-button:focus-visible,
+html[data-setu="on"] .setu-crumb:focus-visible,
+html[data-setu="on"] button.setu-row:focus-visible,
+html[data-setu="on"] .setu-nav-row:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-signal-orange) 72%, white);
+  outline-offset: 2px;
+}
+
+/* --- hover readout, legend, hint -------------------------------------------------------------- */
+
+html[data-setu="on"] .setu-tip {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  padding: 7px 10px;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 12px));
+  white-space: nowrap;
+  border-radius: 10px;
+}
+
+html[data-setu="on"] .setu-tip[data-shown="true"] { display: block; }
+html[data-setu="on"] .setu-tip b { font-weight: 700; }
+html[data-setu="on"] .setu-tip span { opacity: 0.6; margin-left: 6px; }
+
+html[data-setu="on"] .setu-hint {
+  position: absolute;
+  left: 50%;
+  bottom: var(--spacing-16, 1rem);
+  transform: translateX(-50%);
+  padding: 7px 13px;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  pointer-events: none;
+  border-radius: 999px;
+}
+
+html[data-setu-scene="district"] .setu-hint { display: none; }
+
+/* The disclosure line. Small, permanent, and never the thing that scrolls out of view. */
+html[data-setu="on"] .setu-disclosure {
+  position: absolute;
+  left: 220px;
+  top: 18px;
+  max-width: 285px;
+  padding: 10px 12px;
+  font-size: 0.5rem;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  opacity: 0.72;
+  border-radius: 12px;
+  box-shadow: 0 10px 32px -24px color-mix(in srgb, var(--color-deep-green) 28%, transparent);
+}
+
+@media (max-width: 799.98px) {
+  html[data-setu="on"] .setu-dossier {
+    width: calc(100% - 24px);
+    right: 12px;
+    top: 82px;
+    bottom: 12px;
+    border-radius: 16px;
+  }
+  html[data-setu="on"] .setu-controls {
+    width: calc(100% - 24px);
+    left: 12px;
+    bottom: 12px;
+    max-height: 38vh;
+    overflow-y: auto;
+  }
+  html[data-setu="on"] .setu-state-summary { width: calc(100% - 24px); right: 12px; top: 82px; }
+  html[data-setu="on"] .setu-disclosure { display: none; }
+  html[data-setu="on"] .setu-context { display: none; }
+  html[data-setu="on"] .setu-dossier { bottom: min(42vh, 250px); }
+  html[data-setu="on"] .setu-control-row { gap: 7px; }
+  html[data-setu="on"] .setu-control-row > label { min-width: 64px; }
+  html[data-setu="on"] .setu-stress-actions,
+  html[data-setu="on"] .setu-engine-note { padding-left: 71px; }
+  html[data-setu="on"] .setu-lens-group { flex-wrap: wrap; }
+}

@@ -1,0 +1,7923 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BH-042",
+      "properties": {
+        "id": "BH-042",
+        "name": "Bhimsar",
+        "population_2011": 420,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.089,
+              11.604
+            ],
+            [
+              76.101,
+              11.604
+            ],
+            [
+              76.101,
+              11.616
+            ],
+            [
+              76.089,
+              11.616
+            ],
+            [
+              76.089,
+              11.604
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KH-017",
+      "properties": {
+        "id": "KH-017",
+        "name": "Kharsa",
+        "population_2011": 557,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.061317,
+              11.615618
+            ],
+            [
+              76.073317,
+              11.615618
+            ],
+            [
+              76.073317,
+              11.627618
+            ],
+            [
+              76.061317,
+              11.627618
+            ],
+            [
+              76.061317,
+              11.615618
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DH-031",
+      "properties": {
+        "id": "DH-031",
+        "name": "Dhanauri",
+        "population_2011": 694,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.075583,
+              11.585958
+            ],
+            [
+              76.087583,
+              11.585958
+            ],
+            [
+              76.087583,
+              11.597958
+            ],
+            [
+              76.075583,
+              11.597958
+            ],
+            [
+              76.075583,
+              11.585958
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ME-008",
+      "properties": {
+        "id": "ME-008",
+        "name": "Meppadi",
+        "population_2011": 831,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.085445,
+              11.618928
+            ],
+            [
+              76.097445,
+              11.618928
+            ],
+            [
+              76.097445,
+              11.630928
+            ],
+            [
+              76.085445,
+              11.630928
+            ],
+            [
+              76.085445,
+              11.618928
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CH-011",
+      "properties": {
+        "id": "CH-011",
+        "name": "Chooralmala",
+        "population_2011": 968,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.054897,
+              11.600621
+            ],
+            [
+              76.066897,
+              11.600621
+            ],
+            [
+              76.066897,
+              11.612621
+            ],
+            [
+              76.054897,
+              11.612621
+            ],
+            [
+              76.054897,
+              11.600621
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MU-019",
+      "properties": {
+        "id": "MU-019",
+        "name": "Mundakkai",
+        "population_2011": 1105,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.090807,
+              11.593309
+            ],
+            [
+              76.102807,
+              11.593309
+            ],
+            [
+              76.102807,
+              11.605309
+            ],
+            [
+              76.090807,
+              11.605309
+            ],
+            [
+              76.090807,
+              11.593309
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-007",
+      "properties": {
+        "id": "WY-007",
+        "name": "Settlement 7",
+        "population_2011": 1242,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.068707,
+              11.62369
+            ],
+            [
+              76.080707,
+              11.62369
+            ],
+            [
+              76.080707,
+              11.63569
+            ],
+            [
+              76.068707,
+              11.63569
+            ],
+            [
+              76.068707,
+              11.62369
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-008",
+      "properties": {
+        "id": "WY-008",
+        "name": "Settlement 8",
+        "population_2011": 1379,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.064404,
+              11.585523
+            ],
+            [
+              76.076404,
+              11.585523
+            ],
+            [
+              76.076404,
+              11.597523
+            ],
+            [
+              76.064404,
+              11.597523
+            ],
+            [
+              76.064404,
+              11.585523
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-009",
+      "properties": {
+        "id": "WY-009",
+        "name": "Settlement 9",
+        "population_2011": 1516,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.093935,
+              11.61128
+            ],
+            [
+              76.105935,
+              11.61128
+            ],
+            [
+              76.105935,
+              11.62328
+            ],
+            [
+              76.093935,
+              11.62328
+            ],
+            [
+              76.093935,
+              11.61128
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-010",
+      "properties": {
+        "id": "WY-010",
+        "name": "Settlement 10",
+        "population_2011": 1653,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.054034,
+              11.612242
+            ],
+            [
+              76.066034,
+              11.612242
+            ],
+            [
+              76.066034,
+              11.624242
+            ],
+            [
+              76.054034,
+              11.624242
+            ],
+            [
+              76.054034,
+              11.612242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-011",
+      "properties": {
+        "id": "WY-011",
+        "name": "Settlement 11",
+        "population_2011": 1790,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.083306,
+              11.584113
+            ],
+            [
+              76.095306,
+              11.584113
+            ],
+            [
+              76.095306,
+              11.596113
+            ],
+            [
+              76.083306,
+              11.596113
+            ],
+            [
+              76.083306,
+              11.584113
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-012",
+      "properties": {
+        "id": "WY-012",
+        "name": "Settlement 12",
+        "population_2011": 1927,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.080673,
+              11.625275
+            ],
+            [
+              76.092673,
+              11.625275
+            ],
+            [
+              76.092673,
+              11.637275
+            ],
+            [
+              76.080673,
+              11.637275
+            ],
+            [
+              76.080673,
+              11.625275
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-013",
+      "properties": {
+        "id": "WY-013",
+        "name": "Settlement 13",
+        "population_2011": 2064,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.054428,
+              11.592658
+            ],
+            [
+              76.066428,
+              11.592658
+            ],
+            [
+              76.066428,
+              11.604658
+            ],
+            [
+              76.054428,
+              11.604658
+            ],
+            [
+              76.054428,
+              11.592658
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-014",
+      "properties": {
+        "id": "WY-014",
+        "name": "Settlement 14",
+        "population_2011": 2201,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.096397,
+              11.599076
+            ],
+            [
+              76.108397,
+              11.599076
+            ],
+            [
+              76.108397,
+              11.611076
+            ],
+            [
+              76.096397,
+              11.611076
+            ],
+            [
+              76.096397,
+              11.599076
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-015",
+      "properties": {
+        "id": "WY-015",
+        "name": "Settlement 15",
+        "population_2011": 2338,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.060639,
+              11.623005
+            ],
+            [
+              76.072639,
+              11.623005
+            ],
+            [
+              76.072639,
+              11.635005
+            ],
+            [
+              76.060639,
+              11.635005
+            ],
+            [
+              76.060639,
+              11.623005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-016",
+      "properties": {
+        "id": "WY-016",
+        "name": "Settlement 16",
+        "population_2011": 2475,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.070977,
+              11.580674
+            ],
+            [
+              76.082977,
+              11.580674
+            ],
+            [
+              76.082977,
+              11.592674
+            ],
+            [
+              76.070977,
+              11.592674
+            ],
+            [
+              76.070977,
+              11.580674
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-017",
+      "properties": {
+        "id": "WY-017",
+        "name": "Settlement 17",
+        "population_2011": 2612,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.092199,
+              11.619338
+            ],
+            [
+              76.104199,
+              11.619338
+            ],
+            [
+              76.104199,
+              11.631338
+            ],
+            [
+              76.092199,
+              11.631338
+            ],
+            [
+              76.092199,
+              11.619338
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-018",
+      "properties": {
+        "id": "WY-018",
+        "name": "Settlement 18",
+        "population_2011": 2749,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.04995,
+              11.604995
+            ],
+            [
+              76.06195,
+              11.604995
+            ],
+            [
+              76.06195,
+              11.616995
+            ],
+            [
+              76.04995,
+              11.616995
+            ],
+            [
+              76.04995,
+              11.604995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-019",
+      "properties": {
+        "id": "WY-019",
+        "name": "Settlement 19",
+        "population_2011": 2886,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.091248,
+              11.586835
+            ],
+            [
+              76.103248,
+              11.586835
+            ],
+            [
+              76.103248,
+              11.598835
+            ],
+            [
+              76.091248,
+              11.598835
+            ],
+            [
+              76.091248,
+              11.586835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-020",
+      "properties": {
+        "id": "WY-020",
+        "name": "Settlement 20",
+        "population_2011": 3023,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.072864,
+              11.628563
+            ],
+            [
+              76.084864,
+              11.628563
+            ],
+            [
+              76.084864,
+              11.640563
+            ],
+            [
+              76.072864,
+              11.640563
+            ],
+            [
+              76.072864,
+              11.628563
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-021",
+      "properties": {
+        "id": "WY-021",
+        "name": "Settlement 21",
+        "population_2011": 3160,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.058086,
+              11.584929
+            ],
+            [
+              76.070086,
+              11.584929
+            ],
+            [
+              76.070086,
+              11.596929
+            ],
+            [
+              76.058086,
+              11.596929
+            ],
+            [
+              76.058086,
+              11.584929
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-022",
+      "properties": {
+        "id": "WY-022",
+        "name": "Settlement 22",
+        "population_2011": 3297,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.098858,
+              11.607344
+            ],
+            [
+              76.110858,
+              11.607344
+            ],
+            [
+              76.110858,
+              11.619344
+            ],
+            [
+              76.098858,
+              11.619344
+            ],
+            [
+              76.098858,
+              11.607344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-023",
+      "properties": {
+        "id": "WY-023",
+        "name": "Settlement 23",
+        "population_2011": 3434,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.053217,
+              11.618461
+            ],
+            [
+              76.065217,
+              11.618461
+            ],
+            [
+              76.065217,
+              11.630461
+            ],
+            [
+              76.053217,
+              11.630461
+            ],
+            [
+              76.053217,
+              11.618461
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-024",
+      "properties": {
+        "id": "WY-024",
+        "name": "Settlement 24",
+        "population_2011": 3571,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.079608,
+              11.579072
+            ],
+            [
+              76.091608,
+              11.579072
+            ],
+            [
+              76.091608,
+              11.591072
+            ],
+            [
+              76.079608,
+              11.591072
+            ],
+            [
+              76.079608,
+              11.579072
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-025",
+      "properties": {
+        "id": "WY-025",
+        "name": "Settlement 25",
+        "population_2011": 3708,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.086816,
+              11.626366
+            ],
+            [
+              76.098816,
+              11.626366
+            ],
+            [
+              76.098816,
+              11.638366
+            ],
+            [
+              76.086816,
+              11.638366
+            ],
+            [
+              76.086816,
+              11.626366
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-026",
+      "properties": {
+        "id": "WY-026",
+        "name": "Settlement 26",
+        "population_2011": 3845,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.04923,
+              11.596098
+            ],
+            [
+              76.06123,
+              11.596098
+            ],
+            [
+              76.06123,
+              11.608098
+            ],
+            [
+              76.04923,
+              11.608098
+            ],
+            [
+              76.04923,
+              11.596098
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-027",
+      "properties": {
+        "id": "WY-027",
+        "name": "Settlement 27",
+        "population_2011": 3982,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0978,
+              11.593004
+            ],
+            [
+              76.1098,
+              11.593004
+            ],
+            [
+              76.1098,
+              11.605004
+            ],
+            [
+              76.0978,
+              11.605004
+            ],
+            [
+              76.0978,
+              11.593004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-028",
+      "properties": {
+        "id": "WY-028",
+        "name": "Settlement 28",
+        "population_2011": 4119,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.063796,
+              11.628382
+            ],
+            [
+              76.075796,
+              11.628382
+            ],
+            [
+              76.075796,
+              11.640382
+            ],
+            [
+              76.063796,
+              11.640382
+            ],
+            [
+              76.063796,
+              11.628382
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-029",
+      "properties": {
+        "id": "WY-029",
+        "name": "Settlement 29",
+        "population_2011": 4256,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.064983,
+              11.578931
+            ],
+            [
+              76.076983,
+              11.578931
+            ],
+            [
+              76.076983,
+              11.590931
+            ],
+            [
+              76.064983,
+              11.590931
+            ],
+            [
+              76.064983,
+              11.578931
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-030",
+      "properties": {
+        "id": "WY-030",
+        "name": "Settlement 30",
+        "population_2011": 4393,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.097765,
+              11.61649
+            ],
+            [
+              76.109765,
+              11.61649
+            ],
+            [
+              76.109765,
+              11.62849
+            ],
+            [
+              76.097765,
+              11.62849
+            ],
+            [
+              76.097765,
+              11.61649
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-031",
+      "properties": {
+        "id": "WY-031",
+        "name": "Settlement 31",
+        "population_2011": 4530,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.047844,
+              11.610895
+            ],
+            [
+              76.059844,
+              11.610895
+            ],
+            [
+              76.059844,
+              11.622895
+            ],
+            [
+              76.047844,
+              11.622895
+            ],
+            [
+              76.047844,
+              11.610895
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-032",
+      "properties": {
+        "id": "WY-032",
+        "name": "Settlement 32",
+        "population_2011": 4667,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.088737,
+              11.58108
+            ],
+            [
+              76.100737,
+              11.58108
+            ],
+            [
+              76.100737,
+              11.59308
+            ],
+            [
+              76.088737,
+              11.59308
+            ],
+            [
+              76.088737,
+              11.58108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-033",
+      "properties": {
+        "id": "WY-033",
+        "name": "Settlement 33",
+        "population_2011": 4804,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.078649,
+              11.631049
+            ],
+            [
+              76.090649,
+              11.631049
+            ],
+            [
+              76.090649,
+              11.643049
+            ],
+            [
+              76.078649,
+              11.643049
+            ],
+            [
+              76.078649,
+              11.631049
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-034",
+      "properties": {
+        "id": "WY-034",
+        "name": "Settlement 34",
+        "population_2011": 4941,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.052149,
+              11.587077
+            ],
+            [
+              76.064149,
+              11.587077
+            ],
+            [
+              76.064149,
+              11.599077
+            ],
+            [
+              76.052149,
+              11.599077
+            ],
+            [
+              76.052149,
+              11.587077
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-035",
+      "properties": {
+        "id": "WY-035",
+        "name": "Settlement 35",
+        "population_2011": 478,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.101733,
+              11.601702
+            ],
+            [
+              76.113733,
+              11.601702
+            ],
+            [
+              76.113733,
+              11.613702
+            ],
+            [
+              76.101733,
+              11.613702
+            ],
+            [
+              76.101733,
+              11.601702
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-036",
+      "properties": {
+        "id": "WY-036",
+        "name": "Settlement 36",
+        "population_2011": 615,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.054976,
+              11.624565
+            ],
+            [
+              76.066976,
+              11.624565
+            ],
+            [
+              76.066976,
+              11.636565
+            ],
+            [
+              76.054976,
+              11.636565
+            ],
+            [
+              76.054976,
+              11.624565
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-037",
+      "properties": {
+        "id": "WY-037",
+        "name": "Settlement 37",
+        "population_2011": 752,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.074137,
+              11.5758
+            ],
+            [
+              76.086137,
+              11.5758
+            ],
+            [
+              76.086137,
+              11.5878
+            ],
+            [
+              76.074137,
+              11.5878
+            ],
+            [
+              76.074137,
+              11.5758
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-038",
+      "properties": {
+        "id": "WY-038",
+        "name": "Settlement 38",
+        "population_2011": 889,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09307,
+              11.625021
+            ],
+            [
+              76.10507,
+              11.625021
+            ],
+            [
+              76.10507,
+              11.637021
+            ],
+            [
+              76.09307,
+              11.637021
+            ],
+            [
+              76.09307,
+              11.625021
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-039",
+      "properties": {
+        "id": "WY-039",
+        "name": "Settlement 39",
+        "population_2011": 1026,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.04556,
+              11.601364
+            ],
+            [
+              76.05756,
+              11.601364
+            ],
+            [
+              76.05756,
+              11.613364
+            ],
+            [
+              76.04556,
+              11.613364
+            ],
+            [
+              76.04556,
+              11.601364
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-040",
+      "properties": {
+        "id": "WY-040",
+        "name": "Settlement 40",
+        "population_2011": 1163,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.096892,
+              11.586625
+            ],
+            [
+              76.108892,
+              11.586625
+            ],
+            [
+              76.108892,
+              11.598625
+            ],
+            [
+              76.096892,
+              11.598625
+            ],
+            [
+              76.096892,
+              11.586625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-041",
+      "properties": {
+        "id": "WY-041",
+        "name": "Settlement 41",
+        "population_2011": 1300,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.068825,
+              11.632447
+            ],
+            [
+              76.080825,
+              11.632447
+            ],
+            [
+              76.080825,
+              11.644447
+            ],
+            [
+              76.068825,
+              11.644447
+            ],
+            [
+              76.068825,
+              11.632447
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-042",
+      "properties": {
+        "id": "WY-042",
+        "name": "Settlement 42",
+        "population_2011": 1437,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.058508,
+              11.579382
+            ],
+            [
+              76.070508,
+              11.579382
+            ],
+            [
+              76.070508,
+              11.591382
+            ],
+            [
+              76.058508,
+              11.591382
+            ],
+            [
+              76.058508,
+              11.579382
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-043",
+      "properties": {
+        "id": "WY-043",
+        "name": "Settlement 43",
+        "population_2011": 1574,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.102217,
+              11.611733
+            ],
+            [
+              76.114217,
+              11.611733
+            ],
+            [
+              76.114217,
+              11.623733
+            ],
+            [
+              76.102217,
+              11.623733
+            ],
+            [
+              76.102217,
+              11.611733
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-044",
+      "properties": {
+        "id": "WY-044",
+        "name": "Settlement 44",
+        "population_2011": 1711,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.04782,
+              11.617436
+            ],
+            [
+              76.05982,
+              11.617436
+            ],
+            [
+              76.05982,
+              11.629436
+            ],
+            [
+              76.04782,
+              11.629436
+            ],
+            [
+              76.04782,
+              11.617436
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-045",
+      "properties": {
+        "id": "WY-045",
+        "name": "Settlement 45",
+        "population_2011": 1848,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.084287,
+              11.576252
+            ],
+            [
+              76.096287,
+              11.576252
+            ],
+            [
+              76.096287,
+              11.588252
+            ],
+            [
+              76.084287,
+              11.588252
+            ],
+            [
+              76.084287,
+              11.576252
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-046",
+      "properties": {
+        "id": "WY-046",
+        "name": "Settlement 46",
+        "population_2011": 1985,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08522,
+              11.631562
+            ],
+            [
+              76.09722,
+              11.631562
+            ],
+            [
+              76.09722,
+              11.643562
+            ],
+            [
+              76.08522,
+              11.643562
+            ],
+            [
+              76.08522,
+              11.631562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-047",
+      "properties": {
+        "id": "WY-047",
+        "name": "Settlement 47",
+        "population_2011": 2122,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.046961,
+              11.591186
+            ],
+            [
+              76.058961,
+              11.591186
+            ],
+            [
+              76.058961,
+              11.603186
+            ],
+            [
+              76.046961,
+              11.603186
+            ],
+            [
+              76.046961,
+              11.591186
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-048",
+      "properties": {
+        "id": "WY-048",
+        "name": "Settlement 48",
+        "population_2011": 2259,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.102747,
+              11.595137
+            ],
+            [
+              76.114747,
+              11.595137
+            ],
+            [
+              76.114747,
+              11.607137
+            ],
+            [
+              76.102747,
+              11.607137
+            ],
+            [
+              76.102747,
+              11.595137
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-049",
+      "properties": {
+        "id": "WY-049",
+        "name": "Settlement 49",
+        "population_2011": 2396,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.058709,
+              11.630092
+            ],
+            [
+              76.070709,
+              11.630092
+            ],
+            [
+              76.070709,
+              11.642092
+            ],
+            [
+              76.058709,
+              11.642092
+            ],
+            [
+              76.058709,
+              11.630092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-050",
+      "properties": {
+        "id": "WY-050",
+        "name": "Settlement 50",
+        "population_2011": 2533,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.067617,
+              11.574278
+            ],
+            [
+              76.079617,
+              11.574278
+            ],
+            [
+              76.079617,
+              11.586278
+            ],
+            [
+              76.067617,
+              11.586278
+            ],
+            [
+              76.067617,
+              11.574278
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-051",
+      "properties": {
+        "id": "WY-051",
+        "name": "Settlement 51",
+        "population_2011": 2670,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.098911,
+              11.621695
+            ],
+            [
+              76.110911,
+              11.621695
+            ],
+            [
+              76.110911,
+              11.633695
+            ],
+            [
+              76.098911,
+              11.633695
+            ],
+            [
+              76.098911,
+              11.621695
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-052",
+      "properties": {
+        "id": "WY-052",
+        "name": "Settlement 52",
+        "population_2011": 2807,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.043525,
+              11.607798
+            ],
+            [
+              76.055525,
+              11.607798
+            ],
+            [
+              76.055525,
+              11.619798
+            ],
+            [
+              76.043525,
+              11.619798
+            ],
+            [
+              76.043525,
+              11.607798
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-053",
+      "properties": {
+        "id": "WY-053",
+        "name": "Settlement 53",
+        "population_2011": 2944,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.094005,
+              11.580497
+            ],
+            [
+              76.106005,
+              11.580497
+            ],
+            [
+              76.106005,
+              11.592497
+            ],
+            [
+              76.094005,
+              11.592497
+            ],
+            [
+              76.094005,
+              11.580497
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-054",
+      "properties": {
+        "id": "WY-054",
+        "name": "Settlement 54",
+        "population_2011": 3081,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.075131,
+              11.634996
+            ],
+            [
+              76.087131,
+              11.634996
+            ],
+            [
+              76.087131,
+              11.646996
+            ],
+            [
+              76.075131,
+              11.646996
+            ],
+            [
+              76.075131,
+              11.634996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-055",
+      "properties": {
+        "id": "WY-055",
+        "name": "Settlement 55",
+        "population_2011": 3218,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.052123,
+              11.581801
+            ],
+            [
+              76.064123,
+              11.581801
+            ],
+            [
+              76.064123,
+              11.593801
+            ],
+            [
+              76.052123,
+              11.593801
+            ],
+            [
+              76.052123,
+              11.581801
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-056",
+      "properties": {
+        "id": "WY-056",
+        "name": "Settlement 56",
+        "population_2011": 3355,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.105275,
+              11.605599
+            ],
+            [
+              76.117275,
+              11.605599
+            ],
+            [
+              76.117275,
+              11.617599
+            ],
+            [
+              76.105275,
+              11.617599
+            ],
+            [
+              76.105275,
+              11.605599
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-057",
+      "properties": {
+        "id": "WY-057",
+        "name": "Settlement 57",
+        "population_2011": 3492,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.049745,
+              11.624041
+            ],
+            [
+              76.061745,
+              11.624041
+            ],
+            [
+              76.061745,
+              11.636041
+            ],
+            [
+              76.049745,
+              11.636041
+            ],
+            [
+              76.049745,
+              11.624041
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-058",
+      "properties": {
+        "id": "WY-058",
+        "name": "Settlement 58",
+        "population_2011": 3629,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.078367,
+              11.572694
+            ],
+            [
+              76.090367,
+              11.572694
+            ],
+            [
+              76.090367,
+              11.584694
+            ],
+            [
+              76.078367,
+              11.584694
+            ],
+            [
+              76.078367,
+              11.572694
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-059",
+      "properties": {
+        "id": "WY-059",
+        "name": "Settlement 59",
+        "population_2011": 3766,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.092009,
+              11.630154
+            ],
+            [
+              76.104009,
+              11.630154
+            ],
+            [
+              76.104009,
+              11.642154
+            ],
+            [
+              76.092009,
+              11.642154
+            ],
+            [
+              76.092009,
+              11.630154
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-060",
+      "properties": {
+        "id": "WY-060",
+        "name": "Settlement 60",
+        "population_2011": 3903,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.042914,
+              11.596848
+            ],
+            [
+              76.054914,
+              11.596848
+            ],
+            [
+              76.054914,
+              11.608848
+            ],
+            [
+              76.042914,
+              11.608848
+            ],
+            [
+              76.042914,
+              11.596848
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-061",
+      "properties": {
+        "id": "WY-061",
+        "name": "Settlement 61",
+        "population_2011": 4040,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.101878,
+              11.588205
+            ],
+            [
+              76.113878,
+              11.588205
+            ],
+            [
+              76.113878,
+              11.600205
+            ],
+            [
+              76.101878,
+              11.600205
+            ],
+            [
+              76.101878,
+              11.588205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-062",
+      "properties": {
+        "id": "WY-062",
+        "name": "Settlement 62",
+        "population_2011": 4177,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06407,
+              11.634612
+            ],
+            [
+              76.07607,
+              11.634612
+            ],
+            [
+              76.07607,
+              11.646612
+            ],
+            [
+              76.06407,
+              11.646612
+            ],
+            [
+              76.06407,
+              11.634612
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-063",
+      "properties": {
+        "id": "WY-063",
+        "name": "Settlement 63",
+        "population_2011": 4314,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.060586,
+              11.574592
+            ],
+            [
+              76.072586,
+              11.574592
+            ],
+            [
+              76.072586,
+              11.586592
+            ],
+            [
+              76.060586,
+              11.586592
+            ],
+            [
+              76.060586,
+              11.574592
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-064",
+      "properties": {
+        "id": "WY-064",
+        "name": "Settlement 64",
+        "population_2011": 4451,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.103884,
+              11.616678
+            ],
+            [
+              76.115884,
+              11.616678
+            ],
+            [
+              76.115884,
+              11.628678
+            ],
+            [
+              76.103884,
+              11.628678
+            ],
+            [
+              76.103884,
+              11.616678
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-065",
+      "properties": {
+        "id": "WY-065",
+        "name": "Settlement 65",
+        "population_2011": 4588,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.043271,
+              11.614884
+            ],
+            [
+              76.055271,
+              11.614884
+            ],
+            [
+              76.055271,
+              11.626884
+            ],
+            [
+              76.043271,
+              11.626884
+            ],
+            [
+              76.043271,
+              11.614884
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-066",
+      "properties": {
+        "id": "WY-066",
+        "name": "Settlement 66",
+        "population_2011": 4725,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.089371,
+              11.575096
+            ],
+            [
+              76.101371,
+              11.575096
+            ],
+            [
+              76.101371,
+              11.587096
+            ],
+            [
+              76.089371,
+              11.587096
+            ],
+            [
+              76.089371,
+              11.575096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-067",
+      "properties": {
+        "id": "WY-067",
+        "name": "Settlement 67",
+        "population_2011": 4862,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.082224,
+              11.635827
+            ],
+            [
+              76.094224,
+              11.635827
+            ],
+            [
+              76.094224,
+              11.647827
+            ],
+            [
+              76.082224,
+              11.647827
+            ],
+            [
+              76.082224,
+              11.635827
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-068",
+      "properties": {
+        "id": "WY-068",
+        "name": "Settlement 68",
+        "population_2011": 4999,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.046323,
+              11.586013
+            ],
+            [
+              76.058323,
+              11.586013
+            ],
+            [
+              76.058323,
+              11.598013
+            ],
+            [
+              76.046323,
+              11.598013
+            ],
+            [
+              76.046323,
+              11.586013
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-069",
+      "properties": {
+        "id": "WY-069",
+        "name": "Settlement 69",
+        "population_2011": 536,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10669,
+              11.598545
+            ],
+            [
+              76.11869,
+              11.598545
+            ],
+            [
+              76.11869,
+              11.610545
+            ],
+            [
+              76.10669,
+              11.610545
+            ],
+            [
+              76.10669,
+              11.598545
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-070",
+      "properties": {
+        "id": "WY-070",
+        "name": "Settlement 70",
+        "population_2011": 673,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.053498,
+              11.630208
+            ],
+            [
+              76.065498,
+              11.630208
+            ],
+            [
+              76.065498,
+              11.642208
+            ],
+            [
+              76.053498,
+              11.642208
+            ],
+            [
+              76.053498,
+              11.630208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-071",
+      "properties": {
+        "id": "WY-071",
+        "name": "Settlement 71",
+        "population_2011": 810,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.071404,
+              11.570695
+            ],
+            [
+              76.083404,
+              11.570695
+            ],
+            [
+              76.083404,
+              11.582695
+            ],
+            [
+              76.071404,
+              11.582695
+            ],
+            [
+              76.071404,
+              11.570695
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-072",
+      "properties": {
+        "id": "WY-072",
+        "name": "Settlement 72",
+        "population_2011": 947,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.098508,
+              11.626894
+            ],
+            [
+              76.110508,
+              11.626894
+            ],
+            [
+              76.110508,
+              11.638894
+            ],
+            [
+              76.098508,
+              11.638894
+            ],
+            [
+              76.098508,
+              11.626894
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-073",
+      "properties": {
+        "id": "WY-073",
+        "name": "Settlement 73",
+        "population_2011": 1084,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.040334,
+              11.603672
+            ],
+            [
+              76.052334,
+              11.603672
+            ],
+            [
+              76.052334,
+              11.615672
+            ],
+            [
+              76.040334,
+              11.615672
+            ],
+            [
+              76.040334,
+              11.603672
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-074",
+      "properties": {
+        "id": "WY-074",
+        "name": "Settlement 74",
+        "population_2011": 1221,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.099142,
+              11.581414
+            ],
+            [
+              76.111142,
+              11.581414
+            ],
+            [
+              76.111142,
+              11.593414
+            ],
+            [
+              76.099142,
+              11.593414
+            ],
+            [
+              76.099142,
+              11.581414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-075",
+      "properties": {
+        "id": "WY-075",
+        "name": "Settlement 75",
+        "population_2011": 1358,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.070705,
+              11.637765
+            ],
+            [
+              76.082705,
+              11.637765
+            ],
+            [
+              76.082705,
+              11.649765
+            ],
+            [
+              76.070705,
+              11.649765
+            ],
+            [
+              76.070705,
+              11.637765
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-076",
+      "properties": {
+        "id": "WY-076",
+        "name": "Settlement 76",
+        "population_2011": 1495,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.053545,
+              11.576775
+            ],
+            [
+              76.065545,
+              11.576775
+            ],
+            [
+              76.065545,
+              11.588775
+            ],
+            [
+              76.053545,
+              11.588775
+            ],
+            [
+              76.053545,
+              11.576775
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-077",
+      "properties": {
+        "id": "WY-077",
+        "name": "Settlement 77",
+        "population_2011": 1632,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.107597,
+              11.610281
+            ],
+            [
+              76.119597,
+              11.610281
+            ],
+            [
+              76.119597,
+              11.622281
+            ],
+            [
+              76.107597,
+              11.622281
+            ],
+            [
+              76.107597,
+              11.610281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-078",
+      "properties": {
+        "id": "WY-078",
+        "name": "Settlement 78",
+        "population_2011": 1769,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.044877,
+              11.62213
+            ],
+            [
+              76.056877,
+              11.62213
+            ],
+            [
+              76.056877,
+              11.63413
+            ],
+            [
+              76.044877,
+              11.63413
+            ],
+            [
+              76.044877,
+              11.62213
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-079",
+      "properties": {
+        "id": "WY-079",
+        "name": "Settlement 79",
+        "population_2011": 1906,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.083262,
+              11.570839
+            ],
+            [
+              76.095262,
+              11.570839
+            ],
+            [
+              76.095262,
+              11.582839
+            ],
+            [
+              76.083262,
+              11.582839
+            ],
+            [
+              76.083262,
+              11.570839
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-080",
+      "properties": {
+        "id": "WY-080",
+        "name": "Settlement 80",
+        "population_2011": 2043,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.089627,
+              11.634819
+            ],
+            [
+              76.101627,
+              11.634819
+            ],
+            [
+              76.101627,
+              11.646819
+            ],
+            [
+              76.089627,
+              11.646819
+            ],
+            [
+              76.089627,
+              11.634819
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-081",
+      "properties": {
+        "id": "WY-081",
+        "name": "Settlement 81",
+        "population_2011": 2180,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.041544,
+              11.591788
+            ],
+            [
+              76.053544,
+              11.591788
+            ],
+            [
+              76.053544,
+              11.603788
+            ],
+            [
+              76.041544,
+              11.603788
+            ],
+            [
+              76.041544,
+              11.591788
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-082",
+      "properties": {
+        "id": "WY-082",
+        "name": "Settlement 82",
+        "population_2011": 2317,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.106295,
+              11.591036
+            ],
+            [
+              76.118295,
+              11.591036
+            ],
+            [
+              76.118295,
+              11.603036
+            ],
+            [
+              76.106295,
+              11.603036
+            ],
+            [
+              76.106295,
+              11.591036
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-083",
+      "properties": {
+        "id": "WY-083",
+        "name": "Settlement 83",
+        "population_2011": 2454,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.058891,
+              11.635484
+            ],
+            [
+              76.070891,
+              11.635484
+            ],
+            [
+              76.070891,
+              11.647484
+            ],
+            [
+              76.058891,
+              11.647484
+            ],
+            [
+              76.058891,
+              11.635484
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-084",
+      "properties": {
+        "id": "WY-084",
+        "name": "Settlement 84",
+        "population_2011": 2591,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.063838,
+              11.570463
+            ],
+            [
+              76.075838,
+              11.570463
+            ],
+            [
+              76.075838,
+              11.582463
+            ],
+            [
+              76.063838,
+              11.582463
+            ],
+            [
+              76.063838,
+              11.570463
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-085",
+      "properties": {
+        "id": "WY-085",
+        "name": "Settlement 85",
+        "population_2011": 2728,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.104251,
+              11.621927
+            ],
+            [
+              76.116251,
+              11.621927
+            ],
+            [
+              76.116251,
+              11.633927
+            ],
+            [
+              76.104251,
+              11.633927
+            ],
+            [
+              76.104251,
+              11.621927
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-086",
+      "properties": {
+        "id": "WY-086",
+        "name": "Settlement 86",
+        "population_2011": 2865,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.039468,
+              11.61124
+            ],
+            [
+              76.051468,
+              11.61124
+            ],
+            [
+              76.051468,
+              11.62324
+            ],
+            [
+              76.039468,
+              11.62324
+            ],
+            [
+              76.039468,
+              11.61124
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-087",
+      "properties": {
+        "id": "WY-087",
+        "name": "Settlement 87",
+        "population_2011": 3002,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.094642,
+              11.575239
+            ],
+            [
+              76.106642,
+              11.575239
+            ],
+            [
+              76.106642,
+              11.587239
+            ],
+            [
+              76.094642,
+              11.587239
+            ],
+            [
+              76.094642,
+              11.575239
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-088",
+      "properties": {
+        "id": "WY-088",
+        "name": "Settlement 88",
+        "population_2011": 3139,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.078222,
+              11.639268
+            ],
+            [
+              76.090222,
+              11.639268
+            ],
+            [
+              76.090222,
+              11.651268
+            ],
+            [
+              76.078222,
+              11.651268
+            ],
+            [
+              76.078222,
+              11.639268
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-089",
+      "properties": {
+        "id": "WY-089",
+        "name": "Settlement 89",
+        "population_2011": 3276,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.046974,
+              11.580769
+            ],
+            [
+              76.058974,
+              11.580769
+            ],
+            [
+              76.058974,
+              11.592769
+            ],
+            [
+              76.046974,
+              11.592769
+            ],
+            [
+              76.046974,
+              11.580769
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-090",
+      "properties": {
+        "id": "WY-090",
+        "name": "Settlement 90",
+        "population_2011": 3413,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.109737,
+              11.602871
+            ],
+            [
+              76.121737,
+              11.602871
+            ],
+            [
+              76.121737,
+              11.614871
+            ],
+            [
+              76.109737,
+              11.614871
+            ],
+            [
+              76.109737,
+              11.602871
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-091",
+      "properties": {
+        "id": "WY-091",
+        "name": "Settlement 91",
+        "population_2011": 3550,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.048328,
+              11.629054
+            ],
+            [
+              76.060328,
+              11.629054
+            ],
+            [
+              76.060328,
+              11.641054
+            ],
+            [
+              76.048328,
+              11.641054
+            ],
+            [
+              76.048328,
+              11.629054
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-092",
+      "properties": {
+        "id": "WY-092",
+        "name": "Settlement 92",
+        "population_2011": 3687,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.076012,
+              11.56807
+            ],
+            [
+              76.088012,
+              11.56807
+            ],
+            [
+              76.088012,
+              11.58007
+            ],
+            [
+              76.076012,
+              11.58007
+            ],
+            [
+              76.076012,
+              11.56807
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-093",
+      "properties": {
+        "id": "WY-093",
+        "name": "Settlement 93",
+        "population_2011": 3824,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09686,
+              11.631942
+            ],
+            [
+              76.10886,
+              11.631942
+            ],
+            [
+              76.10886,
+              11.643942
+            ],
+            [
+              76.09686,
+              11.643942
+            ],
+            [
+              76.09686,
+              11.631942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-094",
+      "properties": {
+        "id": "WY-094",
+        "name": "Settlement 94",
+        "population_2011": 3961,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.038156,
+              11.598822
+            ],
+            [
+              76.050156,
+              11.598822
+            ],
+            [
+              76.050156,
+              11.610822
+            ],
+            [
+              76.038156,
+              11.610822
+            ],
+            [
+              76.038156,
+              11.598822
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-095",
+      "properties": {
+        "id": "WY-095",
+        "name": "Settlement 95",
+        "population_2011": 4098,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.104022,
+              11.583542
+            ],
+            [
+              76.116022,
+              11.583542
+            ],
+            [
+              76.116022,
+              11.595542
+            ],
+            [
+              76.104022,
+              11.595542
+            ],
+            [
+              76.104022,
+              11.583542
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-096",
+      "properties": {
+        "id": "WY-096",
+        "name": "Settlement 96",
+        "population_2011": 4235,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.065656,
+              11.639475
+            ],
+            [
+              76.077656,
+              11.639475
+            ],
+            [
+              76.077656,
+              11.651475
+            ],
+            [
+              76.065656,
+              11.651475
+            ],
+            [
+              76.065656,
+              11.639475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-097",
+      "properties": {
+        "id": "WY-097",
+        "name": "Settlement 97",
+        "population_2011": 4372,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.056135,
+              11.572107
+            ],
+            [
+              76.068135,
+              11.572107
+            ],
+            [
+              76.068135,
+              11.584107
+            ],
+            [
+              76.056135,
+              11.584107
+            ],
+            [
+              76.056135,
+              11.572107
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-098",
+      "properties": {
+        "id": "WY-098",
+        "name": "Settlement 98",
+        "population_2011": 4509,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.108823,
+              11.615484
+            ],
+            [
+              76.120823,
+              11.615484
+            ],
+            [
+              76.120823,
+              11.627484
+            ],
+            [
+              76.108823,
+              11.627484
+            ],
+            [
+              76.108823,
+              11.615484
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-099",
+      "properties": {
+        "id": "WY-099",
+        "name": "Settlement 99",
+        "population_2011": 4646,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.040464,
+              11.6191
+            ],
+            [
+              76.052464,
+              11.6191
+            ],
+            [
+              76.052464,
+              11.6311
+            ],
+            [
+              76.040464,
+              11.6311
+            ],
+            [
+              76.040464,
+              11.6191
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-100",
+      "properties": {
+        "id": "WY-100",
+        "name": "Settlement 100",
+        "population_2011": 4783,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.088572,
+              11.57011
+            ],
+            [
+              76.100572,
+              11.57011
+            ],
+            [
+              76.100572,
+              11.58211
+            ],
+            [
+              76.088572,
+              11.58211
+            ],
+            [
+              76.088572,
+              11.57011
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-101",
+      "properties": {
+        "id": "WY-101",
+        "name": "Settlement 101",
+        "population_2011": 4920,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.086183,
+              11.638937
+            ],
+            [
+              76.098183,
+              11.638937
+            ],
+            [
+              76.098183,
+              11.650937
+            ],
+            [
+              76.086183,
+              11.650937
+            ],
+            [
+              76.086183,
+              11.638937
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-102",
+      "properties": {
+        "id": "WY-102",
+        "name": "Settlement 102",
+        "population_2011": 457,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.04132,
+              11.586417
+            ],
+            [
+              76.05332,
+              11.586417
+            ],
+            [
+              76.05332,
+              11.598417
+            ],
+            [
+              76.04132,
+              11.598417
+            ],
+            [
+              76.04132,
+              11.586417
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-103",
+      "properties": {
+        "id": "WY-103",
+        "name": "Settlement 103",
+        "population_2011": 594,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11008,
+              11.594864
+            ],
+            [
+              76.12208,
+              11.594864
+            ],
+            [
+              76.12208,
+              11.606864
+            ],
+            [
+              76.11008,
+              11.606864
+            ],
+            [
+              76.11008,
+              11.594864
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-104",
+      "properties": {
+        "id": "WY-104",
+        "name": "Settlement 104",
+        "population_2011": 731,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.053507,
+              11.635199
+            ],
+            [
+              76.065507,
+              11.635199
+            ],
+            [
+              76.065507,
+              11.647199
+            ],
+            [
+              76.053507,
+              11.647199
+            ],
+            [
+              76.053507,
+              11.635199
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-105",
+      "properties": {
+        "id": "WY-105",
+        "name": "Settlement 105",
+        "population_2011": 868,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.068019,
+              11.567045
+            ],
+            [
+              76.080019,
+              11.567045
+            ],
+            [
+              76.080019,
+              11.579045
+            ],
+            [
+              76.068019,
+              11.579045
+            ],
+            [
+              76.068019,
+              11.567045
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-106",
+      "properties": {
+        "id": "WY-106",
+        "name": "Settlement 106",
+        "population_2011": 1005,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.103457,
+              11.627276
+            ],
+            [
+              76.115457,
+              11.627276
+            ],
+            [
+              76.115457,
+              11.639276
+            ],
+            [
+              76.103457,
+              11.639276
+            ],
+            [
+              76.103457,
+              11.627276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-107",
+      "properties": {
+        "id": "WY-107",
+        "name": "Settlement 107",
+        "population_2011": 1142,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.03645,
+              11.606743
+            ],
+            [
+              76.04845,
+              11.606743
+            ],
+            [
+              76.04845,
+              11.618743
+            ],
+            [
+              76.03645,
+              11.618743
+            ],
+            [
+              76.03645,
+              11.606743
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-108",
+      "properties": {
+        "id": "WY-108",
+        "name": "Settlement 108",
+        "population_2011": 1279,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.099908,
+              11.576535
+            ],
+            [
+              76.111908,
+              11.576535
+            ],
+            [
+              76.111908,
+              11.588535
+            ],
+            [
+              76.099908,
+              11.588535
+            ],
+            [
+              76.099908,
+              11.576535
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-109",
+      "properties": {
+        "id": "WY-109",
+        "name": "Settlement 109",
+        "population_2011": 1416,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.073447,
+              11.641859
+            ],
+            [
+              76.085447,
+              11.641859
+            ],
+            [
+              76.085447,
+              11.653859
+            ],
+            [
+              76.073447,
+              11.653859
+            ],
+            [
+              76.073447,
+              11.641859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-110",
+      "properties": {
+        "id": "WY-110",
+        "name": "Settlement 110",
+        "population_2011": 1553,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.048764,
+              11.575631
+            ],
+            [
+              76.060764,
+              11.575631
+            ],
+            [
+              76.060764,
+              11.587631
+            ],
+            [
+              76.048764,
+              11.587631
+            ],
+            [
+              76.048764,
+              11.575631
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-111",
+      "properties": {
+        "id": "WY-111",
+        "name": "Settlement 111",
+        "population_2011": 1690,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.111875,
+              11.607882
+            ],
+            [
+              76.123875,
+              11.607882
+            ],
+            [
+              76.123875,
+              11.619882
+            ],
+            [
+              76.111875,
+              11.619882
+            ],
+            [
+              76.111875,
+              11.607882
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-112",
+      "properties": {
+        "id": "WY-112",
+        "name": "Settlement 112",
+        "population_2011": 1827,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.043365,
+              11.626784
+            ],
+            [
+              76.055365,
+              11.626784
+            ],
+            [
+              76.055365,
+              11.638784
+            ],
+            [
+              76.043365,
+              11.638784
+            ],
+            [
+              76.043365,
+              11.626784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-113",
+      "properties": {
+        "id": "WY-113",
+        "name": "Settlement 113",
+        "population_2011": 1964,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.081218,
+              11.566404
+            ],
+            [
+              76.093218,
+              11.566404
+            ],
+            [
+              76.093218,
+              11.578404
+            ],
+            [
+              76.081218,
+              11.578404
+            ],
+            [
+              76.081218,
+              11.566404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-114",
+      "properties": {
+        "id": "WY-114",
+        "name": "Settlement 114",
+        "population_2011": 2101,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.094128,
+              11.636686
+            ],
+            [
+              76.106128,
+              11.636686
+            ],
+            [
+              76.106128,
+              11.648686
+            ],
+            [
+              76.094128,
+              11.648686
+            ],
+            [
+              76.094128,
+              11.636686
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-115",
+      "properties": {
+        "id": "WY-115",
+        "name": "Settlement 115",
+        "population_2011": 2238,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.03698,
+              11.593466
+            ],
+            [
+              76.04898,
+              11.593466
+            ],
+            [
+              76.04898,
+              11.605466
+            ],
+            [
+              76.03698,
+              11.605466
+            ],
+            [
+              76.03698,
+              11.593466
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-116",
+      "properties": {
+        "id": "WY-116",
+        "name": "Settlement 116",
+        "population_2011": 2375,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.108505,
+              11.586715
+            ],
+            [
+              76.120505,
+              11.586715
+            ],
+            [
+              76.120505,
+              11.598715
+            ],
+            [
+              76.108505,
+              11.598715
+            ],
+            [
+              76.108505,
+              11.586715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-117",
+      "properties": {
+        "id": "WY-117",
+        "name": "Settlement 117",
+        "population_2011": 2512,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.060197,
+              11.640149
+            ],
+            [
+              76.072197,
+              11.640149
+            ],
+            [
+              76.072197,
+              11.652149
+            ],
+            [
+              76.060197,
+              11.652149
+            ],
+            [
+              76.060197,
+              11.640149
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-118",
+      "properties": {
+        "id": "WY-118",
+        "name": "Settlement 118",
+        "population_2011": 2649,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.059722,
+              11.567926
+            ],
+            [
+              76.071722,
+              11.567926
+            ],
+            [
+              76.071722,
+              11.579926
+            ],
+            [
+              76.059722,
+              11.579926
+            ],
+            [
+              76.059722,
+              11.567926
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-119",
+      "properties": {
+        "id": "WY-119",
+        "name": "Settlement 119",
+        "population_2011": 2786,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.108987,
+              11.621
+            ],
+            [
+              76.120987,
+              11.621
+            ],
+            [
+              76.120987,
+              11.633
+            ],
+            [
+              76.108987,
+              11.633
+            ],
+            [
+              76.108987,
+              11.621
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-120",
+      "properties": {
+        "id": "WY-120",
+        "name": "Settlement 120",
+        "population_2011": 2923,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.036622,
+              11.615127
+            ],
+            [
+              76.048622,
+              11.615127
+            ],
+            [
+              76.048622,
+              11.627127
+            ],
+            [
+              76.036622,
+              11.627127
+            ],
+            [
+              76.036622,
+              11.615127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-121",
+      "properties": {
+        "id": "WY-121",
+        "name": "Settlement 121",
+        "population_2011": 3060,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.094097,
+              11.57046
+            ],
+            [
+              76.106097,
+              11.57046
+            ],
+            [
+              76.106097,
+              11.58246
+            ],
+            [
+              76.094097,
+              11.58246
+            ],
+            [
+              76.094097,
+              11.57046
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-122",
+      "properties": {
+        "id": "WY-122",
+        "name": "Settlement 122",
+        "population_2011": 3197,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.081857,
+              11.642405
+            ],
+            [
+              76.093857,
+              11.642405
+            ],
+            [
+              76.093857,
+              11.654405
+            ],
+            [
+              76.081857,
+              11.654405
+            ],
+            [
+              76.081857,
+              11.642405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-123",
+      "properties": {
+        "id": "WY-123",
+        "name": "Settlement 123",
+        "population_2011": 3334,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.042184,
+              11.58093
+            ],
+            [
+              76.054184,
+              11.58093
+            ],
+            [
+              76.054184,
+              11.59293
+            ],
+            [
+              76.042184,
+              11.59293
+            ],
+            [
+              76.042184,
+              11.58093
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-124",
+      "properties": {
+        "id": "WY-124",
+        "name": "Settlement 124",
+        "population_2011": 3471,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.113142,
+              11.599508
+            ],
+            [
+              76.125142,
+              11.599508
+            ],
+            [
+              76.125142,
+              11.611508
+            ],
+            [
+              76.113142,
+              11.611508
+            ],
+            [
+              76.113142,
+              11.599508
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-125",
+      "properties": {
+        "id": "WY-125",
+        "name": "Settlement 125",
+        "population_2011": 3608,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.048107,
+              11.633827
+            ],
+            [
+              76.060107,
+              11.633827
+            ],
+            [
+              76.060107,
+              11.645827
+            ],
+            [
+              76.048107,
+              11.645827
+            ],
+            [
+              76.048107,
+              11.633827
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-126",
+      "properties": {
+        "id": "WY-126",
+        "name": "Settlement 126",
+        "population_2011": 3745,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.072942,
+              11.564417
+            ],
+            [
+              76.084942,
+              11.564417
+            ],
+            [
+              76.084942,
+              11.576417
+            ],
+            [
+              76.072942,
+              11.576417
+            ],
+            [
+              76.072942,
+              11.564417
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-127",
+      "properties": {
+        "id": "WY-127",
+        "name": "Settlement 127",
+        "population_2011": 3882,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.101586,
+              11.632543
+            ],
+            [
+              76.113586,
+              11.632543
+            ],
+            [
+              76.113586,
+              11.644543
+            ],
+            [
+              76.101586,
+              11.644543
+            ],
+            [
+              76.101586,
+              11.632543
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-128",
+      "properties": {
+        "id": "WY-128",
+        "name": "Settlement 128",
+        "population_2011": 4019,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.034281,
+              11.601582
+            ],
+            [
+              76.046281,
+              11.601582
+            ],
+            [
+              76.046281,
+              11.613582
+            ],
+            [
+              76.034281,
+              11.613582
+            ],
+            [
+              76.034281,
+              11.601582
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-129",
+      "properties": {
+        "id": "WY-129",
+        "name": "Settlement 129",
+        "population_2011": 4156,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.104997,
+              11.578892
+            ],
+            [
+              76.116997,
+              11.578892
+            ],
+            [
+              76.116997,
+              11.590892
+            ],
+            [
+              76.104997,
+              11.590892
+            ],
+            [
+              76.104997,
+              11.578892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-130",
+      "properties": {
+        "id": "WY-130",
+        "name": "Settlement 130",
+        "population_2011": 4293,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06809,
+              11.643548
+            ],
+            [
+              76.08009,
+              11.643548
+            ],
+            [
+              76.08009,
+              11.655548
+            ],
+            [
+              76.06809,
+              11.655548
+            ],
+            [
+              76.06809,
+              11.643548
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-131",
+      "properties": {
+        "id": "WY-131",
+        "name": "Settlement 131",
+        "population_2011": 4430,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05159,
+              11.570766
+            ],
+            [
+              76.06359,
+              11.570766
+            ],
+            [
+              76.06359,
+              11.582766
+            ],
+            [
+              76.05159,
+              11.582766
+            ],
+            [
+              76.05159,
+              11.570766
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-132",
+      "properties": {
+        "id": "WY-132",
+        "name": "Settlement 132",
+        "population_2011": 4567,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.113067,
+              11.61339
+            ],
+            [
+              76.125067,
+              11.61339
+            ],
+            [
+              76.125067,
+              11.62539
+            ],
+            [
+              76.113067,
+              11.62539
+            ],
+            [
+              76.113067,
+              11.61339
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-133",
+      "properties": {
+        "id": "WY-133",
+        "name": "Settlement 133",
+        "population_2011": 4704,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.038766,
+              11.623512
+            ],
+            [
+              76.050766,
+              11.623512
+            ],
+            [
+              76.050766,
+              11.635512
+            ],
+            [
+              76.038766,
+              11.635512
+            ],
+            [
+              76.038766,
+              11.623512
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-134",
+      "properties": {
+        "id": "WY-134",
+        "name": "Settlement 134",
+        "population_2011": 4841,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.086831,
+              11.565722
+            ],
+            [
+              76.098831,
+              11.565722
+            ],
+            [
+              76.098831,
+              11.577722
+            ],
+            [
+              76.086831,
+              11.577722
+            ],
+            [
+              76.086831,
+              11.565722
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-135",
+      "properties": {
+        "id": "WY-135",
+        "name": "Settlement 135",
+        "population_2011": 4978,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.090434,
+              11.640979
+            ],
+            [
+              76.102434,
+              11.640979
+            ],
+            [
+              76.102434,
+              11.652979
+            ],
+            [
+              76.090434,
+              11.652979
+            ],
+            [
+              76.090434,
+              11.640979
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-136",
+      "properties": {
+        "id": "WY-136",
+        "name": "Settlement 136",
+        "population_2011": 515,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.036816,
+              11.587796
+            ],
+            [
+              76.048816,
+              11.587796
+            ],
+            [
+              76.048816,
+              11.599796
+            ],
+            [
+              76.036816,
+              11.599796
+            ],
+            [
+              76.036816,
+              11.587796
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-137",
+      "properties": {
+        "id": "WY-137",
+        "name": "Settlement 137",
+        "population_2011": 652,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.112454,
+              11.5908
+            ],
+            [
+              76.124454,
+              11.5908
+            ],
+            [
+              76.124454,
+              11.6028
+            ],
+            [
+              76.112454,
+              11.6028
+            ],
+            [
+              76.112454,
+              11.5908
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-138",
+      "properties": {
+        "id": "WY-138",
+        "name": "Settlement 138",
+        "population_2011": 789,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.054517,
+              11.639791
+            ],
+            [
+              76.066517,
+              11.639791
+            ],
+            [
+              76.066517,
+              11.651791
+            ],
+            [
+              76.054517,
+              11.651791
+            ],
+            [
+              76.054517,
+              11.639791
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-139",
+      "properties": {
+        "id": "WY-139",
+        "name": "Settlement 139",
+        "population_2011": 926,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.064167,
+              11.564357
+            ],
+            [
+              76.076167,
+              11.564357
+            ],
+            [
+              76.076167,
+              11.576357
+            ],
+            [
+              76.064167,
+              11.576357
+            ],
+            [
+              76.064167,
+              11.564357
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-140",
+      "properties": {
+        "id": "WY-140",
+        "name": "Settlement 140",
+        "population_2011": 1063,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.108107,
+              11.626641
+            ],
+            [
+              76.120107,
+              11.626641
+            ],
+            [
+              76.120107,
+              11.638641
+            ],
+            [
+              76.108107,
+              11.638641
+            ],
+            [
+              76.108107,
+              11.626641
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-141",
+      "properties": {
+        "id": "WY-141",
+        "name": "Settlement 141",
+        "population_2011": 1200,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.033465,
+              11.610358
+            ],
+            [
+              76.045465,
+              11.610358
+            ],
+            [
+              76.045465,
+              11.622358
+            ],
+            [
+              76.033465,
+              11.622358
+            ],
+            [
+              76.033465,
+              11.610358
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-142",
+      "properties": {
+        "id": "WY-142",
+        "name": "Settlement 142",
+        "population_2011": 1337,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.099652,
+              11.571858
+            ],
+            [
+              76.111652,
+              11.571858
+            ],
+            [
+              76.111652,
+              11.583858
+            ],
+            [
+              76.099652,
+              11.583858
+            ],
+            [
+              76.099652,
+              11.571858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-143",
+      "properties": {
+        "id": "WY-143",
+        "name": "Settlement 143",
+        "population_2011": 1474,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.076803,
+              11.645121
+            ],
+            [
+              76.088803,
+              11.645121
+            ],
+            [
+              76.088803,
+              11.657121
+            ],
+            [
+              76.076803,
+              11.657121
+            ],
+            [
+              76.076803,
+              11.645121
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-144",
+      "properties": {
+        "id": "WY-144",
+        "name": "Settlement 144",
+        "population_2011": 1611,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.04409,
+              11.575509
+            ],
+            [
+              76.05609,
+              11.575509
+            ],
+            [
+              76.05609,
+              11.587509
+            ],
+            [
+              76.04409,
+              11.587509
+            ],
+            [
+              76.04409,
+              11.575509
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-145",
+      "properties": {
+        "id": "WY-145",
+        "name": "Settlement 145",
+        "population_2011": 1748,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.115392,
+              11.604806
+            ],
+            [
+              76.127392,
+              11.604806
+            ],
+            [
+              76.127392,
+              11.616806
+            ],
+            [
+              76.115392,
+              11.616806
+            ],
+            [
+              76.115392,
+              11.604806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-146",
+      "properties": {
+        "id": "WY-146",
+        "name": "Settlement 146",
+        "population_2011": 1885,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.042865,
+              11.631426
+            ],
+            [
+              76.054865,
+              11.631426
+            ],
+            [
+              76.054865,
+              11.643426
+            ],
+            [
+              76.042865,
+              11.643426
+            ],
+            [
+              76.042865,
+              11.631426
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-147",
+      "properties": {
+        "id": "WY-147",
+        "name": "Settlement 147",
+        "population_2011": 2022,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.078442,
+              11.562655
+            ],
+            [
+              76.090442,
+              11.562655
+            ],
+            [
+              76.090442,
+              11.574655
+            ],
+            [
+              76.078442,
+              11.574655
+            ],
+            [
+              76.078442,
+              11.562655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-148",
+      "properties": {
+        "id": "WY-148",
+        "name": "Settlement 148",
+        "population_2011": 2159,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.098707,
+              11.63756
+            ],
+            [
+              76.110707,
+              11.63756
+            ],
+            [
+              76.110707,
+              11.64956
+            ],
+            [
+              76.098707,
+              11.64956
+            ],
+            [
+              76.098707,
+              11.63756
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-149",
+      "properties": {
+        "id": "WY-149",
+        "name": "Settlement 149",
+        "population_2011": 2296,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.033024,
+              11.595926
+            ],
+            [
+              76.045024,
+              11.595926
+            ],
+            [
+              76.045024,
+              11.607926
+            ],
+            [
+              76.033024,
+              11.607926
+            ],
+            [
+              76.033024,
+              11.595926
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-150",
+      "properties": {
+        "id": "WY-150",
+        "name": "Settlement 150",
+        "population_2011": 2433,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.109746,
+              11.582228
+            ],
+            [
+              76.121746,
+              11.582228
+            ],
+            [
+              76.121746,
+              11.594228
+            ],
+            [
+              76.109746,
+              11.594228
+            ],
+            [
+              76.109746,
+              11.582228
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-151",
+      "properties": {
+        "id": "WY-151",
+        "name": "Settlement 151",
+        "population_2011": 2570,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.062324,
+              11.644287
+            ],
+            [
+              76.074324,
+              11.644287
+            ],
+            [
+              76.074324,
+              11.656287
+            ],
+            [
+              76.062324,
+              11.656287
+            ],
+            [
+              76.062324,
+              11.644287
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-152",
+      "properties": {
+        "id": "WY-152",
+        "name": "Settlement 152",
+        "population_2011": 2707,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.055356,
+              11.566327
+            ],
+            [
+              76.067356,
+              11.566327
+            ],
+            [
+              76.067356,
+              11.578327
+            ],
+            [
+              76.055356,
+              11.578327
+            ],
+            [
+              76.055356,
+              11.566327
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-153",
+      "properties": {
+        "id": "WY-153",
+        "name": "Settlement 153",
+        "population_2011": 2844,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.113278,
+              11.619218
+            ],
+            [
+              76.125278,
+              11.619218
+            ],
+            [
+              76.125278,
+              11.631218
+            ],
+            [
+              76.113278,
+              11.631218
+            ],
+            [
+              76.113278,
+              11.619218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-154",
+      "properties": {
+        "id": "WY-154",
+        "name": "Settlement 154",
+        "population_2011": 2981,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.034675,
+              11.619343
+            ],
+            [
+              76.046675,
+              11.619343
+            ],
+            [
+              76.046675,
+              11.631343
+            ],
+            [
+              76.034675,
+              11.631343
+            ],
+            [
+              76.034675,
+              11.619343
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-155",
+      "properties": {
+        "id": "WY-155",
+        "name": "Settlement 155",
+        "population_2011": 3118,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.092672,
+              11.566043
+            ],
+            [
+              76.104672,
+              11.566043
+            ],
+            [
+              76.104672,
+              11.578043
+            ],
+            [
+              76.092672,
+              11.578043
+            ],
+            [
+              76.092672,
+              11.566043
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-156",
+      "properties": {
+        "id": "WY-156",
+        "name": "Settlement 156",
+        "population_2011": 3255,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.085896,
+              11.644686
+            ],
+            [
+              76.097896,
+              11.644686
+            ],
+            [
+              76.097896,
+              11.656686
+            ],
+            [
+              76.085896,
+              11.656686
+            ],
+            [
+              76.085896,
+              11.644686
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-157",
+      "properties": {
+        "id": "WY-157",
+        "name": "Settlement 157",
+        "population_2011": 3392,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.037669,
+              11.581989
+            ],
+            [
+              76.049669,
+              11.581989
+            ],
+            [
+              76.049669,
+              11.593989
+            ],
+            [
+              76.037669,
+              11.593989
+            ],
+            [
+              76.037669,
+              11.581989
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-158",
+      "properties": {
+        "id": "WY-158",
+        "name": "Settlement 158",
+        "population_2011": 3529,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.115743,
+              11.595672
+            ],
+            [
+              76.127743,
+              11.595672
+            ],
+            [
+              76.127743,
+              11.607672
+            ],
+            [
+              76.115743,
+              11.607672
+            ],
+            [
+              76.115743,
+              11.595672
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-159",
+      "properties": {
+        "id": "WY-159",
+        "name": "Settlement 159",
+        "population_2011": 3666,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.048794,
+              11.638409
+            ],
+            [
+              76.060794,
+              11.638409
+            ],
+            [
+              76.060794,
+              11.650409
+            ],
+            [
+              76.048794,
+              11.650409
+            ],
+            [
+              76.048794,
+              11.638409
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-160",
+      "properties": {
+        "id": "WY-160",
+        "name": "Settlement 160",
+        "population_2011": 3803,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.069334,
+              11.561515
+            ],
+            [
+              76.081334,
+              11.561515
+            ],
+            [
+              76.081334,
+              11.573515
+            ],
+            [
+              76.069334,
+              11.573515
+            ],
+            [
+              76.069334,
+              11.561515
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-161",
+      "properties": {
+        "id": "WY-161",
+        "name": "Settlement 161",
+        "population_2011": 3940,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.106205,
+              11.632233
+            ],
+            [
+              76.118205,
+              11.632233
+            ],
+            [
+              76.118205,
+              11.644233
+            ],
+            [
+              76.106205,
+              11.644233
+            ],
+            [
+              76.106205,
+              11.632233
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-162",
+      "properties": {
+        "id": "WY-162",
+        "name": "Settlement 162",
+        "population_2011": 4077,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.031095,
+              11.604938
+            ],
+            [
+              76.043095,
+              11.604938
+            ],
+            [
+              76.043095,
+              11.616938
+            ],
+            [
+              76.031095,
+              11.616938
+            ],
+            [
+              76.031095,
+              11.604938
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-163",
+      "properties": {
+        "id": "WY-163",
+        "name": "Settlement 163",
+        "population_2011": 4214,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.105066,
+              11.574267
+            ],
+            [
+              76.117066,
+              11.574267
+            ],
+            [
+              76.117066,
+              11.586267
+            ],
+            [
+              76.105066,
+              11.586267
+            ],
+            [
+              76.105066,
+              11.574267
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-164",
+      "properties": {
+        "id": "WY-164",
+        "name": "Settlement 164",
+        "population_2011": 4351,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.071172,
+              11.646995
+            ],
+            [
+              76.083172,
+              11.646995
+            ],
+            [
+              76.083172,
+              11.658995
+            ],
+            [
+              76.071172,
+              11.658995
+            ],
+            [
+              76.071172,
+              11.646995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-165",
+      "properties": {
+        "id": "WY-165",
+        "name": "Settlement 165",
+        "population_2011": 4488,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.046989,
+              11.570319
+            ],
+            [
+              76.058989,
+              11.570319
+            ],
+            [
+              76.058989,
+              11.582319
+            ],
+            [
+              76.046989,
+              11.582319
+            ],
+            [
+              76.046989,
+              11.570319
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-166",
+      "properties": {
+        "id": "WY-166",
+        "name": "Settlement 166",
+        "population_2011": 4625,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.116753,
+              11.610602
+            ],
+            [
+              76.128753,
+              11.610602
+            ],
+            [
+              76.128753,
+              11.622602
+            ],
+            [
+              76.116753,
+              11.622602
+            ],
+            [
+              76.116753,
+              11.610602
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-167",
+      "properties": {
+        "id": "WY-167",
+        "name": "Settlement 167",
+        "population_2011": 4762,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.037945,
+              11.628058
+            ],
+            [
+              76.049945,
+              11.628058
+            ],
+            [
+              76.049945,
+              11.640058
+            ],
+            [
+              76.037945,
+              11.640058
+            ],
+            [
+              76.037945,
+              11.628058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-168",
+      "properties": {
+        "id": "WY-168",
+        "name": "Settlement 168",
+        "population_2011": 4899,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.084355,
+              11.561822
+            ],
+            [
+              76.096355,
+              11.561822
+            ],
+            [
+              76.096355,
+              11.573822
+            ],
+            [
+              76.084355,
+              11.573822
+            ],
+            [
+              76.084355,
+              11.561822
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-169",
+      "properties": {
+        "id": "WY-169",
+        "name": "Settlement 169",
+        "population_2011": 436,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.094896,
+              11.64217
+            ],
+            [
+              76.106896,
+              11.64217
+            ],
+            [
+              76.106896,
+              11.65417
+            ],
+            [
+              76.094896,
+              11.65417
+            ],
+            [
+              76.094896,
+              11.64217
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-170",
+      "properties": {
+        "id": "WY-170",
+        "name": "Settlement 170",
+        "population_2011": 573,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.032729,
+              11.589942
+            ],
+            [
+              76.044729,
+              11.589942
+            ],
+            [
+              76.044729,
+              11.601942
+            ],
+            [
+              76.032729,
+              11.601942
+            ],
+            [
+              76.032729,
+              11.589942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-171",
+      "properties": {
+        "id": "WY-171",
+        "name": "Settlement 171",
+        "population_2011": 710,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.114006,
+              11.586453
+            ],
+            [
+              76.126006,
+              11.586453
+            ],
+            [
+              76.126006,
+              11.598453
+            ],
+            [
+              76.114006,
+              11.598453
+            ],
+            [
+              76.114006,
+              11.586453
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-172",
+      "properties": {
+        "id": "WY-172",
+        "name": "Settlement 172",
+        "population_2011": 847,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05632,
+              11.644039
+            ],
+            [
+              76.06832,
+              11.644039
+            ],
+            [
+              76.06832,
+              11.656039
+            ],
+            [
+              76.05632,
+              11.656039
+            ],
+            [
+              76.05632,
+              11.644039
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-173",
+      "properties": {
+        "id": "WY-173",
+        "name": "Settlement 173",
+        "population_2011": 984,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.059964,
+              11.562454
+            ],
+            [
+              76.071964,
+              11.562454
+            ],
+            [
+              76.071964,
+              11.574454
+            ],
+            [
+              76.059964,
+              11.574454
+            ],
+            [
+              76.059964,
+              11.562454
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-174",
+      "properties": {
+        "id": "WY-174",
+        "name": "Settlement 174",
+        "population_2011": 1121,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.112487,
+              11.625194
+            ],
+            [
+              76.124487,
+              11.625194
+            ],
+            [
+              76.124487,
+              11.637194
+            ],
+            [
+              76.112487,
+              11.637194
+            ],
+            [
+              76.112487,
+              11.625194
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-175",
+      "properties": {
+        "id": "WY-175",
+        "name": "Settlement 175",
+        "population_2011": 1258,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.031224,
+              11.614389
+            ],
+            [
+              76.043224,
+              11.614389
+            ],
+            [
+              76.043224,
+              11.626389
+            ],
+            [
+              76.031224,
+              11.626389
+            ],
+            [
+              76.031224,
+              11.614389
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-176",
+      "properties": {
+        "id": "WY-176",
+        "name": "Settlement 176",
+        "population_2011": 1395,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.098571,
+              11.567375
+            ],
+            [
+              76.110571,
+              11.567375
+            ],
+            [
+              76.110571,
+              11.579375
+            ],
+            [
+              76.098571,
+              11.579375
+            ],
+            [
+              76.098571,
+              11.567375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-177",
+      "properties": {
+        "id": "WY-177",
+        "name": "Settlement 177",
+        "population_2011": 1532,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.080635,
+              11.647685
+            ],
+            [
+              76.092635,
+              11.647685
+            ],
+            [
+              76.092635,
+              11.659685
+            ],
+            [
+              76.080635,
+              11.659685
+            ],
+            [
+              76.080635,
+              11.647685
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-178",
+      "properties": {
+        "id": "WY-178",
+        "name": "Settlement 178",
+        "population_2011": 1669,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.039534,
+              11.576218
+            ],
+            [
+              76.051534,
+              11.576218
+            ],
+            [
+              76.051534,
+              11.588218
+            ],
+            [
+              76.039534,
+              11.588218
+            ],
+            [
+              76.039534,
+              11.576218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-179",
+      "properties": {
+        "id": "WY-179",
+        "name": "Settlement 179",
+        "population_2011": 1806,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.118263,
+              11.601199
+            ],
+            [
+              76.130263,
+              11.601199
+            ],
+            [
+              76.130263,
+              11.613199
+            ],
+            [
+              76.118263,
+              11.613199
+            ],
+            [
+              76.118263,
+              11.601199
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-180",
+      "properties": {
+        "id": "WY-180",
+        "name": "Settlement 180",
+        "population_2011": 1943,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.043196,
+              11.636024
+            ],
+            [
+              76.055196,
+              11.636024
+            ],
+            [
+              76.055196,
+              11.648024
+            ],
+            [
+              76.043196,
+              11.648024
+            ],
+            [
+              76.043196,
+              11.636024
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-181",
+      "properties": {
+        "id": "WY-181",
+        "name": "Settlement 181",
+        "population_2011": 2080,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.075084,
+              11.559497
+            ],
+            [
+              76.087084,
+              11.559497
+            ],
+            [
+              76.087084,
+              11.571497
+            ],
+            [
+              76.075084,
+              11.571497
+            ],
+            [
+              76.075084,
+              11.559497
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-182",
+      "properties": {
+        "id": "WY-182",
+        "name": "Settlement 182",
+        "population_2011": 2217,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.103316,
+              11.637609
+            ],
+            [
+              76.115316,
+              11.637609
+            ],
+            [
+              76.115316,
+              11.649609
+            ],
+            [
+              76.103316,
+              11.649609
+            ],
+            [
+              76.103316,
+              11.637609
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-183",
+      "properties": {
+        "id": "WY-183",
+        "name": "Settlement 183",
+        "population_2011": 2354,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0296,
+              11.599011
+            ],
+            [
+              76.0416,
+              11.599011
+            ],
+            [
+              76.0416,
+              11.611011
+            ],
+            [
+              76.0296,
+              11.611011
+            ],
+            [
+              76.0296,
+              11.599011
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-184",
+      "properties": {
+        "id": "WY-184",
+        "name": "Settlement 184",
+        "population_2011": 2491,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.110175,
+              11.577639
+            ],
+            [
+              76.122175,
+              11.577639
+            ],
+            [
+              76.122175,
+              11.589639
+            ],
+            [
+              76.110175,
+              11.589639
+            ],
+            [
+              76.110175,
+              11.577639
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-185",
+      "properties": {
+        "id": "WY-185",
+        "name": "Settlement 185",
+        "population_2011": 2628,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.065117,
+              11.647954
+            ],
+            [
+              76.077117,
+              11.647954
+            ],
+            [
+              76.077117,
+              11.659954
+            ],
+            [
+              76.065117,
+              11.659954
+            ],
+            [
+              76.065117,
+              11.647954
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-186",
+      "properties": {
+        "id": "WY-186",
+        "name": "Settlement 186",
+        "population_2011": 2765,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.050818,
+              11.56552
+            ],
+            [
+              76.062818,
+              11.56552
+            ],
+            [
+              76.062818,
+              11.57752
+            ],
+            [
+              76.050818,
+              11.57752
+            ],
+            [
+              76.050818,
+              11.56552
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-187",
+      "properties": {
+        "id": "WY-187",
+        "name": "Settlement 187",
+        "population_2011": 2902,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.117164,
+              11.616738
+            ],
+            [
+              76.129164,
+              11.616738
+            ],
+            [
+              76.129164,
+              11.628738
+            ],
+            [
+              76.117164,
+              11.628738
+            ],
+            [
+              76.117164,
+              11.616738
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-188",
+      "properties": {
+        "id": "WY-188",
+        "name": "Settlement 188",
+        "population_2011": 3039,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.033496,
+              11.6238
+            ],
+            [
+              76.045496,
+              11.6238
+            ],
+            [
+              76.045496,
+              11.6358
+            ],
+            [
+              76.033496,
+              11.6358
+            ],
+            [
+              76.033496,
+              11.6238
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-189",
+      "properties": {
+        "id": "WY-189",
+        "name": "Settlement 189",
+        "population_2011": 3176,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.090522,
+              11.561965
+            ],
+            [
+              76.102522,
+              11.561965
+            ],
+            [
+              76.102522,
+              11.573965
+            ],
+            [
+              76.090522,
+              11.573965
+            ],
+            [
+              76.090522,
+              11.561965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-190",
+      "properties": {
+        "id": "WY-190",
+        "name": "Settlement 190",
+        "population_2011": 3313,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09024,
+              11.64623
+            ],
+            [
+              76.10224,
+              11.64623
+            ],
+            [
+              76.10224,
+              11.65823
+            ],
+            [
+              76.09024,
+              11.65823
+            ],
+            [
+              76.09024,
+              11.64623
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-191",
+      "properties": {
+        "id": "WY-191",
+        "name": "Settlement 191",
+        "population_2011": 3450,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.033428,
+              11.583795
+            ],
+            [
+              76.045428,
+              11.583795
+            ],
+            [
+              76.045428,
+              11.595795
+            ],
+            [
+              76.033428,
+              11.595795
+            ],
+            [
+              76.033428,
+              11.583795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-192",
+      "properties": {
+        "id": "WY-192",
+        "name": "Settlement 192",
+        "population_2011": 3587,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.117641,
+              11.59147
+            ],
+            [
+              76.129641,
+              11.59147
+            ],
+            [
+              76.129641,
+              11.60347
+            ],
+            [
+              76.117641,
+              11.60347
+            ],
+            [
+              76.117641,
+              11.59147
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-193",
+      "properties": {
+        "id": "WY-193",
+        "name": "Settlement 193",
+        "population_2011": 3724,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.050243,
+              11.642786
+            ],
+            [
+              76.062243,
+              11.642786
+            ],
+            [
+              76.062243,
+              11.654786
+            ],
+            [
+              76.050243,
+              11.654786
+            ],
+            [
+              76.050243,
+              11.642786
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-194",
+      "properties": {
+        "id": "WY-194",
+        "name": "Settlement 194",
+        "population_2011": 3861,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.065303,
+              11.559274
+            ],
+            [
+              76.077303,
+              11.559274
+            ],
+            [
+              76.077303,
+              11.571274
+            ],
+            [
+              76.065303,
+              11.571274
+            ],
+            [
+              76.065303,
+              11.559274
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-195",
+      "properties": {
+        "id": "WY-195",
+        "name": "Settlement 195",
+        "population_2011": 3998,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.110688,
+              11.631152
+            ],
+            [
+              76.122688,
+              11.631152
+            ],
+            [
+              76.122688,
+              11.643152
+            ],
+            [
+              76.110688,
+              11.643152
+            ],
+            [
+              76.110688,
+              11.631152
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-196",
+      "properties": {
+        "id": "WY-196",
+        "name": "Settlement 196",
+        "population_2011": 4135,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.028528,
+              11.60877
+            ],
+            [
+              76.040528,
+              11.60877
+            ],
+            [
+              76.040528,
+              11.62077
+            ],
+            [
+              76.028528,
+              11.62077
+            ],
+            [
+              76.028528,
+              11.60877
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-197",
+      "properties": {
+        "id": "WY-197",
+        "name": "Settlement 197",
+        "population_2011": 4272,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.104359,
+              11.569708
+            ],
+            [
+              76.116359,
+              11.569708
+            ],
+            [
+              76.116359,
+              11.581708
+            ],
+            [
+              76.104359,
+              11.581708
+            ],
+            [
+              76.104359,
+              11.569708
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-198",
+      "properties": {
+        "id": "WY-198",
+        "name": "Settlement 198",
+        "population_2011": 4409,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.074779,
+              11.649872
+            ],
+            [
+              76.086779,
+              11.649872
+            ],
+            [
+              76.086779,
+              11.661872
+            ],
+            [
+              76.074779,
+              11.661872
+            ],
+            [
+              76.074779,
+              11.649872
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-199",
+      "properties": {
+        "id": "WY-199",
+        "name": "Settlement 199",
+        "population_2011": 4546,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.042386,
+              11.570645
+            ],
+            [
+              76.054386,
+              11.570645
+            ],
+            [
+              76.054386,
+              11.582645
+            ],
+            [
+              76.042386,
+              11.582645
+            ],
+            [
+              76.042386,
+              11.570645
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-200",
+      "properties": {
+        "id": "WY-200",
+        "name": "Settlement 200",
+        "population_2011": 4683,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11992,
+              11.607245
+            ],
+            [
+              76.13192,
+              11.607245
+            ],
+            [
+              76.13192,
+              11.619245
+            ],
+            [
+              76.11992,
+              11.619245
+            ],
+            [
+              76.11992,
+              11.607245
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-201",
+      "properties": {
+        "id": "WY-201",
+        "name": "Settlement 201",
+        "population_2011": 4820,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.037887,
+              11.632674
+            ],
+            [
+              76.049887,
+              11.632674
+            ],
+            [
+              76.049887,
+              11.644674
+            ],
+            [
+              76.037887,
+              11.644674
+            ],
+            [
+              76.037887,
+              11.632674
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-202",
+      "properties": {
+        "id": "WY-202",
+        "name": "Settlement 202",
+        "population_2011": 4957,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.081272,
+              11.558386
+            ],
+            [
+              76.093272,
+              11.558386
+            ],
+            [
+              76.093272,
+              11.570386
+            ],
+            [
+              76.081272,
+              11.570386
+            ],
+            [
+              76.081272,
+              11.558386
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-203",
+      "properties": {
+        "id": "WY-203",
+        "name": "Settlement 203",
+        "population_2011": 494,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.099493,
+              11.642611
+            ],
+            [
+              76.111493,
+              11.642611
+            ],
+            [
+              76.111493,
+              11.654611
+            ],
+            [
+              76.099493,
+              11.654611
+            ],
+            [
+              76.099493,
+              11.642611
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-204",
+      "properties": {
+        "id": "WY-204",
+        "name": "Settlement 204",
+        "population_2011": 631,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.029046,
+              11.59273
+            ],
+            [
+              76.041046,
+              11.59273
+            ],
+            [
+              76.041046,
+              11.60473
+            ],
+            [
+              76.029046,
+              11.60473
+            ],
+            [
+              76.029046,
+              11.59273
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-205",
+      "properties": {
+        "id": "WY-205",
+        "name": "Settlement 205",
+        "population_2011": 768,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.114828,
+              11.581907
+            ],
+            [
+              76.126828,
+              11.581907
+            ],
+            [
+              76.126828,
+              11.593907
+            ],
+            [
+              76.114828,
+              11.593907
+            ],
+            [
+              76.114828,
+              11.581907
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-206",
+      "properties": {
+        "id": "WY-206",
+        "name": "Settlement 206",
+        "population_2011": 905,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.058793,
+              11.647942
+            ],
+            [
+              76.070793,
+              11.647942
+            ],
+            [
+              76.070793,
+              11.659942
+            ],
+            [
+              76.058793,
+              11.659942
+            ],
+            [
+              76.058793,
+              11.647942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-207",
+      "properties": {
+        "id": "WY-207",
+        "name": "Settlement 207",
+        "population_2011": 1042,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0555,
+              11.561256
+            ],
+            [
+              76.0675,
+              11.561256
+            ],
+            [
+              76.0675,
+              11.573256
+            ],
+            [
+              76.0555,
+              11.573256
+            ],
+            [
+              76.0555,
+              11.561256
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-208",
+      "properties": {
+        "id": "WY-208",
+        "name": "Settlement 208",
+        "population_2011": 1179,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.116585,
+              11.623053
+            ],
+            [
+              76.128585,
+              11.623053
+            ],
+            [
+              76.128585,
+              11.635053
+            ],
+            [
+              76.116585,
+              11.635053
+            ],
+            [
+              76.116585,
+              11.623053
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-209",
+      "properties": {
+        "id": "WY-209",
+        "name": "Settlement 209",
+        "population_2011": 1316,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.029657,
+              11.61874
+            ],
+            [
+              76.041657,
+              11.61874
+            ],
+            [
+              76.041657,
+              11.63074
+            ],
+            [
+              76.029657,
+              11.63074
+            ],
+            [
+              76.029657,
+              11.61874
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-210",
+      "properties": {
+        "id": "WY-210",
+        "name": "Settlement 210",
+        "population_2011": 1453,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.096777,
+              11.563111
+            ],
+            [
+              76.108777,
+              11.563111
+            ],
+            [
+              76.108777,
+              11.575111
+            ],
+            [
+              76.096777,
+              11.575111
+            ],
+            [
+              76.096777,
+              11.563111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-211",
+      "properties": {
+        "id": "WY-211",
+        "name": "Settlement 211",
+        "population_2011": 1590,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.084843,
+              11.64961
+            ],
+            [
+              76.096843,
+              11.64961
+            ],
+            [
+              76.096843,
+              11.66161
+            ],
+            [
+              76.084843,
+              11.66161
+            ],
+            [
+              76.084843,
+              11.64961
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-212",
+      "properties": {
+        "id": "WY-212",
+        "name": "Settlement 212",
+        "population_2011": 1727,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.035133,
+              11.57765
+            ],
+            [
+              76.047133,
+              11.57765
+            ],
+            [
+              76.047133,
+              11.58965
+            ],
+            [
+              76.035133,
+              11.58965
+            ],
+            [
+              76.035133,
+              11.57765
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-213",
+      "properties": {
+        "id": "WY-213",
+        "name": "Settlement 213",
+        "population_2011": 1864,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.120533,
+              11.597164
+            ],
+            [
+              76.132533,
+              11.597164
+            ],
+            [
+              76.132533,
+              11.609164
+            ],
+            [
+              76.120533,
+              11.609164
+            ],
+            [
+              76.120533,
+              11.597164
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WY-214",
+      "properties": {
+        "id": "WY-214",
+        "name": "Settlement 214",
+        "population_2011": 2001,
+        "provenance": "synthetic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.044258,
+              11.640532
+            ],
+            [
+              76.056258,
+              11.640532
+            ],
+            [
+              76.056258,
+              11.652532
+            ],
+            [
+              76.044258,
+              11.652532
+            ],
+            [
+              76.044258,
+              11.640532
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

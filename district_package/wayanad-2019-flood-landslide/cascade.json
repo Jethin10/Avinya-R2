@@ -1,1 +1,296 @@
-[]
+[
+  {
+    "source": "LGD-627293",
+    "destination": "LGD-627294",
+    "lag_minutes": 48,
+    "transfer_weight": 0.412558
+  },
+  {
+    "source": "LGD-627293",
+    "destination": "LGD-627295",
+    "lag_minutes": 77,
+    "transfer_weight": 0.177707
+  },
+  {
+    "source": "LGD-627293",
+    "destination": "LGD-627296",
+    "lag_minutes": 75,
+    "transfer_weight": 0.158384
+  },
+  {
+    "source": "LGD-627294",
+    "destination": "LGD-627295",
+    "lag_minutes": 32,
+    "transfer_weight": 0.354856
+  },
+  {
+    "source": "LGD-627296",
+    "destination": "LGD-627301",
+    "lag_minutes": 42,
+    "transfer_weight": 0.20448
+  },
+  {
+    "source": "LGD-627296",
+    "destination": "LGD-627302",
+    "lag_minutes": 38,
+    "transfer_weight": 0.252223
+  },
+  {
+    "source": "LGD-627297",
+    "destination": "LGD-627300",
+    "lag_minutes": 34,
+    "transfer_weight": 0.290199
+  },
+  {
+    "source": "LGD-627297",
+    "destination": "LGD-627301",
+    "lag_minutes": 41,
+    "transfer_weight": 0.20183
+  },
+  {
+    "source": "LGD-627298",
+    "destination": "LGD-627300",
+    "lag_minutes": 55,
+    "transfer_weight": 0.199747
+  },
+  {
+    "source": "LGD-627299",
+    "destination": "LGD-627300",
+    "lag_minutes": 61,
+    "transfer_weight": 0.138649
+  },
+  {
+    "source": "LGD-627307",
+    "destination": "LGD-627306",
+    "lag_minutes": 36,
+    "transfer_weight": 0.261992
+  },
+  {
+    "source": "LGD-627307",
+    "destination": "LGD-627308",
+    "lag_minutes": 41,
+    "transfer_weight": 0.151344
+  },
+  {
+    "source": "LGD-627308",
+    "destination": "LGD-627299",
+    "lag_minutes": 47,
+    "transfer_weight": 0.147725
+  },
+  {
+    "source": "LGD-627308",
+    "destination": "LGD-627300",
+    "lag_minutes": 31,
+    "transfer_weight": 0.366182
+  },
+  {
+    "source": "LGD-627309",
+    "destination": "LGD-627304",
+    "lag_minutes": 32,
+    "transfer_weight": 0.223314
+  },
+  {
+    "source": "LGD-627309",
+    "destination": "LGD-627310",
+    "lag_minutes": 38,
+    "transfer_weight": 0.235069
+  },
+  {
+    "source": "LGD-627311",
+    "destination": "LGD-627304",
+    "lag_minutes": 72,
+    "transfer_weight": 0.115232
+  },
+  {
+    "source": "LGD-627313",
+    "destination": "LGD-627314",
+    "lag_minutes": 71,
+    "transfer_weight": 0.157559
+  },
+  {
+    "source": "LGD-627313",
+    "destination": "LGD-627317",
+    "lag_minutes": 73,
+    "transfer_weight": 0.136847
+  },
+  {
+    "source": "LGD-627314",
+    "destination": "LGD-627310",
+    "lag_minutes": 59,
+    "transfer_weight": 0.212078
+  },
+  {
+    "source": "LGD-627314",
+    "destination": "LGD-627315",
+    "lag_minutes": 56,
+    "transfer_weight": 0.228851
+  },
+  {
+    "source": "LGD-627314",
+    "destination": "LGD-627316",
+    "lag_minutes": 58,
+    "transfer_weight": 0.200474
+  },
+  {
+    "source": "LGD-627316",
+    "destination": "LGD-627315",
+    "lag_minutes": 24,
+    "transfer_weight": 0.297838
+  },
+  {
+    "source": "LGD-627317",
+    "destination": "LGD-627316",
+    "lag_minutes": 36,
+    "transfer_weight": 0.20901
+  },
+  {
+    "source": "LGD-627318",
+    "destination": "LGD-627317",
+    "lag_minutes": 47,
+    "transfer_weight": 0.226699
+  },
+  {
+    "source": "LGD-627320",
+    "destination": "LGD-627317",
+    "lag_minutes": 64,
+    "transfer_weight": 0.117914
+  },
+  {
+    "source": "LGD-627321",
+    "destination": "LGD-627317",
+    "lag_minutes": 34,
+    "transfer_weight": 0.224782
+  },
+  {
+    "source": "LGD-627321",
+    "destination": "LGD-627322",
+    "lag_minutes": 34,
+    "transfer_weight": 0.241148
+  },
+  {
+    "source": "LGD-627322",
+    "destination": "LGD-627316",
+    "lag_minutes": 29,
+    "transfer_weight": 0.220605
+  },
+  {
+    "source": "LGD-627323",
+    "destination": "LGD-627339",
+    "lag_minutes": 30,
+    "transfer_weight": 0.226667
+  },
+  {
+    "source": "LGD-627324",
+    "destination": "LGD-627331",
+    "lag_minutes": 36,
+    "transfer_weight": 0.214944
+  },
+  {
+    "source": "LGD-627326",
+    "destination": "LGD-627325",
+    "lag_minutes": 50,
+    "transfer_weight": 0.11715
+  },
+  {
+    "source": "LGD-627329",
+    "destination": "LGD-627328",
+    "lag_minutes": 38,
+    "transfer_weight": 0.125328
+  },
+  {
+    "source": "LGD-627332",
+    "destination": "LGD-627331",
+    "lag_minutes": 26,
+    "transfer_weight": 0.414534
+  },
+  {
+    "source": "LGD-627332",
+    "destination": "LGD-627333",
+    "lag_minutes": 56,
+    "transfer_weight": 0.08203
+  },
+  {
+    "source": "LGD-627333",
+    "destination": "LGD-627330",
+    "lag_minutes": 28,
+    "transfer_weight": 0.195773
+  },
+  {
+    "source": "LGD-627334",
+    "destination": "LGD-627333",
+    "lag_minutes": 29,
+    "transfer_weight": 0.430521
+  },
+  {
+    "source": "LGD-627334",
+    "destination": "LGD-627335",
+    "lag_minutes": 40,
+    "transfer_weight": 0.150811
+  },
+  {
+    "source": "LGD-627334",
+    "destination": "LGD-627336",
+    "lag_minutes": 34,
+    "transfer_weight": 0.305227
+  },
+  {
+    "source": "LGD-627335",
+    "destination": "LGD-627336",
+    "lag_minutes": 31,
+    "transfer_weight": 0.435658
+  },
+  {
+    "source": "LGD-627337",
+    "destination": "LGD-627335",
+    "lag_minutes": 48,
+    "transfer_weight": 0.200277
+  },
+  {
+    "source": "LGD-627337",
+    "destination": "LGD-627336",
+    "lag_minutes": 43,
+    "transfer_weight": 0.356604
+  },
+  {
+    "source": "LGD-627337",
+    "destination": "LGD-627338",
+    "lag_minutes": 43,
+    "transfer_weight": 0.310651
+  },
+  {
+    "source": "LGD-627338",
+    "destination": "LGD-627329",
+    "lag_minutes": 21,
+    "transfer_weight": 0.488374
+  },
+  {
+    "source": "LGD-627338",
+    "destination": "LGD-913291",
+    "lag_minutes": 48,
+    "transfer_weight": 0.090416
+  },
+  {
+    "source": "LGD-627340",
+    "destination": "LGD-627323",
+    "lag_minutes": 81,
+    "transfer_weight": 0.188286
+  },
+  {
+    "source": "LGD-627340",
+    "destination": "LGD-627337",
+    "lag_minutes": 79,
+    "transfer_weight": 0.184554
+  },
+  {
+    "source": "LGD-627340",
+    "destination": "LGD-627339",
+    "lag_minutes": 51,
+    "transfer_weight": 0.490187
+  },
+  {
+    "source": "LGD-913291",
+    "destination": "LGD-627330",
+    "lag_minutes": 28,
+    "transfer_weight": 0.300318
+  }
+]

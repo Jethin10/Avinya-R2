@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "id": "settlements",
+      "format": "geojson",
+      "path": "layers/settlements.geojson",
+      "provenance": "synthetic_cells_not_surveyed_boundaries"
+    },
+    {
+      "id": "event_features",
+      "format": "geojson",
+      "path": "layers/event_features.geojson",
+      "provenance": "synthetic"
+    },
+    {
+      "id": "hazard_frames",
+      "format": "json",
+      "path": "layers/hazard_frames.json",
+      "provenance": "synthetic"
+    }
+  ]
+}

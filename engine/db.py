@@ -18,7 +18,7 @@ PRAGMA foreign_keys=ON;
 CREATE TABLE IF NOT EXISTS source (id TEXT PRIMARY KEY, channel TEXT, alpha REAL NOT NULL DEFAULT 1, beta REAL NOT NULL DEFAULT 1);
 CREATE TABLE IF NOT EXISTS claim (
  id TEXT PRIMARY KEY, source_id TEXT, settlement_id TEXT, geo_confidence REAL, hazard TEXT,
- claim_text TEXT, text_orig TEXT, lang TEXT, severity_hint TEXT, info_type TEXT, is_firsthand INTEGER,
+ claim_text TEXT, text_orig TEXT, lang TEXT, severity_hint TEXT, info_type TEXT, is_firsthand INTEGER, channel TEXT,
  ts TEXT, cascade_root_id TEXT, cascade_size INTEGER, independent_sources INTEGER, provenance TEXT, chain_json TEXT
 );
 CREATE TABLE IF NOT EXISTS evidence (
@@ -56,6 +56,15 @@ class Database:
         self._conn.row_factory = sqlite3.Row
         with self.connect() as conn:
             conn.executescript(SCHEMA)
+            self._migrate(conn)
+
+    @staticmethod
+    def _migrate(conn: sqlite3.Connection) -> None:
+        """Additive column migrations for databases created by an earlier schema."""
+        for table, column, decl in (("claim", "channel", "TEXT"),):
+            existing = {row["name"] for row in conn.execute(f"PRAGMA table_info({table})")}
+            if column not in existing:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
 
     @contextmanager
     def connect(self) -> Iterator[sqlite3.Connection]:
@@ -95,15 +104,54 @@ class Database:
             return cur.rowcount > 0
 
     def save_claim(self, claim: dict[str, Any]) -> None:
-        columns = ["id","source_id","settlement_id","geo_confidence","hazard","claim_text","text_orig","lang","severity_hint","info_type","is_firsthand","ts","cascade_root_id","cascade_size","independent_sources","provenance","chain_json"]
+        columns = ["id","source_id","settlement_id","geo_confidence","hazard","claim_text","text_orig","lang","severity_hint","info_type","is_firsthand","channel","ts","cascade_root_id","cascade_size","independent_sources","provenance","chain_json"]
         values = [claim.get(c) for c in columns]
-        values[10] = int(bool(values[10])); values[16] = json.dumps(values[16] or [])
+        values[10] = int(bool(values[10])); values[17] = json.dumps(values[17] or [])
         with self._lock, self.connect() as conn:
             conn.execute(f"INSERT OR REPLACE INTO claim({','.join(columns)}) VALUES({','.join('?' for _ in columns)})", values)
 
     def claims(self) -> list[dict[str, Any]]:
         with self.connect() as conn:
             return [dict(r) for r in conn.execute("SELECT * FROM claim ORDER BY ts,id")]
+
+    def coverage(self) -> dict[str, Any]:
+        """Per-settlement message, claim and evidence counts, plus district totals.
+
+        The Twin needs this for three things the belief rows cannot answer: how many raw messages
+        became how many distinct claims (the information-paradox panel), report density per village
+        (the Reports map mode), and which villages carry no usable signal at all (the unknown state).
+        A settlement with evidence but zero messages is a silent zone - the map's Silence mode is
+        exactly this table, read inverted.
+        """
+        with self.connect() as conn:
+            claims = conn.execute(
+                "SELECT settlement_id, COUNT(*) AS messages, COUNT(DISTINCT cascade_root_id) AS claims,"
+                " MAX(independent_sources) AS independent_sources"
+                " FROM claim WHERE settlement_id IS NOT NULL GROUP BY settlement_id"
+            ).fetchall()
+            evidence = conn.execute(
+                "SELECT settlement_id, COUNT(*) AS rows_count, COUNT(DISTINCT channel) AS channels"
+                " FROM evidence GROUP BY settlement_id"
+            ).fetchall()
+            totals = conn.execute(
+                "SELECT (SELECT COUNT(*) FROM ingest_event) AS messages_ingested,"
+                " (SELECT COUNT(*) FROM claim) AS messages_located,"
+                " (SELECT COUNT(DISTINCT cascade_root_id) FROM claim) AS distinct_claims,"
+                " (SELECT COUNT(*) FROM disambiguation_queue WHERE state='open') AS unresolved_locations,"
+                " (SELECT COUNT(*) FROM evidence) AS evidence_rows"
+            ).fetchone()
+        by_id: dict[str, dict[str, Any]] = {}
+        for row in claims:
+            by_id[row["settlement_id"]] = {"settlement_id": row["settlement_id"], "messages": row["messages"],
+                                           "claims": row["claims"], "independent_sources": row["independent_sources"] or 0,
+                                           "evidence_rows": 0, "channels": 0}
+        for row in evidence:
+            entry = by_id.setdefault(row["settlement_id"], {"settlement_id": row["settlement_id"], "messages": 0,
+                                                            "claims": 0, "independent_sources": 0,
+                                                            "evidence_rows": 0, "channels": 0})
+            entry["evidence_rows"] = row["rows_count"]
+            entry["channels"] = row["channels"]
+        return {"totals": dict(totals), "settlements": sorted(by_id.values(), key=lambda row: row["settlement_id"])}
 
     def queue_disambiguation(self, obs_id: str, payload: dict[str, Any]) -> None:
         with self._lock, self.connect() as conn:
@@ -122,6 +170,13 @@ class Database:
     def add_evidence(self, rows: list[dict[str, Any]]) -> None:
         with self._lock, self.connect() as conn:
             conn.executemany("INSERT INTO evidence(settlement_id,channel,failure_mode,log_lr,correlation_group,ts,raw_ref) VALUES(:settlement_id,:channel,:failure_mode,:log_lr,:correlation_group,:ts,:raw_ref)", rows)
+
+    def replace_evidence_for_ref(self, raw_ref: str, rows: list[dict[str, Any]]) -> None:
+        """Re-state the evidence a claim contributes, when corroboration changes its weight."""
+        with self._lock, self.connect() as conn:
+            conn.execute("DELETE FROM evidence WHERE raw_ref=?", (raw_ref,))
+            if rows:
+                conn.executemany("INSERT INTO evidence(settlement_id,channel,failure_mode,log_lr,correlation_group,ts,raw_ref) VALUES(:settlement_id,:channel,:failure_mode,:log_lr,:correlation_group,:ts,:raw_ref)", rows)
 
     def evidence(self, *, until: str | None = None, settlement_id: str | None = None) -> list[dict[str, Any]]:
         clauses, params = [], []

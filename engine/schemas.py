@@ -71,5 +71,22 @@ class DisambiguationResolution(BaseModel):
     actor: str = Field(min_length=1, max_length=100)
 
 
+class SeismicRequest(BaseModel):
+    """An epicentre to shake the loaded district with.
+
+    Bounds are deliberately wide: the Twin lets an operator drop an epicentre anywhere on the atlas,
+    including far outside the district, because "this one is 200 km away and we still feel it" is a
+    thing the model should be allowed to say.
+    """
+
+    lon: float = Field(ge=-180, le=180)
+    lat: float = Field(ge=-90, le=90)
+    magnitude: float = Field(ge=3.0, le=9.0)
+    depth_km: float = Field(default=10.0, ge=1.0, le=700.0)
+    # Whether the shaking is only reported back, or also becomes evidence the belief engine has to
+    # reason about. Off by default: reading the ground motion should never mutate the run.
+    inject: bool = False
+
+
 class ScenarioSelection(BaseModel):
     id: str = Field(pattern=r"^[a-z0-9][a-z0-9-]{1,80}$")

@@ -95,6 +95,18 @@
       "path": "data/sources/glo30_hand_n11_e076.tif",
       "sha256": "098182ab2b19839751447fa5080a89a6986fd97fdd9728b2f6502051cd79d623",
       "access": "CC0 1.0; source attribution retained"
+    },
+    {
+      "id": "osm-wayanad-buildings-2026-08-29",
+      "publisher": "OpenStreetMap contributors",
+      "title": "Wayanad building footprint snapshot",
+      "url": "https://overpass-api.de/api/interpreter",
+      "method": "POST_FORM_FILE",
+      "query_path": "scripts/forge/overpass_wayanad_buildings.ql",
+      "snapshot_at": "2026-08-29T19:46:06Z",
+      "path": "data/sources/osm_wayanad_buildings.json",
+      "sha256": "60dc53c3f4ddbf1163cde4747d3fb04ceeb0bdad15552dcff319876b2ee153c2",
+      "access": "ODbL 1.0; © OpenStreetMap contributors; attribution required"
     }
   ],
   "unavailable_public_streams": [

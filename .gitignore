@@ -3,9 +3,22 @@ __pycache__/
 .pytest_cache/
 tmp/
 .venv/
+.playwright-cli/
+node_modules/
+**/__screens__/
+*.woff
+*.woff2
+*.ttf
+*.otf
 setu.db
 setu-*.db
 *.db-shm
 *.db-wal
 dist/
 models/
+
+# Discontinued/local frontend experiments. The active frontend is sanrita-clone/.
+/web/
+/web-atlas/
+/sanrita.ca/
+/tools/

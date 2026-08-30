@@ -3,14 +3,16 @@ from __future__ import annotations
 import asyncio
 import hashlib
 import json
+import math
 from datetime import datetime, timedelta
 from typing import Any
 
-from core.belief import EvidenceTerm, FailureMode, fuse, sigmoid, smooth_once
+from core.belief import STATE_CHANNELS, EvidenceTerm, FailureMode, fuse, sigmoid, smooth_once, supersede_state_channels
 from core.cascade import propagate
 from core.dispatch import ASSET_FOR_MODE, DispatchCandidate, solve
 from core.voi import VerificationCandidate, rank as rank_voi
 from core.routing import assess_route
+from core.seismic import Epicentre, caveats as seismic_caveats, shake as shake_district
 from engine.clock import SimulationClock
 from engine.db import Database
 from engine.package import DistrictPackage
@@ -98,7 +100,10 @@ class Runtime:
         if replay:
             self._replay_due_events(sim_t)
         evidence_rows = self.db.evidence(until=sim_t.isoformat())
-        terms = [EvidenceTerm(row["settlement_id"], FailureMode(row["failure_mode"]), row["log_lr"], row["correlation_group"], row["channel"], row["raw_ref"]) for row in evidence_rows]
+        terms = supersede_state_channels(
+            EvidenceTerm(row["settlement_id"], FailureMode(row["failure_mode"]), row["log_lr"], row["correlation_group"], row["channel"], row["raw_ref"])
+            for row in evidence_rows
+        )
         states = smooth_once(fuse(self.package.priors, terms), self.package.neighbours)
         updated_at = sim_t.isoformat()
         belief_rows = [{"settlement_id": state.settlement_id, "failure_mode": state.failure_mode.value, "log_odds": state.log_odds, "variance": state.variance, "updated_at": updated_at} for state in states.values()]
@@ -171,7 +176,19 @@ class Runtime:
         evidence = self.db.evidence(until=until, settlement_id=settlement_id)
         prior = [{"failure_mode": mode.value, "probability": sigmoid(values[0]), "variance": values[1]} for (sid, mode), values in self.package.priors.items() if sid == settlement_id]
         posterior = [row for row in self.state.get("beliefs", []) if row["settlement_id"] == settlement_id]
-        return {"settlement": self.package.settlement(settlement_id), "t": until, "prior": prior, "evidence": [{**row, "lr": round(pow(2.718281828459045, row["log_lr"]), 6)} for row in evidence], "posterior": posterior}
+        # Superseded state readings stay in the receipt and are flagged, not deleted: an operator
+        # asking "why does the map say this" is owed the morning's normal heartbeats *and* the fact
+        # that they stopped counting the moment the towers went to zero.
+        counted: dict[tuple[str, str], int] = {}
+        for row in evidence:
+            if row["channel"] in STATE_CHANNELS:
+                counted[(row["failure_mode"], row["channel"])] = row["id"]
+        rows = [
+            {**row, "lr": round(math.exp(row["log_lr"]), 6),
+             "superseded": row["channel"] in STATE_CHANNELS and counted[(row["failure_mode"], row["channel"])] != row["id"]}
+            for row in evidence
+        ]
+        return {"settlement": self.package.settlement(settlement_id), "t": until, "prior": prior, "evidence": rows, "posterior": posterior}
 
     def route(self, settlement_id: str, asset_kind: str) -> dict[str, Any]:
         route = self.package.route(settlement_id, asset_kind)
@@ -218,6 +235,63 @@ class Runtime:
                     first_correct_minutes = max(0.0, (datetime.fromisoformat(entry["sim_t"]) - self.clock.start).total_seconds() / 60); break
         historical = bool(self.package.meta.get("historical", False))
         return {"calibration": {"status": "historical replay diagnostic; seed LRs still require held-out event fitting" if historical else "synthetic replay validation; seed LRs still require held-out real-event fitting", "ece": round(ece, 4), "curve": bins}, "operational": {"top_k": k, "top_k_recall": round(top_k_recall, 4), "silent_zone_recall": round(len(silent_found) / max(1, len(silent_severe)), 4), "silent_severe_count": len(silent_severe), "asset_type_accuracy": round(sum(typed) / len(typed), 4) if typed else None, "time_to_first_correct_dispatch_minutes": first_correct_minutes, "asset_hours_misallocated": None, "asset_hours_status": "requires a routed report-volume baseline"}, "equity": {"district_mean_priority": round(overall, 4), "disadvantaged_mean_priority": round(equity, 4), "gap": round(equity - overall, 4)}, "robustness": {"injected_events": len(self.injected_events), "disabled_channels": sorted(self.disabled_channels), **self.last_robustness}, "audit": {"hash_chain_valid": self.db.audit_chain_valid(), "entries": len(self.db.decisions())}, "disclosure": self.package.meta.get("provenance", {}).get("disclosure", "See package provenance metadata.")}
+
+    async def shake(self, epicentre: Epicentre, *, inject: bool = False) -> dict[str, Any]:
+        """Shake the district and, if asked, let the belief engine hear about it.
+
+        Reading the ground motion is pure: ``inject=False`` computes and returns, and the replay is
+        untouched. ``inject=True`` turns the strongest-shaken villages into the evidence an
+        earthquake actually produces — firsthand collapse reports and, where a slope was already
+        marginal, a landslide report — so the queue that comes back is the queue the existing
+        dispatch solver builds from COLLAPSE and LANDSLIDE beliefs. Nothing here writes a new
+        failure mode; the engine reasons about what falls down, not about the fault that shook it.
+
+        The injected events are marked ``synthetic``, because they are: a simulated earthquake is a
+        scenario an operator is exploring, not something that was observed, and every consumer of
+        the decision log needs to be able to tell those two apart afterwards.
+        """
+        rows = shake_district(epicentre, self.package.settlements)
+        response = {
+            "epicentre": epicentre.payload(),
+            "model": {
+                "ground_motion": "Joyner & Boore (1981) horizontal PGA",
+                "site_response": "Wald & Allen (2007) topographic-slope Vs30 proxy",
+                "intensity": "Wald et al. (1999) PGA to Modified Mercalli",
+                "fragility": "HAZUS-MH complete-damage curves, kutcha/pucca weighted",
+            },
+            "caveats": seismic_caveats(epicentre),
+            "provenance": "synthetic",
+            "injected": inject,
+            "settlements": rows,
+        }
+        if not inject:
+            response["state"] = self.state
+            return response
+
+        felt = [row for row in rows if row["mmi"] >= 5.0][:12]
+        for index, row in enumerate(felt):
+            when = self.clock.current + timedelta(seconds=index * 20)
+            self.injected_events.append(RawEvent(
+                t=when, kind="report", channel="api", source_id=f"seismic-{index}",
+                provenance="synthetic", settlement_id=row["settlement_id"],
+                text=(f"Shaking felt at MMI {row['mmi']:g}; masonry structures down, people trapped."
+                      if row["collapse_probability"] >= 0.10 else
+                      f"Shaking felt at MMI {row['mmi']:g}; walls cracked, no collapse seen."),
+                hazard="quake",
+                severity_hint="severe" if row["collapse_probability"] >= 0.10 else "moderate",
+                is_firsthand=True,
+            ))
+            if row["landslide_probability"] >= 0.4:
+                self.injected_events.append(RawEvent(
+                    t=when + timedelta(seconds=5), kind="report", channel="api",
+                    source_id=f"seismic-slope-{index}", provenance="synthetic",
+                    settlement_id=row["settlement_id"],
+                    text="Hillside above the settlement has come down across the approach road.",
+                    hazard="landslide", severity_hint="severe", is_firsthand=True,
+                ))
+        response["state"] = await self.seek(self.clock.current)
+        response["reports_injected"] = len(felt)
+        return response
 
     async def inject(self, attack: str, params: dict[str, Any]) -> dict[str, Any]:
         baseline_order = self._ranked_settlements(self.state)

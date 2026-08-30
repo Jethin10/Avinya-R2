@@ -1,0 +1,19 @@
+{
+  "name": "sanrita-clone",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:clone": "python scripts/build_clone.py",
+    "predev": "npm run prepare:clone",
+    "dev": "vite",
+    "prebuild": "npm run prepare:clone",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.1",
+    "vite": "6.4.2"
+  }
+}

@@ -191,7 +191,7 @@
   {
     "settlement_id": "WY-028",
     "severe": true,
-    "failure_mode": "COLLAPSE",
+    "failure_mode": "INUNDATION",
     "severity": 0.7,
     "provenance": "synthetic"
   },

@@ -24,6 +24,9 @@ DAMPING: dict[str, float] = {
     "cascade": 0.55,
 }
 
+# Channels that report a *current reading* rather than an accumulating observation.
+STATE_CHANNELS: frozenset[str] = frozenset({"telecom", "power"})
+
 
 @dataclass(frozen=True, slots=True)
 class EvidenceTerm:
@@ -62,6 +65,29 @@ def sigmoid(log_odds: float) -> float:
         return 1.0 / (1.0 + z)
     z = math.exp(log_odds)
     return z / (1.0 + z)
+
+
+def supersede_state_channels(terms: Iterable[EvidenceTerm]) -> list[EvidenceTerm]:
+    """Collapse state-channel evidence to its most recent reading, in arrival order.
+
+    A tower-attach count or an 11 kV feeder state describes how a village is *right now*. Nine
+    hourly heartbeats saying "normal" are one fact, not nine, and once the towers go to a hard zero
+    the morning's normality is history, not counter-evidence. Without this, a village that was
+    healthy all morning could never be believed to have failed by afternoon: the accumulated stale
+    readings would out-vote the drop. Superseded rows stay in the evidence table - the receipt can
+    still show them - they simply stop voting.
+
+    Human reports, remote sensing and verification returns are genuine repeat observations and pass
+    through untouched.
+    """
+    latest: dict[tuple[str, FailureMode, str], EvidenceTerm] = {}
+    passthrough: list[EvidenceTerm] = []
+    for term in terms:
+        if term.channel in STATE_CHANNELS:
+            latest[(term.settlement_id, term.failure_mode, term.channel)] = term
+        else:
+            passthrough.append(term)
+    return [*passthrough, *latest.values()]
 
 
 def fuse(

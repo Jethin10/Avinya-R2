@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puthumala landslide",
+        "date": "2019-08-08",
+        "provenance": "KSDMA memorandum",
+        "parent_settlement_id": "LGD-627340"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.160051,
+          11.489158
+        ]
+      }
+    }
+  ]
+}

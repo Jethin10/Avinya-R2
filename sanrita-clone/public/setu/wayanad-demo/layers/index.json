@@ -1,0 +1,1 @@
+{"layers":[{"id":"event_features","format":"geojson","path":"layers/event_features.geojson","provenance":"synthetic"},{"id":"hazard_frames","format":"json","path":"layers/hazard_frames.json","provenance":"synthetic"}]}
