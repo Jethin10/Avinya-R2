@@ -20,6 +20,10 @@ const SPAN = 200;
 /** Low relief keeps severity readable without making the state look like stacked toy blocks. */
 const RELIEF = 8.6;
 const BASE = 1.0;
+const ASSAM_NRSC_FLOOD = {
+  texture: "/setu/assam-flood-2026-08-08-nrsc-mask.png",
+  bbox: [91.40625, 24.609375, 96.328125, 28.125],
+};
 
 // State overview colours are intentionally cooler than the district hazard palette. On the site's
 // pale background this reads as an integrated cartographic layer; warm orange is reserved for the
@@ -83,6 +87,33 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
   const forest = new THREE.Color(...rgb(palette.forestGreen));
   const deepGreen = new THREE.Color(...rgb(palette.deepGreen));
   const signal = new THREE.Color(...rgb(palette.signalOrange));
+  const flood = new THREE.Color(...rgb("#6f9fb3"));
+  const emergency = new THREE.Color(...rgb("#d94d3f"));
+  const floodLayers = [];
+  const satelliteFloodLayers = [];
+  const alertBeacons = [];
+  const satelliteFlood = state.id === "assam" ? (() => {
+    const texture = new THREE.TextureLoader().load(ASSAM_NRSC_FLOOD.texture);
+    texture.colorSpace = THREE.SRGBColorSpace;
+    // Flood pixels are sparse and only a few source pixels wide. Mipmaps average those traces
+    // into transparency in the state overview, so use the source mask directly and keep its thin
+    // mapped extent crisp while the camera pulls back.
+    texture.generateMipmaps = false;
+    texture.minFilter = THREE.NearestFilter;
+    texture.magFilter = THREE.LinearFilter;
+    texture.wrapS = THREE.ClampToEdgeWrapping;
+    texture.wrapT = THREE.ClampToEdgeWrapping;
+    const [west, south, east, north] = ASSAM_NRSC_FLOOD.bbox;
+    const southWest = project.project(west, south);
+    const northEast = project.project(east, north);
+    return {
+      texture,
+      westX: southWest[0],
+      eastX: northEast[0],
+      northZ: northEast[1],
+      southZ: southWest[1],
+    };
+  })() : null;
 
   for (const district of state.districts) {
     const rings = district.rings.map((ring) => simplify(ring.map(([lon, lat]) => project.project(lon, lat)), tolerance));
@@ -112,6 +143,69 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
     mesh.name = district.id;
     mesh.userData = { district, row, height, base: height };
     group.add(mesh);
+
+    // Recent flood replays get a thin water wash over the real district footprint. This is a
+    // categorical "affected" cue only; the UI explicitly discloses that it is not observed depth.
+    if (row.flood_active && state.id !== "assam") {
+      const waterGeometry = new THREE.ShapeGeometry(shapeFrom(outer), 4);
+      waterGeometry.rotateX(-Math.PI / 2);
+      const waterMaterial = new THREE.MeshBasicMaterial({
+        color: flood,
+        transparent: true,
+        opacity: 0.18,
+        depthWrite: false,
+        side: THREE.DoubleSide,
+      });
+      const water = new THREE.Mesh(waterGeometry, waterMaterial);
+      water.position.y = height + 0.18;
+      water.renderOrder = 3;
+      group.add(water);
+      floodLayers.push({ mesh: water, material: waterMaterial, phase: floodLayers.length * 0.73 });
+      mesh.userData.water = water;
+    }
+
+    // Drape the NRSC/Bhuvan inundation mask onto each Assam district's own top surface. UVs are
+    // calculated in the state's projected coordinate frame, so one satellite pixel lands in the
+    // same geographic place no matter which district clips it.
+    if (satelliteFlood) {
+      const [districtWest, districtSouth, districtEast, districtNorth] = bboxOf(district.rings);
+      const [maskWest, maskSouth, maskEast, maskNorth] = ASSAM_NRSC_FLOOD.bbox;
+      const overlapsMask = districtEast >= maskWest && districtWest <= maskEast
+        && districtNorth >= maskSouth && districtSouth <= maskNorth;
+      if (overlapsMask) {
+        const waterGeometry = new THREE.ShapeGeometry(shapeFrom(outer), 4);
+        const positions = waterGeometry.getAttribute("position");
+        const uvs = new Float32Array(positions.count * 2);
+        const width = satelliteFlood.eastX - satelliteFlood.westX || 1;
+        const depth = satelliteFlood.southZ - satelliteFlood.northZ || 1;
+        for (let index = 0; index < positions.count; index += 1) {
+          const x = positions.getX(index);
+          const z = positions.getY(index);
+          uvs[index * 2] = (x - satelliteFlood.westX) / width;
+          // Three flips DOM image rows on upload by default, so v=0 samples the source image's
+          // northern edge and v=1 its southern edge. Do not flip this a second time here.
+          uvs[index * 2 + 1] = (z - satelliteFlood.northZ) / depth;
+        }
+        waterGeometry.setAttribute("uv", new THREE.BufferAttribute(uvs, 2));
+        waterGeometry.rotateX(-Math.PI / 2);
+        const waterMaterial = new THREE.MeshBasicMaterial({
+          map: satelliteFlood.texture,
+          transparent: true,
+          opacity: 1,
+          depthWrite: false,
+          side: THREE.DoubleSide,
+          toneMapped: false,
+        });
+        const water = new THREE.Mesh(waterGeometry, waterMaterial);
+        // ExtrudeGeometry's bevel extends ~0.34 above the nominal depth; stay just above it so the
+        // evidence layer is visible without looking detached from the district surface.
+        water.position.y = height + 0.48;
+        water.renderOrder = 4;
+        group.add(water);
+        satelliteFloodLayers.push({ mesh: water, material: waterMaterial });
+        mesh.userData.satelliteFlood = water;
+      }
+    }
 
     // Hairline outlines keep the relief crisp without turning the state into a wireframe model.
     // The one district backed by the live/baked engine gets the same restrained signal orange used
@@ -162,9 +256,52 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
       beaconGroup.add(pinMesh, ringMesh);
       beaconGroup.position.set(anchor[0], height, anchor[1]);
       group.add(beaconGroup);
+      mesh.userData.beacon = beaconGroup;
     }
 
-    districts.push({ mesh, district, row, centroid, anchor, footprintSpan, height });
+    // The three highest-impact Assam districts use an emergency pulse that is visible even before
+    // hover. Amber districts keep the flood wash but do not all animate, which preserves legibility.
+    if (row.alert_level === "red") {
+      const alertGroup = new THREE.Group();
+      const alertRadius = Math.max(2.4, Math.min(7.2, footprintSpan * 0.22));
+      const stemGeom = new THREE.CylinderGeometry(0.13, 0.13, 4.8, 14);
+      stemGeom.translate(0, 2.4, 0);
+      const stemMat = new THREE.MeshBasicMaterial({ color: emergency, transparent: true, opacity: 0.9 });
+      const stem = new THREE.Mesh(stemGeom, stemMat);
+      const coreGeom = new THREE.CircleGeometry(alertRadius * 0.34, 32);
+      coreGeom.rotateX(-Math.PI / 2);
+      const coreMat = new THREE.MeshBasicMaterial({ color: emergency, transparent: true, opacity: 0.88, side: THREE.DoubleSide });
+      const core = new THREE.Mesh(coreGeom, coreMat);
+      const ringGeom = new THREE.RingGeometry(alertRadius * 0.72, alertRadius * 0.86, 48);
+      ringGeom.rotateX(-Math.PI / 2);
+      const ringMat = new THREE.MeshBasicMaterial({ color: emergency, transparent: true, opacity: 0.7, side: THREE.DoubleSide, depthWrite: false });
+      const ring = new THREE.Mesh(ringGeom, ringMat);
+      const haloGeom = new THREE.RingGeometry(alertRadius * 1.08, alertRadius * 1.19, 48);
+      haloGeom.rotateX(-Math.PI / 2);
+      const haloMat = new THREE.MeshBasicMaterial({ color: emergency, transparent: true, opacity: 0.28, side: THREE.DoubleSide, depthWrite: false });
+      const halo = new THREE.Mesh(haloGeom, haloMat);
+      core.position.y = 4.75;
+      ring.position.y = 4.72;
+      halo.position.y = 4.7;
+      alertGroup.add(stem, core, ring, halo);
+      alertGroup.position.set(anchor[0], height + 0.32, anchor[1]);
+      alertGroup.renderOrder = 5;
+      group.add(alertGroup);
+      alertBeacons.push({ group: alertGroup, ring, halo, ringMat, haloMat, phase: alertBeacons.length * 1.8 });
+      mesh.userData.alert = alertGroup;
+    }
+
+    districts.push({
+      mesh,
+      district,
+      row,
+      centroid,
+      anchor,
+      footprintSpan,
+      height,
+      baseScale: 1,
+      selectionScale: 1,
+    });
   }
 
   // The ground plinth the districts sit on
@@ -184,7 +321,27 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
   const raycaster = new THREE.Raycaster();
   const pointerNdc = new THREE.Vector2();
   let hovered = null;
+  let selected = null;
   const meshes = districts.map((entry) => entry.mesh);
+
+  /** Keep every surface attached to the district while its relief changes. */
+  function applyScale(entry, scale) {
+    entry.mesh.scale.y = scale;
+    if (entry.mesh.userData.edge) entry.mesh.userData.edge.scale.y = scale;
+    const top = entry.height * scale;
+    if (entry.mesh.userData.water) entry.mesh.userData.water.position.y = top + 0.18;
+    if (entry.mesh.userData.satelliteFlood) entry.mesh.userData.satelliteFlood.position.y = top + 0.48;
+    if (entry.mesh.userData.beacon) entry.mesh.userData.beacon.position.y = top;
+    if (entry.mesh.userData.alert) entry.mesh.userData.alert.position.y = top + 0.32;
+  }
+
+  function refreshEmissive(entry) {
+    if (!entry?.mesh?.material) return;
+    const active = entry === hovered || entry === selected;
+    if (!entry.mesh.material.emissive) entry.mesh.material.emissive = new THREE.Color(0, 0, 0);
+    entry.mesh.material.emissive.set(active ? signal : new THREE.Color(0, 0, 0));
+    entry.mesh.material.emissiveIntensity = active ? (entry === selected ? 0.28 : 0.18) : 0;
+  }
 
   function pick(event, element, camera) {
     const rect = element.getBoundingClientRect();
@@ -199,12 +356,10 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
 
   function highlight(entry) {
     if (hovered === entry) return;
-    if (hovered) hovered.mesh.material.emissive?.setRGB(0, 0, 0);
+    const previous = hovered;
     hovered = entry;
-    if (hovered) {
-      hovered.mesh.material.emissive = new THREE.Color(...rgb(palette.signalOrange));
-      hovered.mesh.material.emissiveIntensity = 0.22;
-    }
+    refreshEmissive(previous);
+    refreshEmissive(hovered);
     onHover?.(entry);
   }
 
@@ -223,11 +378,12 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
      */
     focus(entry, { close = true } = {}) {
       if (!entry) return null;
+      const visibleHeight = entry.height * entry.mesh.scale.y;
       const distance = close
         ? Math.max(58, Math.min(112, entry.footprintSpan * 2.7))
         : Math.max(110, Math.min(this.overview.distance * 0.92, entry.footprintSpan * 4.2));
       return {
-        target: [entry.anchor[0], entry.height * (close ? 1.15 : 0.55), entry.anchor[1]],
+        target: [entry.anchor[0], visibleHeight * (close ? 1.05 : 0.5), entry.anchor[1]],
         distance,
         polar: close ? 0.58 : 0.72,
         azimuth: this.overview.azimuth,
@@ -246,13 +402,14 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
       const entry = districts.find((row) => row.district.id === districtId);
       if (!entry) return null;
       const target = (BASE + RELIEF * severity) / entry.height;
-      const from = entry.mesh.scale.y;
+      const from = entry.baseScale;
       const colour = new THREE.Color(...stateSeverityColour(severity));
       const started = performance.now();
       const step = () => {
         const progress = Math.min(1, (performance.now() - started) / duration);
         const eased = 1 - (1 - progress) ** 3;
-        entry.mesh.scale.y = from + (target - from) * eased;
+        entry.baseScale = from + (target - from) * eased;
+        applyScale(entry, entry.baseScale * entry.selectionScale);
         entry.mesh.material.color.lerpColors(entry.mesh.material.color, colour, eased * 0.3);
         if (progress < 1) requestAnimationFrame(step);
         else entry.mesh.material.color.copy(colour);
@@ -281,21 +438,25 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
      * a map stops being a map and becomes a series of slides.
      */
     riseTo(entry, duration = 900) {
+      const previousSelected = selected;
+      selected = entry;
+      refreshEmissive(previousSelected);
+      refreshEmissive(selected);
       const started = performance.now();
-      const from = districts.map((row) => row.mesh.scale.y);
+      const from = districts.map((row) => row.selectionScale);
       return new Promise((resolve) => {
         const step = () => {
           const progress = Math.min(1, (performance.now() - started) / duration);
           const eased = 1 - (1 - progress) ** 3;
           districts.forEach((row, index) => {
-            const target = row === entry ? 2.6 : 0.35;
-            row.mesh.scale.y = from[index] + (target - from[index]) * eased;
+            // Context stays exactly where it was horizontally. The state becomes a low relief plane
+            // and the selected district is the only piece that rises out of it.
+            const target = row === entry ? 1.85 : 0.07;
+            row.selectionScale = from[index] + (target - from[index]) * eased;
+            applyScale(row, row.baseScale * row.selectionScale);
+            row.mesh.material.transparent = false;
             row.mesh.material.opacity = 1;
-            if (row !== entry) {
-              row.mesh.material.transparent = true;
-              row.mesh.material.opacity = 1 - 0.55 * eased;
-            }
-            if (row.mesh.userData.edge) row.mesh.userData.edge.visible = row === entry;
+            if (row.mesh.userData.edge) row.mesh.userData.edge.visible = true;
           });
           if (progress < 1) requestAnimationFrame(step);
           else resolve();
@@ -304,17 +465,49 @@ export function buildStateScene({ state, severityFor, onPick, onHover }) {
       });
     },
 
-    /** Reset the rise, for coming back up from a district to its state. */
-    settle() {
-      for (const row of districts) {
-        row.mesh.scale.y = 1;
-        row.mesh.material.opacity = 1;
-        row.mesh.material.transparent = false;
-        if (row.mesh.userData.edge) row.mesh.userData.edge.visible = true;
-      }
+    /** Reset the rise without rebuilding the state scene. */
+    settle(duration = 650) {
+      const previousSelected = selected;
+      selected = null;
+      refreshEmissive(previousSelected);
+      const started = performance.now();
+      const from = districts.map((row) => row.selectionScale);
+      return new Promise((resolve) => {
+        const step = () => {
+          const progress = Math.min(1, (performance.now() - started) / duration);
+          const eased = 1 - (1 - progress) ** 3;
+          districts.forEach((row, index) => {
+            row.selectionScale = from[index] + (1 - from[index]) * eased;
+            applyScale(row, row.baseScale * row.selectionScale);
+            row.mesh.material.opacity = 1;
+            row.mesh.material.transparent = false;
+            if (row.mesh.userData.edge) row.mesh.userData.edge.visible = true;
+          });
+          if (progress < 1) requestAnimationFrame(step);
+          else resolve();
+        };
+        step();
+      });
     },
 
-    update() {},
+    update(_delta, seconds) {
+      if (!floodLayers.length && !satelliteFloodLayers.length && !alertBeacons.length) return false;
+      floodLayers.forEach((entry) => {
+        entry.material.opacity = 0.16 + Math.sin(seconds * 1.15 + entry.phase) * 0.035;
+      });
+      satelliteFloodLayers.forEach((entry) => {
+        entry.material.opacity = 0.9 + Math.sin(seconds * 0.82) * 0.08;
+      });
+      alertBeacons.forEach((entry) => {
+        const pulse = (Math.sin(seconds * 2.15 + entry.phase) + 1) * 0.5;
+        const haloScale = 0.92 + pulse * 0.65;
+        entry.halo.scale.setScalar(haloScale);
+        entry.haloMat.opacity = 0.34 * (1 - pulse * 0.72);
+        entry.ring.scale.setScalar(0.96 + pulse * 0.12);
+        entry.ringMat.opacity = 0.52 + pulse * 0.28;
+      });
+      return true;
+    },
   };
 }
 

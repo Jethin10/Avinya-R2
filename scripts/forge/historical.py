@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import math
 import re
-import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -212,9 +211,10 @@ def _common_files(root: Path, settlements: list[dict[str, Any]], geojson: dict[s
     _json(root / "assets.json", assets)
     routes = ROOT / "data" / "derived" / "wayanad_routes.json.gz"
     if routes.exists():
-        shutil.copyfile(routes, root / "routes.json.gz")
+        _write(root / "routes.json.gz", routes.read_bytes())
     terrain = ROOT / "data" / "derived" / "wayanad_terrain.json"
-    if terrain.exists(): shutil.copyfile(terrain, root / "terrain.json")
+    if terrain.exists():
+        _write(root / "terrain.json", terrain.read_bytes())
 
 
 def _write_scenario(root: Path, settlements: list[dict[str, Any]], geojson: dict[str, Any], scenario: dict[str, Any]) -> None:

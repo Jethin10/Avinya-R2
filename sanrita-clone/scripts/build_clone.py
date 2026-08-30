@@ -22,6 +22,22 @@ LIVE_SOURCE = ROOT / "source" / "index.html.live"
 ARCHIVE_SOURCE = ROOT / "source" / "index.html.orig"
 SOURCE = LIVE_SOURCE if LIVE_SOURCE.exists() else ARCHIVE_SOURCE
 TARGET = ROOT / "index.html"
+NEXT_CHUNKS = ROOT / "public" / "_next" / "static" / "chunks"
+
+
+# The captured homepage camera has an initialization effect that explicitly forces the zoom store
+# to 1 after hydration. On the live site that is part of its route transition; in the SETU clone it
+# races the landing screen and causes the map to enter by itself several seconds after first paint.
+# Keep the same camera setup, but initialize it at zoom 0. Real wheel input still owns the normal
+# 0 -> 1 transition afterwards.
+CAPTURED_AUTO_ZOOM = (
+    "I.current?.moveTo(0,0,0),I.current?.zoomTo(1+p,!1),"
+    "I.current?.rotatePolarTo(p/4),u(1),oL(s,1)"
+)
+CAPTURED_MANUAL_ZOOM = (
+    "I.current?.moveTo(0,0,0),I.current?.zoomTo(1,!1),"
+    "I.current?.rotatePolarTo(0),u(0),oL(s,0)"
+)
 
 
 def unescape_inline_script(match: re.Match[str]) -> str:
@@ -31,7 +47,9 @@ def unescape_inline_script(match: re.Match[str]) -> str:
     return f"{opening}{html_module.unescape(body)}</script>"
 
 
-SETU_ENTRY = '<script type="module" src="/src/setu/main.js"></script>'
+SETU_ENTRY = (
+    '<script type="module" src="/src/setu/entry.js"></script>'
+)
 
 
 # The captured page is visual scaffolding for SETU. Rebrand every user-facing phrase that can
@@ -164,10 +182,10 @@ def rebrand_copy(page: str) -> str:
     # language from flashing during hydration or surfacing on narrow/fallback layouts.
     nav_labels = {
         "map": "twin",
-        "projects": "incidents",
-        "about": "intelligence",
-        "playground": "operations",
-        "contact": "command",
+        "projects": "validator",
+        "about": "evidence",
+        "playground": "infer",
+        "contact": "act",
         "instagram": "signals",
         "linkedin": "ledger",
     }
@@ -175,12 +193,21 @@ def rebrand_copy(page: str) -> str:
         page = page.replace(f">{old}<", f">{new}<")
         page = page.replace(f">{old.title()}<", f">{new.title()}<")
 
+    # Reuse the captured Playground / Contact icon slots for the next two SETU workflow pages.
+    # Keep locale-prefixed links working while the route bridges also accept the legacy paths.
+    page = page.replace('href="/en/playground"', 'href="/en/infer"')
+    page = page.replace('href="/fr/playground"', 'href="/fr/infer"')
+    page = page.replace('href="/playground"', 'href="/infer"')
+    page = page.replace('href="/en/contact"', 'href="/en/act"')
+    page = page.replace('href="/fr/contact"', 'href="/fr/act"')
+    page = page.replace('href="/contact"', 'href="/act"')
+
     serialized_nav = {
         r'\"title\":\"Map\",\"link\":\"/\"': r'\"title\":\"Twin\",\"link\":\"/\"',
-        r'\"title\":\"Projects\",\"link\":\"/projects\"': r'\"title\":\"Incidents\",\"link\":\"/projects\"',
-        r'\"title\":\"About\",\"link\":\"/about\"': r'\"title\":\"Intelligence\",\"link\":\"/about\"',
-        r'\"title\":\"Playground\",\"link\":\"/playground\"': r'\"title\":\"Operations\",\"link\":\"/playground\"',
-        r'\"title\":\"Contact\",\"link\":\"/contact\"': r'\"title\":\"Command\",\"link\":\"/contact\"',
+        r'\"title\":\"Projects\",\"link\":\"/projects\"': r'\"title\":\"Validator\",\"link\":\"/projects\"',
+        r'\"title\":\"About\",\"link\":\"/about\"': r'\"title\":\"Evidence\",\"link\":\"/about\"',
+        r'\"title\":\"Playground\",\"link\":\"/playground\"': r'\"title\":\"Infer\",\"link\":\"/infer\"',
+        r'\"title\":\"Contact\",\"link\":\"/contact\"': r'\"title\":\"Act\",\"link\":\"/act\"',
         r'\"title\":\"Instagram\",\"link\":\"#\"': r'\"title\":\"Signals\",\"link\":\"#\"',
         r'\"title\":\"Linkedin\",\"link\":\"#\"': r'\"title\":\"Ledger\",\"link\":\"#\"',
     }
@@ -230,6 +257,22 @@ def attach_setu(page: str) -> str:
     if "</body>" not in page:
         return page + SETU_ENTRY
     return page.replace("</body>", "  " + SETU_ENTRY + "\n</body>", 1)
+
+
+def disable_captured_auto_zoom() -> None:
+    """Patch the archived homepage's delayed camera initialization, idempotently."""
+    if not NEXT_CHUNKS.exists():
+        return
+    for chunk in NEXT_CHUNKS.glob("*.js"):
+        source = chunk.read_text(encoding="utf-8")
+        if CAPTURED_MANUAL_ZOOM in source:
+            return
+        if CAPTURED_AUTO_ZOOM not in source:
+            continue
+        chunk.write_text(source.replace(CAPTURED_AUTO_ZOOM, CAPTURED_MANUAL_ZOOM, 1), encoding="utf-8")
+        print(f"Disabled captured homepage auto-zoom in {chunk.name}")
+        return
+    print("Warning: captured homepage auto-zoom initializer was not found")
 
 
 def main() -> None:
@@ -285,6 +328,7 @@ def main() -> None:
 
     page = rebrand_copy(page)
     page = attach_setu(page)
+    disable_captured_auto_zoom()
 
     TARGET.write_text(page, encoding="utf-8")
     print(f"Prepared {TARGET} ({len(page):,} characters)")

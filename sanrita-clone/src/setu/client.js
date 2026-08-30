@@ -9,6 +9,7 @@
  */
 
 const ENGINE = "/api";
+const HEALTH = "/healthz";
 const BAKED = "/setu";
 
 /** Which source answered. ``null`` until the first probe resolves. */
@@ -60,7 +61,10 @@ export async function probe() {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 600);
   try {
-    const health = await json(`${ENGINE}/healthz`, { signal: controller.signal });
+    // System health deliberately lives outside the API namespace. Probing `/api/healthz` used to
+    // fall through to the Engine's static frontend and return HTML, which meant the Twin always
+    // declared itself a historical replay even while the live Engine was answering beside it.
+    const health = await json(HEALTH, { signal: controller.signal });
     source.mode = "engine";
     source.district = health.district;
     source.disclosure = "Live command engine · risk, dispatch and verification are updating now.";
@@ -124,6 +128,42 @@ export function replay(id) {
 export function layerIndex(id) {
   return memo(`layers:${id}`, () =>
     json(live() ? `${ENGINE}/layers` : `${BAKED}/${id}/layers/index.json`));
+}
+
+export function timeline(id) {
+  return memo(`timeline:${id}`, () =>
+    json(live() ? `${ENGINE}/timeline` : `${BAKED}/${id}/twin_manifest.json`));
+}
+
+/** The Engine's compact hazard/twin frame, with an honest static-layer fallback for baked demos. */
+export async function twinFrame(id, moment) {
+  if (live()) {
+    const query = moment ? `?t=${encodeURIComponent(moment)}` : "";
+    const response = await fetch(`${ENGINE}/twin/states${query}`);
+    if (!response.ok) throw new Error(`${response.status} twin frame`);
+    return {
+      values: new Uint8Array(await response.arrayBuffer()),
+      frame: Number(response.headers.get("X-Setu-Frame") ?? 0),
+      offset: Number(response.headers.get("X-Setu-Offset") ?? 0),
+      count: Number(response.headers.get("X-Setu-Count") ?? 0),
+      encoding: "uint8",
+    };
+  }
+  const [manifest, hazard] = await Promise.all([timeline(id), layer(id, "hazard_frames")]);
+  const frames = hazard?.frames || [];
+  if (!frames.length) return null;
+  const target = moment ? new Date(moment).getTime() : new Date(frames[0].t).getTime();
+  let frame = 0;
+  frames.forEach((item, index) => {
+    if (Math.abs(new Date(item.t).getTime() - target) < Math.abs(new Date(frames[frame].t).getTime() - target)) frame = index;
+  });
+  return {
+    values: Uint8Array.from((frames[frame].values || []).map(value => Math.round(Math.max(0, Math.min(1, Number(value) || 0)) * 255))),
+    frame,
+    offset: frame * Number(manifest.bytes_per_frame || 0),
+    count: Number(manifest.bytes_per_frame || (frames[frame].values || []).length),
+    encoding: "derived hazard frame",
+  };
 }
 
 export async function layer(id, layerId) {
@@ -245,7 +285,7 @@ export async function seismic(request) {
 }
 
 export async function inject(attack, params = {}) {
-  if (!live()) return { applied: true, attack, params };
+  if (!live()) return { unavailable: true, reason: "historical replay", attack, params };
   return json(`${ENGINE}/inject`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -261,6 +301,32 @@ export async function clock(action, extra = {}) {
     body: JSON.stringify({ action, ...extra }),
   });
 }
+
+/** Submit one field observation through the same ingest path used by live deployments. */
+export async function event(payload) {
+  if (!live()) return { unavailable: true, reason: "historical replay" };
+  return json(`${ENGINE}/events`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+}
+
+/** Record a human decision override in the Engine's hash-linked operational ledger. */
+export async function override(decisionId, reason, actor = "district-operator", outcome = "acknowledged") {
+  if (!live()) return { unavailable: true, reason: "historical replay" };
+  return json(`${ENGINE}/override`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ decision_id: Number(decisionId), actor, reason, outcome }),
+  });
+}
+
+/** Stable export URLs are useful to UI controls and remain proxied by Vite in development. */
+export const exports = {
+  dispatch: "/export/dispatch.pdf",
+  alerts: "/export/alerts.cap",
+};
 
 /**
  * Subscribe to the Engine's state stream. A no-op against a bake, which has nothing to push.

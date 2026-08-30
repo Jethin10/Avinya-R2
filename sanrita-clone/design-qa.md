@@ -52,4 +52,29 @@
 - `npm run test:sites`: 4/4 passed.
 - Local preview: `http://127.0.0.1:4173/en`
 
-final result: passed
+## SETU district inspection
+
+- Reference state overview: `C:/Users/jethi/OneDrive/Documents/JetSnap/Screenshots/2026-08/brave_HS4SvCl9Fx.png`
+- Final Assam → Golaghat inspection: `C:/avinyar2/qa-final/setu-assam-golaghat-final.png`
+- Side-by-side state/inspection comparison: `C:/avinyar2/qa-final/setu-reference-vs-golaghat.png`
+- Mobile district inspection: `C:/avinyar2/qa-final/setu-assam-golaghat-mobile.png`
+- Desktop behavior at 1664 × 928: clicking Golaghat keeps `data-setu-scene="state"`, changes the summary to district mode, keeps the India / Assam / Golaghat breadcrumb, lowers the surrounding districts and leaves Golaghat as the relief focus.
+- The district dossier exposes sourced incident status, threat belief, failure mode, affected population, district profile, river/flood signal and the PS operational coverage boundary. Regional-only Assam districts explicitly mark M1–M4 village systems as unavailable instead of fabricating settlement evidence.
+- Full-twin districts expose the existing engine-backed information-fog, belief, Value-of-Information verification, dispatch/routing, cascade, reachability, calibration, equity, robustness, audit and provenance surfaces before the operator explicitly enters village operations.
+- Mobile behavior at 390 × 844: no horizontal document overflow; the district dossier remains inside a 366 px panel and can be vertically inspected while the selected map geometry stays behind it.
+- Captured-shell console noise still includes the pre-existing React hydration warning and non-HTTP captured-asset failures; the SETU district interaction produced no new application exception during QA.
+- `npm run test:sites`: 4/4 passed.
+- Backend `uv run --extra test pytest -q`: passed after routing generated replay copies through the existing atomic `_write` helper, removing the Windows repeated-copy failure in historical package regeneration.
+
+## SETU historical replay interaction pass — 2026-08-30
+
+- Source visual truth: `C:/Users/jethi/OneDrive/Documents/JetSnap/Screenshots/2026-08/brave_YFZr1UfwKq.png` (1910 × 1066 px).
+- Target state: command console opened from a state/district selection, then a full district replay opened and driven through the five-step story plus play/pause/reset.
+- Implementation screenshot: blocked. Browser Harness reached Chrome but Chrome requires the user to approve the one-time `Allow remote debugging` permission before the real UI can be interacted with or captured.
+- Browser-rendered viewport: blocked for the same reason; no substitute screenshot is being treated as browser evidence.
+- Primary interactions pending browser evidence: regional-only district story rejection, full-twin transition, deterministic historical checkpoints, replay play/pause/reset, and semantic camera focus for fog → belief → dispatch → verify → proof.
+- Code/build verification completed: `node --check src/setu/main.js`, `node --check src/setu/panels.js`, `npm run build`, `npm run test:sites`, and `git diff --check` all pass.
+- Replay checkpoint logic was exercised against all three historical Wayanad bundles. The authored checkpoints are monotonic and deterministic: Meppadi 2024 `0 → 3 → 4 → 5 → 8`, Wayanad 2018 `0 → 2 → 4 → 5 → 8`, and Wayanad 2019 `0 → 1 → 2 → 3 → 8`.
+- Comparison history: the original console screenshot exposed a context/action mismatch; the implementation now scopes scenarios to the selected district, refuses regional-only story actions, seeks each historical story step to a meaningful recorded frame, focuses the camera on the actual operational subject, and exposes replay frame/play state in the console status.
+
+final result: blocked

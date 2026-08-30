@@ -23,8 +23,17 @@ const number = (value, digits = 0) => value == null || !Number.isFinite(Number(v
   ? "—"
   : Number(value).toLocaleString("en-IN", { maximumFractionDigits: digits });
 const short = (hash) => (hash ? `${hash.slice(0, 8)}…` : "—");
-const clock = (iso) => (iso ? new Date(iso).toISOString().slice(11, 16) : "—");
-const day = (iso) => (iso ? new Date(iso).toISOString().slice(0, 10) : "—");
+function replayDateParts(iso) {
+  if (!iso) return { day: "—", clock: "—" };
+  const literal = String(iso).match(/^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2})/);
+  if (literal) return { day: literal[1], clock: literal[2] };
+  const parsed = new Date(iso);
+  if (Number.isNaN(parsed.getTime())) return { day: "—", clock: "—" };
+  const normalized = parsed.toISOString();
+  return { day: normalized.slice(0, 10), clock: normalized.slice(11, 16) };
+}
+const clock = (iso) => replayDateParts(iso).clock;
+const day = (iso) => replayDateParts(iso).day;
 
 function panel(title, note) {
   const body = el("div.setu-rows");
@@ -71,6 +80,18 @@ function metricGrid(items) {
     ])));
 }
 
+function districtBox(title, note, children = [], className = "") {
+  const node = el("section.setu-district-box", {}, [
+    el("div.setu-district-box-head", {}, [
+      el("span", { text: title }),
+      note ? el("span", { text: note }) : null,
+    ]),
+    ...children.filter(Boolean),
+  ]);
+  if (className) node.classList.add(...className.split(/\s+/).filter(Boolean));
+  return node;
+}
+
 function actionStrip(actions, { className = "" } = {}) {
   const node = el("div.setu-action-strip");
   if (className) node.classList.add(className);
@@ -86,6 +107,474 @@ function actionStrip(actions, { className = "" } = {}) {
     node.append(button);
   });
   return node;
+}
+
+function option(value, label) {
+  return el("option", { value, text: label });
+}
+
+function consoleField(label, control, note = "") {
+  return el("label.setu-console-field", {}, [
+    el("span", { text: label }),
+    control,
+    note ? el("small", { text: note }) : null,
+  ]);
+}
+
+/**
+ * The live Engine's less-frequent controls belong in one deliberate surface, not scattered through
+ * the five operational lenses. This console is also the demo index: each capability names what the
+ * audience should look for, then hands the terrain back to the corresponding lens.
+ */
+function buildCommandConsole({ onScenario, onClock, onEvent, onOverride, onStoryLens, onOpenTwin, onInject }) {
+  const backdrop = el("button.setu-console-backdrop", { type: "button", "aria-label": "Close command console" });
+  const closeButton = el("button.setu-console-close", { type: "button", text: "Close" });
+  const status = el("div.setu-console-status", { text: "Connecting to command engine…" });
+  const feedback = el("div.setu-console-feedback", { text: "Choose a capability to begin." });
+  const contextKicker = el("span.setu-console-context-kicker", { text: "NO DISTRICT SELECTED" });
+  const contextTitle = el("strong.setu-console-context-title", { text: "National overview" });
+  const contextMeta = el("p.setu-console-context-meta", {
+    text: "Choose a state and district before entering the operational chain.",
+  });
+  const openTwinButton = el("button.setu-button.setu-console-open-twin", {
+    type: "button", text: "Open district twin", disabled: true,
+  });
+  const liveLock = el("div.setu-console-live-lock", {
+    text: "LIVE ENGINE ONLY · field mutation, stress tests and human overrides are intentionally locked in a historical replay.",
+  });
+
+  const scenario = el("select.setu-console-input", { "aria-label": "Scenario" });
+  const openReplayButton = el("button.setu-button.setu-console-open-replay", {
+    type: "button", text: "Open selected replay", disabled: true,
+  });
+  const speed = el("select.setu-console-input", { "aria-label": "Replay speed" }, [
+    option("1", "1× real time"), option("30", "30×"), option("120", "120×"),
+    option("300", "300× demo"), option("600", "600×"),
+  ]);
+  speed.value = "300";
+
+  const settlement = el("select.setu-console-input", { "aria-label": "Observation settlement" });
+  const report = el("textarea.setu-console-input.setu-console-textarea", {
+    rows: "3", "aria-label": "Field report", placeholder: "What did the field team observe?",
+  });
+  const hazard = el("select.setu-console-input", { "aria-label": "Hazard" }, [
+    option("landslide", "Landslide"), option("flood", "Flood"), option("earthquake", "Earthquake"), option("unknown", "Unknown"),
+  ]);
+  const severity = el("select.setu-console-input", { "aria-label": "Severity hint" }, [
+    option("severe", "Severe"), option("moderate", "Moderate"), option("minor", "Minor"), option("unknown", "Unknown"),
+  ]);
+  const reportButton = el("button.setu-button.setu-console-primary", { type: "button", text: "Send live observation" });
+
+  const decision = el("select.setu-console-input", { "aria-label": "Decision to override" });
+  const reason = el("textarea.setu-console-input.setu-console-textarea", {
+    rows: "2", "aria-label": "Override reason", placeholder: "Operational reason for the human override",
+  });
+  const overrideButton = el("button.setu-button", { type: "button", text: "Record human override" });
+
+  const demoSteps = [
+    ["fog", "01", "Reports vs risk", "See message volume, silence and unresolved locations."],
+    ["belief", "02", "Belief", "Open the ranked multi-hazard settlement model."],
+    ["response", "03", "Dispatch", "Follow asset-typed routes and cascade leads."],
+    ["verify", "04", "Verify next", "Show the highest-value question and return path."],
+    ["proof", "05", "Proof", "Finish on robustness, equity and the audit chain."],
+  ];
+  const storyButtons = new Map();
+  const demoList = el("div.setu-demo-list", {}, demoSteps.map(([lens, index, title, copy]) => {
+    const button = el("button.setu-demo-step", { type: "button", onclick: async () => {
+      feedback.textContent = `Opening ${title.toLowerCase()}…`;
+      try {
+        if (!replayReady()) {
+          const ready = await ensureReplayReady();
+          if (!ready || ready.unavailable) return;
+        }
+        const result = await onStoryLens?.(lens);
+        if (result?.unavailable) {
+          feedback.textContent = result.reason || `${title} is unavailable in the current context.`;
+          return;
+        }
+        feedback.textContent = result?.message
+          || `${title} opened · the terrain, lens and dossier now read the same district state.`;
+        setStoryStep(lens);
+        setOpen(false);
+      } catch (error) {
+        feedback.textContent = `Could not open ${title.toLowerCase()} · ${error instanceof Error ? error.message : String(error)}`;
+      }
+    } }, [
+      el("span", { text: index }),
+      el("strong", { text: title }),
+      el("small", { text: copy }),
+    ]);
+    storyButtons.set(lens, button);
+    return button;
+  }));
+
+  const transport = actionStrip([
+    { label: "Play", onClick: () => runReplay("Replay started", () => onClock?.("play")) },
+    { label: "Pause", onClick: () => runReplay("Replay paused", () => onClock?.("pause")) },
+    { label: "Reset", onClick: () => runReplay("Replay reset", () => onClock?.("reset")) },
+  ]);
+  const attacks = actionStrip([
+    { label: "False reports", onClick: () => run("False-report attack injected", () => onInject?.("false_reports")) },
+    { label: "Cut telecom", onClick: () => run("Telecom silence injected", () => onInject?.("silence")) },
+    { label: "Drop satellite", onClick: () => run("Satellite channel disabled", () => onInject?.("kill_sar")) },
+    { label: "Cut road edge", onClick: () => run("Road disruption injected", () => onInject?.("cut_edge")) },
+  ]);
+
+  const exports = el("div.setu-console-exports", {}, [
+    el("a.setu-button", { href: "/export/dispatch.pdf", target: "_blank", rel: "noreferrer", text: "Dispatch PDF" }),
+    el("a.setu-button", { href: "/export/alerts.cap", target: "_blank", rel: "noreferrer", text: "CAP alert XML" }),
+  ]);
+
+  const drawer = el("section.setu-command-console", {
+    role: "dialog", "aria-modal": "true", "aria-label": "SETU command console", "aria-hidden": "true",
+  }, [
+    el("header.setu-console-head", {}, [
+      el("div", {}, [
+        el("div.setu-context-kicker", { text: "DEMO + LIVE OPERATIONS" }),
+        el("h2", { text: "Command console" }),
+        status,
+      ]),
+      closeButton,
+    ]),
+    el("div.setu-console-grid", {}, [
+      el("section.setu-console-section.setu-console-story", {}, [
+        el("h3", { text: "Show the operational story" }),
+        el("p", { text: "A five-step judging path through one changing district twin." }),
+        demoList,
+      ]),
+      el("section.setu-console-section.setu-console-context-section", {}, [
+        el("h3", { text: "Current operational context" }),
+        el("div.setu-console-context-card", {}, [contextKicker, contextTitle, contextMeta, openTwinButton]),
+        consoleField(
+          "Replay package",
+          scenario,
+          "District replays stay local. If this district has none, archived packages move SETU to their real source district.",
+        ),
+        openReplayButton,
+        el("div.setu-console-subhead", { text: "REPLAY CLOCK" }),
+        transport,
+        consoleField("Speed", speed),
+        el("div.setu-console-live-only", {}, [
+          el("div.setu-console-subhead", { text: "LIVE RED-TEAM CONTROLS" }),
+          attacks,
+        ]),
+      ]),
+      el("section.setu-console-section.setu-console-live-section", {}, [
+        el("h3", { text: "Ingest a field report" }),
+        liveLock.cloneNode(true),
+        consoleField("Settlement", settlement),
+        consoleField("Observation", report),
+        el("div.setu-console-inline", {}, [consoleField("Hazard", hazard), consoleField("Severity", severity)]),
+        reportButton,
+      ]),
+      el("section.setu-console-section.setu-console-live-section", {}, [
+        el("h3", { text: "Human authority" }),
+        liveLock.cloneNode(true),
+        consoleField("Decision", decision, "Overrides are appended; the model decision remains auditable."),
+        consoleField("Reason", reason),
+        overrideButton,
+        el("div.setu-console-subhead", { text: "LIVE ENGINE EXPORTS" }),
+        exports,
+      ]),
+    ]),
+    feedback,
+  ]);
+  const shell = el("div.setu-console-shell", { hidden: true }, [backdrop, drawer]);
+
+  let isLive = false;
+  let allScenarios = [];
+  let context = {
+    kind: "nation",
+    stateName: null,
+    districtName: null,
+    fullTwin: false,
+    scenarioIds: [],
+    activeScenario: null,
+  };
+  const replayControls = [transport, speed];
+  const liveControls = [
+    attacks, settlement, report, hazard, severity, reportButton,
+    decision, reason, overrideButton,
+  ];
+
+  const replayReady = () => context.kind === "district" && Boolean(context.fullTwin);
+  const replayCanOpen = () => !isLive && Boolean(scenario.value);
+
+  function setStoryStep(lens) {
+    storyButtons.forEach((button, id) => {
+      const active = id === lens;
+      button.dataset.active = String(active);
+      button.setAttribute("aria-current", active ? "step" : "false");
+    });
+  }
+
+  function syncAvailability() {
+    const hasReplay = replayReady();
+    const canOpenReplay = replayCanOpen();
+    replayControls.forEach(group => {
+      if (group instanceof HTMLSelectElement || group instanceof HTMLButtonElement) group.disabled = !hasReplay && !canOpenReplay;
+      else group.querySelectorAll("button, select").forEach(node => { node.disabled = !hasReplay && !canOpenReplay; });
+    });
+    storyButtons.forEach(button => {
+      button.disabled = !hasReplay && !canOpenReplay;
+      button.title = hasReplay
+        ? ""
+        : (canOpenReplay ? "Loads the selected historical replay, then opens this story step." : "Open a historical replay package first.");
+    });
+    liveControls.forEach(group => {
+      if (group instanceof HTMLSelectElement || group instanceof HTMLButtonElement || group instanceof HTMLTextAreaElement) {
+        group.disabled = !isLive || !hasReplay;
+      } else {
+        group.querySelectorAll("button, select, textarea").forEach(node => { node.disabled = !isLive || !hasReplay; });
+      }
+    });
+  }
+
+  function renderStatus() {
+    const sourceLabel = isLive ? "Live Engine" : "Historical replay";
+    if (context.kind === "district" && context.districtName) {
+      status.textContent = `${sourceLabel} · ${context.stateName || "State"} / ${context.districtName} · district twin active`;
+      return;
+    }
+    if (context.districtName) {
+      status.textContent = context.fullTwin
+        ? `${sourceLabel} · ${context.stateName || "State"} / ${context.districtName} · full twin available`
+        : `${sourceLabel} · ${context.stateName || "State"} / ${context.districtName} · regional evidence only`;
+      return;
+    }
+    if (context.stateName) {
+      status.textContent = `${sourceLabel} · ${context.stateName} overview · choose a district for command actions`;
+      return;
+    }
+    status.textContent = `${sourceLabel} · national overview · choose a state and district for command actions`;
+  }
+
+  function renderContext() {
+    const allowed = new Set(context.scenarioIds || []);
+    const districtItems = allScenarios.filter(item => allowed.has(item.id));
+    const archiveItems = isLive ? [] : allScenarios.filter(item => item.historical);
+    const usingArchive = !districtItems.length && archiveItems.length > 0;
+    const items = districtItems.length ? districtItems : archiveItems;
+    if (context.districtName) {
+      contextKicker.textContent = context.kind === "district"
+        ? "DISTRICT TWIN ACTIVE"
+        : (context.fullTwin ? "FULL TWIN AVAILABLE" : "REGIONAL EVIDENCE ONLY");
+      contextTitle.textContent = `${context.stateName || "State"} / ${context.districtName}`;
+      contextMeta.textContent = context.fullTwin
+        ? (context.kind === "district"
+          ? "Every story step now operates on this district package and its current replay frame."
+          : "Open the district twin to run the five-lens operational story on village-level evidence, verification and dispatch.")
+        : (!isLive && usingArchive
+          ? `${context.districtName} has regional evidence only. Choose an archived replay below; SETU will move to that replay’s real district instead of borrowing its data here.`
+          : "This district has state/regional evidence only. SETU will not borrow another district’s replay or fabricate village-level operations.");
+    } else if (context.stateName) {
+      contextKicker.textContent = "STATE OVERVIEW";
+      contextTitle.textContent = context.stateName;
+      contextMeta.textContent = !isLive && usingArchive
+        ? "Choose an archived replay below to move directly to its recorded district. Regional state data remains separate."
+        : "Select a district first. Command actions stay scoped to the place currently being inspected.";
+    } else {
+      contextKicker.textContent = "NO DISTRICT SELECTED";
+      contextTitle.textContent = "National overview";
+      contextMeta.textContent = !isLive && usingArchive
+        ? "Choose an archived replay below. SETU will open the district that actually owns that historical package."
+        : "Choose a state and district before entering the operational chain.";
+    }
+
+    if (items.length) {
+      scenario.replaceChildren(...items.map(item => option(item.id, `${item.name}${item.historical ? " · historical" : " · synthetic"}`)));
+      const desired = context.activeScenario && items.some(item => item.id === context.activeScenario)
+        ? context.activeScenario
+        : items[0].id;
+      scenario.value = desired;
+    } else {
+      scenario.replaceChildren(option("", context.districtName ? "No district replay package" : "Select a district first"));
+      scenario.value = "";
+    }
+    scenario.disabled = !items.length || (isLive && context.kind !== "district");
+    openReplayButton.hidden = isLive || replayReady();
+    openReplayButton.disabled = isLive || !scenario.value;
+    openTwinButton.hidden = context.kind === "district";
+    openTwinButton.disabled = context.kind !== "state" || !context.fullTwin;
+    renderStatus();
+    syncAvailability();
+  }
+
+  function setOpen(open) {
+    shell.hidden = !open;
+    drawer.setAttribute("aria-hidden", String(!open));
+    document.documentElement.toggleAttribute("data-setu-console", open);
+    if (open) {
+      if (!isLive && !replayReady()) {
+        feedback.textContent = "Choose a replay package below. SETU will move to its recorded district, then unlock the five-step story and replay clock.";
+      }
+      closeButton.focus();
+    }
+  }
+
+  async function run(success, action) {
+    if (!isLive) {
+      feedback.textContent = "Historical replay is read-only. Start the live Engine to use this control.";
+      return null;
+    }
+    feedback.textContent = "Command in progress…";
+    try {
+      const result = await action?.();
+      feedback.textContent = result?.unavailable ? result.reason : success;
+      return result;
+    } catch (error) {
+      feedback.textContent = `Command failed · ${error instanceof Error ? error.message : String(error)}`;
+      return null;
+    }
+  }
+
+  async function runRead(success, action) {
+    feedback.textContent = "Updating district replay…";
+    try {
+      const result = await action?.();
+      if (result?.unavailable) {
+        feedback.textContent = result.reason || "That replay action is unavailable in the current context.";
+        return result;
+      }
+      feedback.textContent = success;
+      return result;
+    } catch (error) {
+      feedback.textContent = `Replay action failed · ${error instanceof Error ? error.message : String(error)}`;
+      return null;
+    }
+  }
+
+  async function ensureReplayReady() {
+    if (replayReady()) return { ready: true };
+    if (!replayCanOpen()) {
+      const result = { unavailable: true, reason: "Choose a historical replay package first." };
+      feedback.textContent = result.reason;
+      return result;
+    }
+    const selectedLabel = scenario.options[scenario.selectedIndex]?.textContent || "historical replay";
+    const result = await runRead(
+      `Historical replay ready · ${selectedLabel}`,
+      () => onScenario?.(scenario.value),
+    );
+    if (!result || result.unavailable) return result || { unavailable: true, reason: "Historical replay could not be opened." };
+    renderContext();
+    return result;
+  }
+
+  async function runReplay(success, action) {
+    if (!replayReady()) {
+      const ready = await ensureReplayReady();
+      if (!ready || ready.unavailable) return ready;
+    }
+    return runRead(success, action);
+  }
+
+  closeButton.addEventListener("click", () => setOpen(false));
+  backdrop.addEventListener("click", () => setOpen(false));
+  drawer.addEventListener("keydown", event => { if (event.key === "Escape") setOpen(false); });
+  scenario.addEventListener("change", () => {
+    context.activeScenario = scenario.value || null;
+    openReplayButton.disabled = isLive || !scenario.value;
+    syncAvailability();
+    if (replayReady()) {
+      runRead("Scenario loaded · every lens now reads from this district replay", () => onScenario?.(scenario.value));
+      return;
+    }
+    feedback.textContent = scenario.value
+      ? "Replay selected · open it directly, or choose any story step and SETU will load it first."
+      : "Choose a historical replay package first.";
+  });
+  openReplayButton.addEventListener("click", async () => {
+    const result = await ensureReplayReady();
+    if (result && !result.unavailable) {
+      feedback.textContent = "Historical replay opened · story and clock controls are unlocked below.";
+    }
+  });
+  speed.addEventListener("change", () => runReplay(`Replay speed · ${speed.value}×`, () => onClock?.("speed", { speed: Number(speed.value) })));
+  openTwinButton.addEventListener("click", async () => {
+    feedback.textContent = `Opening ${context.districtName || "district"} twin…`;
+    try {
+      const result = await onOpenTwin?.();
+      if (result?.unavailable) {
+        feedback.textContent = result.reason || "No district twin is available here.";
+        return;
+      }
+      feedback.textContent = `${context.districtName || "District"} twin opened.`;
+      setOpen(false);
+    } catch (error) {
+      feedback.textContent = `Could not open district twin · ${error instanceof Error ? error.message : String(error)}`;
+    }
+  });
+  reportButton.addEventListener("click", () => run("Observation accepted · beliefs and plan recomputed", async () => {
+    const text = report.value.trim();
+    if (!settlement.value || !text) throw new Error("Choose a settlement and enter an observation");
+    const result = await onEvent?.({
+      kind: "report", channel: "field", source_id: "demo-field-team", provenance: "live",
+      settlement_id: settlement.value, text, hazard: hazard.value,
+      severity_hint: severity.value, is_firsthand: true,
+    });
+    report.value = "";
+    return result;
+  }));
+  overrideButton.addEventListener("click", () => run("Human override appended to the audit ledger", async () => {
+    const why = reason.value.trim();
+    if (!decision.value || why.length < 3) throw new Error("Choose a decision and give a short operational reason");
+    const result = await onOverride?.(Number(decision.value), why);
+    reason.value = "";
+    return result;
+  }));
+  exports.addEventListener("click", event => {
+    if (isLive) return;
+    event.preventDefault();
+    feedback.textContent = "Live exports are unavailable in a historical replay.";
+  });
+
+  return {
+    shell,
+    open: () => setOpen(true),
+    close: () => setOpen(false),
+    setFeedback(text) { feedback.textContent = text; },
+    setStoryStep,
+    setLive(live) {
+      isLive = Boolean(live);
+      syncAvailability();
+      drawer.dataset.live = String(isLive);
+      exports.querySelectorAll("a").forEach(node => {
+        node.setAttribute("aria-disabled", String(!isLive));
+        node.tabIndex = isLive ? 0 : -1;
+      });
+      renderContext();
+    },
+    setScenarios(items, activeId) {
+      allScenarios = items || [];
+      if (activeId && !context.activeScenario) context.activeScenario = activeId;
+      renderContext();
+    },
+    setContext(next) {
+      context = { ...context, ...(next || {}) };
+      renderContext();
+    },
+    setModel(model, activeScenario) {
+      if (activeScenario) {
+        context.activeScenario = activeScenario;
+        renderContext();
+      }
+      const clockState = model?.snapshot?.clock || {};
+      settlement.replaceChildren(...(model?.settlements || []).map(item => option(item.id, `${item.name} · ${item.block || "—"}`)));
+      decision.replaceChildren(...(model?.decisions || []).slice().reverse().map(item => option(item.id, `#${item.id} · ${day(item.sim_t)} ${clock(item.sim_t)}`)));
+      reportButton.disabled = !isLive || !(model?.settlements || []).length;
+      overrideButton.disabled = !isLive || !(model?.decisions || []).length;
+      if (context.kind === "district" && clockState.t) {
+        const frame = model?.snapshot?.baked_frame;
+        const frameText = !isLive && Number.isInteger(frame) ? ` · frame ${frame + 1}` : "";
+        const playText = !isLive && typeof clockState.playing === "boolean"
+          ? ` · ${clockState.playing ? "playing" : "paused"}`
+          : "";
+        status.textContent = `${isLive ? "Live Engine" : "Historical replay"} · ${context.stateName || "State"} / ${context.districtName || "District"} · ${day(clockState.t)} ${clock(clockState.t)}${frameText}${clockState.speed ? ` · ${clockState.speed}×` : ""}${playText}`;
+      }
+      setStoryStep(model?.lens || null);
+    },
+  };
 }
 
 /** Collapse the engine's per-mode belief rows into one worst-case row per settlement. */
@@ -112,14 +601,22 @@ export function createPanels({
   onInject,
   onSeismic,
   onLens,
+  onStoryLens,
   onFogMode,
   onVerify,
   onResolveLocation,
   onSelectBlock,
+  onSelectStateDistrict,
+  onOpenStateDistrict,
+  onClearStateDistrict,
+  onScenario,
+  onClock,
+  onEvent,
+  onOverride,
   onBack,
 }) {
   const crumbs = el("div.setu-crumb-trail", { style: { display: "flex", gap: "8px", alignItems: "center" } });
-  const sourceChip = el("div.setu-source", { text: "connecting" });
+  const sourceChip = el("button.setu-source", { type: "button", text: "connecting", "aria-label": "Open SETU command console" });
   const breadcrumb = el("nav.setu-card.setu-breadcrumb", { "aria-label": "SETU location" }, [crumbs, sourceChip]);
 
   const context = el("section.setu-card.setu-context");
@@ -134,7 +631,17 @@ export function createPanels({
   districtSummary.node.setAttribute("data-shown", "false");
 
   const controls = buildControls({ onScrub, onFlood, onInject, onSeismic, onLens });
-  chrome.append(breadcrumb, context, districtSummary.node, dossier, controls.node, tip, hint);
+  const commandConsole = buildCommandConsole({
+    onScenario,
+    onClock,
+    onEvent,
+    onOverride,
+    onStoryLens,
+    onOpenTwin: onOpenStateDistrict,
+    onInject,
+  });
+  sourceChip.addEventListener("click", commandConsole.open);
+  chrome.append(breadcrumb, context, districtSummary.node, dossier, controls.node, tip, hint, commandConsole.shell);
 
   let names = new Map();
   let sourceDisclosure = "";
@@ -142,13 +649,19 @@ export function createPanels({
   const panels = {
     tip,
     controls,
+    commandConsole,
 
     setSource(source) {
       sourceChip.textContent = source.mode === "engine" ? "live command engine" : "historical replay";
       sourceChip.title = source.disclosure || "";
       sourceDisclosure = source.disclosure || "";
       controls.setLive(source.mode === "engine");
+      commandConsole.setLive(source.mode === "engine");
       panels.showSourceContext();
+    },
+
+    setScenarios(scenarios, activeId) {
+      commandConsole.setScenarios(scenarios, activeId);
     },
 
     showSourceContext() {
@@ -156,6 +669,51 @@ export function createPanels({
         el("div.setu-context-kicker", { text: "SETU SOURCE" }),
         el("p.setu-context-copy", { text: sourceDisclosure || "District command data is loading." }),
       );
+    },
+
+    showStateSituation(summary) {
+      clear(context).append(
+        el("div.setu-context-kicker", { text: summary.kicker || "STATE SITUATION" }),
+        el("div.setu-context-title", { text: summary.title || "Operational picture" }),
+        metricGrid(summary.metrics || []),
+        summary.note ? el("p.setu-context-copy", { text: summary.note }) : null,
+      );
+      context.dataset.alert = summary.alert ? "true" : "false";
+    },
+
+    showStateSummary(stateName, summary) {
+      districtSummary.title.textContent = stateName || "State";
+      districtSummary.note.textContent = summary.alert ? "recent event replay" : "regional prioritisation";
+      districtSummary.node.dataset.mode = "state";
+      districtSummary.node.dataset.alert = summary.alert ? "true" : "false";
+      clear(districtSummary.body);
+      districtSummary.body.append(section(summary.alert ? "Priority flood districts" : "Priority districts", summary.alert ? "08 AUG BULLETIN" : "REGIONAL MODEL"));
+      for (const item of summary.topDistricts || []) {
+        districtSummary.body.append(row({
+          name: item.name,
+          meta: item.meta,
+          value: item.value,
+          bar: item.severity,
+          colour: severityCss(item.severity),
+          onClick: item.id ? () => onSelectStateDistrict?.(item.id) : null,
+        }));
+      }
+      const priorityIds = new Set((summary.topDistricts || []).map(item => item.id));
+      const fullTwins = (summary.fullTwins || []).filter(item => !priorityIds.has(item.id));
+      if (fullTwins.length) {
+        districtSummary.body.append(section("Full district twins", "village-level command package"));
+        for (const item of fullTwins) {
+          districtSummary.body.append(row({
+            name: item.name,
+            meta: item.meta,
+            value: item.value,
+            onClick: item.id ? () => onSelectStateDistrict?.(item.id) : null,
+            className: "setu-row-active",
+          }));
+        }
+      }
+      if (summary.footer) districtSummary.body.append(el("p.setu-state-footnote", { text: summary.footer }));
+      districtSummary.node.setAttribute("data-shown", "true");
     },
 
     setTrail(trail) {
@@ -181,40 +739,166 @@ export function createPanels({
       names = new Map((settlements || []).map(settlement => [settlement.id, settlement.name]));
     },
 
-    showDistrictSummary(summary) {
+    showDistrictSummary(summary, intelligence = null) {
       districtSummary.title.textContent = summary.name || "District";
       districtSummary.note.textContent = summary.live
         ? "full operational twin available"
         : `${summary.provenance || "unknown"} · regional estimate`;
+      districtSummary.node.dataset.mode = "district";
       clear(districtSummary.body);
-      districtSummary.body.append(row({
-        name: "Threat belief",
-        meta: summary.live ? "district model available" : "regional prioritisation only",
-        value: percent(summary.severity),
-        bar: summary.severity,
-        colour: severityCss(summary.severity),
-      }));
-      districtSummary.body.append(row({
-        name: "Likely failure",
-        meta: summary.hazard || (summary.live ? "resolved inside district twin" : "unclassified"),
-        value: summary.failure_mode || (summary.live ? "MULTI-MODE" : "—"),
-      }));
-      if (summary.settlements_estimated != null) districtSummary.body.append(row({
-        name: "Severe settlements", meta: `${summary.settlements_estimated} estimated`, value: String(summary.settlements_severe ?? "—"),
-      }));
-      if (summary.assets_requested != null || summary.asset_kind) districtSummary.body.append(row({
-        name: "Response demand", meta: summary.asset_kind || "requested asset", value: summary.assets_requested == null ? "—" : String(summary.assets_requested),
-      }));
-      districtSummary.body.append(row({
-        name: "Twin coverage",
-        meta: summary.live ? `${summary.scenarioCount || 1} scenario model · opens the district command story` : "no village-level twin",
-        value: summary.live ? "FULL" : "REGIONAL",
-      }));
+      districtSummary.node.dataset.alert = summary.alert_level === "red" ? "true" : "false";
+
+      districtSummary.body.append(actionStrip([
+        { label: "State overview", onClick: () => onClearStateDistrict?.() },
+        ...(summary.live ? [{
+          label: "Open village operations",
+          onClick: () => onOpenStateDistrict?.(),
+          disabled: Boolean(intelligence?.loading || intelligence?.error),
+          title: "Enter the five-lens village command twin",
+        }] : []),
+      ], { className: "setu-state-actions" }));
+
+      const loadedTwin = Boolean(summary.live && intelligence?.fullTwin && !intelligence.loading && !intelligence.error);
+      districtSummary.body.append(metricGrid(loadedTwin ? [
+        { label: "Threat", value: percent(intelligence.peakBelief), meta: intelligence.dominantFailure || "risk belief" },
+        { label: "Population", value: number(intelligence.population), meta: `${number(intelligence.settlementCount)} settlements` },
+        { label: "Severe", value: number(intelligence.severeSettlements), meta: "settlements ≥60%" },
+        { label: "Dispatch", value: number(intelligence.dispatchCount), meta: `${number(intelligence.routedCount)} routed` },
+        { label: "Verify", value: number(intelligence.verifyCount), meta: "open VoI questions" },
+        { label: "Audit", value: intelligence.auditValid == null ? "—" : (intelligence.auditValid ? "VALID" : "FLAG"), meta: "decision chain" },
+      ] : [
+        { label: "Threat", value: percent(summary.severity), meta: summary.failure_mode || summary.hazard || "unclassified" },
+        { label: "People affected", value: number(summary.affected_people), meta: summary.source_label || "district estimate" },
+        { label: "Failure", value: summary.failure_mode || "—", meta: summary.hazard || "hazard" },
+        { label: "Twin", value: summary.live ? (intelligence?.loading ? "READING" : "FULL") : "REGIONAL", meta: `${summary.scenarioCount || 0} package${summary.scenarioCount === 1 ? "" : "s"}` },
+      ]));
+
+      const deck = el("div.setu-district-control-grid");
+
+      if (!summary.live) {
+        deck.append(
+          districtBox("Incident command", summary.source_label || summary.provenance || "regional source", [
+            row({ name: "Incident status", meta: "current district event state", value: summary.status || "MONITOR" }),
+            row({ name: "Threat belief", meta: "regional prioritisation only", value: percent(summary.severity), bar: summary.severity, colour: severityCss(summary.severity) }),
+            row({ name: "Likely failure", meta: summary.hazard || "hazard family", value: summary.failure_mode || "UNCLASSIFIED" }),
+          ], summary.alert_level === "red" ? "setu-district-box-alert" : ""),
+          districtBox("Impact & geography", "people · footprint · exposed area", [
+            row({ name: "People affected", meta: summary.source_label || "reported aggregate", value: number(summary.affected_people) }),
+            row({ name: "District area", meta: "regional profile", value: summary.area_km2 == null ? "—" : `${number(summary.area_km2, 1)} km²` }),
+            row({ name: "Severe settlements", meta: summary.settlements_estimated == null ? "no village estimate loaded" : `${summary.settlements_estimated} estimated`, value: summary.settlements_severe == null ? "—" : String(summary.settlements_severe) }),
+          ]),
+          districtBox("Access & response", "roads · river · field demand", [
+            row({ name: "River / flood signal", meta: summary.response_note || "no district river feed", value: summary.river_status || "NOT LOADED" }),
+            row({ name: "Response demand", meta: summary.asset_kind || "typed asset demand", value: summary.assets_requested == null ? "NOT LOADED" : String(summary.assets_requested) }),
+            row({ name: "Route reachability", meta: "road graph + passability", value: "NOT LOADED" }),
+          ]),
+          districtBox("Communications & infrastructure", "control-room readiness", [
+            row({ name: "Telecom / silence", meta: "tower health + no-report settlements", value: "NOT LOADED" }),
+            row({ name: "Power status", meta: "feeder degradation signal", value: "NOT LOADED" }),
+            row({ name: "Critical facilities", meta: "hospital · shelter · lifeline layer", value: "NOT LOADED" }),
+            row({ name: "Relief capacity", meta: "camps · occupancy · supplies", value: "NOT LOADED" }),
+          ]),
+          districtBox("PS operational chain", "what this district can actually support", [
+            row({ name: "M1 · Information fog", meta: "reports · silence · source trust", value: "DISTRICT ONLY" }),
+            row({ name: "M2 · Belief engine", meta: "settlement failure mode + confidence", value: "NOT LOADED" }),
+            row({ name: "M3 · Verify next", meta: "value-of-information queue", value: "NOT LOADED" }),
+            row({ name: "M4 · Dispatch", meta: "typed assets + reachable routes", value: "NOT LOADED" }),
+          ], "setu-district-box-wide"),
+          districtBox("Resolution boundary", "data honesty", [
+            el("div.setu-state-callout.setu-state-callout-muted", {}, [
+              el("strong", { text: "SETU will not invent village evidence, infrastructure status, routes or dispatch for a district that only has regional data." }),
+              summary.source_label ? el("p", { text: summary.source_label }) : null,
+            ]),
+          ], "setu-district-box-wide"),
+        );
+      } else if (intelligence?.loading) {
+        deck.append(
+          districtBox("Loading district package", "assembling command picture", [
+            row({ name: "Physical prior", meta: "terrain · population · fragility", value: "READING" }),
+            row({ name: "Information fog", meta: "reports · silence · trust", value: "READING" }),
+            row({ name: "Belief + verification", meta: "risk · uncertainty · VoI", value: "READING" }),
+            row({ name: "Dispatch + proof", meta: "assets · routes · audit", value: "READING" }),
+          ], "setu-district-box-wide"),
+        );
+      } else if (intelligence?.error) {
+        deck.append(districtBox("District package unavailable", "state evidence remains visible", [
+          el("div.setu-state-callout", {}, [
+            el("strong", { text: intelligence.error }),
+            el("p", { text: "No missing operational values are substituted." }),
+          ]),
+        ], "setu-district-box-wide setu-district-box-alert"));
+      } else if (loadedTwin) {
+        const topVerify = intelligence.topVerify;
+        const topPrePosition = intelligence.topPrePosition;
+        deck.append(
+          districtBox("Population & exposure", "who is in the hazard footprint", [
+            row({ name: "People + settlements", meta: `${number(intelligence.blockCount)} administrative blocks`, value: `${number(intelligence.population)} · ${number(intelligence.settlementCount)}` }),
+            row({ name: "Households", meta: "district package aggregation", value: number(intelligence.households) }),
+            row({ name: "Elderly exposure", meta: "modelled from settlement demographics", value: number(intelligence.elderlyPopulation) }),
+            intelligence.fatalities == null ? null : row({ name: "Official fatalities", meta: "archived event summary", value: number(intelligence.fatalities) }),
+          ]),
+          districtBox("Terrain & structural risk", "physical prior before reports", [
+            row({ name: "Terrain baseline", meta: `elev ${number(intelligence.meanElevationM)} m · slope ${number(intelligence.meanSlopeDeg, 1)}°`, value: intelligence.meanHandM == null ? "HAND —" : `HAND ${number(intelligence.meanHandM, 1)} m` }),
+            row({ name: "Structural fragility", meta: `${number(intelligence.highFragilitySettlements)} high-fragility settlements`, value: intelligence.meanKutchaShare == null ? "—" : `${percent(intelligence.meanKutchaShare)} kutcha` }),
+            row({ name: "Disadvantaged share", meta: "SC/ST share proxy in settlement package", value: percent(intelligence.meanDisadvantagedShare) }),
+            row({ name: "Normal road access", meta: "mean travel-time baseline", value: intelligence.meanRoadHoursNormal == null ? "—" : `${number(intelligence.meanRoadHoursNormal, 1)} h` }),
+            intelligence.runoutKm == null ? null : row({ name: "Landslide runout", meta: "official event summary", value: `${number(intelligence.runoutKm, 1)} km` }),
+            intelligence.cropLossHa == null ? null : row({ name: "Crop loss", meta: "official event summary", value: `${number(intelligence.cropLossHa, 1)} ha` }),
+          ]),
+          districtBox("M1 · Information fog", "what the EOC can and cannot hear", [
+            row({ name: "Reports heard", meta: `${number(intelligence.distinctClaims)} distinct claims`, value: number(intelligence.reports) }),
+            row({ name: "Evidence rows", meta: "weighted observations after deduplication", value: number(intelligence.evidenceRows) }),
+            row({ name: "Silent settlements", meta: "no report received · silence remains a signal", value: `${number(intelligence.silentSettlements)} / ${number(intelligence.settlementCount)}` }),
+            row({ name: "Unresolved locations", meta: "never guessed below geocoder threshold", value: number(intelligence.unresolvedLocations) }),
+            row({ name: "Observability", meta: "mean district sensing / reporting visibility", value: percent(intelligence.meanObservability) }),
+            row({ name: "Degraded channels", meta: intelligence.rankDisplacement == null ? "telecom + power robustness" : `top-10 rank displacement ${intelligence.rankDisplacement}`, value: intelligence.disabledChannels?.length ? intelligence.disabledChannels.join(", ").toUpperCase() : "NONE" }),
+          ]),
+          districtBox("M2 + M3 · Decide what to verify", "risk belief → value of information", [
+            row({ name: "Peak settlement belief", meta: `${number(intelligence.severeSettlements)} settlements at ≥60%`, value: percent(intelligence.peakBelief), bar: intelligence.peakBelief, colour: severityCss(intelligence.peakBelief) }),
+            row({ name: "Dominant failure", meta: "highest aggregate posterior risk", value: intelligence.dominantFailure }),
+            row({ name: "Open verification queue", meta: topVerify ? `${topVerify.action} · ${topVerify.settlement_name}` : "no unresolved high-value question", value: number(intelligence.verifyCount) }),
+            topVerify ? row({ name: "Highest-value question", meta: `VoI ${number(topVerify.voi_score, 2)} · resolves ${topVerify.resolves}`, value: minutes(topVerify.minutes), className: "setu-row-alert" }) : null,
+          ]),
+          districtBox("M4 · Dispatch & reachability", "typed assets · routes · impact", [
+            row({ name: "Available asset inventory", meta: "district package resource pool", value: number(intelligence.assetInventoryCount) }),
+            row({ name: "Dispatch orders", meta: intelligence.assetMix, value: number(intelligence.dispatchCount) }),
+            row({ name: "Reachability", meta: `${number(intelligence.blockedCount)} routes need review`, value: `${number(intelligence.routedCount)} / ${number(intelligence.dispatchCount)} routed` }),
+            row({ name: "Expected lives saved", meta: "modelled impact across current plan", value: number(intelligence.expectedLivesSaved) }),
+          ]),
+          districtBox("Damage & relief capacity", "what limits response on the ground", [
+            intelligence.roadsDamagedKm == null ? null : row({ name: "Roads damaged", meta: "official event summary", value: `${number(intelligence.roadsDamagedKm, 1)} km` }),
+            intelligence.bridgesDamaged == null ? null : row({ name: "Bridges damaged", meta: "official event summary", value: number(intelligence.bridgesDamaged) }),
+            intelligence.reliefCamps == null ? null : row({ name: "Relief camps", meta: "official event summary", value: number(intelligence.reliefCamps) }),
+            intelligence.campInmates == null ? null : row({ name: "Camp inmates", meta: "official event summary", value: number(intelligence.campInmates) }),
+            intelligence.peakRainfallMm == null ? null : row({ name: "Peak recorded rainfall", meta: "Kalladi gauge · archived event summary", value: `${number(intelligence.peakRainfallMm, 1)} mm` }),
+            intelligence.affectedWardCount == null ? null : row({ name: "Affected wards", meta: "official event summary", value: number(intelligence.affectedWardCount) }),
+            intelligence.affectedSettlementCount == null ? null : row({ name: "Named affected settlements", meta: intelligence.affectedSettlementNames?.join(" · ") || "official event summary", value: number(intelligence.affectedSettlementCount) }),
+            row({ name: "Critical facilities", meta: "hospital / shelter facility-level feed", value: "NO FACILITY LAYER" }),
+          ]),
+          districtBox("Cascade & pre-position", "move before access disappears", [
+            row({ name: "Pre-position leads", meta: topPrePosition ? `${topPrePosition.settlement_name} · ${minutes(topPrePosition.eta_minutes)} lag · source ${topPrePosition.source}` : "no downstream lead above model threshold", value: number(intelligence.prePositionCount) }),
+            row({ name: "Routing provenance", meta: intelligence.routingAttribution || "district routing graph", value: intelligence.officialEventTime ? `${day(intelligence.officialEventTime)} ${clock(intelligence.officialEventTime)}` : "READY" }),
+          ]),
+          districtBox("Proof, equity & resilience", "can the EOC defend the decision", [
+            row({ name: "Audit chain", meta: `${number(intelligence.auditEntries)} decisions${intelligence.latestDecisionHash ? ` · ${short(intelligence.latestDecisionHash)}` : ""}`, value: intelligence.auditValid == null ? "—" : (intelligence.auditValid ? "VALID" : "FLAG"), className: intelligence.auditValid === false ? "setu-row-alert" : "" }),
+            row({ name: "Equity allocation gap", meta: "disadvantaged mean priority − district mean", value: intelligence.equityGap == null ? "—" : Number(intelligence.equityGap).toFixed(3) }),
+            row({ name: "Calibration ECE", meta: "lower is better · model diagnostic", value: intelligence.calibrationEce == null ? "—" : Number(intelligence.calibrationEce).toFixed(3) }),
+            row({ name: "Source datasets", meta: "provenance-backed operational inputs", value: number(intelligence.sourceCount) }),
+          ]),
+          districtBox("Provenance / disclosure", intelligence.updatedAt ? `district state · ${day(intelligence.updatedAt)} ${clock(intelligence.updatedAt)}` : "district state", [
+            el("p.setu-district-disclosure", { text: intelligence.disclosure || "See the district package provenance metadata." }),
+          ], "setu-district-box-wide"),
+        );
+      }
+
+      districtSummary.body.append(deck);
       districtSummary.node.setAttribute("data-shown", "true");
     },
 
     hideDistrictSummary() {
       districtSummary.node.setAttribute("data-shown", "false");
+      districtSummary.node.dataset.alert = "false";
+      districtSummary.node.dataset.mode = "";
     },
 
     showTip(text, meta, at) {
@@ -230,6 +914,7 @@ export function createPanels({
 
     renderDistrict(model) {
       controls.setLens(model.lens);
+      commandConsole.setModel(model, model.scenario);
       if (model.detail?.receipt) {
         renderReceipt({ panel: dossierPanel, context, model, onCloseDetail });
         return;
@@ -501,6 +1186,50 @@ function renderProof({ panel, context, model }) {
     value: "",
   })));
 
+  if ((model.overrides || []).length) {
+    panel.body.append(section("Human authority", "append-only operator overrides"));
+    model.overrides.slice().reverse().slice(0, 3).forEach(entry => panel.body.append(row({
+      name: `Override #${entry.id} · decision #${entry.decision_id}`,
+      meta: `${entry.actor} · ${entry.reason}`,
+      value: String(entry.outcome || "acknowledged").toUpperCase(),
+    })));
+  }
+
+  const calibration = model.metrics?.calibration || {};
+  panel.body.append(section("Calibration", "measured confidence, not a marketing score"));
+  panel.body.append(row({
+    name: "Expected calibration error",
+    meta: calibration.status || "held-out calibration status unavailable",
+    value: calibration.ece == null ? "—" : Number(calibration.ece).toFixed(3),
+  }));
+  if (calibration.curve?.length) panel.body.append(row({
+    name: "Reliability bins",
+    meta: `${calibration.curve.reduce((sum, bin) => sum + Number(bin.count || 0), 0)} evaluated settlement-mode beliefs`,
+    value: `${calibration.curve.length} BINS`,
+  }));
+
+  const dataPlane = model.dataPlane || {};
+  const twin = dataPlane.twin;
+  const intensities = twin?.values ? [...twin.values] : [];
+  const peak = intensities.length ? Math.max(...intensities) / 255 : null;
+  const provenance = [...new Set((dataPlane.layers || []).map(layer => layer.provenance).filter(Boolean))];
+  panel.body.append(section("District data plane", "timeline · layers · compact twin state"));
+  panel.body.append(row({
+    name: "Time-aligned twin frame",
+    meta: `${twin?.count ?? 0} settlement bytes · ${twin?.encoding || "unavailable"}`,
+    value: twin ? `#${Number(twin.frame || 0) + 1} · ${percent(peak)}` : "—",
+  }));
+  panel.body.append(row({
+    name: "Visualisation layers",
+    meta: provenance.length ? provenance.join(" · ") : "layer provenance unavailable",
+    value: number(dataPlane.layers?.length || 0),
+  }));
+  panel.body.append(row({
+    name: "Replay timeline",
+    meta: model.metrics?.disclosure || dataPlane.district?.provenance?.disclosure || "scenario disclosure unavailable",
+    value: dataPlane.timeline?.frame_count == null ? "—" : `${dataPlane.timeline.frame_count} FRAMES`,
+  }));
+
   panel.body.append(section("Robustness", "what happened under attack"));
   panel.body.append(row({ name: "Injected events", meta: "false reports / outages / scenario attacks", value: number(robustness.injected_events ?? 0) }));
   panel.body.append(row({ name: "Top-10 displacement", meta: "rank movement after the latest attack", value: number(robustness.top10_rank_displacement ?? 0) }));
@@ -603,6 +1332,7 @@ function buildControls({ onScrub, onFlood, onInject, onSeismic, onLens }) {
     attack("false_reports", "False reports", "Inject two hundred forwarded severe reports"),
     attack("silence", "Cut telecom", "Drop telecom telemetry to zero"),
     attack("kill_sar", "Drop satellite", "Disable the satellite channel"),
+    attack("cut_edge", "Cut road", "Close one road edge and recompute asset routes"),
     seismicButton,
   );
   const stressToggle = el("button.setu-button.setu-stress-toggle", { type: "button", text: "Stress test" });

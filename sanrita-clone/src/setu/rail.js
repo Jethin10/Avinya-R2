@@ -114,6 +114,7 @@ export function createRail({ states, onSelectState, onSelectLens, onSelectBlock,
       geoRail.style.display = "none";
       storyRail.style.display = "block";
       renderHeading(`SETU · ${districtName || "DISTRICT"}`);
+      for (const [, anchor] of rows) delete anchor.dataset.active;
       for (const [id, anchor] of lensRows) {
         if (id === lens) anchor.dataset.active = "true";
         else delete anchor.dataset.active;

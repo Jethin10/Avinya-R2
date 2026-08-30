@@ -80,6 +80,20 @@ npm run build    # emits sanrita-clone/dist/client
 npm run test:sites
 ```
 
+For a stage demo, build the Twin once and let the Engine serve it on the same offline origin:
+
+```powershell
+cd sanrita-clone
+npm run build
+cd ..
+uv run python -m engine.cli serve
+```
+
+Open [http://localhost:8000](http://localhost:8000). Enter Kerala → Wayanad, then open the
+**live command engine** control in the breadcrumb. Its command console provides the five-step demo
+story, scenario switching, replay transport, field-report ingest, red-team attacks, human override,
+and dispatch/CAP exports without leaving the terrain view.
+
 The old `web/`, `web-atlas/`, and raw `sanrita.ca/` capture directories are local experiments and are
 not part of the published application.
 

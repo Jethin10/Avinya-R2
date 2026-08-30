@@ -309,7 +309,11 @@ def create_app(settings: Settings = default_settings) -> FastAPI:
 
     # The Twin, served from the Engine so the demo is one process and no CDN is ever reached. In dev
     # Vite owns :5173 and proxies here instead, so an absent build is normal, not an error.
-    twin = Path(__file__).resolve().parent.parent / "web" / "dist"
+    repo = Path(__file__).resolve().parent.parent
+    # The San Rita clone is the active operator Twin. Prefer its production build so a judge can run
+    # one Engine process and open :8000; retain the older web build only as a compatibility fallback.
+    candidates = [repo / "sanrita-clone" / "dist" / "client", repo / "web" / "dist"]
+    twin = next((candidate for candidate in candidates if (candidate / "index.html").is_file()), candidates[0])
     if (twin / "index.html").is_file():
         app.mount("/assets", StaticFiles(directory=twin / "assets"), name="twin-assets")
 

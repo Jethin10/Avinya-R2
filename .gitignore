@@ -16,6 +16,15 @@ setu-*.db
 *.db-wal
 dist/
 models/
+.vercel/
+
+# Local visual QA and browser-test artifacts. These are useful while iterating,
+# but are not part of the deployable product.
+qa-final/
+sanrita-clone/.qa/
+sanrita-clone/.qa-tmp/
+sanrita-clone/output/
+sanrita-clone/qa-*.png
 
 # Discontinued/local frontend experiments. The active frontend is sanrita-clone/.
 /web/
