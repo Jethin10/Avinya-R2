@@ -446,6 +446,7 @@ async function showState(state) {
   app.storyFocusId = null;
   app.storyStep = null;
   app.view = { kind: "state", state };
+  app.panels.setLandingChrome(false);
   syncCommandContext({ kind: "state", state });
   app.rail.setActive(state.id);
   const situation = situationForState(state, district => standInFor(state, district));
@@ -1079,6 +1080,7 @@ function showNation() {
   setScene("nation");
   app.panels.hideDistrictSummary();
   app.panels.showSourceContext();
+  app.panels.setLandingChrome(true);
   app.panels.setTrail([{ label: "India", kind: "nation" }]);
   app.panels.setHint("Select a state to enter the response atlas");
 }

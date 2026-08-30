@@ -664,6 +664,12 @@ export function createPanels({
       commandConsole.setScenarios(scenarios, activeId);
     },
 
+    setLandingChrome(isLanding) {
+      const hideOperationalSource = Boolean(isLanding);
+      sourceChip.style.display = hideOperationalSource ? "none" : "";
+      context.style.display = hideOperationalSource ? "none" : "";
+    },
+
     showSourceContext() {
       clear(context).append(
         el("div.setu-context-kicker", { text: "SETU SOURCE" }),
