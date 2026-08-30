@@ -22,6 +22,8 @@ const minutes = (value) => (value == null ? "—" : `${Number(value).toFixed(0)}
 const number = (value, digits = 0) => value == null || !Number.isFinite(Number(value))
   ? "—"
   : Number(value).toLocaleString("en-IN", { maximumFractionDigits: digits });
+const reported = (value, fallback = "NOT REPORTED") => value == null || value === "" ? fallback : String(value);
+const countReported = (value, fallback = "NOT REPORTED") => value == null ? fallback : number(value);
 const short = (hash) => (hash ? `${hash.slice(0, 8)}…` : "—");
 function replayDateParts(iso) {
   if (!iso) return { day: "—", clock: "—" };
@@ -89,6 +91,26 @@ function districtBox(title, note, children = [], className = "") {
     ...children.filter(Boolean),
   ]);
   if (className) node.classList.add(...className.split(/\s+/).filter(Boolean));
+  return node;
+}
+
+function districtBrief(summary, text, actions = []) {
+  return el("div.setu-district-brief", {}, [
+    el("div.setu-district-brief-kicker", { text: `${summary.stateName || "State"} · selected district` }),
+    el("div.setu-district-brief-title", { text: summary.name || "District" }),
+    el("div.setu-district-brief-meta", {
+      text: summary.live
+        ? "FULL DISTRICT TWIN · VILLAGE RESOLUTION"
+        : `${summary.provenance || "REGIONAL"} · DISTRICT RESOLUTION`,
+    }),
+    el("p.setu-district-brief-copy", { text }),
+    actions.length ? actionStrip(actions, { className: "setu-district-inline-actions" }) : null,
+  ]);
+}
+
+function districtNarrative(text, tone = "") {
+  const node = el("p.setu-district-narrative", { text });
+  if (tone) node.dataset.tone = tone;
   return node;
 }
 
@@ -671,6 +693,7 @@ export function createPanels({
     },
 
     showSourceContext() {
+      context.dataset.mode = "source";
       clear(context).append(
         el("div.setu-context-kicker", { text: "SETU SOURCE" }),
         el("p.setu-context-copy", { text: sourceDisclosure || "District command data is loading." }),
@@ -678,6 +701,7 @@ export function createPanels({
     },
 
     showStateSituation(summary) {
+      context.dataset.mode = "state";
       clear(context).append(
         el("div.setu-context-kicker", { text: summary.kicker || "STATE SITUATION" }),
         el("div.setu-context-title", { text: summary.title || "Operational picture" }),
@@ -688,6 +712,7 @@ export function createPanels({
     },
 
     showStateSummary(stateName, summary) {
+      context.dataset.mode = "state";
       districtSummary.title.textContent = stateName || "State";
       districtSummary.note.textContent = summary.alert ? "recent event replay" : "regional prioritisation";
       districtSummary.node.dataset.mode = "state";
@@ -746,6 +771,7 @@ export function createPanels({
     },
 
     showDistrictSummary(summary, intelligence = null) {
+      context.dataset.mode = "district";
       districtSummary.title.textContent = summary.name || "District";
       districtSummary.note.textContent = summary.live
         ? "full operational twin available"
@@ -754,7 +780,9 @@ export function createPanels({
       clear(districtSummary.body);
       districtSummary.node.dataset.alert = summary.alert_level === "red" ? "true" : "false";
 
-      districtSummary.body.append(actionStrip([
+      const loadedTwin = Boolean(summary.live && intelligence?.fullTwin && !intelligence.loading && !intelligence.error);
+      const deck = el("div.setu-district-control-grid");
+      const actions = [
         { label: "State overview", onClick: () => onClearStateDistrict?.() },
         ...(summary.live ? [{
           label: "Open village operations",
@@ -762,138 +790,165 @@ export function createPanels({
           disabled: Boolean(intelligence?.loading || intelligence?.error),
           title: "Enter the five-lens village command twin",
         }] : []),
-      ], { className: "setu-state-actions" }));
-
-      const loadedTwin = Boolean(summary.live && intelligence?.fullTwin && !intelligence.loading && !intelligence.error);
-      districtSummary.body.append(metricGrid(loadedTwin ? [
-        { label: "Threat", value: percent(intelligence.peakBelief), meta: intelligence.dominantFailure || "risk belief" },
-        { label: "Population", value: number(intelligence.population), meta: `${number(intelligence.settlementCount)} settlements` },
-        { label: "Severe", value: number(intelligence.severeSettlements), meta: "settlements ≥60%" },
-        { label: "Dispatch", value: number(intelligence.dispatchCount), meta: `${number(intelligence.routedCount)} routed` },
-        { label: "Verify", value: number(intelligence.verifyCount), meta: "open VoI questions" },
-        { label: "Audit", value: intelligence.auditValid == null ? "—" : (intelligence.auditValid ? "VALID" : "FLAG"), meta: "decision chain" },
-      ] : [
-        { label: "Threat", value: percent(summary.severity), meta: summary.failure_mode || summary.hazard || "unclassified" },
-        { label: "People affected", value: number(summary.affected_people), meta: summary.source_label || "district estimate" },
-        { label: "Failure", value: summary.failure_mode || "—", meta: summary.hazard || "hazard" },
-        { label: "Twin", value: summary.live ? (intelligence?.loading ? "READING" : "FULL") : "REGIONAL", meta: `${summary.scenarioCount || 0} package${summary.scenarioCount === 1 ? "" : "s"}` },
-      ]));
-
-      const deck = el("div.setu-district-control-grid");
+      ];
 
       if (!summary.live) {
+        const failure = summary.failure_mode || summary.hazard || "unclassified";
+        const source = summary.source_label || summary.provenance || "regional model";
+        const posture = summary.severity >= 0.75
+          ? "HIGH PRIORITY"
+          : summary.severity >= 0.6
+            ? "ELEVATED"
+            : "MONITOR";
+        const incidentStatus = summary.status || posture;
+        const incidentType = (summary.hazard || failure || "UNCLASSIFIED").toUpperCase();
+        const resourceRequest = summary.assets_requested == null
+          ? "NOT REPORTED"
+          : `${number(summary.assets_requested)} ${(summary.asset_kind || "RESOURCE").toUpperCase()}`;
+        const lifeSafetyMeta = [
+          summary.injuries == null ? null : `${number(summary.injuries)} injured`,
+          summary.missing == null ? null : `${number(summary.missing)} missing`,
+          summary.trapped == null ? null : `${number(summary.trapped)} need rescue`,
+        ].filter(Boolean).join(" · ") || "injured · missing · rescue status";
+        const sheltered = summary.sheltered ?? null;
+        const roads = summary.roads_damaged_km == null ? null : `${number(summary.roads_damaged_km, 1)} km damaged`;
+        const bridges = summary.bridges_damaged == null ? null : `${number(summary.bridges_damaged)} bridges damaged`;
+        const accessDamage = [roads, bridges].filter(Boolean).join(" · ") || "NOT VERIFIED";
         deck.append(
-          districtBox("Incident command", summary.source_label || summary.provenance || "regional source", [
-            row({ name: "Incident status", meta: "current district event state", value: summary.status || "MONITOR" }),
-            row({ name: "Threat belief", meta: "regional prioritisation only", value: percent(summary.severity), bar: summary.severity, colour: severityCss(summary.severity) }),
-            row({ name: "Likely failure", meta: summary.hazard || "hazard family", value: summary.failure_mode || "UNCLASSIFIED" }),
-          ], summary.alert_level === "red" ? "setu-district-box-alert" : ""),
-          districtBox("Impact & geography", "people · footprint · exposed area", [
-            row({ name: "People affected", meta: summary.source_label || "reported aggregate", value: number(summary.affected_people) }),
-            row({ name: "District area", meta: "regional profile", value: summary.area_km2 == null ? "—" : `${number(summary.area_km2, 1)} km²` }),
-            row({ name: "Severe settlements", meta: summary.settlements_estimated == null ? "no village estimate loaded" : `${summary.settlements_estimated} estimated`, value: summary.settlements_severe == null ? "—" : String(summary.settlements_severe) }),
-          ]),
-          districtBox("Access & response", "roads · river · field demand", [
-            row({ name: "River / flood signal", meta: summary.response_note || "no district river feed", value: summary.river_status || "NOT LOADED" }),
-            row({ name: "Response demand", meta: summary.asset_kind || "typed asset demand", value: summary.assets_requested == null ? "NOT LOADED" : String(summary.assets_requested) }),
-            row({ name: "Route reachability", meta: "road graph + passability", value: "NOT LOADED" }),
-          ]),
-          districtBox("Communications & infrastructure", "control-room readiness", [
-            row({ name: "Telecom / silence", meta: "tower health + no-report settlements", value: "NOT LOADED" }),
-            row({ name: "Power status", meta: "feeder degradation signal", value: "NOT LOADED" }),
-            row({ name: "Critical facilities", meta: "hospital · shelter · lifeline layer", value: "NOT LOADED" }),
-            row({ name: "Relief capacity", meta: "camps · occupancy · supplies", value: "NOT LOADED" }),
-          ]),
-          districtBox("PS operational chain", "what this district can actually support", [
-            row({ name: "M1 · Information fog", meta: "reports · silence · source trust", value: "DISTRICT ONLY" }),
-            row({ name: "M2 · Belief engine", meta: "settlement failure mode + confidence", value: "NOT LOADED" }),
-            row({ name: "M3 · Verify next", meta: "value-of-information queue", value: "NOT LOADED" }),
-            row({ name: "M4 · Dispatch", meta: "typed assets + reachable routes", value: "NOT LOADED" }),
-          ], "setu-district-box-wide"),
-          districtBox("Resolution boundary", "data honesty", [
-            el("div.setu-state-callout.setu-state-callout-muted", {}, [
-              el("strong", { text: "SETU will not invent village evidence, infrastructure status, routes or dispatch for a district that only has regional data." }),
-              summary.source_label ? el("p", { text: summary.source_label }) : null,
+          districtBox("01 · Life safety + impact", "incident snapshot", [
+            districtBrief(summary, `${incidentType} · ${incidentStatus}. This is a district-level incident brief: public-safety facts stay separate from modelled priority so an operator can see exactly what is known and what is still unreported.`, actions),
+            metricGrid([
+              { label: "People affected", value: countReported(summary.affected_people, "—"), meta: summary.affected_people == null ? "not reported" : "reported aggregate" },
+              { label: "Fatalities", value: countReported(summary.fatalities, "—"), meta: summary.fatalities == null ? "not reported" : "official / reported" },
+              { label: "Incident priority", value: percent(summary.severity), meta: "planning signal" },
             ]),
-          ], "setu-district-box-wide"),
+            row({ name: "Incident status", meta: "current district posture", value: incidentStatus }),
+            row({ name: "Incident type", meta: summary.failure_mode || "hazard / failure mode", value: incidentType }),
+            row({ name: "Injured / missing / rescue", meta: lifeSafetyMeta, value: summary.injuries == null && summary.missing == null && summary.trapped == null ? "NOT REPORTED" : "REPORTED" }),
+            row({ name: "Evacuation / shelter", meta: "evacuated · temporary shelter population", value: summary.evacuated == null && sheltered == null ? "NOT REPORTED" : `${countReported(summary.evacuated, "0")} evac · ${countReported(sheltered, "0")} sheltered` }),
+            row({ name: "District footprint", meta: "administrative area", value: summary.area_km2 == null ? "NOT REPORTED" : `${number(summary.area_km2, 1)} km²` }),
+            districtNarrative(`Source boundary: ${source}. Casualties, evacuation and shelter figures are never inferred from the ${posture.toLowerCase()} planning score.`, "boundary"),
+          ], `setu-district-box-risk ${summary.alert_level === "red" ? "setu-district-box-alert" : ""}`),
+          districtBox("02 · Operations + logistics", "actions · access · resources", [
+            row({ name: "Current objective", meta: summary.incident_objective || summary.response_note || "maintain district readiness pending verified field status", value: summary.incident_objective ? "ACTIVE" : "MONITOR / STAGE" }),
+            row({ name: "Access / river condition", meta: "flood · river · district access context", value: reported(summary.river_status, "NOT VERIFIED") }),
+            row({ name: "Roads + bridges", meta: "damage / passability status", value: accessDamage }),
+            row({ name: "Critical facilities", meta: "hospital · shelter · lifeline availability", value: reported(summary.critical_facilities, "NOT REPORTED") }),
+            row({ name: "Relief shelters", meta: "camps · shelter population", value: summary.relief_camps == null && sheltered == null ? "NOT REPORTED" : `${countReported(summary.relief_camps, "0")} camps · ${countReported(sheltered, "0")} people` }),
+            row({ name: "Resource request", meta: "requested / ordered resource", value: resourceRequest }),
+            districtNarrative("Operational rule: district readiness can be staged now; village dispatch remains on hold until route, destination and receiving-facility status are verified.", "decision"),
+          ], "setu-district-box-response"),
+          districtBox("03 · Command + information", "source · comms · gaps", [
+            row({ name: "Source authority", meta: "who this brief is based on", value: source.toUpperCase() }),
+            row({ name: "Last verified update", meta: "snapshot timestamp", value: reported(summary.last_updated, "NO FIELD TIMESTAMP") }),
+            row({ name: "Communications", meta: "telecom / field reporting status", value: reported(summary.telecom_status, "NOT REPORTED") }),
+            row({ name: "Power / lifelines", meta: "power status relevant to response", value: reported(summary.power_status, "NOT REPORTED") }),
+            row({ name: "Evidence resolution", meta: "highest defensible granularity", value: "DISTRICT" }),
+            row({ name: "Verification status", meta: "before settlement-level action", value: reported(summary.verification_status, "FIELD CHECK REQUIRED") }),
+            row({ name: "Decision / activity log", meta: "documentation + accountability", value: summary.decision_log_entries == null ? "NOT AVAILABLE" : `${number(summary.decision_log_entries)} EXERCISE ENTRIES` }),
+            districtNarrative("Next useful update: casualties and evacuation, road/facility status, communications, resource status and a timestamped field report. Missing fields remain explicit gaps.", "boundary"),
+          ], "setu-district-box-evidence"),
         );
       } else if (intelligence?.loading) {
         deck.append(
-          districtBox("Loading district package", "assembling command picture", [
+          districtBox("Risk + impact", "reading district package", [
+            districtBrief(summary, "SETU is assembling the village-resolution risk picture from the selected district package.", actions),
             row({ name: "Physical prior", meta: "terrain · population · fragility", value: "READING" }),
+            row({ name: "Risk belief", meta: "settlement posteriors", value: "READING" }),
+          ], "setu-district-box-risk"),
+          districtBox("Access + response", "assembling routes", [
+            row({ name: "Asset inventory", meta: "typed district resources", value: "READING" }),
+            row({ name: "Reachability", meta: "routes · passability · blockages", value: "READING" }),
+            row({ name: "Verification", meta: "highest-value unanswered question", value: "READING" }),
+          ], "setu-district-box-response"),
+          districtBox("Evidence + readiness", "assembling proof", [
             row({ name: "Information fog", meta: "reports · silence · trust", value: "READING" }),
-            row({ name: "Belief + verification", meta: "risk · uncertainty · VoI", value: "READING" }),
-            row({ name: "Dispatch + proof", meta: "assets · routes · audit", value: "READING" }),
-          ], "setu-district-box-wide"),
+            row({ name: "Audit chain", meta: "decision receipts", value: "READING" }),
+            districtNarrative("The three command boxes fill from one district snapshot; no placeholder operational values are invented while it loads."),
+          ], "setu-district-box-evidence"),
         );
       } else if (intelligence?.error) {
-        deck.append(districtBox("District package unavailable", "state evidence remains visible", [
-          el("div.setu-state-callout", {}, [
-            el("strong", { text: intelligence.error }),
-            el("p", { text: "No missing operational values are substituted." }),
-          ]),
-        ], "setu-district-box-wide setu-district-box-alert"));
+        deck.append(
+          districtBox("Risk + impact", "regional fallback", [
+            districtBrief(summary, "The selected district is still visible, but its full operational package could not be read.", actions),
+            row({ name: "Threat", meta: summary.failure_mode || summary.hazard || "regional estimate", value: percent(summary.severity), bar: summary.severity, colour: severityCss(summary.severity) }),
+          ], "setu-district-box-risk setu-district-box-alert"),
+          districtBox("Access + response", "package unavailable", [
+            districtNarrative("No route, facility or dispatch state is promoted from stale or partial data.", "boundary"),
+            row({ name: "Operational state", meta: "district package read failed", value: "WITHHELD" }),
+          ], "setu-district-box-response"),
+          districtBox("Evidence + readiness", "read failure", [
+            districtNarrative(intelligence.error, "boundary"),
+            row({ name: "Fallback", meta: "state evidence remains available", value: "REGIONAL" }),
+            districtNarrative("Missing operational values remain missing until the package can be read."),
+          ], "setu-district-box-evidence"),
+        );
       } else if (loadedTwin) {
         const topVerify = intelligence.topVerify;
         const topPrePosition = intelligence.topPrePosition;
+        const impactAffected = intelligence.affectedPeopleOfficial ?? null;
+        const sheltered = intelligence.sheltered ?? intelligence.campInmates ?? null;
+        const casualtyDetail = [
+          intelligence.injuries == null ? null : `${number(intelligence.injuries)} injured`,
+          intelligence.missing == null ? null : `${number(intelligence.missing)} missing`,
+          intelligence.trapped == null ? null : `${number(intelligence.trapped)} need rescue`,
+        ].filter(Boolean).join(" · ") || "injured · missing · rescue status not reported";
+        const affectedLocations = [
+          intelligence.affectedSettlementCount == null ? null : `${number(intelligence.affectedSettlementCount)} settlements`,
+          intelligence.affectedWardCount == null ? null : `${number(intelligence.affectedWardCount)} wards`,
+        ].filter(Boolean).join(" · ") || "NOT REPORTED";
+        const hazardIndicator = intelligence.peakRainfallMm != null
+          ? `${number(intelligence.peakRainfallMm, 1)} mm rainfall`
+          : intelligence.runoutKm != null
+            ? `${number(intelligence.runoutKm, 1)} km runout`
+            : "SEE INCIDENT LAYERS";
+        const transportDamage = [
+          intelligence.roadsDamagedKm == null ? null : `${number(intelligence.roadsDamagedKm, 1)} km roads`,
+          intelligence.bridgesDamaged == null ? null : `${number(intelligence.bridgesDamaged)} bridges`,
+        ].filter(Boolean).join(" · ") || "NO OFFICIAL DAMAGE TOTAL";
+        const updateStamp = intelligence.updatedAt
+          ? `${day(intelligence.updatedAt)} ${clock(intelligence.updatedAt)}`
+          : intelligence.officialEventTime
+            ? `${day(intelligence.officialEventTime)} ${clock(intelligence.officialEventTime)}`
+            : "NO TIMESTAMP";
         deck.append(
-          districtBox("Population & exposure", "who is in the hazard footprint", [
-            row({ name: "People + settlements", meta: `${number(intelligence.blockCount)} administrative blocks`, value: `${number(intelligence.population)} · ${number(intelligence.settlementCount)}` }),
-            row({ name: "Households", meta: "district package aggregation", value: number(intelligence.households) }),
-            row({ name: "Elderly exposure", meta: "modelled from settlement demographics", value: number(intelligence.elderlyPopulation) }),
-            intelligence.fatalities == null ? null : row({ name: "Official fatalities", meta: "archived event summary", value: number(intelligence.fatalities) }),
-          ]),
-          districtBox("Terrain & structural risk", "physical prior before reports", [
-            row({ name: "Terrain baseline", meta: `elev ${number(intelligence.meanElevationM)} m · slope ${number(intelligence.meanSlopeDeg, 1)}°`, value: intelligence.meanHandM == null ? "HAND —" : `HAND ${number(intelligence.meanHandM, 1)} m` }),
-            row({ name: "Structural fragility", meta: `${number(intelligence.highFragilitySettlements)} high-fragility settlements`, value: intelligence.meanKutchaShare == null ? "—" : `${percent(intelligence.meanKutchaShare)} kutcha` }),
-            row({ name: "Disadvantaged share", meta: "SC/ST share proxy in settlement package", value: percent(intelligence.meanDisadvantagedShare) }),
-            row({ name: "Normal road access", meta: "mean travel-time baseline", value: intelligence.meanRoadHoursNormal == null ? "—" : `${number(intelligence.meanRoadHoursNormal, 1)} h` }),
-            intelligence.runoutKm == null ? null : row({ name: "Landslide runout", meta: "official event summary", value: `${number(intelligence.runoutKm, 1)} km` }),
-            intelligence.cropLossHa == null ? null : row({ name: "Crop loss", meta: "official event summary", value: `${number(intelligence.cropLossHa, 1)} ha` }),
-          ]),
-          districtBox("M1 · Information fog", "what the EOC can and cannot hear", [
-            row({ name: "Reports heard", meta: `${number(intelligence.distinctClaims)} distinct claims`, value: number(intelligence.reports) }),
-            row({ name: "Evidence rows", meta: "weighted observations after deduplication", value: number(intelligence.evidenceRows) }),
-            row({ name: "Silent settlements", meta: "no report received · silence remains a signal", value: `${number(intelligence.silentSettlements)} / ${number(intelligence.settlementCount)}` }),
-            row({ name: "Unresolved locations", meta: "never guessed below geocoder threshold", value: number(intelligence.unresolvedLocations) }),
-            row({ name: "Observability", meta: "mean district sensing / reporting visibility", value: percent(intelligence.meanObservability) }),
-            row({ name: "Degraded channels", meta: intelligence.rankDisplacement == null ? "telecom + power robustness" : `top-10 rank displacement ${intelligence.rankDisplacement}`, value: intelligence.disabledChannels?.length ? intelligence.disabledChannels.join(", ").toUpperCase() : "NONE" }),
-          ]),
-          districtBox("M2 + M3 · Decide what to verify", "risk belief → value of information", [
-            row({ name: "Peak settlement belief", meta: `${number(intelligence.severeSettlements)} settlements at ≥60%`, value: percent(intelligence.peakBelief), bar: intelligence.peakBelief, colour: severityCss(intelligence.peakBelief) }),
-            row({ name: "Dominant failure", meta: "highest aggregate posterior risk", value: intelligence.dominantFailure }),
-            row({ name: "Open verification queue", meta: topVerify ? `${topVerify.action} · ${topVerify.settlement_name}` : "no unresolved high-value question", value: number(intelligence.verifyCount) }),
-            topVerify ? row({ name: "Highest-value question", meta: `VoI ${number(topVerify.voi_score, 2)} · resolves ${topVerify.resolves}`, value: minutes(topVerify.minutes), className: "setu-row-alert" }) : null,
-          ]),
-          districtBox("M4 · Dispatch & reachability", "typed assets · routes · impact", [
-            row({ name: "Available asset inventory", meta: "district package resource pool", value: number(intelligence.assetInventoryCount) }),
-            row({ name: "Dispatch orders", meta: intelligence.assetMix, value: number(intelligence.dispatchCount) }),
-            row({ name: "Reachability", meta: `${number(intelligence.blockedCount)} routes need review`, value: `${number(intelligence.routedCount)} / ${number(intelligence.dispatchCount)} routed` }),
-            row({ name: "Expected lives saved", meta: "modelled impact across current plan", value: number(intelligence.expectedLivesSaved) }),
-          ]),
-          districtBox("Damage & relief capacity", "what limits response on the ground", [
-            intelligence.roadsDamagedKm == null ? null : row({ name: "Roads damaged", meta: "official event summary", value: `${number(intelligence.roadsDamagedKm, 1)} km` }),
-            intelligence.bridgesDamaged == null ? null : row({ name: "Bridges damaged", meta: "official event summary", value: number(intelligence.bridgesDamaged) }),
-            intelligence.reliefCamps == null ? null : row({ name: "Relief camps", meta: "official event summary", value: number(intelligence.reliefCamps) }),
-            intelligence.campInmates == null ? null : row({ name: "Camp inmates", meta: "official event summary", value: number(intelligence.campInmates) }),
-            intelligence.peakRainfallMm == null ? null : row({ name: "Peak recorded rainfall", meta: "Kalladi gauge · archived event summary", value: `${number(intelligence.peakRainfallMm, 1)} mm` }),
-            intelligence.affectedWardCount == null ? null : row({ name: "Affected wards", meta: "official event summary", value: number(intelligence.affectedWardCount) }),
-            intelligence.affectedSettlementCount == null ? null : row({ name: "Named affected settlements", meta: intelligence.affectedSettlementNames?.join(" · ") || "official event summary", value: number(intelligence.affectedSettlementCount) }),
-            row({ name: "Critical facilities", meta: "hospital / shelter facility-level feed", value: "NO FACILITY LAYER" }),
-          ]),
-          districtBox("Cascade & pre-position", "move before access disappears", [
-            row({ name: "Pre-position leads", meta: topPrePosition ? `${topPrePosition.settlement_name} · ${minutes(topPrePosition.eta_minutes)} lag · source ${topPrePosition.source}` : "no downstream lead above model threshold", value: number(intelligence.prePositionCount) }),
-            row({ name: "Routing provenance", meta: intelligence.routingAttribution || "district routing graph", value: intelligence.officialEventTime ? `${day(intelligence.officialEventTime)} ${clock(intelligence.officialEventTime)}` : "READY" }),
-          ]),
-          districtBox("Proof, equity & resilience", "can the EOC defend the decision", [
-            row({ name: "Audit chain", meta: `${number(intelligence.auditEntries)} decisions${intelligence.latestDecisionHash ? ` · ${short(intelligence.latestDecisionHash)}` : ""}`, value: intelligence.auditValid == null ? "—" : (intelligence.auditValid ? "VALID" : "FLAG"), className: intelligence.auditValid === false ? "setu-row-alert" : "" }),
-            row({ name: "Equity allocation gap", meta: "disadvantaged mean priority − district mean", value: intelligence.equityGap == null ? "—" : Number(intelligence.equityGap).toFixed(3) }),
-            row({ name: "Calibration ECE", meta: "lower is better · model diagnostic", value: intelligence.calibrationEce == null ? "—" : Number(intelligence.calibrationEce).toFixed(3) }),
-            row({ name: "Source datasets", meta: "provenance-backed operational inputs", value: number(intelligence.sourceCount) }),
-          ]),
-          districtBox("Provenance / disclosure", intelligence.updatedAt ? `district state · ${day(intelligence.updatedAt)} ${clock(intelligence.updatedAt)}` : "district state", [
-            el("p.setu-district-disclosure", { text: intelligence.disclosure || "See the district package provenance metadata." }),
-          ], "setu-district-box-wide"),
+          districtBox("01 · Life safety + impact", "incident snapshot", [
+            districtBrief(summary, `${intelligence.dominantFailure} · ${updateStamp}. The selected district now has a village-resolution command package, but official impact totals remain visually distinct from SETU's modelled risk and sensing layers.`, actions),
+            metricGrid([
+              { label: "People affected", value: countReported(impactAffected, "—"), meta: impactAffected == null ? "official total not reported" : "official / archived" },
+              { label: "Fatalities", value: countReported(intelligence.fatalities, "—"), meta: intelligence.fatalities == null ? "not reported" : "official / archived" },
+              { label: "Sheltered", value: countReported(sheltered, "—"), meta: intelligence.reliefCamps == null ? "shelter total" : `${number(intelligence.reliefCamps)} relief camps` },
+            ]),
+            row({ name: "Incident / failure type", meta: "dominant operational hazard", value: intelligence.dominantFailure }),
+            row({ name: "Injured / missing / rescue", meta: casualtyDetail, value: intelligence.injuries == null && intelligence.missing == null && intelligence.trapped == null ? "NOT REPORTED" : "REPORTED" }),
+            row({ name: "Evacuated / displaced", meta: "movement caused by the incident", value: intelligence.evacuated == null && intelligence.displaced == null ? "NOT REPORTED" : `${countReported(intelligence.evacuated, "0")} evac · ${countReported(intelligence.displaced, "0")} displaced` }),
+            row({ name: "Affected locations", meta: intelligence.affectedSettlementNames?.slice(0, 3).join(" · ") || "official affected geography", value: affectedLocations }),
+            row({ name: "Key hazard indicator", meta: "event-specific field / sensor context", value: hazardIndicator }),
+            row({ name: "Population baseline", meta: `${number(intelligence.settlementCount)} settlements · census/settlement package`, value: number(intelligence.population) }),
+            districtNarrative(`${number(intelligence.severeSettlements)} settlements are currently above SETU's severe-risk threshold. That is a planning layer, not a substitute for reported casualties or damage.`, "boundary"),
+          ], "setu-district-box-risk"),
+          districtBox("02 · Operations + logistics", "actions · access · resources", [
+            row({ name: "Active assignments", meta: intelligence.assetMix, value: number(intelligence.dispatchCount) }),
+            row({ name: "Route status", meta: `${number(intelligence.blockedCount)} need review`, value: `${number(intelligence.routedCount)} / ${number(intelligence.dispatchCount)} reachable` }),
+            row({ name: "Transport damage", meta: "official road / bridge impact", value: transportDamage }),
+            row({ name: "Resource inventory", meta: "available typed district assets", value: countReported(intelligence.assetInventoryCount) }),
+            row({ name: "Relief shelter capacity", meta: intelligence.reliefCamps == null ? "camps / shelter population" : `${number(intelligence.reliefCamps)} relief camps`, value: sheltered == null ? "NOT REPORTED" : `${number(sheltered)} people` }),
+            row({ name: "Critical facilities", meta: "hospital · shelter · lifeline availability", value: reported(intelligence.criticalFacilities, "NOT REPORTED") }),
+            row({ name: "Pre-positioning", meta: topPrePosition ? `${topPrePosition.settlement_name} · ${minutes(topPrePosition.eta_minutes)} lead` : "no downstream lead above threshold", value: intelligence.prePositionCount ? `${number(intelligence.prePositionCount)} LEADS` : "NONE" }),
+            row({ name: "Next operational dependency", meta: topVerify ? `${topVerify.action} · ${topVerify.settlement_name}` : "no unresolved high-value field check", value: topVerify ? `VERIFY · ${minutes(topVerify.minutes)}` : "CLEAR", className: topVerify ? "setu-row-alert" : "" }),
+            districtNarrative(`${number(intelligence.dispatchCount)} assignments are in the current plan. Resource and access status are shown separately so a resource is never mistaken for a reachable destination.`, "decision"),
+          ], "setu-district-box-response"),
+          districtBox("03 · Command + information", "source · comms · accountability", [
+            row({ name: "Situation timestamp", meta: "snapshot / event time", value: updateStamp }),
+            row({ name: "Reports / distinct claims", meta: "raw intake after deduplication", value: `${countReported(intelligence.reports, "—")} / ${countReported(intelligence.distinctClaims, "—")}` }),
+            row({ name: "Unresolved locations", meta: "location not guessed below threshold", value: countReported(intelligence.unresolvedLocations) }),
+            row({ name: "Communications coverage", meta: `${countReported(intelligence.silentSettlements, "—")} silent settlements`, value: intelligence.telecomStatus ? reported(intelligence.telecomStatus) : (intelligence.meanObservability == null ? "NOT REPORTED" : `${percent(intelligence.meanObservability)} OBSERVABLE`) }),
+            row({ name: "Power / lifelines", meta: "field-operability signal", value: reported(intelligence.powerStatus, "NOT REPORTED") }),
+            row({ name: "Verify next", meta: topVerify ? `${topVerify.resolves} · ${topVerify.settlement_name}` : "no open high-value question", value: topVerify ? `VoI ${number(topVerify.voi_score, 2)}` : "CLEAR", className: topVerify ? "setu-row-alert" : "" }),
+            row({ name: "Source datasets", meta: "provenance-backed operational inputs", value: countReported(intelligence.sourceCount) }),
+            row({ name: "Decision / activity log", meta: `${countReported(intelligence.auditEntries, "—")} entries${intelligence.latestDecisionHash ? ` · ${short(intelligence.latestDecisionHash)}` : ""}`, value: intelligence.auditValid == null ? "NOT CHECKED" : (intelligence.auditValid ? "VALID" : "FLAG"), className: intelligence.auditValid === false ? "setu-row-alert" : "" }),
+            districtNarrative(intelligence.disclosure || "See the district package provenance metadata.", "boundary"),
+          ], "setu-district-box-evidence"),
         );
       }
 

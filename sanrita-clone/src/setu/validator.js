@@ -362,7 +362,7 @@ function createPrinciple(index, title, copy, mark) {
 }
 
 export function isValidatorRoute(pathname = window.location.pathname) {
-  return /\/(?:[a-z]{2}\/)?(?:projects|validator)\/?$/i.test(pathname);
+  return /\/(?:[a-z]{2}\/)?(?:projects|validator|validation)\/?$/i.test(pathname);
 }
 
 export function mountValidatorPage() {
@@ -371,7 +371,7 @@ export function mountValidatorPage() {
 
   document.documentElement.setAttribute("data-setu", "on");
   document.documentElement.setAttribute("data-setu-page", "validator");
-  document.title = "SETU | Source Validator";
+  document.title = "SETU | Evidence Validation";
 
   let selected = SIGNALS[1] || SIGNALS[0];
 
@@ -383,24 +383,24 @@ export function mountValidatorPage() {
 
   machine = createValidationMachine(setSelected);
 
-  const root = el("div.setu-validator-root", {}, [
+  const root = el("div.setu-validator-root.setu-module-root", { "data-module": "validation" }, [
     el("a.setu-validator-skip", { href: "#setu-validator-main", text: "Skip to validation workbench" }),
-    el("header.setu-validator-topbar", {}, [
+    el("header.setu-validator-topbar.setu-module-topbar", {}, [
       el("a.setu-validator-brand", { href: "/", text: "SETU" }),
       el("div.setu-validator-context", {}, [
         el("span", { text: "WAYANAD · FIRST 24H" }),
-        el("span", { text: "SYNTHETIC REPLAY · 8 SIGNALS" }),
+        el("span", { text: "02 · VALIDATION · 8 SIGNALS" }),
       ]),
       el("nav.setu-validator-toplinks", { "aria-label": "Validation workflow" }, [
-        el("a", { href: "/about", text: "← EVIDENCE" }),
-        el("a", { href: "/infer", text: "INFER →" }),
+        el("a", { href: "/evidence", text: "← EVIDENCE" }),
+        el("a", { href: "/inference", text: "INFERENCE →" }),
       ]),
     ]),
-    el("main.setu-validator-page", { id: "setu-validator-main" }, [
+    el("main.setu-validator-page.setu-module-page", { id: "setu-validator-main" }, [
       el("section.setu-validator-hero", {}, [
         el("div.setu-validator-hero-intro", {}, [
           el("div.setu-validator-hero-copy", {}, [
-            el("h1", {}, ["SOURCE", el("br"), "VALIDATOR"]),
+            el("h1", { text: "VALIDATION" }),
             el("p", { text: "SETU validates the claim, not the reputation around it. Every evidence object is tested for origin, independence, place, time, signal quality and corroboration before it can influence response." }),
           ]),
           el("div.setu-validator-hero-note", {}, [
@@ -426,7 +426,7 @@ export function mountValidatorPage() {
     el("footer.setu-validator-footer", {}, [
       el("p", { text: "Validation produces a weighted, traceable input. It does not erase uncertainty." }),
       el("p", { text: "Demo logic mirrors SETU’s provenance, duplicate-collapse, reliability and Bayesian evidence-fusion model. Evidence objects are synthetic." }),
-      el("a", { href: "/infer", text: "NEXT · INFER RISK BELIEF" }),
+      el("a", { href: "/inference", text: "NEXT · INFERENCE" }),
     ]),
   ]);
 
@@ -445,6 +445,9 @@ export function installValidatorRouteBridge() {
   const reconcile = () => {
     if (isValidatorRoute()) {
       mountValidatorPage();
+      if (window.location.pathname !== "/validation") {
+        history.replaceState(history.state, "", "/validation");
+      }
       return;
     }
     if (document.querySelector(".setu-validator-root")) window.location.reload();
@@ -456,12 +459,26 @@ export function installValidatorRouteBridge() {
     try {
       const url = new URL(anchor.href, window.location.href);
       if (url.origin !== window.location.origin || !isValidatorRoute(url.pathname)) return;
+      if (!anchor.closest(".setu-module-root")) return;
       event.preventDefault();
-      window.location.assign("/projects");
+      window.location.assign("/validation");
     } catch {
       // Ignore malformed or non-standard hrefs owned by the captured shell.
     }
   }, true);
 
+  window.__setuRouteReconcilers ??= new Set();
+  window.__setuRouteReconcilers.add(reconcile);
+  if (!window.__setuRouteHistoryBridge) {
+    window.__setuRouteHistoryBridge = true;
+    for (const method of ["pushState", "replaceState"]) {
+      const original = history[method].bind(history);
+      history[method] = (...args) => {
+        const result = original(...args);
+        queueMicrotask(() => window.__setuRouteReconcilers?.forEach((handler) => handler()));
+        return result;
+      };
+    }
+  }
   window.addEventListener("popstate", reconcile);
 }

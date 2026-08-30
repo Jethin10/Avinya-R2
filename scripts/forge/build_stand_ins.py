@@ -34,10 +34,10 @@ ATLAS = ROOT / "district_package" / "_atlas"
 OUTPUT = ATLAS / "stand_ins.json"
 
 DISCLOSURE = (
-    "Authored severity for districts with no engine behind them. Conditioned on real geography "
-    "(latitude, coastal proximity, area) and the hazard character of the state, seeded from the "
-    "district id so it is reproducible. It is not a forecast, not an observation, and not an "
-    "assessment of any real event."
+    "Synthetic exercise snapshots for districts with no engine behind them. Severity and demo "
+    "briefing fields are conditioned on real geography and the hazard character of the state, then "
+    "seeded from the district id so every build is reproducible. They are not forecasts, observations, "
+    "official reports or assessments of real events."
 )
 
 # What each state's terrain and monsoon actually tend to produce, as a weighting over the failure
@@ -143,6 +143,38 @@ def _district(state: dict[str, Any], district: dict[str, Any]) -> dict[str, Any]
     # small one for no reason.
     settlements = max(4, int(round(area / 43.0)))
     severe = int(round(settlements * severity * 0.28))
+    # Regional districts are demo surfaces, not empty records. Populate a coherent incident-command
+    # snapshot from the same stable seed while keeping its exercise provenance explicit everywhere.
+    # These values are deliberately not copied into engine-backed historical packages.
+    impact_scale = max(8, int(round((severe + 1) * (18 + 28 * _jitter("impact", district["id"])))))
+    affected = impact_scale + int(round(area * (0.015 + 0.025 * severity)))
+    fatalities = int(round(affected * severity * (0.0008 + 0.0015 * _jitter("fatalities", district["id"]))))
+    injuries = max(1, int(round(affected * severity * (0.006 + 0.01 * _jitter("injuries", district["id"])))))
+    missing = int(round(severity * 4 * _jitter("missing", district["id"])))
+    trapped = int(round(severity * 7 * _jitter("trapped", district["id"])))
+    evacuated = max(injuries, int(round(affected * (0.16 + 0.18 * _jitter("evacuated", district["id"])))))
+    sheltered = int(round(evacuated * (0.48 + 0.3 * _jitter("sheltered", district["id"]))))
+    relief_camps = max(1, int(math.ceil(sheltered / (85 + 95 * _jitter("camps", district["id"])))))
+    roads_damaged = round(max(0.8, severe * (0.65 + 1.25 * _jitter("roads", district["id"]))), 1)
+    bridges_damaged = max(0, int(round(severity * 3.5 * _jitter("bridges", district["id"]))))
+    telecom = "DEGRADED · PRIORITY BLOCKS" if severity >= 0.6 else "PARTIAL · FIELD CHECKS OPEN"
+    power = "INTERRUPTIONS REPORTED" if severity >= 0.72 else "LOCAL OUTAGES · MONITORING"
+    corridor_count = max(1, bridges_damaged + 1)
+    access_status = {
+        "LANDSLIDE": f"{corridor_count} CORRIDOR{'S' if corridor_count != 1 else ''} UNDER REVIEW",
+        "INUNDATION": "RIVER GAUGES ELEVATED · LOW ROUTES RESTRICTED",
+        "WIND": "DEBRIS CLEARANCE ACTIVE ON PRIORITY ROUTES",
+        "COLLAPSE": "IMPACT-ZONE ACCESS CONTROL ACTIVE",
+    }[mode]
+    verification_checks = max(2, int(round(2 + severity * 5 * _jitter("checks", district["id"]))))
+    decision_entries = max(3, int(round(3 + severe * 0.45 + 4 * _jitter("decisions", district["id"]))))
+    facility_count = max(1, relief_camps // 2)
+    objective = {
+        "LANDSLIDE": "OPEN PRIORITY CORRIDORS · STAGE SEARCH AND RESCUE",
+        "INUNDATION": "VERIFY FLOOD ISLANDS · STAGE BOAT EVACUATION",
+        "WIND": "CLEAR ACCESS ROUTES · PROTECT CRITICAL LIFELINES",
+        "COLLAPSE": "SECURE IMPACT ZONES · STAGE URBAN SEARCH AND RESCUE",
+    }[mode]
     return {
         "district_id": district["id"],
         "state_id": state["id"],
@@ -156,6 +188,29 @@ def _district(state: dict[str, Any], district: dict[str, Any]) -> dict[str, Any]
         "settlements_estimated": settlements,
         "settlements_severe": severe,
         "assets_requested": max(1, int(round(severe * 0.6))),
+        "status": "EXERCISE · ELEVATED" if severity >= 0.6 else "EXERCISE · MONITOR",
+        "affected_people": affected,
+        "fatalities": fatalities,
+        "injuries": injuries,
+        "missing": missing,
+        "trapped": trapped,
+        "evacuated": evacuated,
+        "sheltered": sheltered,
+        "relief_camps": relief_camps,
+        "roads_damaged_km": roads_damaged,
+        "bridges_damaged": bridges_damaged,
+        "river_status": access_status,
+        "telecom_status": telecom,
+        "power_status": power,
+        "critical_facilities": (
+            "1 PRIORITY FACILITY UNDER CHECK" if facility_count == 1
+            else f"{facility_count} PRIORITY FACILITIES UNDER CHECK"
+        ),
+        "incident_objective": objective,
+        "source_label": "SYNTHETIC EXERCISE SEED",
+        "last_updated": "2026-08-30 · 09:30 IST",
+        "verification_status": f"{verification_checks} FIELD CHECKS OPEN",
+        "decision_log_entries": decision_entries,
         "confidence": "none",
         "provenance": "synthetic",
     }
@@ -195,10 +250,10 @@ def build() -> Path:
         }
 
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "provenance": {"severity": "synthetic", "geometry": "archived", "disclosure": DISCLOSURE},
         "model": {
-            "character": "per-state failure-mode weighting, tilted by latitude and coastal proximity",
+            "character": "per-state failure-mode weighting plus reproducible exercise briefing fields",
             "seed": "blake2b of state/district id, so a rebuild reproduces this file exactly",
             "excluded": "districts carrying a scenario, which the engine describes instead",
         },

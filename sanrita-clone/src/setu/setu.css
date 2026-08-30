@@ -28,6 +28,13 @@ html[data-setu="on"] {
   --setu-surface-strong: color-mix(in srgb, #f8fbfc 90%, transparent);
   --setu-hairline: color-mix(in srgb, var(--color-forest-green) 10%, transparent);
   --setu-muted: color-mix(in srgb, var(--color-forest-green) 58%, transparent);
+  --setu-command-ink: #171a1a;
+  --setu-command-copy: #4b5151;
+  --setu-command-muted: #7a8080;
+  --setu-command-line: #cfd4d4;
+  --setu-command-white: #f8f9f9;
+  --setu-command-grey: #eceeee;
+  --setu-command-deep-grey: #e2e5e5;
   --setu-shadow: 0 24px 70px -34px color-mix(in srgb, var(--color-deep-green) 42%, transparent),
     0 4px 18px -10px color-mix(in srgb, var(--color-deep-green) 18%, transparent);
 }
@@ -452,6 +459,12 @@ html[data-setu-scene="state"] .setu-context {
   transform: translateY(0);
 }
 
+html[data-setu-scene="state"] .setu-context[data-mode="district"] {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+}
+
 html[data-setu="on"] .setu-context-kicker {
   margin-bottom: 5px;
   font-size: 0.5rem;
@@ -598,20 +611,25 @@ html[data-setu-scene="state"] .setu-state-summary[data-shown="true"] {
   pointer-events: auto;
 }
 
-/* Clicking a district keeps the state scene resident. The same right-hand surface expands into one
- * scrollable district dossier while the selected geometry carries the visual focus. */
+/* Clicking a district keeps the state scene resident. The selected geometry stays visually dominant
+ * while three compact command boxes occupy the edges of the canvas. */
 html[data-setu-scene="state"] .setu-state-summary[data-mode="district"] {
-  top: 64px;
-  width: min(660px, 48vw);
-  max-height: calc(100vh - 82px);
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  scrollbar-width: thin;
+  inset: 66px 24px 54px 188px;
+  width: auto;
+  max-height: none;
+  padding: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  pointer-events: none;
 }
 
-html[data-setu-scene="state"] .setu-state-summary[data-mode="district"]::-webkit-scrollbar { width: 3px; }
-html[data-setu-scene="state"] .setu-state-summary[data-mode="district"]::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--color-forest-green) 28%, transparent);
+html[data-setu-scene="state"] .setu-state-summary[data-mode="district"] > .setu-panel-head {
+  display: none;
 }
 
 html[data-setu="on"] .setu-state-actions {
@@ -620,38 +638,83 @@ html[data-setu="on"] .setu-state-actions {
   border-bottom: 1px solid var(--setu-hairline);
 }
 
-/* A district is an EOC workspace, not a long list. Keep the typography and material language of the
- * captured shell, but group the PS surfaces into glanceable operational boxes. */
-html[data-setu-scene="state"] .setu-state-summary[data-mode="district"] > .setu-rows > .setu-metric-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 9px 0 11px;
-  border: 1px solid color-mix(in srgb, var(--color-forest-green) 10%, transparent);
-  border-radius: 12px;
-  overflow: hidden;
+html[data-setu-scene="state"] .setu-state-summary[data-mode="district"] > .setu-rows {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
 html[data-setu="on"] .setu-district-control-grid {
+  position: absolute;
+  inset: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  align-items: start;
-  padding: 2px 0 3px;
+  grid-template-columns: minmax(380px, 445px) minmax(410px, 500px);
+  grid-template-rows: auto auto;
+  align-content: space-between;
+  justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 16px;
+  pointer-events: none;
 }
 
 html[data-setu="on"] .setu-district-box {
   min-width: 0;
-  padding: 10px 10px 7px;
-  border: 1px solid color-mix(in srgb, var(--color-forest-green) 11%, transparent);
-  border-radius: 12px;
-  background: color-mix(in srgb, #ffffff 26%, transparent);
-  box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff 28%, transparent);
+  padding: 13px 17px 12px;
+  border: 1px solid var(--setu-command-line);
+  border-radius: 19px;
+  background: var(--setu-command-grey);
+  color: var(--setu-command-ink);
+  box-shadow: 0 20px 50px -32px rgba(18, 24, 24, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px) saturate(104%);
+  -webkit-backdrop-filter: blur(20px) saturate(104%);
+  pointer-events: auto;
+  overflow: visible;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 html[data-setu="on"] .setu-district-box-wide { grid-column: 1 / -1; }
 
+html[data-setu-scene="state"] .setu-district-box-risk {
+  position: static;
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 16px;
+  align-items: start;
+  width: 100%;
+  background: var(--setu-command-white);
+}
+
+html[data-setu-scene="state"] .setu-district-box-risk > :is(
+  .setu-district-box-head,
+  .setu-district-brief,
+  .setu-metric-grid,
+  .setu-district-narrative
+) {
+  grid-column: 1 / -1;
+}
+
+html[data-setu-scene="state"] .setu-district-box-response {
+  position: static;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  background: var(--setu-command-grey);
+}
+
+html[data-setu-scene="state"] .setu-district-box-evidence {
+  position: static;
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  background: var(--setu-command-deep-grey);
+}
+
 html[data-setu="on"] .setu-district-box-alert {
-  border-color: color-mix(in srgb, var(--color-signal-orange) 28%, var(--setu-hairline));
-  background: color-mix(in srgb, var(--color-signal-orange) 3.5%, transparent);
+  border-color: #aeb5b5;
+  box-shadow: 0 22px 52px -34px rgba(10, 14, 14, 0.52), inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
 html[data-setu="on"] .setu-district-box-head {
@@ -659,12 +722,13 @@ html[data-setu="on"] .setu-district-box-head {
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
-  min-height: 24px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-forest-green) 9%, transparent);
-  font-size: 0.5rem;
-  font-weight: 700;
-  letter-spacing: 0.075em;
+  min-height: 25px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--setu-command-line);
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
   line-height: 1.25;
   text-transform: uppercase;
 }
@@ -672,25 +736,178 @@ html[data-setu="on"] .setu-district-box-head {
 html[data-setu="on"] .setu-district-box-head span:last-child:not(:first-child) {
   max-width: 54%;
   text-align: right;
-  font-weight: 400;
-  opacity: 0.42;
+  font-weight: 500;
+  color: var(--setu-command-muted);
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-district-brief {
+  padding: 5px 0 10px;
+}
+
+html[data-setu="on"] .setu-district-brief-kicker {
+  margin-bottom: 6px;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.53rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #5f6666;
+}
+
+html[data-setu="on"] .setu-district-brief-title {
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif;
+  font-size: clamp(1.75rem, 2.05vw, 2.35rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  color: #111414;
+}
+
+html[data-setu="on"] .setu-district-brief-meta {
+  margin-top: 8px;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--setu-command-muted);
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-district-brief-copy,
+html[data-setu="on"] .setu-district-narrative {
+  margin: 8px 0 5px;
+  font-size: 0.72rem;
+  line-height: 1.48;
+  letter-spacing: 0;
+  color: var(--setu-command-copy);
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-district-narrative[data-tone="decision"] {
+  margin-top: 10px;
+  padding: 9px 10px 9px 12px;
+  border-left: 3px solid #202424;
+  border-radius: 0 9px 9px 0;
+  background: rgba(255, 255, 255, 0.38);
+  color: #303535;
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-district-narrative[data-tone="boundary"] {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px solid #c4caca;
+  color: #626969;
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-district-narrative[data-tone="context"] { color: #676e6e; opacity: 1; }
+
+html[data-setu="on"] .setu-district-inline-actions {
+  padding: 9px 0 0;
+  gap: 7px;
+}
+
+html[data-setu="on"] .setu-district-box .setu-metric-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 4px 0 8px;
+  border: 1px solid var(--setu-command-line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.54);
+}
+
+html[data-setu="on"] .setu-district-box .setu-metric {
+  padding: 10px 9px 9px;
+  border-color: var(--setu-command-line);
+}
+
+html[data-setu="on"] .setu-district-box .setu-metric strong {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 720;
+  color: #121515;
+}
+
+html[data-setu="on"] .setu-district-box .setu-metric span {
+  margin-top: 5px;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.52rem;
+  font-weight: 650;
+  color: #515858;
+  opacity: 1;
+}
+
+html[data-setu="on"] .setu-district-box .setu-metric small {
+  margin-top: 3px;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.48rem;
+  color: #7a8080;
+  opacity: 1;
 }
 
 html[data-setu="on"] .setu-district-box .setu-row {
   padding: 7px 0;
-  gap: 7px;
+  gap: 12px;
+  border-color: var(--setu-command-line);
+  font-size: 0.72rem;
+  color: #242828;
+}
+
+@media (min-width: 1100px) and (max-height: 1120px) {
+  html[data-setu="on"] .setu-district-control-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    align-items: end;
+    gap: 14px;
+  }
+
+  html[data-setu-scene="state"] .setu-district-box-risk,
+  html[data-setu-scene="state"] .setu-district-box-response,
+  html[data-setu-scene="state"] .setu-district-box-evidence {
+    grid-row: 1;
+    width: auto;
+  }
+
+  html[data-setu-scene="state"] .setu-district-box-risk { grid-column: 1; }
+  html[data-setu-scene="state"] .setu-district-box-response { grid-column: 2; }
+  html[data-setu-scene="state"] .setu-district-box-evidence { grid-column: 3; }
 }
 
 html[data-setu="on"] .setu-district-box .setu-row-name {
   white-space: normal;
-  line-height: 1.25;
+  line-height: 1.3;
+  font-weight: 610;
+  overflow: visible;
+}
+
+html[data-setu="on"] .setu-district-box .setu-row-meta {
+  margin-top: 3px;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--setu-command-muted);
+  opacity: 1;
 }
 
 html[data-setu="on"] .setu-district-box .setu-row-value {
-  max-width: 128px;
+  max-width: 185px;
   text-align: right;
-  line-height: 1.25;
+  line-height: 1.3;
   overflow-wrap: anywhere;
+  color: #111414;
+  font-size: 0.69rem;
+  font-weight: 760;
+}
+
+html[data-setu="on"] .setu-district-box .setu-row-alert {
+  margin-inline: -8px;
+  padding-inline: 8px;
+  border-radius: 8px;
+  background: rgba(20, 24, 24, 0.055);
+  color: #111414;
 }
 
 html[data-setu="on"] .setu-district-disclosure {
@@ -1113,14 +1330,34 @@ html[data-setu="on"] .setu-disclosure {
   }
   html[data-setu="on"] .setu-state-summary { width: calc(100% - 24px); right: 12px; top: 82px; }
   html[data-setu-scene="state"] .setu-state-summary[data-mode="district"] {
-    top: 82px;
-    width: calc(100% - 24px);
-    max-height: calc(100vh - 104px);
+    inset: 82px 12px 82px 12px;
+    width: auto;
+    max-height: none;
+    overflow: visible;
   }
-  html[data-setu-scene="state"] .setu-state-summary[data-mode="district"] > .setu-rows > .setu-metric-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  html[data-setu="on"] .setu-district-control-grid {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: max-content;
+    align-content: start;
+    gap: 8px;
+    overflow-y: auto;
+    pointer-events: auto;
+    padding-top: 36vh;
   }
-  html[data-setu="on"] .setu-district-control-grid { grid-template-columns: 1fr; }
+  html[data-setu-scene="state"] .setu-district-box-risk,
+  html[data-setu-scene="state"] .setu-district-box-response,
+  html[data-setu-scene="state"] .setu-district-box-evidence {
+    position: static;
+    grid-column: 1;
+    grid-row: auto;
+    width: auto;
+    max-height: none;
+  }
+  html[data-setu-scene="state"] .setu-district-box-risk { display: block; }
   html[data-setu="on"] .setu-district-box-wide { grid-column: auto; }
   html[data-setu="on"] .setu-disclosure { display: none; }
   html[data-setu="on"] .setu-context { display: none; }
@@ -6655,4 +6892,556 @@ html[data-setu-page="validator"] .setu-validator-announcer {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* --- SETU chapter system -------------------------------------------------------------------
+ * Evidence → Validation → Inference → Action are four chapters of one product. Keep the captured
+ * San Rita editorial restraint: cool paper, ink, rules and one restrained signal accent. */
+html[data-setu-page="evidence"],
+html[data-setu-page="validator"],
+html[data-setu-page="infer"],
+html[data-setu-page="act"] {
+  --module-canvas: #d9dedd;
+  --module-band: #cdd4d3;
+  --module-work: #e2e6e5;
+  --module-surface: #eef1f0;
+  --module-surface-2: #e5e9e8;
+  --module-ink: #17201d;
+  --module-muted: #5b6662;
+  --module-faint: #7d8783;
+  --module-line: rgba(23, 32, 29, 0.14);
+  --module-line-strong: rgba(23, 32, 29, 0.24);
+  --module-accent: #c85b41;
+  background: var(--module-canvas);
+  color: var(--module-ink);
+}
+
+html[data-setu-page="evidence"] body,
+html[data-setu-page="validator"] body,
+html[data-setu-page="infer"] body,
+html[data-setu-page="act"] body,
+.setu-module-root {
+  margin: 0;
+  overflow-x: clip;
+  color: var(--module-ink) !important;
+  background: var(--module-canvas) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The captured terrain canvas owns the transition. Standalone modules must never hide it. */
+html[data-setu-page="evidence"] .c-transition-wrapper,
+html[data-setu-page="validator"] .c-transition-wrapper,
+html[data-setu-page="infer"] .c-transition-wrapper,
+html[data-setu-page="act"] .c-transition-wrapper {
+  display: block !important;
+}
+
+.setu-module-page {
+  width: min(calc(100% - 56px), 1420px) !important;
+  max-width: 1420px !important;
+  margin: 0 auto !important;
+  padding-inline: 0 !important;
+}
+
+.setu-module-topbar {
+  min-height: 70px !important;
+  color: var(--module-ink) !important;
+  background: rgba(217, 222, 221, 0.9) !important;
+  border-bottom: 1px solid var(--module-line-strong) !important;
+  backdrop-filter: blur(18px);
+}
+
+html[data-setu-page="validator"] .setu-module-topbar {
+  width: min(calc(100% - 56px), 1420px) !important;
+  max-width: 1420px !important;
+  margin-inline: auto !important;
+}
+
+.setu-module-root :is(.setu-evidence-brand, .setu-validator-brand, .setu-infer-brand, .setu-act-brand) {
+  color: var(--module-ink) !important;
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif !important;
+  font-size: 2.15rem !important;
+  line-height: 0.9 !important;
+  letter-spacing: -0.045em !important;
+  text-decoration: none;
+}
+
+.setu-module-root :is(.setu-evidence-context, .setu-validator-context, .setu-infer-context, .setu-act-context,
+  .setu-evidence-back, .setu-validator-toplinks, .setu-infer-toplinks, .setu-act-toplinks) {
+  color: var(--module-muted) !important;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace !important;
+  font-size: 0.72rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.07em !important;
+  text-transform: uppercase;
+}
+
+.setu-module-root :is(.setu-evidence-back, .setu-validator-toplinks a, .setu-infer-toplinks a, .setu-act-toplinks a) {
+  color: var(--module-ink) !important;
+  opacity: 0.72;
+  text-decoration: none;
+  transition: opacity 160ms ease;
+}
+
+.setu-module-root :is(.setu-evidence-back, .setu-validator-toplinks a, .setu-infer-toplinks a, .setu-act-toplinks a):hover {
+  opacity: 1;
+}
+
+html[data-setu-page="evidence"] .setu-evidence-hero::before,
+html[data-setu-page="validator"] .setu-validator-hero::before,
+html[data-setu-page="infer"] .setu-infer-hero::before,
+html[data-setu-page="act"] .setu-act-hero::before {
+  background: var(--module-canvas) !important;
+}
+
+.setu-module-root :is(.setu-evidence-hero, .setu-validator-hero, .setu-infer-hero, .setu-act-hero) {
+  color: var(--module-ink) !important;
+}
+
+html[data-setu-page="evidence"] .setu-evidence-hero,
+html[data-setu-page="infer"] .setu-infer-hero,
+html[data-setu-page="act"] .setu-act-hero {
+  grid-template-columns: minmax(300px, 0.66fr) minmax(580px, 1.34fr) !important;
+  gap: clamp(48px, 6vw, 92px) !important;
+  align-items: center !important;
+  padding: clamp(66px, 7vh, 94px) 0 clamp(76px, 8vh, 108px) !important;
+}
+
+html[data-setu-page="validator"] .setu-validator-hero {
+  padding: clamp(66px, 7vh, 94px) max(28px, calc((100vw - 1420px) / 2)) clamp(76px, 8vh, 108px) !important;
+  background: var(--module-canvas) !important;
+}
+
+.setu-module-root :is(.setu-evidence-hero h1, .setu-validator-hero-copy h1, .setu-infer-hero-copy h1, .setu-act-hero-copy h1) {
+  max-width: none !important;
+  margin: 0 !important;
+  color: var(--module-ink) !important;
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif !important;
+  font-size: clamp(5.7rem, 9vw, 9.6rem) !important;
+  font-weight: 400 !important;
+  line-height: 0.73 !important;
+  letter-spacing: -0.06em !important;
+  text-transform: uppercase;
+}
+
+.setu-module-root :is(.setu-evidence-hero > div:first-child > p, .setu-validator-hero-copy p, .setu-infer-hero-copy p, .setu-act-hero-copy p) {
+  max-width: 34rem !important;
+  margin-top: 32px !important;
+  color: var(--module-muted) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif !important;
+  font-size: clamp(0.94rem, 1.05vw, 1.08rem) !important;
+  line-height: 1.62 !important;
+  opacity: 1 !important;
+}
+
+/* One restrained workstation surface per chapter. */
+.setu-module-root :is(.setu-evidence-situation, .setu-validator-machine, .setu-infer-machine, .setu-act-machine) {
+  overflow: hidden;
+  color: var(--module-ink) !important;
+  background: var(--module-surface) !important;
+  border: 1px solid var(--module-line-strong) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 18px 48px rgba(23, 32, 29, 0.07) !important;
+}
+
+.setu-module-root :is(.setu-evidence-situation-head, .setu-validator-machine-head, .setu-infer-machine-head, .setu-act-machine-head) {
+  min-height: 48px;
+  padding: 13px 18px !important;
+  color: var(--module-muted) !important;
+  background: var(--module-surface-2) !important;
+  border-bottom: 1px solid var(--module-line) !important;
+  font-family: var(--next-font-mono), ui-monospace, "SFMono-Regular", Consolas, monospace !important;
+  font-size: 0.72rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.07em !important;
+}
+
+.setu-module-root :is(.setu-evidence-situation, .setu-validator-machine, .setu-infer-machine, .setu-act-machine)
+  :is(p, small, em) {
+  color: var(--module-muted) !important;
+}
+
+.setu-module-root :is(.setu-evidence-situation, .setu-validator-machine, .setu-infer-machine, .setu-act-machine)
+  :is(small, em) {
+  font-size: 0.72rem !important;
+  line-height: 1.4 !important;
+}
+
+.setu-module-root :is(.setu-evidence-situation, .setu-validator-machine, .setu-infer-machine, .setu-act-machine)
+  p {
+  font-size: 0.82rem !important;
+  line-height: 1.52 !important;
+}
+
+html[data-setu-page="infer"] .setu-infer-machine-flow,
+html[data-setu-page="act"] .setu-act-machine-grid {
+  min-height: 450px !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-source-card, .setu-infer-belief-field),
+html[data-setu-page="act"] :is(.setu-act-selected, .setu-act-route) {
+  color: var(--module-ink) !important;
+  background: transparent !important;
+  border-color: var(--module-line) !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-source-state, .setu-infer-source-claim, .setu-infer-source-metrics span,
+  .setu-infer-vote-wrap > span, .setu-infer-node-name, .setu-infer-node-mode, .setu-infer-node-delta,
+  .setu-infer-cascade-note > span, .setu-infer-cascade-copy, .setu-infer-reason),
+html[data-setu-page="act"] :is(.setu-act-selected-mode, .setu-act-selected-command > span, .setu-act-selected-metrics span,
+  .setu-act-selected-reason, .setu-act-route-head, .setu-act-route-constraint, .setu-act-route-logic,
+  .setu-act-decision-pulse, .setu-act-decision-note) {
+  color: var(--module-muted) !important;
+  opacity: 1 !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-source-code, .setu-infer-node-value, .setu-infer-rank-probability),
+html[data-setu-page="act"] :is(.setu-act-selected-place, .setu-act-task-harm) {
+  color: var(--module-ink) !important;
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-source-metrics, .setu-infer-vote-wrap, .setu-infer-cascade-note),
+html[data-setu-page="act"] :is(.setu-act-selected-metrics, .setu-act-selected-command) {
+  background: rgba(23, 32, 29, 0.025) !important;
+  border-color: var(--module-line) !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-belief-node, .setu-infer-source-metrics > div),
+html[data-setu-page="act"] .setu-act-selected-metrics > div {
+  border-color: var(--module-line) !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-link, .setu-infer-arrow i),
+html[data-setu-page="act"] :is(.setu-act-route-track, .setu-act-route-logic i) {
+  background: var(--module-line-strong) !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-source-state, .setu-infer-node-delta, .setu-infer-cascade-value),
+html[data-setu-page="act"] :is(.setu-act-selected-action, .setu-act-decision-pulse[data-state="changed"]) {
+  color: var(--module-accent) !important;
+}
+
+/* Narrative band: editorial rules instead of floating cards or decorative diagrams. */
+html[data-setu-page="evidence"] .setu-evidence-story::before,
+html[data-setu-page="validator"] .setu-validator-story::before,
+html[data-setu-page="infer"] .setu-infer-story::before,
+html[data-setu-page="act"] .setu-act-story::before {
+  background: var(--module-band) !important;
+}
+
+.setu-module-root :is(.setu-evidence-story, .setu-validator-story, .setu-infer-story, .setu-act-story) {
+  color: var(--module-ink) !important;
+  border-top: 1px solid var(--module-line) !important;
+  border-bottom: 1px solid var(--module-line) !important;
+}
+
+html[data-setu-page="infer"] .setu-infer-story,
+html[data-setu-page="act"] .setu-act-story,
+html[data-setu-page="evidence"] .setu-evidence-story {
+  grid-template-columns: minmax(300px, 0.66fr) minmax(0, 1.34fr) !important;
+  gap: clamp(54px, 7vw, 104px) !important;
+  padding: clamp(76px, 8vw, 110px) 0 !important;
+}
+
+html[data-setu-page="validator"] .setu-validator-story {
+  padding: clamp(76px, 8vw, 110px) max(28px, calc((100vw - 1420px) / 2)) !important;
+  background: var(--module-band) !important;
+}
+
+.setu-module-root :is(.setu-evidence-story-copy h2, .setu-validator-story-copy h2, .setu-infer-story-copy h2, .setu-act-story-copy h2,
+  .setu-evidence-stream-head h2, .setu-infer-workspace-head h2, .setu-act-workspace-head h2) {
+  color: var(--module-ink) !important;
+  font-family: F37stout, "F37stout Fallback", Impact, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 0.8 !important;
+  letter-spacing: -0.05em !important;
+  text-transform: uppercase;
+}
+
+.setu-module-root :is(.setu-evidence-story-copy p, .setu-validator-story-copy p, .setu-infer-story-copy p, .setu-act-story-copy p) {
+  color: var(--module-muted) !important;
+  font-size: 0.94rem !important;
+  line-height: 1.62 !important;
+  opacity: 1 !important;
+}
+
+.setu-module-root :is(.setu-evidence-moments, .setu-validator-principles, .setu-infer-principles, .setu-act-principles) {
+  gap: 0 !important;
+  border-top: 1px solid var(--module-line-strong) !important;
+  border-bottom: 1px solid var(--module-line-strong) !important;
+}
+
+.setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle) {
+  min-height: 0 !important;
+  padding: 26px 22px 28px !important;
+  color: var(--module-ink) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-right: 1px solid var(--module-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle):last-child {
+  border-right: 0 !important;
+}
+
+.setu-module-root :is(.setu-evidence-moment-visual, .setu-validator-principle-visual, .setu-infer-principle-visual, .setu-act-principle-visual) {
+  display: none !important;
+}
+
+.setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle) > span {
+  color: var(--module-faint) !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.075em !important;
+}
+
+.setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle) > strong {
+  display: block;
+  margin-top: 18px !important;
+  color: var(--module-ink) !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  font-weight: 650 !important;
+}
+
+.setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle) > p {
+  margin-top: 12px !important;
+  color: var(--module-muted) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.55 !important;
+  opacity: 1 !important;
+}
+
+/* Work layer: denser pale ledger, with hierarchy coming from rules and type rather than cards. */
+html[data-setu-page="evidence"] .setu-evidence-workspace::before,
+html[data-setu-page="validator"] .setu-validator-workspace::before,
+html[data-setu-page="infer"] .setu-infer-workspace::before,
+html[data-setu-page="act"] .setu-act-workspace::before {
+  background: var(--module-work) !important;
+}
+
+.setu-module-root :is(.setu-evidence-workspace, .setu-validator-workspace, .setu-infer-workspace, .setu-act-workspace) {
+  color: var(--module-ink) !important;
+  padding-top: clamp(64px, 6vw, 88px) !important;
+  padding-bottom: 70px !important;
+}
+
+html[data-setu-page="validator"] .setu-validator-workspace {
+  background: var(--module-work) !important;
+}
+
+.setu-module-root :is(.setu-evidence-source-controls, .setu-evidence-stream-list, .setu-infer-timeline, .setu-infer-ranking,
+  .setu-act-task-list, .setu-act-assets, .setu-act-verify) {
+  color: var(--module-ink) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: var(--module-line) !important;
+  box-shadow: none !important;
+}
+
+.setu-module-root :is(.setu-evidence-row, .setu-infer-step, .setu-infer-rank-row, .setu-act-task, .setu-act-asset-row, .setu-act-verify-row) {
+  color: var(--module-ink) !important;
+  border-color: var(--module-line) !important;
+  background: transparent !important;
+}
+
+.setu-module-root :is(.setu-evidence-row, .setu-infer-step, .setu-infer-rank-row, .setu-act-task, .setu-act-asset-row, .setu-act-verify-row):hover {
+  background: rgba(255, 255, 255, 0.34) !important;
+}
+
+html[data-setu-page="infer"] :is(.setu-infer-step[aria-pressed="true"], .setu-infer-rank-row[data-risk="critical"]),
+html[data-setu-page="act"] :is(.setu-act-task[aria-pressed="true"], .setu-act-verify-row[data-resolved="true"]),
+html[data-setu-page="evidence"] .setu-evidence-entry[data-expanded="true"] {
+  color: var(--module-ink) !important;
+  background: rgba(200, 91, 65, 0.08) !important;
+}
+
+.setu-module-root :is(.setu-infer-step small, .setu-infer-rank-name span, .setu-act-task-place span, .setu-act-task-action span,
+  .setu-act-asset-row span, .setu-act-verify-row div small) {
+  color: var(--module-muted) !important;
+  font-size: 0.72rem !important;
+  line-height: 1.4 !important;
+  opacity: 1 !important;
+}
+
+.setu-module-root :is(.setu-infer-step b, .setu-infer-rank-name strong, .setu-act-task-place strong, .setu-act-task-action strong,
+  .setu-act-asset-row strong, .setu-act-verify-row div span) {
+  font-size: 0.82rem !important;
+  line-height: 1.35 !important;
+}
+
+html[data-setu-page="evidence"] .setu-evidence-source-controls {
+  border-radius: 14px 14px 0 0 !important;
+}
+
+html[data-setu-page="evidence"] .setu-evidence-capture {
+  background: var(--module-surface-2) !important;
+  border-color: var(--module-line) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+
+html[data-setu-page="validator"] :is(.setu-validator-selector-wrap, .setu-validator-review, .setu-validator-gate, .setu-validator-selected),
+html[data-setu-page="evidence"] :is(.setu-evidence-trace-sources, .setu-evidence-trace-panel, .setu-evidence-situation-foot) {
+  color: var(--module-ink) !important;
+  background: transparent !important;
+  border-color: var(--module-line) !important;
+}
+
+html[data-setu-page="validator"] :is(.setu-validator-selected-label, .setu-validator-origin, .setu-validator-check-note,
+  .setu-validator-check-state, .setu-validator-provenance-note, .setu-validator-gate-copy > span,
+  .setu-validator-gate-metrics span, .setu-validator-selector-wrap > span),
+html[data-setu-page="evidence"] :is(.setu-evidence-trace-label, .setu-evidence-trace-source-kind, .setu-evidence-trace-origin,
+  .setu-evidence-fact > span:first-child, .setu-evidence-fact-note, .setu-evidence-trace-state,
+  .setu-evidence-route-result > span, .setu-evidence-situation-foot) {
+  color: var(--module-muted) !important;
+  opacity: 1 !important;
+}
+
+html[data-setu-page="validator"] :is(.setu-validator-selector-item, .setu-validator-check) {
+  color: var(--module-ink) !important;
+}
+
+html[data-setu-page="validator"] .setu-validator-selector-item[aria-checked="true"],
+html[data-setu-page="validator"] .setu-validator-check[data-state="flag"] {
+  background: rgba(200, 91, 65, 0.08) !important;
+}
+
+html[data-setu-page="validator"] .setu-validator-gate {
+  background: var(--module-surface-2) !important;
+}
+
+/* Footer is the only near-black band: a quiet terminus and strong hierarchy anchor. */
+.setu-module-root :is(.setu-evidence-footer, .setu-validator-footer, .setu-infer-footer, .setu-act-footer) {
+  color: rgba(244, 246, 245, 0.76) !important;
+  background: #1c2421 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.setu-module-root :is(.setu-evidence-footer, .setu-validator-footer, .setu-infer-footer, .setu-act-footer) :is(p, a) {
+  color: inherit !important;
+  font-size: 0.76rem !important;
+  line-height: 1.5 !important;
+  opacity: 1 !important;
+}
+
+.setu-module-root :is(.setu-evidence-footer, .setu-validator-footer, .setu-infer-footer, .setu-act-footer) a {
+  color: #f4f6f5 !important;
+  letter-spacing: 0.055em;
+}
+
+.setu-module-root :is(a, button):focus-visible {
+  outline: 2px solid var(--module-ink) !important;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1040px) {
+  .setu-module-page,
+  html[data-setu-page="validator"] .setu-module-topbar {
+    width: min(calc(100% - 40px), 980px) !important;
+  }
+
+  html[data-setu-page="evidence"] .setu-evidence-hero,
+  html[data-setu-page="infer"] .setu-infer-hero,
+  html[data-setu-page="act"] .setu-act-hero,
+  html[data-setu-page="evidence"] .setu-evidence-story,
+  html[data-setu-page="infer"] .setu-infer-story,
+  html[data-setu-page="act"] .setu-act-story {
+    grid-template-columns: 1fr !important;
+  }
+
+  .setu-module-root :is(.setu-evidence-hero > div:first-child > p, .setu-validator-hero-copy p, .setu-infer-hero-copy p, .setu-act-hero-copy p) {
+    max-width: 44rem !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .setu-module-page,
+  html[data-setu-page="validator"] .setu-module-topbar {
+    width: min(calc(100% - 28px), 700px) !important;
+  }
+
+  .setu-module-topbar {
+    min-height: 60px !important;
+  }
+
+  .setu-module-root :is(.setu-evidence-context, .setu-validator-context, .setu-infer-context, .setu-act-context) {
+    display: none !important;
+  }
+
+  .setu-module-root :is(.setu-evidence-hero h1, .setu-validator-hero-copy h1, .setu-infer-hero-copy h1, .setu-act-hero-copy h1) {
+    font-size: clamp(4.3rem, 20vw, 6.5rem) !important;
+  }
+
+  html[data-setu-page="validator"] .setu-validator-hero,
+  html[data-setu-page="validator"] .setu-validator-story {
+    padding-inline: 16px !important;
+  }
+
+  .setu-module-root :is(.setu-evidence-moments, .setu-validator-principles, .setu-infer-principles, .setu-act-principles) {
+    grid-template-columns: 1fr !important;
+  }
+
+  .setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle) {
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--module-line) !important;
+  }
+
+  .setu-module-root :is(.setu-evidence-moment, .setu-validator-principle, .setu-infer-principle, .setu-act-principle):last-child {
+    border-bottom: 0 !important;
+  }
+}
+
+/* SETU keeps only operational chapters in the captured navigation. The original studio social
+   accounts are not part of an incident command surface. */
+.c-icons > a[target="_blank"] {
+  display: none !important;
+}
+
+/* The captured WebGL scene still owns the hut, glow, camera and hover motion. Only the baked word
+   is replaced here, as normal text, so the same terrain choreography can say Evidence / Validation
+   / Inference / Action. */
+.setu-terrain-hotspot-label {
+  --setu-hotspot-x: 0px;
+  --setu-hotspot-y: 0px;
+  position: fixed;
+  left: var(--setu-hotspot-x);
+  top: calc(var(--setu-hotspot-y) - 34px);
+  z-index: 2147483000;
+  pointer-events: none;
+  transform: translate(-50%, -100%) scale(0.84);
+  transform-origin: 50% 100%;
+  opacity: 0;
+  color: #efffdc;
+  font-family: Bahnschrift, "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(19px, 1.75vw, 27px);
+  font-weight: 700;
+  font-stretch: condensed;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 3px rgba(226, 255, 201, 0.78),
+    0 0 9px rgba(226, 255, 201, 0.28);
+  transition: opacity 150ms ease, transform 230ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.setu-terrain-hotspot-label[data-visible="true"] {
+  opacity: 1;
+  transform: translate(-50%, -100%) scale(1);
+}
+
+.setu-transition-wordmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #efffdc;
+  font-family: Bahnschrift, "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(50px, 7.5vw, 104px);
+  font-weight: 800;
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
 }

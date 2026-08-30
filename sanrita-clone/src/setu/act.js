@@ -149,7 +149,7 @@ function createPrinciple(index, title, strong, copy, mark) {
 }
 
 export function isActRoute(pathname = window.location.pathname) {
-  return /\/(?:[a-z]{2}\/)?(?:act|contact)\/?$/i.test(pathname);
+  return /\/(?:[a-z]{2}\/)?(?:act|action|contact)\/?$/i.test(pathname);
 }
 
 export function mountActPage() {
@@ -248,22 +248,22 @@ export function mountActPage() {
     verifyList.append(button);
   }
 
-  const root = el("div.setu-act-root", {}, [
-    el("main.setu-act-page", {}, [
-      el("header.setu-act-topbar", {}, [
+  const root = el("div.setu-act-root.setu-module-root", { "data-module": "action" }, [
+    el("main.setu-act-page.setu-module-page", {}, [
+      el("header.setu-act-topbar.setu-module-topbar", {}, [
         el("a.setu-act-brand", { href: "/", text: "SETU" }),
         el("div.setu-act-context", {}, [
           el("span", { text: "WAYANAD · FIRST 24H" }),
-          el("span", { text: "DECISION LAYER" }),
+          el("span", { text: "04 · ACTION" }),
         ]),
         el("div.setu-act-toplinks", {}, [
-          el("a", { href: "/infer", text: "← INFER" }),
+          el("a", { href: "/inference", text: "← INFERENCE" }),
           el("a", { href: "/", text: "DISTRICT TWIN →" }),
         ]),
       ]),
       el("section.setu-act-hero", {}, [
         el("div.setu-act-hero-copy", {}, [
-          el("h1", {}, ["TURN BELIEF", el("br"), "INTO ACTION"]),
+          el("h1", { text: "ACTION" }),
           el("p", { text: "SETU does not dispatch to the reddest dot. It weighs expected harm, route viability, asset fit and what one more verification could change, then leaves a receipt for the operator." }),
         ]),
         el("section.setu-act-machine", {}, [
@@ -389,6 +389,9 @@ export function installActRouteBridge() {
   const reconcile = () => {
     if (isActRoute()) {
       mountActPage();
+      if (window.location.pathname !== "/action") {
+        history.replaceState(history.state, "", "/action");
+      }
       return;
     }
     if (document.querySelector(".setu-act-root")) window.location.reload();
@@ -400,12 +403,26 @@ export function installActRouteBridge() {
     try {
       const url = new URL(anchor.href, window.location.href);
       if (url.origin !== window.location.origin || !isActRoute(url.pathname)) return;
+      if (!anchor.closest(".setu-module-root")) return;
       event.preventDefault();
-      window.location.assign("/act");
+      window.location.assign("/action");
     } catch {
       // Ignore malformed hrefs owned by the captured shell.
     }
   }, true);
 
+  window.__setuRouteReconcilers ??= new Set();
+  window.__setuRouteReconcilers.add(reconcile);
+  if (!window.__setuRouteHistoryBridge) {
+    window.__setuRouteHistoryBridge = true;
+    for (const method of ["pushState", "replaceState"]) {
+      const original = history[method].bind(history);
+      history[method] = (...args) => {
+        const result = original(...args);
+        queueMicrotask(() => window.__setuRouteReconcilers?.forEach((handler) => handler()));
+        return result;
+      };
+    }
+  }
   window.addEventListener("popstate", reconcile);
 }

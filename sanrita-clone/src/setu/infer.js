@@ -175,7 +175,7 @@ function createPrinciple(index, title, strong, copy, mark) {
 }
 
 export function isInferRoute(pathname = window.location.pathname) {
-  return /\/(?:[a-z]{2}\/)?(?:infer|playground)\/?$/i.test(pathname);
+  return /\/(?:[a-z]{2}\/)?(?:infer|inference|playground)\/?$/i.test(pathname);
 }
 
 export function mountInferPage() {
@@ -253,22 +253,22 @@ export function mountInferPage() {
 
   for (const step of INFER_STEPS) stepRail.append(createStepButton(step, setSelected));
 
-  const root = el("div.setu-infer-root", {}, [
-    el("main.setu-infer-page", {}, [
-      el("header.setu-infer-topbar", {}, [
+  const root = el("div.setu-infer-root.setu-module-root", { "data-module": "inference" }, [
+    el("main.setu-infer-page.setu-module-page", {}, [
+      el("header.setu-infer-topbar.setu-module-topbar", {}, [
         el("a.setu-infer-brand", { href: "/", text: "SETU" }),
         el("div.setu-infer-context", {}, [
           el("span", { text: "WAYANAD · FIRST 24H" }),
-          el("span", { text: "INFERENCE LAYER" }),
+          el("span", { text: "03 · INFERENCE" }),
         ]),
         el("div.setu-infer-toplinks", {}, [
-          el("a", { href: "/projects", text: "← VALIDATE" }),
-          el("a", { href: "/act", text: "ACT →" }),
+          el("a", { href: "/validation", text: "← VALIDATION" }),
+          el("a", { href: "/action", text: "ACTION →" }),
         ]),
       ]),
       el("section.setu-infer-hero", {}, [
         el("div.setu-infer-hero-copy", {}, [
-          el("h1", {}, ["INFER WHAT", el("br"), "IS HAPPENING"]),
+          el("h1", { text: "INFERENCE" }),
           el("p", { text: "Validated evidence does not become a verdict. SETU moves a probability, preserves the uncertainty, and shows exactly why the ranking changed." }),
         ]),
         el("section.setu-infer-machine", {}, [
@@ -348,7 +348,7 @@ export function mountInferPage() {
       el("footer.setu-infer-footer", {}, [
         el("p", { text: "Inference is a ranked, explainable belief state. It is not an autonomous order to act." }),
         el("p", { text: "This page is a lightweight synthetic demo trace of SETU’s Bayesian belief fusion and time-lagged cascade model." }),
-        el("a", { href: "/act", text: "NEXT · TURN BELIEF INTO ACTION" }),
+        el("a", { href: "/action", text: "NEXT · ACTION" }),
       ]),
     ]),
   ]);
@@ -375,6 +375,9 @@ export function installInferRouteBridge() {
   const reconcile = () => {
     if (isInferRoute()) {
       mountInferPage();
+      if (window.location.pathname !== "/inference") {
+        history.replaceState(history.state, "", "/inference");
+      }
       return;
     }
     if (document.querySelector(".setu-infer-root")) window.location.reload();
@@ -386,12 +389,26 @@ export function installInferRouteBridge() {
     try {
       const url = new URL(anchor.href, window.location.href);
       if (url.origin !== window.location.origin || !isInferRoute(url.pathname)) return;
+      if (!anchor.closest(".setu-module-root")) return;
       event.preventDefault();
-      window.location.assign("/infer");
+      window.location.assign("/inference");
     } catch {
       // Ignore malformed hrefs owned by the captured shell.
     }
   }, true);
 
+  window.__setuRouteReconcilers ??= new Set();
+  window.__setuRouteReconcilers.add(reconcile);
+  if (!window.__setuRouteHistoryBridge) {
+    window.__setuRouteHistoryBridge = true;
+    for (const method of ["pushState", "replaceState"]) {
+      const original = history[method].bind(history);
+      history[method] = (...args) => {
+        const result = original(...args);
+        queueMicrotask(() => window.__setuRouteReconcilers?.forEach((handler) => handler()));
+        return result;
+      };
+    }
+  }
   window.addEventListener("popstate", reconcile);
 }
